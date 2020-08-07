@@ -1,0 +1,1 @@
+window.TEXT_SEARCH_DATA={'posts':[{'title':"Welcome",'url':"/2018/07/01/welcome.html"},{'title':"Variabilité de la consommation électrique et thermo-sensibilité",'url':"/2019/05/24/variabilite-de-la-consommation-electrique-et-thermo-sensibilite.html"}]};

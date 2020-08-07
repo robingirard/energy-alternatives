@@ -1,0 +1,53 @@
+/* start custom scss snippet */
+
+div.summary{
+  margin: 10px 140px 15px;
+}
+
+span.summary{
+  margin: 10px 140px 15px;
+}
+
+
+span.text{
+  margin: 10px 70px 15px;
+}
+
+span.legendtext{
+  margin: 10px 70px 15px;
+  color: Darkgrey;
+}
+
+
+div.text{
+  margin: 10px 70px 15px;
+}
+
+td {  /* Table  */
+  font-size: 8px;
+}
+h1.title {
+  font-size: 38px;
+  color: DarkRed;
+}
+h1 { /* Header 1 */
+  font-size: 38px;
+  color: DarkRed;
+}
+h2 { /* Header 2 */
+    font-size: 22px;
+  color: DarkBlue;
+}
+h3 { /* Header 3 */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ /* Code block */
+    font-size: 12px;
+}
+pre { /* Code block - determines code spacing between lines */
+    font-size: 14px;
+}
+
+/* end custom scss snippet */

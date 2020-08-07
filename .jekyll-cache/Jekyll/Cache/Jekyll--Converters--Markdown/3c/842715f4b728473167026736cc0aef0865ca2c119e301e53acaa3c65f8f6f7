@@ -1,0 +1,60 @@
+I"<<div class="summary" style="display:block; text-align: justify">
+<em>
+     Résumé -- Dans ce post je décris brièvement les phénomènes de variabilité de la consommation électrique en distinguant plusieurs causes et plusieurs échelles de temps. J’analyse en particulier le phénomène de thermosensibilité –sensibilité de la consommation à la température- important en France et problématique. Je montre l’évolution de cette thermosensibilité depuis 1996, on observe un doublement de l’amplitude du phénomène de 2000 à 2010.
+     Dans d’autres posts je discuterai les causes de cette évolution, de la dispersion de ce phénomène sur le territoire ainsi que les évolutions possibles dans l’avenir.
+</em>
+</div>
+
+<!--more-->
+
+<hr />
+
+<div class="text" style="display:block; text-align: justify">
+     Dans la plupart des régions du monde on a coutume de découper les variations intra-annuelles de la consommation électrique en variations journalières, hebdomadaires et saisonnières. Pour les variations intra-annuelles on peut distinguer grossièrement deux types de causes :
+<ul> <li>l’emploi du temps des consommateurs qui fait varier la consommation au cours d’une journée et d’un jour de travail à un jour de congé. Cet emploi du temps peut aussi provoquer de légères variations saisonnières avec les grandes vacances d’été, surtout localement mais aussi à l’échelle du pays.</li>
+  <li>la sensibilité de la consommation à la météorologie et plus particulièrement à la température -la thermo-sensibilité- qui a de légères conséquences sur les variations de la consommation à l’échelle journalières des conséquences qui peuvent être importantes à l’échelle hebdomadaires, et surtout des conséquences très importantes à l’échelle saisonnière.</li>
+</ul>
+</div>
+
+<p><span class="text" style="display:block; text-align: justify">
+     Je vais étudier en détail les effets de ces deux types de causes. Puis je parlerai des évolutions sur le long terme (au-delà de l’échelle intra-annuelle) de la consommation et de sa thermo-sensibilité qui ont d’autres causes.
+</span></p>
+
+<h2 id="les-variations-intra-annuelles-de-la-consommation-dorigine-non-météorologique">Les variations intra-annuelles de la consommation d’origine non météorologique</h2>
+<p><span class="text" style="display:block; text-align: justify">
+Les variations journalières peuvent différer en fonction de la saison. C’est le cas par exemple en France où l’on consomme toujours plus la journée que la nuit mais le pic journalier est atteint vers 19h en hivers et plutôt vers 14h en été (<a href="#Figure1">Figure 1</a>). A l’inter-saison le pic du soir se déplace légèrement avec l’évolution de la luminosité qui joue non seulement sur notre consommation de lumière mais aussi sur notre mode de vie.
+</span></p>
+
+<p><span class="text" id="Figure1" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2019-05-24/VarConsoFigure1.png" alt="Image" class="border" />
+</span>
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+<strong>Figure 1</strong> – Type de profil de consommation électrique (exprimée en GW une unité de puissance) pour une journée froide de l’hiver 2012 et une journée chaude de l’été en France. Attention, les échelles des deux graphiques sont très différentes ! (Source : données de consommation France RTE)
+</span></p>
+
+<p><span class="text" style="display:block; text-align: justify">
+Sur cet exemple particulier de la <a href="#Figure1">Figure 1</a>, la différence entre le creux de la nuit et le pic de la journée ou du soir est d’environ 15 GW, et la différence n’est pas plus marquée en hiver. Nous allons étudier la distribution générale de ces pics au cours de l’année. On peut diviser ces variations en deux parties comme cela est fait Figure 2 : une variation à la baisse (entre la moyenne journalière et le creux) et une variation à la hausse (entre la moyenne journalière et le pic). La Figure 2 donne la distribution de ces variations en puissance pour la période 2012-2018, période pendant laquelle elles n’ont quasiment pas évolué. Ces variations sont plus importantes à la baisse (autour de 9-10 GW en moyenne et jusqu’à 16 GW au maximum) qu’à la hausse (autour de 7GW en moyenne et jusqu’à 12GW au maximum). La température (période chaude ou froide) a une influence assez faible sur les variations. Pour les variations à la hausse, la moyenne hivernale n’est que quelques centaines de MW plus grande que pendant la saison chaude. Cette définition des variations est simple et pratique et elle sera traduite en un besoin de modulation dans des posts ultérieurs. Il existe évidemment d’autre manières d’appréhender cette variabilité, et l’on pourra par exemple consulter [<a href="https://www.sciencedirect.com/science/article/pii/S0306261919302107?via%3Dihub">Heggarty2018</a>] pour les définitions proposées à plusieurs échelles de temps et les références qui s’y trouvent.
+</span></p>
+
+<p><span class="text" id="Figure2" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2019-05-24/VarConsoFigure2.v2.png" alt="Image" class="border" />
+</span>
+<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
+<strong>Figure 2</strong> – Une définition des variations extremales à la hausse ou à la baisse (à gauche) et leurs distributions sur la période 2012-2018 en fonction du moment de l’année (période d’utilisation du chauffage ou non). Source des données : consommation France RTE
+</span></p>
+
+<p><span class="text" style="display:block; text-align: justify">
+Les variations hebdomadaires peuvent être liées aux deux causes mentionnées en introduction de ce post. En ce qui concerne la sensibiltié de la consommation à la température nous étudierons ce phénomène dans la section suivante, à l’échelle hebdomadaire l’arrivée d’une vague de froid peut faire augmenter la consommation de quelques dizaines de GW en un jour ou deux. Pour ce qui est de l’emploi du temps des consommateurs, ce sont essentiellement les variations entre le weekend end ou les jours de congés et la semaine de travail, qui causent des variations de consommation. En générale la consommation est plus faible le week end.
+</span></p>
+
+<p><span class="text" style="display:block; text-align: justify">
+On peut produire pour ces de variations hebdomadaires la même analyse que pour les variations journalières en définissant une variation à la baisse (ou à la hausse) entre la moyenne hebdomadaire et la plus petite (ou la plus grande) consommation moyenne journalière. C’est ce qui est fait Figure 3 où l’on observera que ces variations sont plus importante à la baisse. Ceci s’explique par le fait que la consommation est plus faible seulement les jours de week end et que donc la moyenne hebdomadaire reflète plutôt un jour de semaine.
+</span></p>
+
+<p><span class="text" id="Figure3" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2019-05-24/VarConsoFigure2.v2.png" alt="Image" class="border" />
+</span>
+<span class="legendtext" id="CAPFigure3" style="display:block;text-align:center">
+<strong>Figure 3</strong> –  Distributions sur la période 2012-2018 des variations hebdomadaires extremales à la hausse ou à la baisse leurs en fonction du moment de l’année (période d’utilisation du chauffage ou non). Source des données : consommation France RTE. La variation hebdomadaire est construite à partir des consommations moyennes journalières (voir texte).
+</span></p>
+:ET
