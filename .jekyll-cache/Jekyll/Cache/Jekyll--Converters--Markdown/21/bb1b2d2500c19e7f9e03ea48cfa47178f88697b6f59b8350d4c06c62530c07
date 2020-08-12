@@ -1,0 +1,56 @@
+I"h<div class="summary" style="display:block; text-align: justify">
+<em>
+     L’objectif de ce post est d’introduire une base simple permettant la description du mix de production d’électricité d’un pays. Cela passe par une segmentation des moyens de production en grandes familles : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien », ou « biomasse ». La place que tient chacune de ces classes dans le mix est résumée par deux indicateurs simples, importants et complémentaires que sont d’un côté l’énergie annuelle produite et de l’autre la puissance installée. La puissance installée est décomposée entre une puissance installée pilotable et une qui ne l’est pas. Ce qui lie l’énergie annuelle produite à la puissance installée est le facteur de charge. Nous donnons une première analyse grossière des éléments qui l’influencent pour les différents moyens permettant de produire de l’électricité. Enfin, nous expliquons en quoi la puissance installée et énergie annuelle produite sont de bons paramètres pour estimer le coût économique et en termes de GES d’un système électrique. Nous donnons les paramètres permettant ces estimations dans un tableur partagé et nous l’utilisons pour estimer l’ordre de grandeur du coût (économique et en termes de GES) d’un futur mix fortement renouvelable et de celui d’un futur mix fortement nucléaire. En définitive le paramètre primordial pour l’estimation des impacts économiques et environnementaux n’est pas la puissance installée mais bien l’énergie produite. Nous ne donnons ici que des estimations grossières mais nous montrons en quoi le mix nucléaire implique des émissions de GES plus faibles que le mix fortement renouvelable mais que tous deux sont compatibles avec la stratégie nationale bas carbone visant la neutralité carbone à l’échelle de la France, pour l’horizon 2050.
+</em>
+</div>
+<!--more-->
+<p><span class="mytext">
+<a href="https://git.persee.mines-paristech.fr/robin.girard/energy-alternatives/blob/master/2020-04-01-Puissance-Energie-LCOE.R">Le code et les données permettant de faire les graphiques de ce post sont mis à disposition librement.</a>
+</span></p>
+
+<hr />
+
+<h1 id="description-dun-système-électrique">Description d’un système électrique</h1>
+
+<h2 id="puissance-installée-et-énergie-annuelle-consommée">Puissance installée et énergie annuelle consommée.</h2>
+
+<p><span class="mytext">
+On combine sur un territoire (une île, un pays ou un continent) différentes sortes de moyens de production et de stockage d’électricité et l’ensemble formé par ceux-ci est appelé le mix de production d’électricité. Si l’on y ajoute le réseau de transport et de distribution d’électricité dont nous parlerons dans un autre texte, il s’agit alors du système électrique. Le mix de production d’électricité en France est composé essentiellement de centrales nucléaires et de centrales hydrauliques, mais il comprend aussi des centrales à gaz, des éoliennes, des panneaux photovoltaïques, des usines marémotrices, …
+</span>
+<span class="mytext">
+Les deux premières grandeurs qu’il faut apprendre à distinguer pour appréhender le mix de production d’électricité d’un pays sont, d’un côté l’énergie annuelle produite qui est une énergie “finale” (par opposition à une énergie primaire) qui s’exprime le plus souvent en TWh (ou GWh, ou MWh, ou kWh), et de l’autre la puissance installée qui se donne en GW (ou MW, ou kW). Comme nous le verrons dans la section 3, l’intérêt qu’il y a à décrire un système électrique à partir des puissances installées et des énergies produites est que celles-ci se traduisent assez simplement en termes de coûts économique et d’émissions de gaz à effet de serre (GES).
+</span>
+<span class="mytext">
+On peut voir dans le graphique ci-dessous la décomposition entre puissance et énergie pour les différents moyens de production en France et en Allemagne en 2018. Les moyens de production sont regroupés en grandes classes selon la source d’énergie utilisée : nucléaire, gaz, pétrole (oil), charbon, éolien (Wind), photovoltaïque (Solar PV). Nous avons ici rassemblé les moyens de production sous différentes grandes classes (éolien, PV, nucléaire, gaz, charbon, …) derrière lesquelles se cachent des variantes importantes que nous détaillerons prochainement, vis à vis des capacités techniques, des coûts, et des impacts environnementaux. …
+</span></p>
+
+<p><span class="text" id="Figure1" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/ElecMixFig1.png&quot;" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+<strong>Figure 1</strong> – Energie produite par an et puissance installée pour différentes classes de moyens de production en France et en Allemagne en 2018. Les moyens de production pilotables sont à gauche de la zone verte, les moyens de production fortement carbonés sont à gauche de la zone rouge (Oil, Gaz et Coal). Source de données ENTSOE <a href="https://www.entsoe.eu/data/">1</a>
+</span></p>
+
+<h2 id="puissance-installée-pilotable-et-non-pilotable">Puissance installée pilotable et non pilotable</h2>
+
+<p><span class="text" id="Figure2" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/ElecMixFig2-World2.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
+<strong>Figure 2</strong> –
+</span></p>
+
+<p><span class="text" id="Figure3" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/ElecMixFig3-CapacityFactors.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure3" style="display:block;text-align:center">
+<strong>Figure 3</strong> –
+</span></p>
+
+<p><span class="text" id="Figure4" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/EvolutionCouts.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure4" style="display:block;text-align:center">
+<strong>Figure 4</strong> –
+</span></p>
+:ET

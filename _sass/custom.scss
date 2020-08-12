@@ -13,6 +13,20 @@ span.text{
   margin: 10px 70px 15px;
 }
 
+span.mytext{
+  margin: 10px 70px 15px;
+  display:block;
+  text-align: justify;
+  text-indent: 9mm;
+}
+
+div.mytext{
+  margin: 10px 70px 15px;
+  display:block;
+  text-align: justify;
+  text-indent: 9mm;
+}
+
 span.legendtext{
   margin: 10px 70px 15px;
   color: Darkgrey;
@@ -49,5 +63,47 @@ code.r{ /* Code block */
 pre { /* Code block - determines code spacing between lines */
     font-size: 14px;
 }
+
+.myparagraph {
+
+  display:block;
+  text-align: justify;
+  text-indent: 9mm;
+}
+
+
+.wrapstyle {
+  white-space: nowrap;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mbtablestyle {
+           border-collapse: collapse;
+           overflow-x: auto;
+           border-spacing: 5px;
+
+      >table{
+           width: 100%;
+          font-size: 14px;
+
+          table-layout: fixed;
+        }
+           /*word-break:break-all;*/
+      >  tr{
+        width: 100%;
+
+      }
+      >  th, td{
+            /*background-color: #f5f5f5;*/
+
+            font-size: 14px;
+           border: 1px solid black;
+        }
+}
+
+
 
 /* end custom scss snippet */

@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/2018/07/01/welcome.html</loc>
-<lastmod>2018-07-01T00:00:00+02:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/2019/05/24/variabilite-de-la-consommation-electrique-et-thermo-sensibilite.html</loc>
 <lastmod>2019-05-24T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2020/03/22/une-contribution-a-la-reflexion-sur-la-strategie-nationale-bas-carbone-dans-le-batiment-partie-1-quels-modes-de-chauffage-a-lhorizon-2050.html</loc>
+<lastmod>2020-03-22T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2020/05/07/mix-de-production-delectricite-energie-et-puissance.html</loc>
+<lastmod>2020-05-07T00:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about.html</loc>

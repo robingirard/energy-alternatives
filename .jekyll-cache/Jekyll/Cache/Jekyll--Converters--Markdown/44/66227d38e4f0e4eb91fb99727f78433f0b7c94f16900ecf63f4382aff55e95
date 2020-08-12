@@ -1,0 +1,86 @@
+I"�3<div class="summary" style="display:block; text-align: justify">
+<em>
+     L’objectif de ce post est d’introduire une base simple permettant la description du mix de production d’électricité d’un pays. Cela passe par une segmentation des moyens de production en grandes familles : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien », ou « biomasse ». La place que tient chacune de ces classes dans le mix est résumée par deux indicateurs simples, importants et complémentaires que sont d’un côté l’énergie annuelle produite et de l’autre la puissance installée. La puissance installée est décomposée entre une puissance installée pilotable et une qui ne l’est pas. Ce qui lie l’énergie annuelle produite à la puissance installée est le facteur de charge. Nous donnons une première analyse grossière des éléments qui l’influencent pour les différents moyens permettant de produire de l’électricité. Enfin, nous expliquons en quoi la puissance installée et énergie annuelle produite sont de bons paramètres pour estimer le coût économique et en termes de GES d’un système électrique. Nous donnons les paramètres permettant ces estimations dans un tableur partagé et nous l’utilisons pour estimer l’ordre de grandeur du coût (économique et en termes de GES) d’un futur mix fortement renouvelable et de celui d’un futur mix fortement nucléaire. En définitive le paramètre primordial pour l’estimation des impacts économiques et environnementaux n’est pas la puissance installée mais bien l’énergie produite. Nous ne donnons ici que des estimations grossières mais nous montrons en quoi le mix nucléaire implique des émissions de GES plus faibles que le mix fortement renouvelable mais que tous deux sont compatibles avec la stratégie nationale bas carbone visant la neutralité carbone à l’échelle de la France, pour l’horizon 2050.
+</em>
+</div>
+<!--more-->
+<p><span class="mytext">
+<a href="https://git.persee.mines-paristech.fr/robin.girard/energy-alternatives/blob/master/2020-04-01-Puissance-Energie-LCOE.R">Le code et les données permettant de faire les graphiques de ce post sont mis à disposition librement.</a>
+</span></p>
+
+<hr />
+
+<h1 id="description-dun-système-électrique">Description d’un système électrique</h1>
+
+<h2 id="puissance-installée-et-énergie-annuelle-consommée">Puissance installée et énergie annuelle consommée.</h2>
+
+<p><span class="mytext">
+On combine sur un territoire (une île, un pays ou un continent) différentes sortes de moyens de production et de stockage d’électricité et l’ensemble formé par ceux-ci est appelé le mix de production d’électricité. Si l’on y ajoute le réseau de transport et de distribution d’électricité dont nous parlerons dans un autre texte, il s’agit alors du système électrique. Le mix de production d’électricité en France est composé essentiellement de centrales nucléaires et de centrales hydrauliques, mais il comprend aussi des centrales à gaz, des éoliennes, des panneaux photovoltaïques, des usines marémotrices, …
+</span>
+<span class="mytext">
+Les deux premières grandeurs qu’il faut apprendre à distinguer pour appréhender le mix de production d’électricité d’un pays sont, d’un côté l’énergie annuelle produite qui est une énergie “finale” (par opposition à une énergie primaire) qui s’exprime le plus souvent en TWh (ou GWh, ou MWh, ou kWh), et de l’autre la puissance installée qui se donne en GW (ou MW, ou kW). Comme nous le verrons dans la section 3, l’intérêt qu’il y a à décrire un système électrique à partir des puissances installées et des énergies produites est que celles-ci se traduisent assez simplement en termes de coûts économique et d’émissions de gaz à effet de serre (GES).
+</span>
+<span class="mytext">
+On peut voir dans le graphique ci-dessous la décomposition entre puissance et énergie pour les différents moyens de production en France et en Allemagne en 2018. Les moyens de production sont regroupés en grandes classes selon la source d’énergie utilisée : nucléaire, gaz, pétrole (oil), charbon, éolien (Wind), photovoltaïque (Solar PV). Nous avons ici rassemblé les moyens de production sous différentes grandes classes (éolien, PV, nucléaire, gaz, charbon, …) derrière lesquelles se cachent des variantes importantes que nous détaillerons prochainement, vis à vis des capacités techniques, des coûts, et des impacts environnementaux. …
+</span></p>
+
+<p><span class="text" id="Figure1" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/ElecMixFig1.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+<strong>Figure 1</strong> – Energie produite par an et puissance installée pour différentes classes de moyens de production en France et en Allemagne en 2018. Les moyens de production pilotables sont à gauche de la zone verte, les moyens de production fortement carbonés sont à gauche de la zone rouge (Oil, Gaz et Coal). Source de données ENTSOE <a href="https://www.entsoe.eu/data/">1</a>
+</span></p>
+
+<h2 id="puissance-installée-pilotable-et-non-pilotable">Puissance installée pilotable et non pilotable</h2>
+<p><span class="mytext">
+La puissance installée (ou capacité installée) n’a pas la même valeur selon qu’elle est pilotable (gaz, charbon, nucléaire, hydraulique) ou relative à une production non pilotable (éolien, photovoltaïque) dont la disponibilité n’est pas le résultat d’un choix. On ne peut produire avec les éoliennes et les panneaux photovoltaïque que lorsqu’il y a du vent ou du soleil. En France la capacité pilotable est atour de 110 GW, alors qu’en Allemagne elle est un peu plus faible, autour de 100GW (on peut lire ces chiffres sur la Figure 1 en totalisant les puissances installées des moyens de production se trouvant à gauche de la zone bleue de l’hydraulique).
+</span>
+<span class="mytext">
+Cette dichotomie est utile mais quelques nuances doivent être évoquées. Un moyen de production pilotable n’a jamais une disponibilité de 100% du fait de la nécessité de maintenances ou de certaines contraintes de fonctionnement, mais les maintenances à l’origine des indisponibilités correspondantes sont le plus souvent le résultat d’un choix qui peut être utilement optimisé. C’est par exemple le cas en France avec le nucléaire dont les maintenances sont optimisées pour adapter la production à la variation saisonnière de la consommation due à sa thermosensibilité, nous en avons déjà parlé [2]. Une partie de l’hydraulique au fil de l’eau n’est que partiellement pilotable (avec des flexibilités de quelques dizaines de minutes). Un moyen de production non pilotable peut être partiellement piloté, par exemple en faisant de la régulation à la baisse pour gérer une contrainte réseau, ou pour gérer un surplu de production sur le système. C’est ce que l’on appelle parfois l’effacement de production, le bridage (pour l’éolien) ou en anglais le curtailement)
+</span></p>
+
+<p><span class="mytext">
+La capacité pilotable donne un ordre de grandeur de la consommation instantanée maximale qu’il est possible de couvrir mais cette question requiert une analyse plus complexe tenant compte d’autres facteurs comme d’un côté les besoins de maintenance des centrales pilotables, les besoins de réserve du système électrique qui diminuent la capacité pilotable disponible et de l’autre les variations de la consommation conjointement avec celles de la production intermittente, l’existence et la disponibilité de capacités de stockage, d’interconnexion et de demande flexible qui peuvent permettre de revoir à la baisse le besoin de puissance pilotable. Il n’est pas nécessaire à ce stade de comprendre ce qui se cache derrière tous ces termes, c’est un enjeu important sur lequel nous reviendrons. En France, nous avons couvert, lors de l’hiver très froid de 2012, une consommation de 110 GW.
+</span></p>
+
+<h2 id="exemples-de-mix-électriques-dans-le-monde">Exemples de mix électriques dans le monde</h2>
+
+<p><span class="mytext">
+La place occupée par un moyen de production peut être décrite en termes de puissance pilotable installée, ou bien, en termes d’énergie annuelle produite. Ces deux choses sont en général différentes. Par exemple, le nucléaire contribue à environ 3/4 de la production d’énergie en France mais ne représente qu’un peu plus de la moitié de la capacité pilotable (avec 63 GW installés). A l’inverse, toujours en France, la capacité hydraulique pilotable tient une place importante en puissance (de l’ordre de 25 GW) mais beaucoup moins en énergie. En Allemagne les énergies éoliennes et photovoltaïques ont une puissance installée importante qui représente la moitié du mix en termes de puissance installée, ce sont des puissances non pilotables qui représentent moins d’un tiers pour ce qui est de l’énergie produite. Mais nous allons voir que le rapport entre puissance installée et énergie produite est relativement stable au sein d’une technologie (c’est le facteur de charge dont nous parlons à la section suivante). Aussi nous donnons dans la Figure 2 une description des volumes d’électricité produits par différentes technologies pour différents pays dans le monde
+</span></p>
+
+<p><span class="text" id="Figure2" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/ElecMixFig2-World2.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
+<strong>Figure 2</strong> – Énergie annuelle (électrique) produite en 2018 par pays et par technologie.
+</span></p>
+
+<p><span class="mytext">
+Les données ont des origines variées mais elles sont toutes publiques, mon travail a été de les rassembler pour vous dans ce document. On peut noter que la Chine a donc une production d’énergie électrique 10 fois plus importante que l’Allemagne qui a elle-même une production deux fois plus importante que l’Espagne. C’est en France que la production bas carbone est la plus importante mais l’Espagne, l’Allemagne et l’Angleterre ont une part significative de production bas carbone.
+</span></p>
+
+<h1 id="facteur-de-charge">Facteur de charge</h1>
+<h2 id="définition">Définition</h2>
+
+<p>On passe de la puissance installée d’une centrale ou d’un groupe de centrales à une énergie annuelle par le facteur de charge qui est un élément essentiel pour décrire les moyens de production du mix électrique. Il se définit comme l’énergie produite pendant une certaine période (une heure, un mois, un an, …) rapportée à l’énergie que l’on aurait produit en tournant tout le temps à pleine puissance. Le facteur de charge annuel est exprimé soit en proportion soit en nombre d’heures annuelles (obtenu en multipliant la proportion par le nombre d’heures d’une année : 8760). Si l’on note  $E$  l’énergie annuelle produite en TWh/an et $P$ la puissance installée en GW, on a alors un facteur de charge annuel donné par :</p>
+
+\[𝐹𝐶=𝐸𝑃∗8760∗10−3=𝐸𝑃∗8,76\]
+
+<p>Figure 3 : distribution des facteurs de charge pour différentes technologies sur la période 2008-2018 et dans les différents pays considérés dans la Figure 2. Ces distributions sont représentées avec des boîtes à moustache, le rectangle contient la moitié des valeurs et le trait plein 90% des valeurs, les points sont des valeurs extrêmes ou aberrantes vis à vis des autres observations. Un point représente le facteur de charge de tout un parc pour toute une année dans un pays.
+On peut voir Figure 3 la distribution des facteurs de charges des différentes classes des technologies sur la période 2008-2018 et dans les différents pays considérés Figure 2. Çà ne sont donc pas les facteurs de charge des centrales qui sont représentés ici mais celui de groupes cohérents de centrales dans différents pays et pour différentes années. Ces valeurs ne sont pas pondérées par la taille des différents pays et l’on ne peut pas dire que les pays choisis soient exactement représentatifs de la diversité existante dans le monde, aussi ces valeurs sont données ici à titre d’exemple, surtout pour illustrer le panel de valeurs possibles et la tendance par type de moyen de production. Nous allons maintenant donner quelques explications sur l’origine de ces valeurs.</p>
+
+<p><span class="text" id="Figure3" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/ElecMixFig3-CapacityFactors.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure3" style="display:block;text-align:center">
+<strong>Figure 3</strong> –
+</span></p>
+
+<p><span class="text" id="Figure4" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-05-07/EvolutionCouts.png" alt="Image" />
+</span>
+<span class="legendtext" id="CAPFigure4" style="display:block;text-align:center">
+<strong>Figure 4</strong> –
+</span></p>
+:ET
