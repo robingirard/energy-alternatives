@@ -2817,19 +2817,19 @@ body, html, .root, .layout--page { height: 100%; }
 .layout--404 .sign p { font-size: 1.8rem; }
 
 /* start custom scss snippet */
-div.summary { margin: 10px 140px 15px; }
+div.summary { margin: 10px 15% 15px; /* 10px 140px 15px;*/ }
 
-span.summary { margin: 10px 140px 15px; }
+span.summary { margin: 10px 15% 15px; }
 
-span.text { margin: 10px 70px 15px; }
+span.text { margin: 10px 10% 15px; /*  10px 70px 15px;*/ }
 
-span.mytext { margin: 10px 70px 15px; display: block; text-align: justify; text-indent: 9mm; }
+span.mytext { margin: 10px 10% 15px; display: block; text-align: justify; text-indent: 9mm; }
 
-div.mytext { margin: 10px 70px 15px; display: block; text-align: justify; text-indent: 9mm; }
+div.mytext { margin: 10px 10% 15px; display: block; text-align: justify; text-indent: 9mm; }
 
-span.legendtext { margin: 10px 70px 15px; color: Darkgrey; }
+span.legendtext { margin: 10px 10% 15px; color: Darkgrey; }
 
-div.text { margin: 10px 70px 15px; }
+div.text { margin: 10px 10% 15px; }
 
 td { /* Table  */ font-size: 8px; }
 
@@ -2845,19 +2845,49 @@ code.r { /* Code block */ font-size: 12px; }
 
 pre { /* Code block - determines code spacing between lines */ font-size: 14px; }
 
-.myparagraph { display: block; text-align: justify; text-indent: 9mm; }
-
 .wrapstyle { white-space: nowrap; }
 
-.center { margin-left: auto; margin-right: auto; }
+.center { margin-left: auto; margin-right: auto; font-size: 14px; }
+
+.center > table, .center tbody { width: 100%; font-size: 14px; }
+
+.center > th, .center td { /*background-color: #f5f5f5;*/ font-size: 14px; border: 1px solid black; }
 
 .mbtablestyle { border-collapse: collapse; overflow-x: auto; border-spacing: 5px; /*word-break:break-all;*/ }
 
-.mbtablestyle > table { width: 100%; font-size: 14px; table-layout: fixed; }
+.mbtablestyle > table, .mbtablestyle tbody { width: 100%; font-size: 14px; table-layout: fixed; }
 
 .mbtablestyle > tr { width: 100%; }
 
 .mbtablestyle > th, .mbtablestyle td { /*background-color: #f5f5f5;*/ font-size: 14px; border: 1px solid black; }
+
+table body.table { text-align: center; }
+
+tr:hover { background-color: #f5f5f5; }
+
+table, th, td, tr table.simple7 { white-space: nowrap; width: 70%; margin-left: 15%; margin-right: 15%; }
+
+table.simple7 td { text-align: left; font-size: 13px; padding: 6px; }
+
+table.simple7 th { background-color: #f5f5f5; text-align: left; font-size: 14px; padding: 6px; }
+
+table.simple7 tr { width: 100%; }
+
+table.simple7 tr:nth-child(even) { background-color: #f2f2f2; }
+
+table.simple5 { width: 55%; margin-left: 20%; margin-right: 20%; }
+
+table.simple5 td { text-align: left; font-size: 13px; padding: 6px; }
+
+table.simple5 th { background-color: #f5f5f5; text-align: left; font-size: 14px; padding: 6px; }
+
+table.simple5 tr:nth-child(even) { background-color: #f2f2f2; }
+
+table.bottomBorder { width: 70%; margin-left: 15%; margin-right: 15%; border-collapse: collapse; }
+
+table.bottomBorder td, table.bottomBorder th { border-bottom: 1px solid black; padding: 10px; text-align: left; }
+
+.myparagraph { display: block; text-align: justify; text-indent: 9mm; }
 
 /* end custom scss snippet */
 

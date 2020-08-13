@@ -54,7 +54,7 @@ ____________________________________
 |Consommation TWh/an          | 35| 122|  40| 85|   13| 300|
 |Emissions gCO2eq/kWh         | 60| 240| 320| 50|  100| 186|
 |Emissions totales MtCO2eq/an |  2.1|  29.3|  12.8|  4.25|    1.3|  55.8|
-{: .mbtablestyle .center .wrapstyle }
+{: .simple5 }
 
 <span class="legendtext" id="CAPTable1" style="display:block;text-align:center">
 **Table 1** -- Consommation d’énergie pour l’usage chauffage résidentiel et émissions associées pour différents vecteurs énergétiques. Source pour les énergies consommées [[2](https://www.statistiques.developpement-durable.gouv.fr/les-menages-et-la-consommation-denergie.)]. Pour les émissions source valeurs moyennes données par l’ADEME dans la base carbone [[10](https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?gaz.htm)].
@@ -173,7 +173,7 @@ En plus de cela les performances des PAC en période de grand froid sont plus fa
 |Quantile de température [°C]          |-1.59 |-2.65 |-3.58 |-4.9 |
 |COP médian des systèmes air-air 3.5kW |3.5   |3.35  |3.2   |3.1  |
 |COP médian des systèmes air-air 7kW   |3.5   |3.2   |3.1   |2.9  |
- {: .mbtablestyle .wrapstyle .center}
+ {: .mbtablestyle .wrapstyle .simple5}
  <span class="legendtext" id="CAPTable2" style="display:block;text-align:center">
  **Table 2** -- Consommation d’énergie pour l’usage chauffage résidentiel et émissions associées pour différents vecteurs énergétiques. Source pour les énergies consommées [[2](https://www.statistiques.developpement-durable.gouv.fr/les-menages-et-la-consommation-denergie.)]. Pour les émissions source valeurs moyennes données par l’ADEME dans la base carbone [[10](https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?gaz.htm)].
  </span>
@@ -196,7 +196,7 @@ Ce COP de 3 reflète des données déclarées par les constructeurs sur des PAC 
  |Gaz+Fioul+Elec devient PAC |2.8-0.9 = 1.9 GW/°C   |+38 GW  |9.2   |
  |Gaz+Elec devient PAC, Fioul devient Bois   |(0.6+2.1)- 1.5 = 1.2 GW/°C   |+ 24 GW |10.4   |
 |Gaz+Elec devient PAC Fioul devient Bois Renovation, besoin divisé par deux   |(0.6+2.8)/2-1.5 = -0.15 GW/°C   |-3 GW |5,2   |
-  {: .mbtablestyle .center}
+  {: .wrapstyle  .simple7}
 <span class="legendtext" id="CAPTable3" style="display:block;text-align:center">
 **Table 3** -- Impact de différents scénarios de changement de mode de chauffage, à l’échelle de la France et à l’horizon 2050, sur l’évolution de la thermosensibilité et l’évolution du besoin de pointe associé. Nous ne tenons pas compte de la croissance du nombre de logements d’ici là, nous avons donc ici une borne inférieure. La thermosensibilité est calculée en supposant un COP de 2,5 pour les PAC en période de grand froid. Les émissions prises sont celles de la [Table 1](#CAPTable1). Elles pourraient baisser si l’électricité baisse, mais les émissions de l’électricité baisseront difficilement si le besoin de pointe reste le même. Tous les calculs sont effectués dans le code partagé avec les données de la Table 1 et de l’Annexe 1.
   </span>
@@ -247,9 +247,9 @@ Dans la perspective d’un système décarboné ce gaz devrait être du biométh
 |Chaudiere gaz     |150 |0.9|décentralisé |1 minute|
 |TAC Gaz     |150 |3*0.33= 1|semi-centralisé |15 minutes|
 |CCG    |800 |3*1/2 = 1.5|centralisé | 3 heures|
-|Micro-cogé     |[2,3]*$10^3$ |1/(5/6+1/18)  = 1.125|décentralisé |Doit s’adapter à l’usage chaleur|
+|Micro-cogé     |[2,3]*$10^3$ |1/(5/6+1/18)  = 1.125|décentralisé |adaptation usage chaleur|
 |PiAC     |$10^4$ |Pas d’utilisation du biogaz|décentralisé |1 seconde|
- {: .mbtablestyle .center}
+{: .wrapstyle  .simple7}
 <span class="legendtext" id="CAPTable4" style="display:block;text-align:center">
 **Table 4** -- Pour la deuxième colonne, nous faisons l’hypothèse que l’électricité produite est utilisée pour générer de la chaleur dans une PAC ayant un COP de 3. Ces coûts capacitaires sont à mettre en regard du cout de la PAC (500-1000 euros/kW pour la PAC air-eau, 4000€+1000€/kW pour la PAC air-eau), et du coût capacitaire du nucléaire [3000-6500] euros/kW)
  </span>

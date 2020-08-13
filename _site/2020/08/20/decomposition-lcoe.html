@@ -1,0 +1,1254 @@
+<!DOCTYPE html><html lang="fr">
+  <head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>Décomposition du coût du mix de production de l'électricité - Alternatives énergétiques</title>
+
+<meta name="description" content="L’objectif de ce post est d’introduire une base simple permettant la description du mix de production d’électricité d’un pays.">
+<link rel="canonical" href="http://localhost:4000/2020/08/20/decomposition-lcoe.html"><link rel="alternate" type="application/rss+xml" title="Alternatives énergétiques" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#fc4d50"><link rel="shortcut icon" href="/assets/favicon.ico">
+
+<meta name="msapplication-TileColor" content="#ffc40d"><meta name="msapplication-config" content="/assets/browserconfig.xml">
+
+<meta name="theme-color" content="#ffffff">
+<!-- end favicons snippet --><link rel="stylesheet" href="/assets/css/main.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" ><!-- start custom head snippets -->
+
+
+<!-- end custom head snippets -->
+<script>(function() {
+  window.isArray = function(val) {
+    return Object.prototype.toString.call(val) === '[object Array]';
+  };
+  window.isString = function(val) {
+    return typeof val === 'string';
+  };
+
+  window.hasEvent = function(event) {
+    return 'on'.concat(event) in window.document;
+  };
+
+  window.isOverallScroller = function(node) {
+    return node === document.documentElement || node === document.body || node === window;
+  };
+
+  window.isFormElement = function(node) {
+    var tagName = node.tagName;
+    return tagName === 'INPUT' || tagName === 'SELECT' || tagName === 'TEXTAREA';
+  };
+
+  window.pageLoad = (function () {
+    var loaded = false, cbs = [];
+    window.addEventListener('load', function () {
+      var i;
+      loaded = true;
+      if (cbs.length > 0) {
+        for (i = 0; i < cbs.length; i++) {
+          cbs[i]();
+        }
+      }
+    });
+    return {
+      then: function(cb) {
+        cb && (loaded ? cb() : (cbs.push(cb)));
+      }
+    };
+  })();
+})();
+(function() {
+  window.throttle = function(func, wait) {
+    var args, result, thisArg, timeoutId, lastCalled = 0;
+
+    function trailingCall() {
+      lastCalled = new Date;
+      timeoutId = null;
+      result = func.apply(thisArg, args);
+    }
+    return function() {
+      var now = new Date,
+        remaining = wait - (now - lastCalled);
+
+      args = arguments;
+      thisArg = this;
+
+      if (remaining <= 0) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+        lastCalled = now;
+        result = func.apply(thisArg, args);
+      } else if (!timeoutId) {
+        timeoutId = setTimeout(trailingCall, remaining);
+      }
+      return result;
+    };
+  };
+})();
+(function() {
+  var Set = (function() {
+    var add = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          return;
+        }
+      }
+      this.size ++;
+      data.push(item);
+      return data;
+    };
+
+    var Set = function(data) {
+      this.size = 0;
+      this._data = [];
+      var i;
+      if (data.length > 0) {
+        for (i = 0; i < data.length; i++) {
+          add.call(this, data[i]);
+        }
+      }
+    };
+    Set.prototype.add = add;
+    Set.prototype.get = function(index) { return this._data[index]; };
+    Set.prototype.has = function(item) {
+      var i, data = this._data;
+      for (i = 0; i < data.length; i++) {
+        if (this.get(i) === item) {
+          return true;
+        }
+      }
+      return false;
+    };
+    Set.prototype.is = function(map) {
+      if (map._data.length !== this._data.length) { return false; }
+      var i, j, flag, tData = this._data, mData = map._data;
+      for (i = 0; i < tData.length; i++) {
+        for (flag = false, j = 0; j < mData.length; j++) {
+          if (tData[i] === mData[j]) {
+            flag = true;
+            break;
+          }
+        }
+        if (!flag) { return false; }
+      }
+      return true;
+    };
+    Set.prototype.values = function() {
+      return this._data;
+    };
+    return Set;
+  })();
+
+  window.Lazyload = (function(doc) {
+    var queue = {js: [], css: []}, sources = {js: {}, css: {}}, context = this;
+    var createNode = function(name, attrs) {
+      var node = doc.createElement(name), attr;
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          node.setAttribute(attr, attrs[attr]);
+        }
+      }
+      return node;
+    };
+    var end = function(type, url) {
+      var s, q, qi, cbs, i, j, cur, val, flag;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        s[url] = true;
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (cur.urls.has(url)) {
+            qi = cur, val = qi.urls.values();
+            qi && (cbs = qi.callbacks);
+            for (flag = true, j = 0; j < val.length; j++) {
+              cur = val[j];
+              if (!s[cur]) {
+                flag = false;
+              }
+            }
+            if (flag && cbs && cbs.length > 0) {
+              for (j = 0; j < cbs.length; j++) {
+                cbs[j].call(context);
+              }
+              qi.load = true;
+            }
+          }
+        }
+      }
+    };
+    var load = function(type, urls, callback) {
+      var s, q, qi, node, i, cur,
+        _urls = typeof urls === 'string' ? new Set([urls]) : new Set(urls), val, url;
+      if (type === 'js' || type ==='css') {
+        s = sources[type], q = queue[type];
+        for (i = 0; i < q.length; i++) {
+          cur = q[i];
+          if (_urls.is(cur.urls)) {
+            qi = cur;
+            break;
+          }
+        }
+        val = _urls.values();
+        if (qi) {
+          callback && (qi.load || qi.callbacks.push(callback));
+          callback && (qi.load && callback());
+        } else {
+          q.push({
+            urls: _urls,
+            callbacks: callback ? [callback] : [],
+            load: false
+          });
+          for (i = 0; i < val.length; i++) {
+            node = null, url = val[i];
+            if (s[url] === undefined) {
+              (type === 'js' ) && (node = createNode('script', { src: url }));
+              (type === 'css') && (node = createNode('link', { rel: 'stylesheet', href: url }));
+              if (node) {
+                node.onload = (function(type, url) {
+                  return function() {
+                    end(type, url);
+                  };
+                })(type, url);
+                (doc.head || doc.body).appendChild(node);
+                s[url] = false;
+              }
+            }
+          }
+        }
+      }
+    };
+    return {
+      js: function(url, callback) {
+        load('js', url, callback);
+      },
+      css: function(url, callback) {
+        load('css', url, callback);
+      }
+    };
+  })(this.document);
+})();
+</script><script>
+  (function() {
+    var TEXT_VARIABLES = {
+      version: '2.2.6',
+      sources: {
+        font_awesome: 'https://use.fontawesome.com/releases/v5.0.13/css/all.css',
+        jquery: 'https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js',
+        leancloud_js_sdk: '//cdn.jsdelivr.net/npm/leancloud-storage@3.13.2/dist/av-min.js',
+        chart: 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js',
+        gitalk: {
+          js: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.js',
+          css: 'https://cdn.bootcss.com/gitalk/1.2.2/gitalk.min.css'
+        },
+        valine: 'https://unpkg.com/valine/dist/Valine.min.js',
+        mathjax: 'https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML',
+        mermaid: 'https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js'
+      },
+      site: {
+        toc: {
+          selectors: 'h1,h2,h3'
+        }
+      },
+      paths: {
+        search_js: '/assets/search.js'
+      }
+    };
+    window.TEXT_VARIABLES = TEXT_VARIABLES;
+  })();
+</script>
+</head>
+  <body>
+    <div class="root" data-is-touch="false">
+      <div class="layout--page js-page-root"><div class="page__main js-page-main page__viewport has-aside cell cell--auto">
+
+      <div class="page__main-inner"><div class="page__header d-print-none"><header class="header"><div class="main">
+      <div class="header__title">
+        <div class="header__brand"><?xml version="1.0" encoding="utf-8"?>
+<!-- Generated by IcoMoon.io -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+<path fill="#444444" d="M8 0l-8 8 8 8 8-8-8-8zM2 8l6-6 6 6-6 6-6-6z"></path>
+</svg>
+<a title="Vers une meilleure compréhension de notre système énergétique et de son évolution
+" href="/">Alternatives énergétiques</a></div><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></div><nav class="navigation">
+        <ul><li class="navigation__item"><a href="/archive.html">Archives</a></li><li class="navigation__item"><a href="/about.html">À propos</a></li><li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li></ul>
+      </nav></div>
+  </header>
+</div><div class="page__content"><img class="article__header--cover" src="/assets/images/Posts/2020-05-07/DSCF8920c.jpg" /><div class ="main"><div class="grid grid--reverse">
+
+              <div class="col-aside d-print-none js-col-aside"><aside class="page__aside js-page-aside"><div class="toc-aside js-toc-root"></div>
+</aside></div>
+
+              <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
+
+<!-- end custom main top snippet -->
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>Décomposition du coût du mix de production de l'électricité</h1></header><span class="split-space">&nbsp;</span>
+          <a class="edit-on-github"
+            title="Modifier sur Github"
+            href="https://github.com/robingirard/energy-alternatives/tree/master/_posts/2020-08-20-decomposition-lcoe.md">
+            <i class="far fa-edit"></i></a></div><meta itemprop="headline" content="Décomposition du coût du mix de production de l'électricité"><div class="article__info clearfix"><ul class="left-col menu"><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=mix-production">mix-production</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=intermittence">intermittence</a>
+            </li><li>
+              <a class="button button--secondary button--pill button--sm"
+                href="/archive.html?tag=evolution">evolution</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>20 Aug, 2020</span>
+            </li></ul></div><meta itemprop="author" content="Robin Girard"/><meta itemprop="datePublished" content="2020-08-20T00:00:00+02:00">
+    <meta itemprop="keywords" content="mix-production,intermittence,evolution"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+
+<!-- end custom article top snippet -->
+<div class="article__content" itemprop="articleBody"><div class="summary" style="display:block; text-align: justify">
+<em>
+L’objectif de ce post est d’introduire une base simple permettant la description du mix de production d’électricité d’un pays.
+</em>
+</div>
+<!--more-->
+<p><span class="mytext">
+Dans un post précédent [1], nous avons présenté une manière de modéliser les coûts économiques et environnementaux d’un système électrique à partir de la connaissance de l’énergie produite $E_i$ et de la puissance installée $P_i$ pour chaque moyen de production $i$ du système :
+</span>
+<span class="mytext">
+\(\sum_i \alpha_i^{cout} E_i+\beta_i^{cout} P_i\)
+</span>
+<span class="mytext">
+Ceci nous a permis de retrouver une estimation du coût de notre système actuel et de donner une estimation du coût à l’horizon 2050 d’un système fortement renouvelable et de celui d’un système fortement nucléaire. Des valeurs pour les coefficients $\alpha_i^{cout}$ (en [€/MWh]) et $\beta_i^{cout}$ (en [€/kW/an]) ont été proposées sans donner beaucoup de détails sur les calculs et les sources permettant de les obtenir. Le coût marginal $\alpha_i^{cout}$ est en général connu et facile à trouver, mais le coût fixe actualisé et annualisé $\beta_i^{cout}$ s’obtient à partir de données économiques comme l’actualisation, le coût d’investissement, les coût annuels d’exploitation d’une manière que nous allons détailler ici. Ceci nous permettra d’introduire le LCOE (levelized cost of energy) qui est très utilisé dans le domaine.
+Par ailleurs, nous avons considéré de grandes familles de technologies de production : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien », ou « biomasse ». La précision des données de coût (économiques et environnementaux) va nécessiter de donner quelques précisions sur la diversité des technologies existantes dans ces familles. C’est ce que nous allons faire dans une première partie qui nous permettra aussi d’introduire les données économiques propres à chaque familles de technologies.
+</span></p>
+
+<h1 id="quelques-précisions-sur-la-diversité-cachée-derrière-ces-grandes-classes-de-moyens-de-production">Quelques précisions sur la diversité cachée derrière ces grandes classes de moyens de production</h1>
+
+<h2 id="introduction--différentes-sortes-de-coûts">introduction : différentes sortes de coûts</h2>
+<p><span class="mytext">
+Nous n’allons pas détailler ici toutes variations existantes au sein de chacune des familles de technologies, ou des carburants utilisés, il y aura presque dans chaque cas un post futur plus détaillé mais pour que le niveau de détail choisi jusqu’à maintenant ne paraisse pas trop arbitraire, et pour comprendre certains enjeux autour du facteur de charge, du rendement, des émissions de GES, ainsi que du coût il est déjà utile d’avoir conscience de quelques sous-catégories. Aussi, pour chacun des moyens de production nous allons chercher à donner les variables suivantes :
+</span></p>
+<div class="text" style="display:block; text-align: justify">
+<ul> <li>Les coûts d’investissement $C_I$ exprimés en €/kW (kW installé) et dépensé au moment juste avant que le projet ne commence à produire de l’énergie. Une somme investie 10 ans avant le démarrage du projet aura un impact sur le coût à livraison beaucoup plus important, et lié à l’actualisation, qu’une somme déboursée au moment du démarrage (« à la livraison »).</li>
+<li>Les coûts annuels d’exploitation $C_F$ exprimés en €/kW/an (kW installé)  qui ne dépendent pas de l’énergie produite et qui correspondent plus à des coûts d’entretien, de gestion, la location d’un terrain, ou la rémunération du personnel. Ils sont payés pendant toute la durée de vie du projet. Ils sont dépensés chaque année pendant toute la durée de vie du projet, quel que soit la production.</li>
+<li>Le coût marginal de production $C_M$ exprimé en €/MWh qui correspond à ce qu’il faut payer pour produire un MWh supplémentaire lorsque l’on produit déjà (et qui inclus d’une certaine manière des coûts de démarrage). Ces coûts sont payés à chaque fois que la centrale produit et sont donc proportionnels à l’énergie produite. Ils correspondent souvent à un simple coût de carburant, auxquels il faut rajouter par exemple la taxe carbone.</li>
+<li> Emissions de GES $E_{ges}$ exprimées en /MWh.</li>
+</ul>
+</div>
+
+<h2 id="centrales-pilotables">Centrales pilotables</h2>
+<p><span class="mytext">
+En ce qui concerne le <strong>nucléaire</strong>, on distingue <a href="https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9rations_de_r%C3%A9acteurs_nucl%C3%A9aires">plusieurs générations</a>. La seconde génération est celle en activité aujourd’hui et construite entre le début des années 70 et la fin des années 80. Les nouvelles centrales que l’on construit aujourd’hui sont de la troisième génération. Parmi les nombreuses technologies déployées de manière commerciales aujourd’hui (seconde et troisième génération), les deux plus importantes sont les réacteurs à <a href="https://fr.wikipedia.org/wiki/R%C3%A9acteur_%C3%A0_eau_bouillante">eau bouillante</a> (dit « REB ») des réacteurs à <a href="https://fr.wikipedia.org/wiki/R%C3%A9acteur_%C3%A0_eau_pressuris%C3%A9e">eau pressurisé</a> (dit « REP »). Une liste plus exhaustive est donnée dans le lien sur les générations. La quatrième génération est prévue pour les décennies à venir (un projet pilote a vu le jour en Russie) ; il existe plusieurs propositions qui visent, par des évolutions technologiques importantes, à avoir des centrales qui n’utilisent plus le même combustible mais une forme d’uranium beaucoup moins rare, qui permettent de retraiter une partie des déchets à vie longue qui existent aujourd’hui, qui ne présentent pas de risque d’emballement, qui peuvent plus facilement moduler leur production sans pertes de rendement (nous reparlerons de la modulation des centrales nucléaires actuelles dans un post ultérieur, car certaines choses sont possibles mais pas tout et c’est un sujet important). En France le projet de recherche Astrid abandonné récemment était dans cette lignée, mais dans le monde d’autres projets se poursuivent dans cette direction. Enfin, une dernière génération de nucléaire arrivera avec la fission. Sur le fonctionnement des centrales nucléaires, je renvoie vers les <a href="https://www.youtube.com/watch?v=HMystmGbctw">vidéos du réveilleur</a> (youtubeur effectuant un travail documenté et abordable et que je citerai souvent). Pour les coûts, je donne dans la table ci-dessous quelques coûts d’investissement avec les sources associées.
+</span></p>
+
+<p><span class="mytext">
+Pour le gaz (et le fioul), on distingue plusieurs grandes catégories de centrales. La plus élémentaire est la turbine à combustion (TAC, ou OCGT pour open cycle gaz turbine dans le cas du gaz) dans laquelle le gaz ou le fioul est mélangé à de l’eau et envoyé sous pression dans une turbine où il s’enflamme. Le principe de la TAC est très proche de celui du moteur d’avion. Dans la TAC la chaleur des gaz d’échappement est perdue mais l’on peut la récupérer de différentes manières. Une première solution est de faire chauffer de l’eau (dans une sorte de grande bouilloire) dont les vapeurs vont aller entrainer une seconde turbine connectée à celle de la TAC. C’est ce que l’on appelle un cycle combiné (CCGT pour le cycle combiné gaz). Le rendement d’un CCG est donc meilleur : il peut monter autour de 55% (il y a même un record à 64% détenu par la centrale de Bouchain), alors que celui de la TAC est limité autour de 35-40% (sauf pour des technologies très particulières utilisant des fluides supercritiques). Le coût d’installation du CCG est plus élevé, et ce dernier demande quelques heures pour démarrer alors que la TAC n’a pas besoin de plus de 30 minutes. Une autre manière d’utiliser les gaz d’échappement de la TAC est d’en extraire directement la chaleur pour une autre application (réseau de chaleur, serres, …), c’est ce que l’on appelle la cogénération. Dans ce cas le rendement global de l’installation est meilleur mais l’utilisation de la TAC est un peu asservie au besoin de chaleur : on est obligé de produire quand il faut froid et pas nécessairement seulement lorsqu’il y en a besoin.
+</span></p>
+
+<p><span class="mytext">
+Dans une centrale à charbon on fait généralement chauffer de l’eau en brûlant du charbon, la vapeur sous pression ainsi générée est envoyée dans une turbine qui produit de l’électricité. Pour la production d’électricité à partir du charbon il existe plusieurs technologies plus ou moins efficaces selon le niveau de pression utilisé lors de la combustion du charbon. Les rendements correspondants peuvent varier entre 30 et 50%, et les impacts environnementaux varient eux aussi beaucoup selon la qualité de la combustion. L’industrie du charbon met en avant : l’augmentation des rendements de ses nouvelles centrales qui envoient dans la turbine des fluides « super-critiques » ; ainsi que la séquestration du carbone capturé en sortie de cheminée. Pourtant, le charbon reste à l’heure actuelle un moyen de production d’électricité parmi les plus polluants, et ce sur beaucoup de plans.
+</span></p>
+
+<table class="mbtablestyle wrapstyle simple5">
+  <thead>
+    <tr>
+      <th style="text-align: left">Système</th>
+      <th style="text-align: left">Rendement</th>
+      <th style="text-align: left">CAPEX €/kW</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Gaz – TAC</td>
+      <td style="text-align: left">35%</td>
+      <td style="text-align: left">600</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Gaz – CCGT</td>
+      <td style="text-align: left">54%</td>
+      <td style="text-align: left">970</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Coal – Subcritical</td>
+      <td style="text-align: left">40%</td>
+      <td style="text-align: left">1200</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Coal – Supercritical</td>
+      <td style="text-align: left">45%</td>
+      <td style="text-align: left">-2.65</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Coal – Ultra-Supercritical</td>
+      <td style="text-align: left">50%</td>
+      <td style="text-align: left">3.35</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nuke - Moyenne parc français actuel</td>
+      <td style="text-align: left">33%</td>
+      <td style="text-align: left">3.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nuke - Flamanville Hinckley point (EPR)</td>
+      <td style="text-align: left">33%</td>
+      <td style="text-align: left">3.2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nuke - Taishan (EPR)</td>
+      <td style="text-align: left">33%</td>
+      <td style="text-align: left">3.2</td>
+    </tr>
+  </tbody>
+</table>
+<p><span class="legendtext" id="CAPTable1" style="display:block;text-align:center">
+<strong>Table 1</strong> – moyens de production d’électricité au gaz et au charbon ainsi que leur efficacité et le coût d’investissement correspondant. Source pour le charbon : [1], pour le gaz : U.S. energy information administration [<a href="https://www.eia.gov/analysis/studies/powerplants/capitalcost/pdf/capcost_assumption.pdf">2</a>]
+</span>
+<span class="mytext">
+La production d’électricité à partir de biomasse ressemble assez à ce que l’on fait avec du charbon, combustion de la biomasse pour faire chauffer de l’eau et faire tourner une turbine à vapeur. La qualité de la combustion, le caractère renouvelable, les impacts environnementaux dépendent beaucoup de la biomasse utilisée, de sa nature et de sa provenance, ils peuvent être acceptables lors de l’utilisation de déchets ou d’une biomasse qui serait locale et tout de suite replacée mais aussi très mauvais lorsque par exemple on choisit de couper des forêts à l’autre bout du monde sans rien replanter.
+</span>
+<span class="mytext">
+On distingue en générale l’électricité produite à partir d’un charbon de basse qualité -comme la lignite- de celle produite à partir de charbon noir. Il existe une grande variété de type de charbons liée à des niveaux de houillification différents. Ils se distinguent notamment par leur humidité, leur teneur en carbone ou leur pouvoir calorifique différents. Il n’existe pas de définition unique internationalement retenue permettant de classifier précisément les charbons mais on trouve une classification et quelques explications dans la base carbone de l’ADEME [<a href="https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm">3</a>]. La Lignite est moins dense, sa combustion est moins bonne et donc plus polluante (pas sur le plan des émissions de GES cela dit voir table ci-dessous), son transport (ramené à la consommation d’énergie qu’il implique) est plus coûteux. Son extraction se fait souvent dans des mines à ciel ouvert qui peuvent avoir un avantage économique à court terme mais certainement pas un avantage environnemental. Pour ces raisons la Lignite continue d’être exploitée dans cas où c’est une ressource locale pour des raisons de coût, et parfois pour des questions de préservation d’une économie locale. L’Allemagne possède sur son territoire une ressource importante de lignite qui est utilisée pour la moitié de l’électricité produite à partir de charbon.<br />
+</span></p>
+
+<table class="simple7">
+<thead>
+<tr>
+  <th>Produits</th>
+  <th>Emissions</th>
+  <th>PCI</th>
+  <th align="center" colspan="3" class="mb6">Share</th>
+  <th colspan="2">Cost [$/ton]</th>
+</tr>
+<tr>
+  <th>(kWh/kg)</th>
+  <th>gCO2eq/kWhth</th>
+  <th></th>
+  <th class="mb6"></th>
+  <th></th>
+  <th></th>
+  <th>2017</th>
+  <th>2017</th>
+</tr>
+<tr>
+  <th>(TWh/Mt)</th>
+  <th>(TWh/Mt)</th>
+  <th></th>
+  <th class="mb6">US</th>
+  <th>World</th>
+  <th>DE</th>
+  <th>US</th>
+  <th>DE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Anthracite (hard/black coal)</td>
+  <td>384</td>
+  <td>9 à 10</td>
+  <td>1</td>
+  <td>14</td>
+  <td>-</td>
+  <td>93</td>
+  <td></td>
+</tr>
+<tr>
+  <td>Bituminous</td>
+  <td>374</td>
+  <td>5 à 9</td>
+  <td>46</td>
+  <td>76</td>
+  <td>-</td>
+  <td>55</td>
+  <td>50</td>
+</tr>
+<tr>
+  <td>subbituminous</td>
+  <td>377</td>
+  <td>4 à 5</td>
+  <td>45</td>
+  <td>-</td>
+  <td>-</td>
+  <td>14</td>
+  <td></td>
+</tr>
+  <tr>
+    <td>Lignite (brown coal)</td>
+    <td>393</td>
+    <td>2 à 3</td>
+    <td>9</td>
+    <td>14</td>
+    <td>100</td>
+    <td>19</td>
+    <td>20</td>
+  </tr>
+</tbody>
+</table>
+
+<!-- | Produits                   |	Emissions    |	PCI	   |      | Share|      | Cost | [\$/ton]   |
+|	(kWh/kg) 		               |	gCO2eq/kWhth |	       |      |      |      |  2017|	2017|
+|	(TWh/Mt)	                 | (TWh/Mt) 	   |         |US    |	World| DE	  |US	   | DE   |
+|:---------------------------|:--------------|:--------|:-----|:-----|:-----|:-----|:-----|
+|Anthracite (hard/black coal)|	384          |	9 à 10 |	1   |	14   |	-	  | 93	 |      |
+|Bituminous                  |	374          |	5 à 9  |	46  |	76	 |	-	  | 55	 |  50  |
+|subbituminous               |	377          |	4 à 5  |	45  |	-    |	-	  | 14	 |      |
+|Lignite (brown coal)        |	393          |	2 à 3  |	9   |	14   |	100	| 19	 |  20  |
+{: .mbtablestyle .center}
+-->
+<p><span class="legendtext" id="CAPTable2" style="display:block;text-align:center">
+  <strong>Table 2</strong> – différentes sortes de charbon. Sources : U.S. EIA [<a href="https://www.eia.gov/energyexplained/coal/prices-and-outlook.php">4</a>] et ADEME [<a href="https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm">3</a>].
+    </span></p>
+
+<p><span class="mytext">
+Dans <strong>l’hydraulique</strong>, on fait de l’électricité en faisant passer de l’eau dans une turbine. On différenciera une centrale hydraulique selon des caractéristiques techniques et naturelles. D’un côté on regardera le type de turbine, la possibilité de faire fonctionner la turbine à vitesse variable, l’existence d’une pompe pour faire remonter l’eau. De l’autre il s’agira de différentier l’hydraulique « au fil de l’eau » qui tire parti d’un fleuve ou d’une petite rivière sans bassin de stockage, et un grand barrage de vallée alpine qui récupère un faible débit d’eau mais peut garder en stock plusieurs jours de production à pleine puissance. Le fil de l’eau dans certaines grosses centrales de la vallée du Rhône permet tout de même de moduler la puissance de production sur une ou deux heures. Certains barrages sont équipés de pompes qui permettent de faire remonter l’eau et jouent ainsi un rôle de stockage d’électricité, c’est ce que l’on appelle les STEP (station de transfert d’énergie par pompage, qui ont le même nom que les stations d’épuration). En France nous avons actuellement un peu moins de 5 GW de STEP dont certaines ont une capacité de stockage allant jusqu’à plusieurs jours (72 heures pour la plus grande). Le gisement Français d’hydraulique est assez saturé mais certains grands barrages pourraient être équipé de pompes pour augmenter la puissance disponible de stockage, on parle de 2GW supplémentaires. Il existe également un gisement de micro-STEP dont nous parlerons ultérieurement lorsqu’il sera plus précisément question du stockage.
+</span></p>
+
+<h2 id="electricité-dorigine-renouvelable">Electricité d’origine renouvelable</h2>
+<p><span class="mytext">
+Pour le <strong>solaire photovoltaïque</strong> il est pertinent de distinguer les tailles de centrales : grandes centrales au sol occupant plusieurs hectares, centrales en toiture de centre commercial ou sur un parking (dites « ombrières » pour l’ombre qu’elles apportent aux voitures), et petites centrales de quelques kW sur le toit d’une maison. Pour les grosses centrales il faut distinguer les centrales avec des systèmes de tracking (système avec un axe ou deux axes, qui permet de suivre la position du soleil dans le ciel pour maximiser la production) de celles qui n’en ont pas.
+</span></p>
+
+<p><span class="text" id="Figure1" style="display:block;text-align:center">
+<img src="/assets/images/Posts/2020-08-20/CAPEX-PV.png" alt="Image" class="border" />
+</span>
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+<strong>Figure 1</strong> – Décomposition des coûts d’investissement moyens observés dans les appel d’offre CRE, étude publiée en février 2019, [<a href="https://www.cre.fr/Documents/Publications/Rapports-thematiques/Couts-et-rentabilites-du-grand-photovoltaique-en-metropole-continentale">1</a>].
+</span>
+<span class="mytext">
+Finalement un facteurs qui déterminera de manière essentielle les performances d’un système de production photovoltaïques est la localisation de la centrale. Une centrale au sud de l’Espagne produira plus qu’une centrale au nord de l’Allemagne et surtout sa variabilité hiver/été sera beaucoup moins importante mais nous reparlerons de tout çà de manière quantitative lorsque nous parlerons de la variabilité de ces moyens de production. Sur le plan environnemental le lieu de construction des panneaux (et le mix électrique utilisé pour faire fonctionner les machines qui produisent les panneaux) peut aussi avoir de l’importance. Finalement, une classe à part de l’énergie solaire est le solaire à concentration : thermodynamique ou photovoltaïque. Le solaire thermodynamique permet de chauffer de l’eau (à plus ou moins haute température) pour l’utiliser directement pour le chauffage ou dans le cas du solaire à concentration thermodynamique faire tourner une turbine et permet donc de stocker l’énergie produite dans la journée pour la réutilisé le soir. Ce type de système est très développé en Espagne. On retrouvera une vidéo assez complète du réveilleur sur le sujet des différentes technos solaires <a href="https://www.youtube.com/watch?v=dykSjXQhSjM">ici</a>.
+</span>
+<span class="mytext">
+Pour <strong>l’éolien</strong>, la localisation de la centrale est aussi fondamentale. Mais il faut avant tout distinguer l’éolien offshore (en mer) de l’éolien on shore (sur terre). L’éolien en mer peut être posé sur le fond de la mer ou flottant lorsque la mer est trop profonde. Dans tous les cas un facteur qui impact de manière importante les performances est la hauteur de l’éolienne, la taille des pales et la puissance du moteur. La hauteur permet d’accéder à des vents plus forts, la surface balayée par les pales permet de collecter une puissance plus ou moins grande à vitesse de vent fixée, la puissance du moteur permet de définir quelle sera la puissance maximum transmise par l’éolienne. Un facteur important dont nous reparlerons est le toilage de l’éolienne : le rapport entre la surface balayée par les pales et la puissance installée (en m^2/kW).<br />
+</span>
+<span class="mytext">
+J’ai omis des sources de production d’électricité plus rares comme l’énergie des vagues ou des courants marins, dont je parlerai sans doute plus tard.
+</span></p>
+
+<h1 id="puissance-et-énergie-dans-le-coût-actualisé-de-lénergie-lcoe">Puissance et énergie dans le coût actualisé de l’énergie (LCOE)</h1>
+
+<h2 id="lcoe-pour-une-technologie">LCOE pour une technologie</h2>
+
+<p><span class="mytext">
+Lorsque l’on compare le coût de systèmes de production d’électricité il y a deux grandes difficultés. La première est d’ordre économique : il est impossible de ramener objectivement un projet quel qu’il soit à un seul coût et un seul revenu. En effet, on dépense de l’argent à différents moments de la durée de de vie du projet : pour sa construction un certain nombre d’années avant de produire, pour assurer le fonctionnement, payer du personnel, puis au bout de quelques années pour remplacer certaines parties du système, pour son démantèlement, et peut-être plusieurs années après encore lorsqu’il faut gérer des déchets. De même, les bénéfices que l’on tire de ce projet vont s’étaler de manière plus ou moins variable sur toute sa durée de vie.
+</span>
+<span class="mytext">
+Afin de pallier à ce problème, les économistes qui réfléchissent à la question du coût et les ingénieurs qui développent des projets utilisent le modèle de l’actualisation. Ce modèle est loin d’être parfait mais il est très utilisé et il faut donc connaitre son fonctionnement et ses limites. Il repose sur une unique hypothèse plus simple à comprendre et à formuler qu’à discuter : l’argent $ x_{n} $ que l’on gagne ou que l’on dépense à l’année $ n$  a plus de valeur que l’argent $x_{n+1}$  que l’on gagne ou dépense à l’année $ n$. Le surcroit de valeur est $x_n \alpha$, où $\alpha$ est appelé taux d’actualisation (car il permet d’actualiser la valeur de l’argent d’une année à l’autre). Ainsi, avec ce modèle, on peut comparer $x_{n+1}/(1+\alpha) $ à $x_n$  et par récurrence $x_{n+1}/(1+alpha)^n$  à $x_0$. En additionnant les dépenses actualisées et en divisant par les énergies produites et actualisées elle aussi, on calcule le coût actualisé de l’énergie actualisée, ou encore levelized cost of energy noté LCOE. Une formule est donnée en Annexe 1 et il n’est pas très important de la comprendre complètement ici car nous allons en donner une forme beaucoup plus simple. Je ne vais pas discuter $ \alpha$ ici mais l’on peut dire que $ \alpha$ est autour de 4% dans des projets portés par le public et plutôt autour de 8-10% pour des projets portés par le privé.
+</span>
+<span class="mytext">
+Pour ce faire il faut lister les dépenses du projet. Lister toutes les dépenses d’un projet sur sa durée de vie est un travail complexe, et le but ici n’est pas de donner un exemple de calcul de LCOE très précis mais plutôt une version simplifiée permettant à chacun de comprendre les facteurs importants. Dans le domaine de la production d’électricité (et dans beaucoup d’autres secteurs) on peut classifier les dépenses en 4 parties :
+</span></p>
+<div class="text" style="display:block; text-align: justify">
+<ul> <li>Les coûts d’investissement $C_I$ exprimés en €/kW et dépensé au moment juste avant que le projet ne commence à produire de l’énergie. Une somme investie 10 ans avant le démarrage du projet aura un impact sur le coût à livraison beaucoup plus important, et lié à l’actualisation, qu’une somme déboursée au moment du démarrage (« à la livraison »).</li>
+<li>Les coûts annuels d’exploitation $C_F$ exprimés en €/kW/an qui ne dépendent pas de l’énergie produite et qui correspondent plus à des coûts d’entretien, de gestion, la location d’un terrain, ou la rémunération du personnel. Ils sont payés pendant toute la durée de vie du projet. Ils sont dépensés chaque année pendant toute la durée de vie du projet, quel que soit la production.</li>
+<li>	Le coût marginal de production $C_M$ exprimé en €/MWh qui correspond à ce qu’il faut payer pour produire un MWh supplémentaire lorsque l’on produit déjà (et qui inclus d’une certaine manière des coûts de démarrage). Ces coûts sont payés à chaque fois que la centrale produit. Ils correspondent souvent à un simple coût de carburant.</li>
+<li>	On peut ajouter à ceci les coûts de démantèlement $C_D$ exprimé en €/kW, dans lequel on peut inclure les coûts qui surviennent après le projet (e.g gestion des déchets). $C_D$ peut aussi intégrer une valeur résiduelle de l’actif à la fin de la période considérée (dans ce cas un bénéfice, c’est-à-dire une valeur négative pour $C_D$).</li>
+</ul>
+</div>
+<p><span class="mytext">
+Avec cela, le LCOE s’exprime finalement comme une simple fonction de ces paramètres et du facteur de charge FC (P étant encore la puissance installée en GW et E l’énergie annuelle produite en TWh )  :
+</span>
+<span class="mytext">
+\(LCOE =\beta*\frac{P}{E}+C_M=\frac{\beta }{FC\times 8,76}+C_M\)
+</span>
+<span class="mytext">
+Où $ \beta $ est ce que l’on peut appeler le « coût capacitaire annuel moyen actualisé » exprimé en [€/kW] et donné par la formule :
+</span>
+<span class="mytext">
+\(\beta = \frac{C_c}{L^{\alpha}}+\frac{C_D}{(1+\alpha)^{L-1}}+C_F\)
+</span>
+<span class="mytext">
+Ici $ L $ est la durée de vie du projet et $ L^{\alpha} $ la durée de vie corrigée de l’actualisation qui est définie par une formule donnée dans l’annexe 1, qui contient également une table de valeurs de $ L^{\alpha} $ en fonction de $\alpha$ et de la vraie durée de vie $ L $. Ce qu’il faut retenir sur cette durée de vie corrigée est qu’elle est plus petite que la vraie durée de vie, et que plus $ \alpha $ est petit (proche de zéro), plus $ L^{\alpha} $ est proche de $ L $. Dans les cas extrêmes on a les valeurs suivantes :
+</span></p>
+<div class="text" style="display:block; text-align: justify">
+<ul> <li>Avec une actualisation à 2% une durée de 30 ans se corrige à 22 et une durée de 80 ans se corrige à 40 </li>
+<li>Avec une actualisation à 4% une durée de 30 ans se corrige à 22 et une durée de 80 ans se corrige à 40 </li>
+<li>Avec une actualisation à 10%, cette durée est presque toujours entre 10 et 11 ans, même si la durée de vie est de 80 ans.</li>
+</ul>
+</div>
+<p><span class="mytext">
+On comprend dans quelle mesure les grandes valeurs de $ \alpha$ correspondent à hypothéquer le futur. La réalité est souvent bien plus complexe que ce modèle d’actualisation. Le premier élément singulier qu’il faut comprendre est qu’un acteur privé qui a des fonds propres importants peut décider d’investir dans un projet qu’il considère stratégique pour son entreprise en tablant sur une actualisation relativement faible, au risque de laisser passer des projets qui amèneraient un retour sur investissement plus rapide.
+</span>
+<span class="mytext">
+Quel que soit le coût de démantèlement $ C_D $ il est a un poids presque toujours négligeable du fait de l’actualisation. Ce poids sera d’autant plus négligeable que le démantèlement se fera sur une période très longue (comme dans le cas du nucléaire où des temps d’attente sont nécessaire pour laisser la radioactivité diminuer). Le raisonnement sous-jacent est que l’entreprise peut ici mettre dès le début du projet une somme de côté (provisionnement) pour le démantèlement et que cet argent, s’il est bien placé, rapportera une somme d’argent liée à l’actualisation. Dans ce cas l’actualisation a un lien avec la rentabilité du capital. Le même raisonnement s’applique à la gestion des déchets.
+Dans la table suivante, nous donnons quelques valeurs typiques de $ C_c $ $ C_F  $ , $ \beta  $ et $ C_M $. Nous discutons les sources de ces valeurs dans l’annexe 2.
+</span>
+<span class="mytext">
+Discuter l’actualisation dépasse de très loin ce que je peux faire ici aujourd’hui sans vous ennuyer, on a là un pan entier de l’économie. Notons juste que 8% correspond à une vision court-termiste, même s’il y a pire (certains gestionnaires de capital voudront 10% voir 15%), mais que même à 4% on ne voit pas bien au-delà de 40 ans. Des discussions un peu tendues ont eu lieu sur cette question autour du rapport Stern sur les conséquences du changement climatique (prévues à l’époque pour dans longtemps). Il existe des méthodes qui consistent à ne plus actualiser au-delà d’une certaine durée, pour éviter d’écraser les coûts. Après, même dans un monde « en décroissance » ou avec une inflation nulle, l’actualisation peut difficilement se rapprocher de zéro. Vous l’avez compris, ce petit modèle et la valeur de son unique paramètre soulèvent des questions de société importantes. Nous allons maintenant parler de la deuxième grande difficulté
+</span></p>
+
+<h2 id="lcoe-du-système">LCOE du système</h2>
+<p><span class="mytext">
+La deuxième grande difficulté, lorsque l’on compare le coût de systèmes de production d’électricité, est technique : il faut s’assurer que les systèmes fournissent des services techniques équivalents. La comparaison ne se fait jamais sur la puissance installée mais sur l’énergie produite, ainsi nous allons voir que le coût actualisé de l’énergie. Pourtant nous  Le LCOE donne un coût en euros/MWh et de ramène un coût de production à une énergie produite il permet donc de comparer des moyens de production qui ont des facteurs de charge différents comme un système éolien+gaz et un système nucléaire. Cependant il ne tient pas compte de la pilotabilité des moyens de production et il faut donc s’assurer que l’on compare deux systèmes offrant à peu près la même pilotabilité, on ne peut pas par exemple comparer un système éolien à un système nucléaire sur cette base. Deux systèmes ne seront jamais exactement comparables, certains seront plus rapide à construire, d’autres auront peut-être une utilisation du territoire plus importante, des impacts environnementaux différents.
+</span></p>
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2020-08-20T00:00:00+02:00"><!-- start custom article footer snippet -->
+
+<!-- end custom article footer snippet -->
+<div class="article__subscribe"><div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="/feed.xml">S'abonner</a></div>
+</div></footer>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PRÉCÉDENT</span><a href="/2020/05/07/mix-de-production-delectricite-energie-et-puissance.html">Mix de production d’électricité – énergie et puissance.</a></div></div></div>
+
+</div>
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    $(function() {
+      var $this ,$scroll;
+      var $articleContent = $('.js-article-content');
+      var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+      var scroll = hasSidebar ? '.js-page-main' : 'html, body';
+      $scroll = $(scroll);
+
+      $articleContent.find('.highlight').each(function() {
+        $this = $(this);
+        $this.attr('data-lang', $this.find('code').attr('data-lang'));
+      });
+      $articleContent.find('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').each(function() {
+        $this = $(this);
+        $this.append($('<a class="anchor d-print-none" aria-hidden="true"></a>').html('<i class="fas fa-anchor"></i>'));
+      });
+      $articleContent.on('click', '.anchor', function() {
+        $scroll.scrollToAnchor('#' + $(this).parent().attr('id'), 400);
+      });
+    });
+  });
+})();
+</script>
+</div><section class="page__comments d-print-none"></section></article><!-- start custom main bottom snippet -->
+
+<!-- end custom main bottom snippet -->
+</div>
+            </div></div></div><div class="page__footer d-print-none">
+<footer class="footer py-4 js-page-footer">
+  <div class="main"><div itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Robin Girard"><meta itemprop="url" content="/"><meta itemprop="description" content="I am an assistant professor at MINES ParisTech"><div class="footer__author-links"><div class="author-links">
+  <ul class="menu menu--nowrap menu--inline"><li title="Envoyez-moi un courriel.">
+      <a class="button button--circle mail-button" itemprop="email" href="mailto:robin.girard@mines-paristech.fr" target="_blank">
+        <i class="fas fa-envelope"></i>
+      </a><li title="Suivez-moi sur Linkedin.">
+        <a class="button button--circle linkedin-button" itemprop="sameAs" href="https://www.linkedin.com/in/robin-girard-a88baa4" target="_blank">
+          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M260.096 155.648c0 27.307008-9.899008 50.516992-29.696 69.632-19.796992 19.115008-45.396992 28.672-76.8 28.672-30.036992 0-54.612992-9.556992-73.728-28.672-19.115008-19.115008-28.672-42.324992-28.672-69.632 0-28.672 9.556992-52.224 28.672-70.656 19.115008-18.432 44.372992-27.648 75.776-27.648 31.403008 0 56.32 9.216 74.752 27.648 18.432 18.432 28.331008 41.984 29.696 70.656 0 0 0 0 0 0m-202.752 808.96c0 0 0-632.832 0-632.832 0 0 196.608 0 196.608 0 0 0 0 632.832 0 632.832 0 0-196.608 0-196.608 0 0 0 0 0 0 0m313.344-430.08c0-58.708992-1.364992-126.292992-4.096-202.752 0 0 169.984 0 169.984 0 0 0 10.24 88.064 10.24 88.064 0 0 4.096 0 4.096 0 40.96-68.267008 105.812992-102.4 194.56-102.4 68.267008 0 123.220992 22.868992 164.864 68.608 41.643008 45.739008 62.464 113.664 62.464 203.776 0 0 0 374.784 0 374.784 0 0-196.608 0-196.608 0 0 0 0-350.208 0-350.208 0-91.476992-33.451008-137.216-100.352-137.216-47.787008 0-81.236992 24.576-100.352 73.728-4.096 8.192-6.144 24.576-6.144 49.152 0 0 0 364.544 0 364.544 0 0-198.656 0-198.656 0 0 0 0-430.08 0-430.08 0 0 0 0 0 0" />
+</svg>
+</div>
+        </a>
+      </li><li title="Suivez-moi sur Github.">
+        <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/robingirard" target="_blank">
+          <div class="icon"><svg fill="#000000" width="24px" height="24px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path class="svgpath" data-index="path_0" fill="#272636" d="M0 525.2c0 223.6 143.3 413.7 343 483.5 26.9 6.8 22.8-12.4 22.8-25.4l0-88.7c-155.3 18.2-161.5-84.6-172-101.7-21.1-36-70.8-45.2-56-62.3 35.4-18.2 71.4 4.6 113.1 66.3 30.2 44.7 89.1 37.2 119 29.7 6.5-26.9 20.5-50.9 39.7-69.6C248.8 728.2 181.7 630 181.7 513.2c0-56.6 18.7-108.7 55.3-150.7-23.3-69.3 2.2-128.5 5.6-137.3 66.5-6 135.5 47.6 140.9 51.8 37.8-10.2 80.9-15.6 129.1-15.6 48.5 0 91.8 5.6 129.8 15.9 12.9-9.8 77-55.8 138.8-50.2 3.3 8.8 28.2 66.7 6.3 135 37.1 42.1 56 94.6 56 151.4 0 117-67.5 215.3-228.8 243.7 26.9 26.6 43.6 63.4 43.6 104.2l0 128.8c0.9 10.3 0 20.5 17.2 20.5C878.1 942.4 1024 750.9 1024 525.3c0-282.9-229.3-512-512-512C229.1 13.2 0 242.3 0 525.2L0 525.2z" />
+</svg>
+</div>
+        </a>
+      </li></ul>
+</div>
+</div>
+    </div><div class="site-info mt-2">
+      <div>© Alternatives énergétiques 2020,
+        Powered by <a title="Jekyll is a simple, blog-aware, static site generator." href="http://jekyllrb.com/">Jekyll</a> & <a
+        title="TeXt is a super customizable Jekyll theme." href="https://github.com/kitian616/jekyll-TeXt-theme">TeXt Theme</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+</div></div>
+    </div><script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $body = $('body'), $window = $(window);
+    var $pageRoot = $('.js-page-root'), $pageMain = $('.js-page-main');
+    var activeCount = 0;
+    function modal(options) {
+      var $root = this, visible, onChange, hideWhenWindowScroll = false;
+      var scrollTop;
+      function setOptions(options) {
+        var _options = options || {};
+        visible = _options.initialVisible === undefined ? false : show;
+        onChange = _options.onChange;
+        hideWhenWindowScroll = _options.hideWhenWindowScroll;
+      }
+      function init() {
+        setState(visible);
+      }
+      function setState(isShow) {
+        if (isShow === visible) {
+          return;
+        }
+        visible = isShow;
+        if (visible) {
+          activeCount++;
+          scrollTop = $(window).scrollTop() || $pageMain.scrollTop();
+          $root.addClass('modal--show');
+          $pageMain.scrollTop(scrollTop);
+          activeCount === 1 && ($pageRoot.addClass('show-modal'), $body.addClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.on('scroll', hide);
+          $window.on('keyup', handleKeyup);
+        } else {
+          activeCount > 0 && activeCount--;
+          $root.removeClass('modal--show');
+          $window.scrollTop(scrollTop);
+          activeCount === 0 && ($pageRoot.removeClass('show-modal'), $body.removeClass('of-hidden'));
+          hideWhenWindowScroll && window.hasEvent('touchstart') && $window.off('scroll', hide);
+          $window.off('keyup', handleKeyup);
+        }
+        onChange && onChange(visible);
+      }
+      function show() {
+        setState(true);
+      }
+      function hide() {
+        setState(false);
+      }
+      function handleKeyup(e) {
+        // Char Code: 27  ESC
+        if (e.which ===  27) {
+          hide();
+        }
+      }
+      setOptions(options);
+      init();
+      return {
+        show: show,
+        hide: hide,
+        $el: $root
+      };
+    }
+    $.fn.modal = modal;
+  });
+})();
+</script><div class="modal modal--overflow page__search-modal d-print-none js-page-search-modal"><script>
+(function () {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    // search panel
+    var search = (window.search || (window.search = {}));
+    var useDefaultSearchBox = window.useDefaultSearchBox === undefined ?
+      true : window.useDefaultSearchBox ;
+
+    var $searchModal = $('.js-page-search-modal');
+    var $searchToggle = $('.js-search-toggle');
+    var searchModal = $searchModal.modal({ onChange: handleModalChange, hideWhenWindowScroll: true });
+    var modalVisible = false;
+    search.searchModal = searchModal;
+
+    var $searchBox = null;
+    var $searchInput = null;
+    var $searchClear = null;
+
+    function getModalVisible() {
+      return modalVisible;
+    }
+    search.getModalVisible = getModalVisible;
+
+    function handleModalChange(visible) {
+      modalVisible = visible;
+      if (visible) {
+        search.onShow && search.onShow();
+        useDefaultSearchBox && $searchInput[0] && $searchInput[0].focus();
+      } else {
+        search.onShow && search.onHide();
+        useDefaultSearchBox && $searchInput[0] && $searchInput[0].blur();
+        setTimeout(function() {
+          useDefaultSearchBox && ($searchInput.val(''), $searchBox.removeClass('not-empty'));
+          search.clear && search.clear();
+          window.pageAsideAffix && window.pageAsideAffix.refresh();
+        }, 400);
+      }
+    }
+
+    $searchToggle.on('click', function() {
+      modalVisible ? searchModal.hide() : searchModal.show();
+    });
+    // Char Code: 83  S, 191 /
+    $(window).on('keyup', function(e) {
+      if (!modalVisible && !window.isFormElement(e.target || e.srcElement) && (e.which === 83 || e.which === 191)) {
+        modalVisible || searchModal.show();
+      }
+    });
+
+    if (useDefaultSearchBox) {
+      $searchBox = $('.js-search-box');
+      $searchInput = $searchBox.children('input');
+      $searchClear = $searchBox.children('.js-icon-clear');
+      search.getSearchInput = function() {
+        return $searchInput.get(0);
+      };
+      search.getVal = function() {
+        return $searchInput.val();
+      };
+      search.setVal = function(val) {
+        $searchInput.val(val);
+      };
+
+      $searchInput.on('focus', function() {
+        $(this).addClass('focus');
+      });
+      $searchInput.on('blur', function() {
+        $(this).removeClass('focus');
+      });
+      $searchInput.on('input', window.throttle(function() {
+        var val = $(this).val();
+        if (val === '' || typeof val !== 'string') {
+          search.clear && search.clear();
+        } else {
+          $searchBox.addClass('not-empty');
+          search.onInputNotEmpty && search.onInputNotEmpty(val);
+        }
+      }, 400));
+      $searchClear.on('click', function() {
+        $searchInput.val(''); $searchBox.removeClass('not-empty');
+        search.clear && search.clear();
+      });
+    }
+  });
+})();
+</script><div class="search search--dark">
+  <div class="main">
+    <div class="search__header">Recherche</div>
+    <div class="search-bar">
+      <div class="search-box js-search-box">
+        <div class="search-box__icon-search"><i class="fas fa-search"></i></div>
+        <input type="text" />
+        <div class="search-box__icon-clear js-icon-clear">
+          <a><i class="fas fa-times"></i></a>
+        </div>
+      </div>
+      <button class="button button--theme-dark button--pill search__cancel js-search-toggle">
+        Annuler</button>
+    </div>
+    <div class="search-result js-search-result"></div>
+  </div>
+</div>
+<script>var SOURCES = window.TEXT_VARIABLES.sources;
+var PAHTS = window.TEXT_VARIABLES.paths;
+window.Lazyload.js([SOURCES.jquery, PAHTS.search_js], function() {
+  var search = (window.search || (window.search = {}));
+  var searchData = window.TEXT_SEARCH_DATA || {};
+
+  function memorize(f) {
+    var cache = {};
+    return function () {
+      var key = Array.prototype.join.call(arguments, ',');
+      if (key in cache) return cache[key];
+      else return cache[key] = f.apply(this, arguments);
+    };
+  }
+
+  /// search
+  function searchByQuery(query) {
+    var i, j, key, keys, cur, _title, result = {};
+    keys = Object.keys(searchData);
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      for (j = 0; j < searchData[key].length; j++) {
+        cur = searchData[key][j], _title = cur.title;
+        if ((result[key] === undefined || result[key] && result[key].length < 4 )
+          && _title.toLowerCase().indexOf(query.toLowerCase()) >= 0) {
+          if (result[key] === undefined) {
+            result[key] = [];
+          }
+          result[key].push(cur);
+        }
+      }
+    }
+    return result;
+  }
+
+  var renderHeader = memorize(function(header) {
+    return $('<p class="search-result__header">' + header + '</p>');
+  });
+
+  var renderItem = function(index, title, url) {
+    return $('<li class="search-result__item" data-index="' + index + '"><a class="button" href="' + url + '">' + title + '</a></li>');
+  };
+
+  function render(data) {
+    if (!data) { return null; }
+    var $root = $('<ul></ul>'), i, j, key, keys, cur, itemIndex = 0;
+    keys = Object.keys(data);
+    for (i = 0; i < keys.length; i++) {
+      key = keys[i];
+      $root.append(renderHeader(key));
+      for (j = 0; j < data[key].length; j++) {
+        cur = data[key][j];
+        $root.append(renderItem(itemIndex++, cur.title, cur.url));
+      }
+    }
+    return $root;
+  }
+
+  // search box
+  var $result = $('.js-search-result'), $resultItems;
+  var lastActiveIndex, activeIndex;
+
+  function clear() {
+    $result.html(null);
+    $resultItems = $('.search-result__item'); activeIndex = 0;
+  }
+  function onInputNotEmpty(val) {
+    $result.html(render(searchByQuery(val)));
+    $resultItems = $('.search-result__item'); activeIndex = 0;
+    $resultItems.eq(0).addClass('active');
+  }
+
+  search.clear = clear;
+  search.onInputNotEmpty = onInputNotEmpty;
+
+  function updateResultItems() {
+    lastActiveIndex >= 0 && $resultItems.eq(lastActiveIndex).removeClass('active');
+    activeIndex >= 0 && $resultItems.eq(activeIndex).addClass('active');
+  }
+
+  function moveActiveIndex(direction) {
+    var itemsCount = $resultItems ? $resultItems.length : 0;
+    if (itemsCount > 1) {
+      lastActiveIndex = activeIndex;
+      if (direction === 'up') {
+        activeIndex = (activeIndex - 1 + itemsCount) % itemsCount;
+      } else if (direction === 'down') {
+        activeIndex = (activeIndex + 1 + itemsCount) % itemsCount;
+      }
+      updateResultItems();
+    }
+  }
+
+  // Char Code: 13  Enter, 37  ⬅, 38  ⬆, 39  ➡, 40  ⬇
+  $(window).on('keyup', function(e) {
+    var modalVisible = search.getModalVisible && search.getModalVisible();
+    if (modalVisible) {
+      if (e.which === 38) {
+        modalVisible && moveActiveIndex('up');
+      } else if (e.which === 40) {
+        modalVisible && moveActiveIndex('down');
+      } else if (e.which === 13) {
+        modalVisible && $resultItems && activeIndex >= 0 && $resultItems.eq(activeIndex).children('a')[0].click();
+      }
+    }
+  });
+
+  $result.on('mouseover', '.search-result__item > a', function() {
+    var itemIndex = $(this).parent().data('index');
+    itemIndex >= 0 && (lastActiveIndex = activeIndex, activeIndex = itemIndex, updateResultItems());
+  });
+});
+</script>
+</div></div>
+
+
+<script>(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function scrollToAnchor(anchor, duration, callback) {
+      var $root = this;
+      $root.animate({ scrollTop: $(anchor).position().top }, duration, function() {
+        window.history.replaceState(null, '', window.location.href.split('#')[0] + anchor);
+        callback && callback();
+      });
+    }
+    $.fn.scrollToAnchor = scrollToAnchor;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function affix(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroll,
+        offsetBottom = 0, scrollTarget = window, scroll = window.document, disabled = false, isOverallScroller = true,
+        rootTop, rootLeft, rootHeight, scrollBottom, rootBottomTop,
+        hasInit = false, curState;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.offsetBottom && (offsetBottom = _options.offsetBottom);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroll && (scroll = _options.scroll);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $scrollTarget = $(scrollTarget);
+        isOverallScroller = window.isOverallScroller($scrollTarget[0]);
+        $scroll = $(scroll);
+      }
+      function preCalc() {
+        top();
+        rootHeight = $root.outerHeight();
+        rootTop = $root.offset().top + (isOverallScroller ? 0 :  $scrollTarget.scrollTop());
+        rootLeft = $root.offset().left;
+      }
+      function calc(needPreCalc) {
+        needPreCalc && preCalc();
+        scrollBottom = $scroll.outerHeight() - offsetBottom - rootHeight;
+        rootBottomTop = scrollBottom - rootTop;
+      }
+      function top() {
+        if (curState !== 'top') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: 0
+          });
+          curState = 'top';
+        }
+      }
+      function fixed() {
+        if (curState !== 'fixed') {
+          $root.addClass('fixed').css({
+            left: rootLeft + 'px',
+            top: 0
+          });
+          curState = 'fixed';
+        }
+      }
+      function bottom() {
+        if (curState !== 'bottom') {
+          $root.removeClass('fixed').css({
+            left: 0,
+            top: rootBottomTop + 'px'
+          });
+          curState = 'bottom';
+        }
+      }
+      function setState() {
+        var scrollTop = $scrollTarget.scrollTop();
+        if (scrollTop >= rootTop && scrollTop <= scrollBottom) {
+          fixed();
+        } else if (scrollTop < rootTop) {
+          top();
+        } else {
+          bottom();
+        }
+      }
+      function init() {
+        if(!hasInit) {
+          var interval, timeout;
+          calc(true); setState();
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState();
+          });
+          $window.on('resize', function() {
+            disabled || (calc(true), setState());
+          });
+          hasInit = true;
+        }
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions,
+        refresh: function() {
+          calc(true, { animation: false }); setState();
+        }
+      };
+    }
+    $.fn.affix = affix;
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    function toc(options) {
+      var $root = this, $window = $(window), $scrollTarget, $scroller, $tocUl = $('<ul class="toc toc--ellipsis"></ul>'), $tocLi, $headings, $activeLast, $activeCur,
+        selectors = 'h1,h2,h3', container = 'body', scrollTarget = window, scroller = 'html, body', disabled = false,
+        headingsPos, scrolling = false, hasRendered = false, hasInit = false;
+
+      function setOptions(options) {
+        var _options = options || {};
+        _options.selectors && (selectors = _options.selectors);
+        _options.container && (container = _options.container);
+        _options.scrollTarget && (scrollTarget = _options.scrollTarget);
+        _options.scroller && (scroller = _options.scroller);
+        _options.disabled !== undefined && (disabled = _options.disabled);
+        $headings = $(container).find(selectors).filter('[id]');
+        $scrollTarget = $(scrollTarget);
+        $scroller = $(scroller);
+      }
+      function calc() {
+        headingsPos = [];
+        $headings.each(function() {
+          headingsPos.push(Math.floor($(this).position().top));
+        });
+      }
+      function setState(element, disabled) {
+        var scrollTop = $scrollTarget.scrollTop(), i;
+        if (disabled || !headingsPos || headingsPos.length < 1) { return; }
+        if (element) {
+          $activeCur = element;
+        } else {
+          for (i = 0; i < headingsPos.length; i++) {
+            if (scrollTop >= headingsPos[i]) {
+              $activeCur = $tocLi.eq(i);
+            } else {
+              $activeCur || ($activeCur = $tocLi.eq(i));
+              break;
+            }
+          }
+        }
+        $activeLast && $activeLast.removeClass('active');
+        ($activeLast = $activeCur).addClass('active');
+      }
+      function render() {
+        if(!hasRendered) {
+          $root.append($tocUl);
+          $headings.each(function() {
+            var $this = $(this);
+            $tocUl.append($('<li></li>').addClass('toc-' + $this.prop('tagName').toLowerCase())
+              .append($('<a></a>').text($this.text()).attr('href', '#' + $this.prop('id'))));
+          });
+          $tocLi = $tocUl.children('li');
+          $tocUl.on('click', 'a', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            scrolling = true;
+            setState($this.parent());
+            $scroller.scrollToAnchor($this.attr('href'), 400, function() {
+              scrolling = false;
+            });
+          });
+        }
+        hasRendered = true;
+      }
+      function init() {
+        var interval, timeout;
+        if(!hasInit) {
+          render(); calc(); setState(null, scrolling);
+          // run calc every 100 millisecond
+          interval = setInterval(function() {
+            calc();
+          }, 100);
+          timeout = setTimeout(function() {
+            clearInterval(interval);
+          }, 45000);
+          window.pageLoad.then(function() {
+            setTimeout(function() {
+              clearInterval(interval);
+              clearTimeout(timeout);
+            }, 3000);
+          });
+          $scrollTarget.on('scroll', function() {
+            disabled || setState(null, scrolling);
+          });
+          $window.on('resize', window.throttle(function() {
+            if (!disabled) {
+              render(); calc(); setState(null, scrolling);
+            }
+          }, 100));
+        }
+        hasInit = true;
+      }
+
+      setOptions(options);
+      if (!disabled) {
+        init();
+      }
+      $window.on('resize', window.throttle(function() {
+        init();
+      }, 200));
+      return {
+        setOptions: setOptions
+      };
+    }
+    $.fn.toc = toc;
+  });
+})();
+/*(function () {
+
+})();*/
+</script><script>
+  /* toc must before affix, since affix need to konw toc' height. */(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  var TOC_SELECTOR = window.TEXT_VARIABLES.site.toc.selectors;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window);
+    var $articleContent = $('.js-article-content');
+    var $tocRoot = $('.js-toc-root'), $col2 = $('.js-col-aside');
+    var toc;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+    var hasToc = $articleContent.find(TOC_SELECTOR).length > 0;
+
+    function disabled() {
+      return $col2.css('display') === 'none' || !hasToc;
+    }
+
+    tocDisabled = disabled();
+
+    toc = $tocRoot.toc({
+      selectors: TOC_SELECTOR,
+      container: $articleContent,
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      tocDisabled = disabled();
+      toc && toc.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+  });
+})();
+(function() {
+  var SOURCES = window.TEXT_VARIABLES.sources;
+  window.Lazyload.js(SOURCES.jquery, function() {
+    var $window = $(window), $pageFooter = $('.js-page-footer');
+    var $pageAside = $('.js-page-aside');
+    var affix;
+    var tocDisabled = false;
+    var hasSidebar = $('.js-page-root').hasClass('layout--page--sidebar');
+
+    affix = $pageAside.affix({
+      offsetBottom: $pageFooter.outerHeight(),
+      scrollTarget: hasSidebar ? '.js-page-main' : null,
+      scroller: hasSidebar ? '.js-page-main' : null,
+      scroll: hasSidebar ? $('.js-page-main').children() : null,
+      disabled: tocDisabled
+    });
+
+    $window.on('resize', window.throttle(function() {
+      affix && affix.setOptions({
+        disabled: tocDisabled
+      });
+    }, 100));
+
+    window.pageAsideAffix = affix;
+  });
+})();
+</script><script>
+  window.Lazyload.js(['https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js', 'https://cdn.bootcss.com/Chart.js/2.7.2/Chart.bundle.min.js'], function() {
+    var $canvas = null, $this = null, _ctx = null, _text = '';
+    $('.language-chart').each(function(){
+      $this = $(this);
+      $canvas = $('<canvas></canvas>');
+      _text = $this.text();
+      $this.text('').append($canvas);
+      _ctx = $canvas.get(0).getContext('2d');
+      (_ctx && _text) && (new Chart(_ctx, JSON.parse(_text)) && $this.attr('data-processed', true));
+    });
+  });
+</script>
+<script type="text/x-mathjax-config">
+	var _config = { tex2jax: {
+		inlineMath: [['$','$'], ['\\(','\\)']]
+	}};MathJax.Hub.Config(_config);
+</script>
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+    </div>
+    <script>(function () {
+  var $root = document.getElementsByClassName('root')[0];
+  if (window.hasEvent('touchstart')) {
+    $root.dataset.isTouch = true;
+    document.addEventListener('touchstart', function(){}, false);
+  }
+})();
+</script>
+  </body>
+</html>
+

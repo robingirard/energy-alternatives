@@ -244,9 +244,9 @@ Un autre enjeu est celui de l’utilisation du gaz. Il sera difficile de se pass
  <tr><td>&nbsp;</td><td>Total</td><td>[gCO2/kWh]</td><td>10</td><td>60</td><td>7</td><td>11</td><td>79</td><td>11</td><td>7</td><td>47</td><td>X</td><td>24</td></tr>
  <tr><td>&nbsp;</td><td>&nbsp;</td><td>[MtCO2eq/an] </td><td>4,0</td><td>0,9</td><td>0,5</td><td>5,4</td><td>2,4</td><td>3,4</td><td>0,5</td><td>4,5</td><td>1,0</td><td>11,8</td></tr>
 </tbody></table>
-{: .mbtablestyle .center .wrapstyle }
+{: .wrapstyle  .simple7}
 
-<span class="legendtext" id="CAPTable1" style="display:block;text-align:center">
+<span class="legendtext" id="CAPTable2" style="display:block;text-align:center">
 **Table 2** -- Mix fortement nucléaire ou fortement renouvelable pour l’horizon 2050.  [Fichier Excel.](Fichier Excel.)
 </span>
 
