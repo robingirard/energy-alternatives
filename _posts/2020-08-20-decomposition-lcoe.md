@@ -8,7 +8,7 @@ article_header:
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-*Ce post vient en complément du post "energie et puissance" [[1](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)] mais il peut être lu séparément. Nous donnons plus de détails sur les différents moyens de production d'électricité qui existent dans les grandes classes utilisées dans le post précédent. Nous en profitons pour discuter des coûts d'investissement, de fonctionnement et des coûts marginaux, pour chaque type de moyen de production. Enfin nous exposons la méthode classique de calcul du coût complet actualisé (LCOE) de l'énergie produite par un moyen de production, et pour un mix électrique. Cette méthode et les données présentées au cours de ce post permettent de retrouver les valeurs de [[1](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)] et nous fournissons un tableur excel permettant de refaire tous les calculs en changeant les hypothèses.*
+*Ce post vient en complément du post "energie et puissance" [[1](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)] mais il peut être lu séparément. Il est même sans doute plus naturel de lire ce post en premier. Nous donnons plus de détails sur les différents moyens de production d'électricité qui existent dans les grandes classes utilisées dans le post précédent. Nous en profitons pour discuter des coûts d'investissement, de fonctionnement et des coûts marginaux, pour chaque type de moyen de production. Enfin nous exposons la méthode classique de calcul du coût complet actualisé (LCOE) de l'énergie produite par un moyen de production, et pour un mix électrique. Cette méthode et les données présentées au cours de ce post permettent de retrouver les valeurs de [[1](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)] et nous fournissons un tableur excel permettant de refaire tous les calculs en changeant les hypothèses.*
 </span>
 <!--more-->
 <span class="mytext">
@@ -18,12 +18,12 @@ Dans un post précédent [[1](https://www.energy-alternatives.eu/2020/05/07/mix-
 $$ \sum_i \alpha_i^{cout} E_i+\beta_i^{cout} P_i$$
 </span>
 <span class="mytext">
-Ceci nous a permis de retrouver des ordres de grandeur pour le coût de notre système actuel et d'en donner pour le coût à l’horizon 2050 d’un système fortement renouvelable et pour celui d’un système fortement nucléaire. Des valeurs pour les coefficients $\alpha_i^{cout}$ (en [€/MWh]) et $\beta_i^{cout}$ (en [€/kW/an]) ont été proposées sans que l'on explique ce qui permet de les obtenir. Le coût marginal $\alpha_i^{cout}$ s'estime en général assez bien à partir du coût de carburant, ajusté d'une taxe (e.g. taxe carbone) et du rendement de l'installation. Le coût fixe actualisé et annualisé $\beta_i^{cout}$ s’obtient à partir de données économiques comme l’actualisation, le coût d’investissement, les coût annuels d’exploitation d’une manière que nous allons détailler ici. Ceci nous permettra d’introduire le LCOE (levelized cost of energy) qui est très utilisé dans le domaine.
-Par ailleurs, nous avons considéré de grandes familles de technologies de production : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien », ou « biomasse ». La précision des données de coût (économiques et environnementaux) va nécessiter de donner quelques précisions sur la diversité des technologies existantes dans ces familles. C’est ce que nous allons faire dans une première partie qui nous permettra aussi d’introduire les données économiques propres à chaque familles de technologies.
+Ceci nous a permis de retrouver des ordres de grandeur pour le coût de notre système actuel et d'en donner pour le coût à l’horizon 2050 d’un système fortement renouvelable et pour celui d’un système fortement nucléaire. Des valeurs pour les coefficients $\alpha_i^{cout}$ (en [€/MWh]) et $\beta_i^{cout}$ (en [€/kW/an]) ont été proposées sans que l'on explique ce qui permet de les obtenir. Le coût marginal $\alpha_i^{cout}$ s'estime en général assez bien à partir du coût de carburant, ajusté d'une taxe (e.g. taxe carbone) et du rendement de l'installation. Le coût fixe actualisé et annualisé $\beta_i^{cout}$ s’obtient à partir de données économiques comme l’actualisation, le coût d’investissement, les coût annuels d’exploitation d’une manière que nous allons détailler ici (dans la première partie de ce post). Ceci nous permettra d’introduire le LCOE (levelized cost of energy) qui est très utilisé dans le domaine.
+Par ailleurs, nous avons considéré de grandes familles de technologies de production : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien », ou « biomasse ». La précision des données de coût (économiques et environnementaux) va nécessiter de donner quelques précisions sur la diversité des technologies existantes dans ces familles. C’est ce que nous allons faire dans la seconde partie de ce post. Ceci nous permettra aussi d’introduire les données économiques propres à chaque familles de technologies, et de proposer des ordres de grandeur pour les LCOE associés.
 </span>
 
 
-# Une formule simplifiée du coût actualisé
+# Coût actualisé (LCOE).
 
 ## Introduction : actualisation
 
@@ -34,7 +34,7 @@ Lorsque l’on compare le coût de systèmes de production d’électricité il 
 Afin de pallier à ce problème, les économistes qui réfléchissent à la question du coût et les ingénieurs qui développent des projets utilisent le modèle de l’actualisation. Ce modèle est loin d’être parfait mais il est très utilisé et il faut donc connaitre son fonctionnement et ses limites. Il repose sur une unique hypothèse plus simple à comprendre et à formuler qu’à discuter : l’argent $ x_{n} $ que l’on gagne ou que l’on dépense à l’année $n$  a plus de valeur que l’argent $x_{n+1}$  que l’on gagne ou dépense à l’année $n$. Le surcroit de valeur est $x_n \alpha$, où $\alpha$ est appelé taux d’actualisation (car il permet d’actualiser la valeur de l’argent d’une année à l’autre). Dans ce modèle, $\alpha$  ne dépend pas de $n$, et cela permet de rendre "comparable" $x_{n+1}/(1+\alpha)$ et $x_n$, mais aussi, par récurrence $x_{n+1}/(1+\alpha)^n$ et $x_0$. En additionnant les dépenses actualisées et en divisant par les énergies produites et actualisées elles aussi, on calcule le coût actualisé de l’énergie actualisée, ou encore levelized cost of energy noté $LCOE$. Une formule est [disponible ici](https://fr.wikipedia.org/wiki/LCOE) mais nous allons, dans la section suivante, en donner une forme plus facile d'usage qui en découle par quelques calculs simples. Je ne vais pas discuter $ \alpha$ ici, et nous reportons quelques éléments de discussion en Annexe (prise en compte de l'inflation, du taux d'intérêt long terme, de la rentabilité du capital, de la croissance d'une entreprise, ...), mais l’on peut dire que $\alpha$ est autour de 4% dans des projets portés par le public (ce taux est alors encadré par la loi) et plutôt autour de 8-10% pour des projets portés par le privé.
 </span>
 
-## Dépenses d'un projet et LCOE
+## Dépenses d'un projet
 <span class="mytext">
 Pour ce faire il faut lister les dépenses du projet. Lister toutes les dépenses d’un projet sur sa durée de vie est un travail complexe, et le but ici n’est pas de donner un exemple de calcul de LCOE très précis mais plutôt une version simplifiée permettant à chacun de comprendre les facteurs importants. Dans le domaine de la production d’électricité (et dans beaucoup d’autres secteurs) on peut classifier les dépenses en 4 parties :
 </span>
@@ -45,6 +45,8 @@ Pour ce faire il faut lister les dépenses du projet. Lister toutes les dépense
 <li> le coût de démentellement $C_D$ exprimé en €/kW, dans lequel on peut inclure les coûts qui surviennent après le projet (e.g gestion des déchets). $C_D$ peut aussi intégrer une valeur résiduelle de l’actif à la fin de la période considérée (dans ce cas un bénéfice, c’est-à-dire une valeur négative pour $C_D$).</li>
 </ul>
 </div>
+
+## Formule simplifiée
 <span class="mytext">
 Avec cela, on peut montrer facilement que le LCOE d'une technologie donnée s’exprime comme une simple fonction de ces paramètres et du facteur de charge FC (P étant encore la puissance installée en GW et E l’énergie annuelle produite en TWh )  :
 </span>
@@ -92,7 +94,7 @@ Discuter l’actualisation dépasse de très loin ce que je peux faire ici aujou
 
 
 # Quelques précisions sur la diversité cachée derrière ces grandes classes de moyens de production
-
+Dans cette section  nous allons parcourir les grandes classes de moyens de production d'électricité, et pour chacune d'entre elles nous allons discuter les différentes sortes de coûts pour donner des ordres de grandeur sur le LCOE. Nous ne parlons pas ici du coût du système électrique et nous renvoyons le lecteur à notre post précédent [[1](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)].
 ## Centrales nucléaire
 
 <span class="mytext">
@@ -294,7 +296,7 @@ Pour **l’éolien**, les données sont nombreuses, et évoluent encore ces dern
 </span>
 <div class="text" style="display:block; text-align: justify">
 <ul> <li>la taille de l'éolienne (le coût capacitaire baisse avec la taille) </li>
-<li> le pays de construction, en particulier pour l'éolien en mer. Comme pour le nucléaire le coût de construction est plus bas en Chine, cela est du à la fois à une main d'oeuvre moins cher (que l'on peut quantifier en regardant la différence entre le coût du BTP en Europe et en Chine), des frais banquaires sans doute plus bas, des effets d'échelle plus importants, des durées de construction plus courtes. Sur ce dernier sujet dans le contexte de l'éolien offshore en Europe, voir l'aricle [Peysson2019](https://www.larevuedelenergie.com/impact-de-la-reglementation-sur-les-couts-de-production-de-leolien-en-mer-en-europe/). D'une manière générale les contraintes administratives et les oppositions aux projets peuvent jouer sur les coûts et sont très différentes d'une région à une autre (parfois au sein d'un même pays) </li>
+<li> le pays de construction, en particulier pour l'éolien en mer. Comme pour le nucléaire le coût de construction est plus bas en Chine, cela est du à la fois à une main d'oeuvre moins cher (que l'on peut quantifier en regardant la différence entre le coût du BTP en Europe et en Chine), des frais banquaires sans doute plus bas, des effets d'échelle plus importants, des durées de construction plus courtes. Sur ce dernier sujet dans le contexte de l'éolien offshore en Europe, voir l'aricle <a href="https://www.larevuedelenergie.com/impact-de-la-reglementation-sur-les-couts-de-production-de-leolien-en-mer-en-europe/"> [Peysson2019]</a>. D'une manière générale les contraintes administratives et les oppositions aux projets peuvent jouer sur les coûts et sont très différentes d'une région à une autre (parfois au sein d'un même pays) </li>
 <li> ce qu'on appelle le toilage : le rapport entre la surface balayée par les pales et la puissance installée (en m^2/kW). Le toilage augmente le coût capacitaire mais aussi le facteur de charge. </li>
 </ul>
 </div>
@@ -319,8 +321,13 @@ Pour l'éolien on-shore, on retrouve des LCOE entre 50 et 70 €/MWh ce qui corr
 [AOCRE2020](https://www.cre.fr/media/Fichiers/publications/appelsoffres/ao-eolien-terrestre-telecharger-le-rapport-de-synthese-version-publique-de-la-cinquieme-periode-de-candidature) où le prix moyen des projets selectionnés était de 62 €/MWh. On peut faire ici la même remarque que dans le cas du PV.
 </span>
 # Conclusion
-Dans un prochain post je parlerai du stockage batterie, et des technologie de *power to gaz* (hydrogène ou méthane).
 
+<span class="mytext">
+Nous avons donné une formule simple permettant de calculer le LCOE d'un moyen de production d'électricité à partir de coûts annualisés. Pour différentes familles de moyens de production, nous avons discuté les facteurs impactants les coûts. Ces couts peuvent être utilisés pour alimenter un modèle pour l'estimation des coûts du système électrique comme nous l'avons fait dans un post précédent [[1](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)]. Ces données peuvent servir de base à mon TP sur l'optimisation et la planification du système électrique dans un contexte de transition énergétique (et qui sera mis en open source prochainement). C'est un sujet qui peut évoluer assez vite et sur lequel il est difficile de tout maitriser, je serai évidement à l'écoute des remarques et proposisions qui seront faites en commentaires. Autrement dit, les données proposées ici sont ouvertes à discussion, et j'essaierai d'actualiser ce post à partir des commentaires constructifs qui me seront fait et des évolutions au fil du temps.
+</span>
+<span class="mytext">
+Dans un prochain post je complèterai celui ci en fournissant des données économiques pour le stockage batterie, des volants d'inerties, et des technologie de *power to gaz* (hydrogène ou méthane).
+</span>
 # Bibliographie
 
 [CDC2012] [2012 Les coûts de la filière électro nucléaire](https://www.ccomptes.fr/fr/publications/les-couts-de-la-filiere-electro-nucleaire)
