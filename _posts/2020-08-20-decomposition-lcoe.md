@@ -4,7 +4,7 @@ tags: mix-production intermittence evolution lcoe
 article_header:
   type: cover
   image:
-    src: /assets/images/Posts/2020-05-07/DSCF8920c.jpg
+    src: /assets/images/Posts/2020-08-20/DSCF7793.jpg
 ---
 
 <span class="summary" style="display:block; text-align: justify">
@@ -284,11 +284,14 @@ Pour le **solaire photovoltaïque** il est pertinent de distinguer les tailles d
 **Figure 1** -- Décomposition des coûts d’investissement moyens observés dans les appel d’offre CRE, étude publiée en février 2019, [[1](https://www.cre.fr/Documents/Publications/Rapports-thematiques/Couts-et-rentabilites-du-grand-photovoltaique-en-metropole-continentale)].
 </span>
 <span class="mytext">
-Finalement un facteurs qui déterminera de manière essentielle les performances d’un système de production photovoltaïques est la localisation de la centrale. Une centrale au sud de l’Espagne produira plus qu’une centrale au nord de l’Allemagne et surtout sa variabilité hiver/été sera beaucoup moins importante mais nous reparlerons de tout çà de manière quantitative lorsque nous parlerons de la variabilité de ces moyens de production. Sur le plan environnemental le lieu de construction des panneaux (et le mix électrique utilisé pour faire fonctionner les machines qui produisent les panneaux) peut aussi avoir de l’importance. Finalement, une classe à part de l’énergie solaire est le solaire à concentration : thermodynamique ou photovoltaïque. Le solaire thermodynamique permet de chauffer de l’eau (à plus ou moins haute température) pour l’utiliser directement pour le chauffage ou dans le cas du solaire à concentration thermodynamique faire tourner une turbine et permet donc de stocker l’énergie produite dans la journée pour la réutilisé le soir. Ce type de système est très développé en Espagne. On retrouvera une vidéo assez complète du réveilleur sur le sujet des différentes technos solaires [ici](https://www.youtube.com/watch?v=dykSjXQhSjM).
+Finalement un facteurs qui déterminera de manière essentielle le facteur de charge d’un système de production photovoltaïques est la localisation de la centrale. Une centrale au sud de l’Espagne produira plus qu’une centrale au nord de l’Allemagne et surtout sa variabilité hiver/été sera beaucoup moins importante mais nous reparlerons de tout çà de manière quantitative lorsque nous parlerons de la variabilité de ces moyens de production. Sur le plan environnemental le lieu de construction des panneaux (et le mix électrique utilisé pour faire fonctionner les machines qui produisent les panneaux) peut aussi avoir de l’importance.  
 </span>
 <span class="mytext">
 Pour les grandes centrales PV, on retrouve des LCOE entre 45 et 65 €/MWh ce qui correspond aux ordres de grandeur que l'on retrouve dans les réponses aux appels d'offre, comme en 2020
-[CRE2020PV](https://www.cre.fr/media/Fichiers/publications/appelsoffres/ao-centrale-au-sol-telecharger-le-rapport-de-synthese-version-publique-de-la-septieme-periode-de-candidature) où le prix moyen des projets selectionnés était autour de 60 €/MWh pour les gros projets. Attention, le prix constaté dans les réponses aux appels d'offre n'est pas exactement un LCOE mêmes si il y est comparable. La durée pendant laquelle le tarif est assuré, et qui fixe l'évaluation économique n'est pas la durée de vie mais plutôt une durée de 15 ans. Certains montages financiers permettent aujourd'hui avoir des frais financiers limités et correpondent probablement à des taux d'actualisation inférieurs à 5%.
+[[CRE2020PV](https://www.cre.fr/media/Fichiers/publications/appelsoffres/ao-centrale-au-sol-telecharger-le-rapport-de-synthese-version-publique-de-la-septieme-periode-de-candidature)] où le prix moyen des projets selectionnés était autour de 60 €/MWh pour les gros projets. Attention, le prix constaté dans les réponses aux appels d'offre n'est pas exactement un LCOE mêmes si il y est comparable. La durée pendant laquelle le tarif est assuré, et qui fixe l'évaluation économique n'est pas la durée de vie mais plutôt une durée de 15 ans. Certains montages financiers permettent aujourd'hui avoir des frais financiers limités et correpondent probablement à des taux d'actualisation inférieurs à 5%.
+</span>
+<span class="mytext">
+Une classe à part de l’énergie solaire est le solaire à concentration : thermodynamique ou photovoltaïque. Le solaire thermodynamique permet de chauffer de l’eau (à plus ou moins haute température) pour l’utiliser directement pour le chauffage ou dans le cas du solaire à concentration thermodynamique faire tourner une turbine et permet donc de stocker l’énergie produite dans la journée pour la réutilisé le soir. Ce type de système est très développé en Espagne. On retrouvera une vidéo assez complète du réveilleur sur le sujet des différentes technos solaires [ici](https://www.youtube.com/watch?v=dykSjXQhSjM). Je n'ai pas pris le temps pour l'instant de récolter des données économiques sur ce sujet.
 </span>
 ## Centrales éoliennes
 <span class="mytext">
@@ -318,7 +321,7 @@ Pour **l’éolien**, les données sont nombreuses, et évoluent encore ces dern
 
 <span class="mytext">
 Pour l'éolien on-shore, on retrouve des LCOE entre 50 et 70 €/MWh ce qui correspond aux ordres de grandeur que l'on retrouve dans les réponses aux appels d'offre, comme en 2020
-[AOCRE2020](https://www.cre.fr/media/Fichiers/publications/appelsoffres/ao-eolien-terrestre-telecharger-le-rapport-de-synthese-version-publique-de-la-cinquieme-periode-de-candidature) où le prix moyen des projets selectionnés était de 62 €/MWh. On peut faire ici la même remarque que dans le cas du PV.
+[[AOCRE2020](https://www.cre.fr/media/Fichiers/publications/appelsoffres/ao-eolien-terrestre-telecharger-le-rapport-de-synthese-version-publique-de-la-cinquieme-periode-de-candidature)] où le prix moyen des projets selectionnés était de 62 €/MWh. On peut faire ici la même remarque que dans le cas du PV.
 </span>
 # Conclusion
 
