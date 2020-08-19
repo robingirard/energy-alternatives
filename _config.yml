@@ -40,7 +40,7 @@ author:
   avatar    : # path or url of avatar image (square)
   bio       : I am an assistant professor at MINES ParisTech
   email     : robin.girard@mines-paristech.fr
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  facebook  : robin.girard0 # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
   googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
@@ -122,7 +122,7 @@ comments:
 
   ## Disqus
   disqus:
-    shortname: # the Disqus shortname for the site
+    shortname: energy-alternatives-eu # the Disqus shortname for the site
 
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
