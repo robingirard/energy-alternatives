@@ -1,5 +1,6 @@
 ---
 title: Mix de production d’électricité – énergie et puissance.
+key: mix-de-production-delectricite-energie-et-puissance
 tags: mix-production intermittence evolution
 article_header:
   type: cover

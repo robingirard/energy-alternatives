@@ -1,5 +1,6 @@
 ---
 title: Une contribution à la réflexion sur la stratégie nationale bas carbone dans le batiment. Partie 1 - Quels modes de chauffage à l’horizon 2050.
+key: une-contribution-a-la-reflexion-sur-la-strategie-nationale-bas-carbone-dans-le-batiment-partie-1-quels-modes-de-chauffage-a-lhorizon-2050
 tags: Thermosensibilite consommation variabilite chauffage evolution
 article_header:
   type: cover

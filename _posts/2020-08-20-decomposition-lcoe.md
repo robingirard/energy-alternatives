@@ -1,5 +1,6 @@
 ---
 title: Décomposition du coût du mix de production de l'électricité
+key: decomposition-lcoe
 tags: mix-production intermittence evolution lcoe
 article_header:
   type: cover
