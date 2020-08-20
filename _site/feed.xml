@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="fr" /><updated>2020-08-19T12:26:29+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alternatives énergétiques</title><subtitle>Vers une meilleure compréhension de notre système énergétique et de son évolution
-</subtitle><author><name>Robin Girard</name><email>robin.girard@mines-paristech.fr</email></author><entry><title type="html">Décomposition du coût du mix de production de l’électricité</title><link href="http://localhost:4000/2020/08/20/decomposition-lcoe.html" rel="alternate" type="text/html" title="Décomposition du coût du mix de production de l’électricité" /><published>2020-08-20T00:00:00+02:00</published><updated>2020-08-20T00:00:00+02:00</updated><id>http://localhost:4000/2020/08/20/decomposition-lcoe</id><content type="html" xml:base="http://localhost:4000/2020/08/20/decomposition-lcoe.html">&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="fr" /><updated>2020-08-20T17:58:09+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Alternatives énergétiques</title><subtitle>Vers une meilleure compréhension de notre système énergétique et de son évolution
+</subtitle><author><name>Robin Girard</name><email>robin.girard@mines-paristech.fr</email></author><entry><title type="html">Evaluer le coût économique de la production d’électricité</title><link href="http://localhost:4000/2020/08/20/decomposition-lcoe.html" rel="alternate" type="text/html" title="Evaluer le coût économique de la production d’électricité" /><published>2020-08-20T00:00:00+02:00</published><updated>2020-08-20T00:00:00+02:00</updated><id>http://localhost:4000/2020/08/20/decomposition-lcoe</id><content type="html" xml:base="http://localhost:4000/2020/08/20/decomposition-lcoe.html">&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
 &lt;em&gt;Ce post vient en complément du post “energie et puissance” [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;] mais il peut être lu séparément. Il est même sans doute plus naturel de lire ce post en premier. Nous donnons une formule simple d’usage et assez classique pour le calcul du coût actualisé de l’électricité.  Elle repose sur un regroupement des coûts en plusieurs catégories : les coûts d’investissement, les coûts d’exploitation et de maintenance, les coûts marginaux. Pour chacun des différents moyens de production d’électricité qui existent dans les grandes classes utilisées dans le post précédent (nucléaire, gaz, charbon, éolien, solaire, hydraulique), nous donnons ces différents coûts et quelques précisions sur les éléments impactant le facteur de charge. Ceci nous permet en outre de donner des ordres de grandeur pour le coût actualisé et de retrouver les valeurs utilisées dans [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;].&lt;/em&gt;
 &lt;/span&gt;
 &lt;!--more--&gt;
@@ -21,15 +21,20 @@ Par ailleurs, nous avons considéré de grandes familles de technologies de prod
 &lt;h2 id=&quot;introduction--actualisation&quot;&gt;Introduction : actualisation&lt;/h2&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-Lorsque l’on compare le coût de systèmes de production d’électricité il y a deux grandes difficultés. La première est d’ordre économique : il est impossible de ramener objectivement un projet quel qu’il soit à un coût et un revenu qui interviendraient à un instant unique. En effet, on dépense de l’argent à différents moments de la durée de de vie du projet : pour sa construction un certain nombre d’années avant de produire, pour assurer le fonctionnement, payer du personnel, puis au bout de quelques années pour remplacer certaines parties du système, pour son démantèlement, et peut-être plusieurs années après encore lorsqu’il faut gérer des déchets. De même, les bénéfices que l’on tire de ce projet vont s’étaler de manière plus ou moins variable sur toute sa durée de vie. La seconde grande difficulté vient du fait que l’on ne peut pas comparer directement un MWh produit avec un moyen de production pilotable et un MWh de production fatale (e.g. éolien, photovoltaique), notre post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;] donne une réponse à ce problème.
-&lt;/span&gt;
-&lt;span class=&quot;mytext&quot;&gt;
-Afin de pallier au premier problème, les économistes qui réfléchissent à la question du coût et les ingénieurs qui développent des projets utilisent depuis très longtemps le modèle de l’actualisation. Ce modèle est loin d’être parfait mais il est très courant et il faut donc connaitre son fonctionnement et ses limites. Il repose sur une unique hypothèse plus simple à comprendre et à formuler qu’à discuter : l’argent $ x_{n} $ que l’on gagne ou que l’on dépense à l’année $n$ a plus de valeur que l’argent $x_{n+1}$ que l’on gagne ou dépense à l’année $n$. Le surcroit de valeur est $x_n \alpha$, où $\alpha$ est appelé taux d’actualisation, en effet, il permet “d’actualiser” la valeur de l’argent d’une année à l’autre. Dans ce modèle, $\alpha$  ne dépend pas de $n$, et cela permet de rendre comparable $x_{n+1}/(1+\alpha)$ et $x_n$, mais aussi, par récurrence $x_{n+1}/(1+\alpha)^n$ et $x_0$. En additionnant les dépenses actualisées et en divisant par les énergies produites et actualisées elles aussi, on calcule le coût actualisé de l’énergie actualisée, ou encore levelized cost of energy noté $LCOE$. Une formule est &lt;a href=&quot;https://fr.wikipedia.org/wiki/LCOE&quot;&gt;disponible ici&lt;/a&gt; mais nous allons, dans la section suivante, en donner une forme plus facile d’usage qui n’a rien de révolutionnaire mais est plus facile à manipuler et peut être obtenu par quelques calculs simples. Je ne vais pas discuter $\alpha$ ici, et nous reportons quelques éléments de discussion en Annexe (prise en compte des capitaux propres de l’entreprise, de l’inflation, du taux d’intérêt long terme, de la rentabilité du capital, de la croissance d’une entreprise, des frais bancaires, des intérêts intercallaires, …), mais l’on peut dire que $\alpha$ est autour de 4% dans des projets portés par le public (ce taux est alors encadré par la loi) et plutôt autour de 8-10% pour des projets portés par le privé.
+Lorsque l’on compare le coût de systèmes de production d’électricité il y a deux grandes difficultés. La première est d’ordre économique : il est impossible de ramener objectivement un projet quel qu’il soit à un coût et un revenu qui interviendraient à un instant unique. En effet, on dépense de l’argent à différents moments de la durée de de vie du projet : pour sa construction un certain nombre d’années avant de produire, pour assurer le fonctionnement, payer du personnel, puis au bout de quelques années pour remplacer certaines parties du système, pour son démantèlement, et peut-être plusieurs années après encore lorsqu’il faut gérer des déchets. De même, les bénéfices que l’on tire de ce projet vont s’étaler de manière plus ou moins variable sur toute sa durée de vie. La seconde grande difficulté vient du fait que l’on ne peut pas comparer directement un MWh produit avec un moyen de production pilotable et un MWh de production fatale (e.g. éolien, photovoltaique), mais nous en avons déjà parlé dans notre post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;].
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Afin de pallier au premier problème, les économistes qui réfléchissent à la question du coût et les ingénieurs qui développent des projets utilisent depuis très longtemps le modèle de l’actualisation. Ce modèle est loin d’être parfait, mais il n’en existe pas de bien meilleurs et cela ne fait qu’illustrer la naiveté qu’il y aurait à croire que toute chose a un coût économique bien fixé que l’on pourrait minimiser pour une société efficace. Ce modèle est tout de même très pratique et très courant, aussi faut-il  connaitre son fonctionnement et ses limites. Il repose sur une unique hypothèse plus simple à comprendre et à formuler qu’à discuter : l’argent $ x_{n} $ que l’on gagne ou que l’on dépense à l’année $n$ a plus de valeur que l’argent $x_{n+1}$ que l’on gagne ou dépense à l’année $n$. Le surcroit de valeur est $x_n \alpha$, où $\alpha$ est appelé taux d’actualisation, en effet, il permet “d’actualiser” la valeur de l’argent d’une année à l’autre. Dans ce modèle, $\alpha$  ne dépend pas de $n$, et cela permet de rendre comparable $x_{n+1}/(1+\alpha)$ et $x_n$, mais aussi, par récurrence $x_{n+1}/(1+\alpha)^n$ et $x_0$. En additionnant les dépenses actualisées et en divisant par les énergies produites et actualisées elles aussi, on calcule le coût actualisé de l’énergie actualisée, ou encore levelized cost of energy noté $LCOE$. Une formule est &lt;a href=&quot;https://fr.wikipedia.org/wiki/LCOE&quot;&gt;disponible ici&lt;/a&gt;, dans la section suivante nous en donnerons une forme alternative, elle n’a rien de révolutionnaire mais elle a l’avantage d’être stynthétique et plus facile à manipuler.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Nous n’allons pas discuter plus profondement ce qui se cache derrière l’actualsiation ici, c’est un très vaste sujet. Notons seulement que $\alpha$ est autour de 4-5% dans des projets portés par le public (ce taux est alors souvent encadré par la loi) et plutôt autour de 8-10% pour des projets portés par le privé. Si $\alpha$ est égal à l’inflation plus un taux de retour sur investissement, alors le LCOE correspond au tarif d’achat que le monteur de projet est susceptible de demander dans un appel d’offre (sauf dans le cas d’un contrat pour différence comme avec Hinckley point où le prix est indéxé sur l’inflation qui ne doit pas être incluse dans le taux d’actualisation), voir [&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0301421518306645&quot;&gt;Williams2019&lt;/a&gt;].  Nous reportons quelques éléments de discussion autour de l’actualsiation en Annexe 1 : prise en compte des capitaux propres de l’entreprise, de l’inflation, du taux d’intérêt long terme, de la rentabilité du capital, de la croissance d’une entreprise, des frais bancaires, des intérêts intercallaires, actualisation et décroissance…
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;dépenses-dun-projet&quot;&gt;Dépenses d’un projet&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-Pour calculer le LCOE, il faut lister toutes les dépenses du projet, depuis la dépense des premiers euros, avant la mise en route de la centrale, jusqu’à ce que plus rien ne soit gagné ou dépensé, après l’arrêt et le démentellement de la centrale. C’est est un travail complexe, et le but ici n’est pas de donner un exemple de calcul de LCOE très précis mais plutôt une version simplifiée permettant à chacun de comprendre les facteurs importants. Dans le domaine de la production d’électricité (et dans beaucoup d’autres secteurs) on peut classer les dépenses en 4 parties :
+Pour calculer le LCOE, il faut lister toutes les dépenses du projet, depuis la dépense des premiers euros, avant la mise en route de la centrale, jusqu’à ce que plus rien ne soit gagné ou dépensé, après l’arrêt et le démentellement de la centrale. C’est est un travail complexe, et le but ici n’est pas de donner un exemple de calcul de LCOE très précis mais plutôt une version simplifiée permettant à chacun de comprendre les facteurs importants. Dans le domaine de la production d’électricité (et dans beaucoup d’autres secteurs) il est pratique de classer les dépenses en 4 parties :
 &lt;/span&gt;&lt;/p&gt;
 &lt;div class=&quot;text&quot; style=&quot;display:block; text-align: justify&quot;&gt;
 &lt;ul&gt; &lt;li&gt;Les coûts d’investissement $C_I$ exprimés en €/kW et comptabilisés à la date de livraison, c'est à dire la date où la centrale commence à produire de l’énergie. Une somme investie 10 ans avant le démarrage du projet aura un impact sur le coût à livraison beaucoup plus important, et lié à l’actualisation (ou plus directement aux intérêts intercallaires), qu’une somme déboursée au moment du démarrage (« à la livraison »). Je discute la prise en compte de la durée de construction dans les calculs en Annexe. &lt;/li&gt;
@@ -38,6 +43,18 @@ Pour calculer le LCOE, il faut lister toutes les dépenses du projet, depuis la 
 &lt;li&gt; le coût de démentellement $C_D$ exprimé en €/kW, dans lequel on peut inclure les coûts qui surviennent après le projet (e.g gestion des déchets). $C_D$ peut aussi intégrer une valeur résiduelle de l’actif à la fin de la période considérée (dans ce cas un bénéfice, c’est-à-dire une valeur négative pour $C_D$).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Notons que, pour la formule simplifiée du LCOE qui va suivre, toutes les dépenses sont soit annualisées (dans la catégorie “coût d’exploitation”) ou ramenées à la date de démarrage du projet ou ramenées à la date de fin de fonctionnement. Il il y a deux types d’hypothèses sous-jacentes.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+D’une part cela nécessite de supposer que certains facteurs ne varient pas d’une année sur l’autre comme le facteur de charge ou $C_F$. Ceci n’est évidement jamais le cas mais si il n’y a pas d’asymétrie dans la distribution du coefficient en question année après année (e.g. une tendance à un facteur de charge plus important ou plus faible pour les première années de fonctionnement),  on peut sans trop de scrupule utiliser une valeur moyenne. Le facteur de charge aura souvent une tendance à baisser au fil du temps sur certaines installations, soit par l’usage des machines, soit par un besoin accru de maintenances. A l’inverse les coûts d’exploitation auront tendance à augmenter avec les années. On pourra lire à ce sujet la discussion intéressante de [&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0301421518306645&quot;&gt;Williams2019&lt;/a&gt;]
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+D’autre part, lorsque l’on parle d’un coût de construction, d’un coût de démentellement, ou d’un coût de gestion des déchets, il s’y cache toujours une séries de dépenses intervenant à différents moments du projet, rassemblées par le biais d’une actualisation. Concernant le coût de construction, nous discutons ce sujet en Annexe.
+&lt;/span&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;formule-simplifiée&quot;&gt;Formule simplifiée&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
@@ -59,36 +76,34 @@ On retrouve la formule du coût complet donnée en introduction et utilisée dan
 \(LCOE_i*E_i =\beta_i*P_i+C_M*E_i=\beta^{cout}_i*P_i+\alpha^{cout}_i*E_i\)
 &lt;/span&gt;
 &lt;span class=&quot;mytext&quot;&gt;
-Ici $ L $ est la durée de vie du projet, et $ L^{\alpha} $ donné par la formule
+Ici $L$ est la durée de vie du projet, et $L^{\alpha}$ donné par la formule
 &lt;/span&gt;
 &lt;span class=&quot;mytext&quot;&gt;
 \(L^{\alpha}= \sum_{i=0}^{L-1}\frac{1}{(1+\alpha)^i}=\frac{1+\alpha}{\alpha}(1-(1+\alpha)^{-L}),\)
 &lt;/span&gt;
 &lt;span class=&quot;mytext&quot;&gt;
-est homogène à une durée de vie qui serait comme raccourcie par “l’effet de l’actualisation”. Nous donnons dans &lt;a href=&quot;annexe-1--table-pour-la-durée-de-vie-corrigée&quot;&gt;l’Annexe 1&lt;/a&gt; une table de valeurs de $ L^{\alpha} $ en fonction de $\alpha$ et de la vraie durée de vie $ L $. Ce qu’il faut retenir sur cette durée de vie “corrigée” est qu’elle est plus petite que la vraie durée de vie, et que plus $ \alpha $ est petit (proche de zéro), plus $ L^{\alpha} $ est proche de $ L $. On peut donner $ L^{\alpha} $ pour les cas emblématiques suivants :
+est homogène à une durée de vie qui serait comme raccourcie (économiquement) par “l’effet de l’actualisation”. Nous donnons dans &lt;a href=&quot;annexe-1--table-pour-la-durée-de-vie-corrigée&quot;&gt;l’Annexe 1&lt;/a&gt; une table de valeurs de $ L^{\alpha} $ en fonction de $\alpha$ et de la vraie durée de vie $L$. Ce qu’il faut retenir sur cette durée de vie “corrigée” est qu’elle est plus petite que la vraie durée de vie, et que plus $\alpha$ est petit (proche de zéro), plus $L^{\alpha}$ est proche de $L$. Notons que la formule simple proposée ressemble à l’approche donnée par [&lt;a href=&quot;https://www.nrel.gov/analysis/tech-lcoe-documentation.html&quot;&gt;NREL2018&lt;/a&gt;] et $L^{\alpha}$ n’est pas loin d’être l’inverse de ce qui est appellé le CRF (capital recovery factor). On peut donner $L^{\alpha}$ pour les cas emblématiques suivants :
 &lt;/span&gt;&lt;/p&gt;
 &lt;div class=&quot;text&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;ul&gt; &lt;li&gt;Avec une actualisation à 2% une durée de 30 ans se corrige à 22 et une durée de 80 ans se corrige à 40 &lt;/li&gt;
-&lt;li&gt;Avec une actualisation à 4% une durée de 30 ans se corrige à 22 et une durée de 80 ans se corrige à 40 &lt;/li&gt;
-&lt;li&gt;Avec une actualisation à 10%, cette durée est presque toujours entre 10 et 11 ans, même si la durée de vie est de 80 ans.&lt;/li&gt;
+&lt;ul&gt; &lt;li&gt; Avec une actualisation à 2%, une durée de 30 ans se corrige à 22, et une durée de 80 ans se corrige à 40 &lt;/li&gt;
+&lt;li&gt; Avec une actualisation à 4%, une durée de 30 ans se corrige à 22, et une durée de 80 ans se corrige à 40 &lt;/li&gt;
+&lt;li&gt; Avec une actualisation à 10%, cette durée est presque toujours entre 10 et 11 ans, même si la durée de vie est de 80 ans.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-On comprend dans quelle mesure les grandes valeurs de $\alpha$ correspondent à hypothéquer le futur. La réalité est souvent bien plus complexe que ce modèle d’actualisation. Le premier élément singulier qu’il faut comprendre est qu’un acteur privé qui a des fonds propres importants peut décider d’investir dans un projet qu’il considère stratégique pour son entreprise en tablant sur une actualisation relativement faible, au risque de laisser passer des projets qui amèneraient un retour sur investissement plus rapide.
+On comprend dans quelle mesure les grandes valeurs de $\alpha$ correspondent à hypothéquer le futur. La réalité est évidement bien plus complexe que ce que peut encadrer un modèle d’actualisation.
 &lt;/span&gt;
 &lt;span class=&quot;mytext&quot;&gt;
-Quel que soit le coût de démantèlement $C_D$ il est a un poids presque toujours négligeable du fait de l’actualisation. Ce poids sera d’autant plus négligeable que le démantèlement se fera sur une période très longue (comme dans le cas du nucléaire où des temps d’attente sont nécessaire pour laisser la radioactivité diminuer). Le raisonnement sous-jacent est que l’entreprise peut ici mettre dès le début du projet une somme de côté (provisionnement) pour le démantèlement et que cet argent, s’il est bien placé, rapportera une somme d’argent liée à l’actualisation. Dans ce cas l’actualisation a un lien avec la rentabilité du capital. Le même raisonnement s’applique à la gestion des déchets.
-Dans la table suivante, nous donnons quelques valeurs typiques de $ C_c $ $C_F$ , $\beta$ et $C_M$. Nous discutons les sources de ces valeurs dans l’annexe 2.
-&lt;/span&gt;
-&lt;span class=&quot;mytext&quot;&gt;
-Discuter l’actualisation dépasse de très loin ce que je peux faire ici aujourd’hui sans vous ennuyer, on a là un pan entier de l’économie. Notons juste que 8% correspond à une vision court-termiste, même s’il y a pire (certains gestionnaires de capital voudront 10% voir 15%), mais que même à 4% on ne voit pas bien au-delà de 40 ans. Des discussions un peu tendues ont eu lieu sur cette question autour du rapport Stern sur les conséquences du changement climatique (prévues à l’époque pour dans longtemps). Il existe des méthodes qui consistent à ne plus actualiser au-delà d’une certaine durée, pour éviter d’écraser les coûts. Après, même dans un monde « en décroissance » ou avec une inflation nulle, l’actualisation peut difficilement se rapprocher de zéro. Vous l’avez compris, ce petit modèle et la valeur de son unique paramètre soulèvent des questions de société importantes. Nous allons maintenant parler de la deuxième grande difficulté
-&lt;/span&gt;
-&lt;span class=&quot;mytext&quot;&gt;
-Notons pour finir que dans cette version simplifiée, tout est annualisé. Par exemple le facteur de charge est supposé constant d’une année sur l’autre. Ceci n’est évidement jamais le cas mais si il n’y a pas d’asymétrie dans la distribution du facteur de charge année après année (i.e. une tendance à un facteur de charge plus important ou plus faible pour les première années de fonctionnement),  on peut sans trop de scrupule utiliser un facteur de charge moyen. Le même raisonnement s’applique aux autres facteurs annualisés (en particulier $C_F$).
+Quel que soit le coût de démantèlement $C_D$ il est a un poids presque toujours négligeable du fait de l’actualisation. Ce poids sera d’autant plus négligeable que le démentellement se fera sur une période très longue (comme dans le cas du nucléaire où des temps d’attente sont nécessaire pour laisser la radioactivité diminuer).
+Dans les tables de la section suivante, nous donnons quelques valeurs typiques de $ C_c $ $C_F$ , $\beta$ et $C_M$.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;quelques-précisions-sur-la-diversité-cachée-derrière-ces-grandes-classes-de-moyens-de-production&quot;&gt;Quelques précisions sur la diversité cachée derrière ces grandes classes de moyens de production&lt;/h1&gt;
-&lt;p&gt;Dans cette section  nous allons parcourir les grandes classes de moyens de production d’électricité, et pour chacune d’entre elles nous allons discuter les différentes sortes de coûts pour donner des ordres de grandeur sur le LCOE. Nous ne parlons pas ici du coût du système électrique et nous renvoyons le lecteur à notre post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;1&lt;/a&gt;].&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Dans cette section  nous allons parcourir les grandes classes de moyens de production d’électricité, et pour chacune d’entre elles nous allons discuter les différentes sortes de coûts pour donner des ordres de grandeur sur le LCOE. Nous ne parlons pas ici du coût du système électrique et nous renvoyons le lecteur à notre post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;1&lt;/a&gt;].
+&lt;/span&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;centrales-nucléaire&quot;&gt;Centrales nucléaire&lt;/h2&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
@@ -96,7 +111,7 @@ En ce qui concerne le &lt;strong&gt;nucléaire&lt;/strong&gt;, on distingue &lt;
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-Pour les coûts, la transparence en France a beaucoup progressé suite à une analyse continue de la cours des comptes les 10 dernières années sanctionnée par au moins 5 rapports &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/les-couts-de-la-filiere-electro-nucleaire&quot;&gt;CDC2012&lt;/a&gt;, &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt;CDC2014&lt;/a&gt;, &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-rapport-public-annuel-2016&quot;&gt;CDC2016&lt;/a&gt;, &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/laval-du-cycle-du-combustible-nucleaire&quot;&gt;CDC2019&lt;/a&gt;, et &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/larret-et-le-demantelement-des-installations-nucleaires&quot;&gt;CDC2020&lt;/a&gt;. Je donne dans la table ci-dessous quelques coûts d’investissement et de fonctionnement en France avec les sources associées, la pluspart des chiffres viennent de [&lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt;CDC2014&lt;/a&gt;] tableaux p11,14 et 24. Certaines valeurs et dicsussions sont complétées par d’autres rapports.
+Pour les coûts, la transparence en France a beaucoup progressé dans le cadre d’une analyse continue de la cours des comptes les 10 dernières années, sanctionnée par au moins 5 rapports &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/les-couts-de-la-filiere-electro-nucleaire&quot;&gt;CDC2012&lt;/a&gt;, &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt;CDC2014&lt;/a&gt;, &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-rapport-public-annuel-2016&quot;&gt;CDC2016&lt;/a&gt;, &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/laval-du-cycle-du-combustible-nucleaire&quot;&gt;CDC2019&lt;/a&gt;, et &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/larret-et-le-demantelement-des-installations-nucleaires&quot;&gt;CDC2020&lt;/a&gt;. Je donne dans la table ci-dessous quelques coûts d’investissement et de fonctionnement en France avec les sources associées, la pluspart des chiffres viennent de [&lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt;CDC2014&lt;/a&gt;] tableaux p11,14 et 24. Certaines valeurs et dicsussions sont complétées par d’autres rapports.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;div class=&quot;text&quot; style=&quot;display:block; text-align: justify&quot;&gt;
@@ -113,7 +128,7 @@ Pour les coûts, la transparence en France a beaucoup progressé suite à une an
 &lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-Avec un facteur de charge de 75%, on peut donc évaluer les coûts suivants. Nous manquons d’élément pour chiffrer le coût d’exploitation de l’EPR, mais ces éléments donnent des ordres de grandeur et nous prendrons une valeur de 175 €/kW/an, le loyer économique peut sans doute être calculé à partir d’une actualisation plus importante, et nous avons donc dans la tableau ci-dessous une évaluation du coût intégrant ce “loyer économique” dans la ligne où l’actualisation est de 9% et qui permet d’obtenir pour Hinkley point C un ordre de grandeur au niveau de ce qui a été &lt;a href=&quot;https://www.zonebourse.com/ELECTRICITE-DE-FRANCE-4998/actualite/Electricite-de-France-le-cout-d-Hinkley-Point-C-en-hausse-de-29-en-3-ans-29251492/&quot;&gt;obtenu par EDF au près des Anglais, 92,5 £/MWh (en monnaie 2012).&lt;/a&gt;. On peut donc noter que l’électricité nucléaire, qui a le grand intérêt d’être à la fois pilotable et décabonnée, reste une énergie dont les coûts peuvent être maitrisés à condition que sson financement est accompagné (pour avoir des actualisations basses) et qu’elle soit développée massivement (effets d’échelle nécessaires pour la baisse des coûts et le maintien des compétences).
+Avec un facteur de charge de 75%, on peut donc évaluer les coûts suivants. Nous manquons d’élément pour chiffrer le coût d’exploitation de l’EPR, mais ces éléments donnent des ordres de grandeur et nous prendrons une valeur de 175 €/kW/an, le loyer économique peut sans doute être calculé à partir d’une actualisation plus importante, et nous avons donc dans la tableau ci-dessous une évaluation du coût intégrant ce “loyer économique” dans la ligne où l’actualisation est de 9% et qui permet d’obtenir pour Hinkley point C un ordre de grandeur au niveau de ce qui a été &lt;a href=&quot;https://www.zonebourse.com/ELECTRICITE-DE-FRANCE-4998/actualite/Electricite-de-France-le-cout-d-Hinkley-Point-C-en-hausse-de-29-en-3-ans-29251492/&quot;&gt;obtenu par EDF au près des Anglais, 92,5 £/MWh (en monnaie 2012).&lt;/a&gt; (c’est un contrat pour différence, CFD, le tarif est indéxé sur l’inflation et donc cette dernière n’est pas incluse dans le calcul du taux d’actualisation, voir Annexe 1). On peut donc noter que l’électricité nucléaire, qui a le grand intérêt d’être à la fois pilotable et décabonnée, reste une énergie dont les coûts peuvent être maitrisés à condition que sson financement est accompagné (pour avoir des actualisations basses) et qu’elle soit développée massivement (effets d’échelle nécessaires pour la baisse des coûts et le maintien des compétences).
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;table class=&quot;mbtablestyle wrapstyle simple7&quot;&gt;
@@ -206,8 +221,9 @@ Avec un facteur de charge de 75%, on peut donc évaluer les coûts suivants. Nou
 
 &lt;h2 id=&quot;gaz-fuel-et-charbon&quot;&gt;Gaz, fuel et charbon&lt;/h2&gt;
 
+&lt;h3 id=&quot;types-de-centrales-et-coûts-dinvestissement&quot;&gt;Types de centrales et coûts d’investissement&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-Pour le gaz (et le fioul), on distingue plusieurs grandes catégories de centrales. La plus élémentaire est la turbine à combustion (TAC, ou OCGT pour open cycle gaz turbine dans le cas du gaz) dans laquelle le gaz ou le fioul est mélangé à de l’eau et envoyé sous pression dans une turbine où il s’enflamme. Le principe de la TAC est très proche de celui du moteur d’avion. Dans la TAC la chaleur des gaz d’échappement est perdue mais l’on peut la récupérer de différentes manières. Une première solution est de faire chauffer de l’eau (dans une sorte de grande bouilloire) dont les vapeurs vont aller entrainer une seconde turbine connectée à celle de la TAC. C’est ce que l’on appelle un cycle combiné (CCGT pour le cycle combiné gaz). Le rendement d’un CCG est donc meilleur : il peut monter autour de 55% (il y a même un record à 64% détenu par la centrale de Bouchain), alors que celui de la TAC est limité autour de 35-40% (sauf pour des technologies très particulières utilisant des fluides supercritiques). Le coût d’installation du CCG est plus élevé, et ce dernier demande quelques heures pour démarrer alors que la TAC n’a pas besoin de plus de 30 minutes. Une autre manière d’utiliser les gaz d’échappement de la TAC est d’en extraire directement la chaleur pour une autre application (réseau de chaleur, serres, …), c’est ce que l’on appelle la cogénération. Dans ce cas le rendement global de l’installation est meilleur mais l’utilisation de la TAC est un peu asservie au besoin de chaleur : on est obligé de produire quand il faut froid et pas nécessairement seulement lorsqu’il y en a besoin.
+Pour le gaz (et le fioul), on distingue plusieurs grandes catégories de centrales. La plus élémentaire est la &lt;a href=&quot;https://fr.wikipedia.org/wiki/Turbine_%C3%A0_gaz&quot;&gt;turbine à combustion&lt;/a&gt; (TAC, ou OCGT pour open cycle gaz turbine dans le cas du gaz) dans laquelle le gaz ou le fioul est mélangé à de l’eau et envoyé sous pression dans une turbine où il s’enflamme. Le principe de la TAC est très proche de celui du moteur d’avion. Dans la TAC la chaleur des gaz d’échappement est perdue mais l’on peut la récupérer de différentes manières. Une première solution est de faire chauffer de l’eau (dans une sorte de grande bouilloire) dont les vapeurs vont aller entrainer une seconde turbine connectée à celle de la TAC. C’est ce que l’on appelle un &lt;a href=&quot;https://fr.wikipedia.org/wiki/Cycle_combin%C3%A9&quot;&gt;cycle combiné&lt;/a&gt; (CCGT pour le cycle combiné gaz). Le rendement d’un CCG est donc meilleur : il peut monter autour de 55% (il y a même un record à 64% détenu par la centrale de Bouchain), alors que celui de la TAC est limité autour de 35-40% (sauf pour des technologies très particulières utilisant des fluides supercritiques). Le coût d’installation du CCG est plus élevé, et ce dernier demande quelques heures pour démarrer alors que la TAC n’a pas besoin de plus de 30 minutes. Une autre manière d’utiliser les gaz d’échappement de la TAC est d’en extraire directement la chaleur pour une autre application (réseau de chaleur, serres, …), c’est ce que l’on appelle la &lt;a href=&quot;https://fr.wikipedia.org/wiki/Cog%C3%A9n%C3%A9ration&quot;&gt;cogénération&lt;/a&gt;. Dans ce cas le rendement global de l’installation est meilleur mais l’utilisation de la TAC est un peu asservie au besoin de chaleur : on est obligé de produire quand il faut froid et pas nécessairement seulement lorsqu’il y en a besoin.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
@@ -262,9 +278,12 @@ Dans une centrale à charbon on fait généralement chauffer de l’eau en brûl
 &lt;/span&gt;
 &lt;span class=&quot;mytext&quot;&gt;
 La production d’électricité à partir de &lt;strong&gt;biomasse&lt;/strong&gt; ressemble assez à ce que l’on fait avec du charbon, combustion de la biomasse pour faire chauffer de l’eau et faire tourner une turbine à vapeur. La qualité de la combustion, le caractère renouvelable, les impacts environnementaux dépendent beaucoup de la biomasse utilisée, de sa nature et de sa provenance, ils peuvent être acceptables lors de l’utilisation de déchets ou d’une biomasse qui serait locale et tout de suite replacée mais aussi très mauvais lorsque par exemple on choisit de couper des forêts à l’autre bout du monde sans rien replanter.
-&lt;/span&gt;
-&lt;span class=&quot;mytext&quot;&gt;
-On distingue en générale l’électricité produite à partir d’un &lt;strong&gt;charbon&lt;/strong&gt; de basse qualité -comme la lignite- de celle produite à partir de charbon noir. Il existe une grande variété de type de charbons liée à des niveaux de houillification différents. Ils se distinguent notamment par leur humidité, leur teneur en carbone ou leur pouvoir calorifique différents. Il n’existe pas de définition unique internationalement retenue permettant de classifier précisément les charbons mais on trouve une classification et quelques explications dans la base carbone de l’ADEME [&lt;a href=&quot;https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm&quot;&gt;3&lt;/a&gt;]. La Lignite est moins dense, sa combustion est moins bonne et donc plus polluante (pas sur le plan des émissions de GES cela dit voir table ci-dessous), son transport (ramené à la consommation d’énergie qu’il implique) est plus coûteux. Son extraction se fait souvent dans des mines à ciel ouvert qui peuvent avoir un avantage économique à court terme mais certainement pas un avantage environnemental. Pour ces raisons la Lignite continue d’être exploitée dans cas où c’est une ressource locale pour des raisons de coût, et parfois pour des questions de préservation d’une économie locale. L’Allemagne possède sur son territoire une ressource importante de lignite qui est utilisée pour la moitié de l’électricité produite à partir de charbon.&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;coûts-de-carburant&quot;&gt;Coûts de carburant&lt;/h3&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+On distingue en générale l’électricité produite à partir d’un &lt;strong&gt;charbon&lt;/strong&gt; de basse qualité -comme la lignite- de celle produite à partir de charbon noir. Il existe une grande variété de type de charbons liée à des niveaux de houillification différents. Ils se distinguent notamment par leur humidité, leur teneur en carbone ou leur pouvoir calorifique différents. Il n’existe pas de définition unique internationalement retenue permettant de classifier précisément les charbons mais on trouve une classification et quelques explications dans la base carbone de l’ADEME [&lt;a href=&quot;https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm&quot;&gt;ADEMEGES&lt;/a&gt;]. La Lignite est moins dense, sa combustion est moins bonne et donc plus polluante (pas vraiment sur le plan des émissions de GES cela dit voir table ci-dessous), son transport (ramené à la consommation d’énergie qu’il implique) est plus coûteux. Son extraction se fait souvent dans des mines à ciel ouvert qui peuvent avoir un avantage économique à court terme mais certainement pas un avantage environnemental. Pour ces raisons la Lignite continue d’être exploitée dans cas où c’est une ressource locale pour des raisons de coût, et parfois pour des questions de préservation d’une économie locale. L’Allemagne possède sur son territoire une ressource importante de lignite qui est utilisée pour la moitié de l’électricité produite à partir de charbon. Sur le plan économique, avec un coût de 5 €/MWhth (tableau ci-dessous) cela fait, pour une centrale avec un rendement de 40%, un coût marginal de moins de 15 €/MWh. Avec un tel coût marginal, ces centrales fonctionnent plutôt en base qu’en pointe. Avec un charbon de meilleurs qualité, importé pour l’Allemagne ou la France, on se retrouve avec un coût marginal entre 20 et 25  €/MWh. Une taxe carbone à 1 €/tCO2 rajoute ici à peu près 1 €/MWh, on comprend bien que sans taxe carbone le charbon a encore un avenir prometteur.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;table class=&quot;simple7&quot;&gt;
@@ -275,23 +294,28 @@ On distingue en générale l’électricité produite à partir d’un &lt;stron
   &lt;th&gt;PCI&lt;/th&gt;
   &lt;th align=&quot;center&quot; colspan=&quot;3&quot; class=&quot;mb6&quot;&gt;Share&lt;/th&gt;
   &lt;th colspan=&quot;2&quot;&gt;Cost [$/ton]&lt;/th&gt;
+  &lt;th colspan=&quot;2&quot;&gt;Cost [€/MWhth]&lt;/th&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-  &lt;th&gt;(kWh/kg)&lt;/th&gt;
-  &lt;th&gt;gCO2eq/kWhth&lt;/th&gt;
   &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;gCO2eq/kWhth&lt;/th&gt;
+  &lt;th&gt;(kWhth/kg)&lt;/th&gt;
   &lt;th class=&quot;mb6&quot;&gt;&lt;/th&gt;
   &lt;th&gt;&lt;/th&gt;
   &lt;th&gt;&lt;/th&gt;
   &lt;th&gt;2017&lt;/th&gt;
   &lt;th&gt;2017&lt;/th&gt;
+  &lt;th&gt;2017&lt;/th&gt;
+  &lt;th&gt;2017&lt;/th&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-  &lt;th&gt;(TWh/Mt)&lt;/th&gt;
-  &lt;th&gt;(TWh/Mt)&lt;/th&gt;
   &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;&lt;/th&gt;
+  &lt;th&gt;(TWhth/Mt)&lt;/th&gt;
   &lt;th class=&quot;mb6&quot;&gt;US&lt;/th&gt;
   &lt;th&gt;World&lt;/th&gt;
+  &lt;th&gt;DE&lt;/th&gt;
+  &lt;th&gt;US&lt;/th&gt;
   &lt;th&gt;DE&lt;/th&gt;
   &lt;th&gt;US&lt;/th&gt;
   &lt;th&gt;DE&lt;/th&gt;
@@ -307,6 +331,8 @@ On distingue en générale l’électricité produite à partir d’un &lt;stron
   &lt;td&gt;-&lt;/td&gt;
   &lt;td&gt;93&lt;/td&gt;
   &lt;td&gt;&lt;/td&gt;
+  &lt;td&gt;8.8&lt;/td&gt;
+  &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
   &lt;td&gt;Bituminous&lt;/td&gt;
@@ -317,6 +343,8 @@ On distingue en générale l’électricité produite à partir d’un &lt;stron
   &lt;td&gt;-&lt;/td&gt;
   &lt;td&gt;55&lt;/td&gt;
   &lt;td&gt;50&lt;/td&gt;
+  &lt;td&gt;7.7&lt;/td&gt;
+  &lt;td&gt;7&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
   &lt;td&gt;subbituminous&lt;/td&gt;
@@ -326,6 +354,8 @@ On distingue en générale l’électricité produite à partir d’un &lt;stron
   &lt;td&gt;-&lt;/td&gt;
   &lt;td&gt;-&lt;/td&gt;
   &lt;td&gt;14&lt;/td&gt;
+  &lt;td&gt;&lt;/td&gt;
+  &lt;td&gt;3&lt;/td&gt;
   &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
   &lt;tr&gt;
@@ -337,6 +367,8 @@ On distingue en générale l’électricité produite à partir d’un &lt;stron
     &lt;td&gt;100&lt;/td&gt;
     &lt;td&gt;19&lt;/td&gt;
     &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -352,9 +384,28 @@ On distingue en générale l’électricité produite à partir d’un &lt;stron
 {: .mbtablestyle .center}
 --&gt;
 &lt;p&gt;&lt;span class=&quot;legendtext&quot; id=&quot;CAPTable2&quot; style=&quot;display:block;text-align:center&quot;&gt;
-  &lt;strong&gt;Table 2&lt;/strong&gt; – différentes sortes de charbon. Sources : U.S. EIA [&lt;a href=&quot;https://www.eia.gov/energyexplained/coal/prices-and-outlook.php&quot;&gt;4&lt;/a&gt;] et ADEME [&lt;a href=&quot;https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm&quot;&gt;3&lt;/a&gt;].
-    &lt;/span&gt;&lt;/p&gt;
+&lt;strong&gt;Table 2&lt;/strong&gt; – différentes sortes de charbon. Sources : U.S. EIA [&lt;a href=&quot;https://www.eia.gov/energyexplained/coal/prices-and-outlook.php&quot;&gt;4&lt;/a&gt;] et ADEME [&lt;a href=&quot;https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm&quot;&gt;ADEMEGES&lt;/a&gt;].
+&lt;/span&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Pour le gaz, il faut faire la différence entre le &lt;strong&gt;Gaz&lt;/strong&gt; naturel liquéfié et non liquéfié. Le gaz non liquéfié se transporte essentiellement par pipline, son prix est donc homogène au sein d’un réseau interconnecté (même si des différences de prix peuvent exister lorsque les interconnections sont saturées comme cela arrive parfois entre le nord et le sud de la France). Le gaz liquéfié se transporte par bateau dans le monde entier, il est plus cher mais son cours est homogène sur la terre entière et donc plus stable. Le charbon (noir) et le gaz ont donc des prix qui varient dans le temps et dans l’espace, et qui sont liés aux cours du pétrole. Une représentation est données Figure 1. Tous ont connu un pic en 2008 puis un creu important. Ils connaissent aujourd’hui un creu important lié à la crise du COVID19.
+&lt;/span&gt;
+&lt;span class=&quot;text&quot; id=&quot;Figure1&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;img src=&quot;/assets/images/Posts/2020-08-20/CoursGaz.png&quot; alt=&quot;Image&quot; class=&quot;border&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;text&quot; id=&quot;Figure1&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;img src=&quot;/assets/images/Posts/2020-08-20/CoursGazEEx.png&quot; alt=&quot;Image&quot; class=&quot;border&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;legendtext&quot; id=&quot;CAPFigure1&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;strong&gt;Figure 1-a&lt;/strong&gt; – Evolution des cours du gaz depuis 2009 (avec 2008 pour l’Europe histoire d’illustrer le pic), données annuelles moyennes, puis données EEX Europe extraites en 2020.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;text&quot; id=&quot;Figure1b&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;img src=&quot;/assets/images/Posts/2020-08-20/CoalPrice.png&quot; alt=&quot;Image&quot; class=&quot;border&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;legendtext&quot; id=&quot;CAPFigure1b&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;strong&gt;Figure 1-b&lt;/strong&gt; – Evolution des cours du charbon.
+&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;centrales-hydrauliques&quot;&gt;Centrales hydrauliques&lt;/h2&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
@@ -374,11 +425,14 @@ une source intéressante de coûts observés. Les CAPEX pour les systèmes avec 
 Pour le &lt;strong&gt;solaire photovoltaïque&lt;/strong&gt; il est pertinent de distinguer les tailles de centrales : grandes centrales au sol occupant plusieurs hectares, centrales en toiture de centre commercial ou sur un parking (dites « ombrières » pour l’ombre qu’elles apportent aux voitures), et petites centrales de quelques kW sur le toit d’une maison. Pour les grosses centrales il faut distinguer les centrales avec des systèmes de tracking (système avec un axe ou deux axes, qui permet de suivre la position du soleil dans le ciel pour maximiser la production) de celles qui n’en ont pas.
 &lt;/span&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;text&quot; id=&quot;Figure1&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;text&quot; id=&quot;Figure2&quot; style=&quot;display:block;text-align:center&quot;&gt;
 &lt;img src=&quot;/assets/images/Posts/2020-08-20/CAPEX-PV.png&quot; alt=&quot;Image&quot; class=&quot;border&quot; /&gt;
 &lt;/span&gt;
-&lt;span class=&quot;legendtext&quot; id=&quot;CAPFigure1&quot; style=&quot;display:block;text-align:center&quot;&gt;
-&lt;strong&gt;Figure 1&lt;/strong&gt; – Décomposition des coûts d’investissement moyens observés dans les appel d’offre CRE, étude publiée en février 2019, [&lt;a href=&quot;https://www.cre.fr/Documents/Publications/Rapports-thematiques/Couts-et-rentabilites-du-grand-photovoltaique-en-metropole-continentale&quot;&gt;1&lt;/a&gt;].
+&lt;span class=&quot;text&quot; id=&quot;Figure2b&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;img src=&quot;/assets/images/Posts/2020-08-20/OPEXPV.png&quot; alt=&quot;Image&quot; class=&quot;border&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;legendtext&quot; id=&quot;CAPFigure2&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;strong&gt;Figure 2&lt;/strong&gt; – Décomposition des coûts (CAPEX et OPEX) moyens observés dans les appel d’offre CRE, étude publiée en février 2019, [&lt;a href=&quot;https://www.cre.fr/Documents/Publications/Rapports-thematiques/Couts-et-rentabilites-du-grand-photovoltaique-en-metropole-continentale&quot;&gt;CRE2019&lt;/a&gt;].
 &lt;/span&gt;
 &lt;span class=&quot;mytext&quot;&gt;
 Finalement un facteurs qui déterminera de manière essentielle le facteur de charge d’un système de production photovoltaïques est la localisation de la centrale. Une centrale au sud de l’Espagne produira plus qu’une centrale au nord de l’Allemagne et surtout sa variabilité hiver/été sera beaucoup moins importante mais nous reparlerons de tout çà de manière quantitative lorsque nous parlerons de la variabilité de ces moyens de production. Sur le plan environnemental le lieu de construction des panneaux (et le mix électrique utilisé pour faire fonctionner les machines qui produisent les panneaux) peut aussi avoir de l’importance.&lt;br /&gt;
@@ -402,7 +456,14 @@ Pour &lt;strong&gt;l’éolien&lt;/strong&gt;, les données sont nombreuses, et 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
- Dans tous les cas un facteur qui impact de manière importante les performances est la hauteur de l’éolienne, la taille des pales et la puissance du moteur. La hauteur permet d’accéder à des vents plus forts, la surface balayée par les pales permet de collecter une puissance plus ou moins grande à vitesse de vent fixée, la puissance du moteur permet de définir quelle sera la puissance maximum transmise par l’éolienne.
+ Dans tous les cas, le facteur de charge va dépendre de la localisation (et le vent associé) de l’éolienne et de ses caractéristiques tehniques. Un facteur technique qui impacte de manière importante les performances est la hauteur de l’éolienne, la taille des pales et la puissance du moteur. La hauteur permet d’accéder à des vents plus forts, la surface balayée par les pales permet de collecter une puissance plus ou moins grande à vitesse de vent fixée, la puissance du moteur permet de définir quelle sera la puissance maximum transmise par l’éolienne. Ici aussi le toilage est important. Son évolution ces dernières années est illustré Figure 2, elle est très importante et rend difficile tout calcul sur des facteurs de charge anciens. Nous passerons du temps sur ce sujet dans un autre post.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;text&quot; id=&quot;Figure3&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;img src=&quot;/assets/images/Posts/2020-08-20/Toilage.png&quot; alt=&quot;Image&quot; class=&quot;border&quot; /&gt;
+&lt;/span&gt;
+&lt;span class=&quot;legendtext&quot; id=&quot;CAPFigure3&quot; style=&quot;display:block;text-align:center&quot;&gt;
+&lt;strong&gt;Figure 3&lt;/strong&gt; – Evolution du toilage moyen des éoliennes [$m^2/kW$] par pays en fonction de la date d’installation.
 &lt;/span&gt;&lt;/p&gt;
 
 &lt;table class=&quot;mbtablestyle wrapstyle simple7&quot;&gt;
@@ -452,14 +513,25 @@ Pour l’éolien on-shore, on retrouve des LCOE entre 50 et 70 €/MWh ce qui co
 &lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
 
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-Nous avons donné une formule simple permettant de calculer le LCOE d’un moyen de production d’électricité à partir de coûts annualisés. Pour différentes familles de moyens de production, nous avons discuté les facteurs impactants les coûts. Ces couts peuvent être utilisés pour alimenter un modèle pour l’estimation des coûts du système électrique comme nous l’avons fait dans un post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;]. Ces données peuvent servir de base à notre TP sur l’optimisation et la planification du système électrique dans un contexte de transition énergétique (et qui sera mis en open source prochainement). C’est un sujet qui peut évoluer assez vite et sur lequel il est difficile de tout maitriser, nous serons à l’écoute des remarques et proposisions qui seront faites en commentaires. Autrement dit, les données proposées ici sont ouvertes à discussion, et j’essaierai d’actualiser ce post à partir des commentaires constructifs qui me seront fait et des évolutions au fil du temps.
-&lt;/span&gt;
-&lt;span class=&quot;mytext&quot;&gt;
-Dans un prochain post je complèterai celui ci en fournissant des données économiques pour le stockage batterie, des volants d’inerties, et des technologie de &lt;em&gt;power to gaz&lt;/em&gt; (hydrogène ou méthane).
+Nous avons donné une formule simple permettant de calculer le LCOE d’un moyen de production d’électricité à partir de coûts annualisés. Pour différentes familles de moyens de production, nous avons discuté les facteurs impactants les coûts. Ces couts peuvent être utilisés pour alimenter un modèle pour l’estimation des coûts du système électrique comme nous l’avons fait dans un post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;]. Ces données peuvent servir de base à notre TP sur l’optimisation et la planification du système électrique dans un contexte de transition énergétique (et qui sera mis en ligne et en open source prochainement).
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Nous avons rappelé que la comparaison des moyens de production sur la plan économique pose deux grandes difficultés. La première, d’ordre technique, impose de passer par une une vision du système électrique dans son ensemble, comme celle que nous avons entammé dans notre post précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;PostPrec&lt;/a&gt;], tant il est évident qu’un MWh non pilotable n’a pas la même valeur qu’un MWh pilotable. La seconde, sur le plan économique, impose de tenir compte de l’ensemble des coûts et de la temporalité associée. Nous avons rappelé quel était le cadre classique pour encadrer cette difficulté. Nous espérons par ce post, ouvrir un espace de discussion dans le débat démocratique autour de la transition énergétique qui soit scientifique, permettant la remise en question des modèles et des paramètres (comme l’actualisation) mais en évitant de comparer des choses qui ne sont pas comparables. Une démarche comme celle appliquée dans &lt;a href=&quot;https://jancovici.com/transition-energetique/renouvelables/100-renouvelable-pour-pas-plus-cher-fastoche/&quot;&gt;Jancovici2018&lt;/a&gt; qui ne consisterait à ne tenir compte que des coûts d’investissement sans tenir compte de l’actualisation, des coûts d’exploitation, des coûts de démentellement, et des coûts marginaux, n’est pas adaptée à nos objectifs. C’est un sujet qui peut évoluer assez vite et sur lequel il est difficile de tout maitriser, nous serons à l’écoute des remarques et proposisions qui seront faites en commentaires. Autrement dit, les données et modèles proposées ici sont ouverts à discussion, et nous essaierons d’actualiser ce post à partir des commentaires constructifs qui seront fait et des évolutions au fil du temps.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Dans un prochain post je complèterai celui ci en fournissant des données économiques pour le stockage batterie, des volants d’inerties, et des technologie de &lt;em&gt;power to gaz&lt;/em&gt; (hydrogène ou méthane). Nous nous concentrerons également sur les aspects environnementaux dans un autre post.
 &lt;/span&gt;&lt;/p&gt;
 &lt;h1 id=&quot;bibliographie&quot;&gt;Bibliographie&lt;/h1&gt;
 
 &lt;p&gt;[PostPrec] &lt;a href=&quot;https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance&quot;&gt;Mai 2020, Mix de production d’électricité – énergie et puissance.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[NREL2018] &lt;a href=&quot;https://www.nrel.gov/analysis/tech-lcoe-documentation.html&quot;&gt;Simple Levelized Cost of Energy (LCOE) Calculator Documentation&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[Williams2019] &lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0301421518306645&quot;&gt;Williams and Tuber, Energy Policy 2019  - Levelised cost of energy – A theoretical justification and critical assessment&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[CRE2019] &lt;a href=&quot;https://www.cre.fr/Documents/Publications/Rapports-thematiques/Couts-et-rentabilites-du-grand-photovoltaique-en-metropole-continentale&quot;&gt;2019- Rapport de la CRE- Coûts et rentabilités du grand photovoltaïque en métropole continentale&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;[CDC2012] &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/les-couts-de-la-filiere-electro-nucleaire&quot;&gt;2012 Les coûts de la filière électro nucléaire&lt;/a&gt;&lt;/p&gt;
 
@@ -481,14 +553,55 @@ Dans un prochain post je complèterai celui ci en fournissant des données écon
 
 &lt;p&gt;[Peysson2019] &lt;a href=&quot;https://www.larevuedelenergie.com/impact-de-la-reglementation-sur-les-couts-de-production-de-leolien-en-mer-en-europe/&quot;&gt;2019 Pierre Peysson, IMPACT DE LA RÈGLEMENTATION SUR LES COÛTS DE PRODUCTION DE L’ÉOLIEN EN MER EN EUROPE&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;[Jancovici2018] &lt;a href=&quot;https://jancovici.com/transition-energetique/renouvelables/100-renouvelable-pour-pas-plus-cher-fastoche/&quot;&gt;Blog Jean-Marc Jancovici 2018. 100% renouvelable pour pas plus cher, fastoche ?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[ADEMEGES] &lt;a href=&quot;https://www.bilans-ges.ademe.fr/documentation/UPLOAD_DOC_FR/index.htm?solides3.htm&quot;&gt;Bilan des émissions de $CO_2$ du Charbon&lt;/a&gt;&lt;/p&gt;
+
 &lt;h1 id=&quot;annexes&quot;&gt;Annexes&lt;/h1&gt;
 
-&lt;h2 id=&quot;annexe-1--table-pour-la-durée-de-vie-corrigée&quot;&gt;Annexe 1 : table pour la durée de vie corrigée&lt;/h2&gt;
+&lt;h2 id=&quot;annexe-1--taux-dactualisation-une-discussion&quot;&gt;Annexe 1- Taux d’actualisation, une discussion&lt;/h2&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Discuter l’actualisation dépasse de très loin ce que je peux faire ici aujourd’hui sans vous ennuyer, on a là un pan entier de l’économie. Notons juste que 8% correspond à une vision court-termiste, même s’il y a pire (certains gestionnaires de capital voudront 10% voir 15%), mais que même à 4% on ne voit pas bien au-delà de 40 ans. Des discussions un peu tendues ont eu lieu sur cette question autour du rapport Stern sur les conséquences du changement climatique (prévues à l’époque pour dans longtemps). Il existe des méthodes qui consistent à ne plus actualiser au-delà d’une certaine durée, pour éviter d’écraser les coûts. Après, même dans un monde « en décroissance » ou avec une inflation nulle, l’actualisation peut difficilement se rapprocher de zéro. Ce petit modèle et la valeur de son unique paramètre soulèvent des questions de société importantes, et nous n’allons pas y apporter un éclairage déterminant ici. L’actualisation est le reflet de plusieurs éléments et nous allons en mentionner quelques uns.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Le premier est &lt;strong&gt;l’inflation&lt;/strong&gt;. En effet, avec une inflation $\tau_I$ l’argent $x_{n,n}$ obtenu à l’année $n$ en monnaie de l’année $n$ ne vaut plus que $x_{n,n+1}=x_{n,n}/(1+\tau_I)$ en monnaie de l’année $n+1$. Pour quelqu’un qui aurait emprunté l’argent $x_{0,0}$ à l’année $0$ et qui rembourserait $x_{n,n}$ chaque année avec un intérêt $\tau_N$ : $\sum_n x_{n,n}\times (1+\tau_N)^n =x_{0,0}$, le remboursement total exprimé en monnaie de l’année $0$ serait de $\sum_n x_{n,0}/(1+\tau_I)^n*(1+\tau_N)^n$. Cette somme ne sera supérieure à $x_{0,0}$ que si $\tau_N&amp;gt;\tau_I$.  On définit classiquement le taux d’intérêt “réel” $\tau_R=\tau_N-\tau_I$ par opposition au taux “naturel” $\tau_N$, et l’on fait souvent l’approximation suivante
+&lt;/span&gt;
+&lt;span class=&quot;mytext&quot;&gt;
+\(\sum_n x_{n,0}/(1+\tau_I)^n*(1+\tau_N)^n \approx \sum_n x_{n,0}\times (1+\tau_R)^n\)
+&lt;/span&gt;
+&lt;span class=&quot;mytext&quot;&gt;
+Ainsi, on comprend facilement que le taux naturel d’actualisation a en général un plancher au niveau de l’inflation, et que les périodes de forte inflation, comme celle que nous avons connu dans les années 70, sont propices à écraser des coûts d’investissement dans le calcul d’un LCOE. Ceci a joué un rôle important dans la construction du parc nucléaire actuel. Une inflation nulle n’implique pas nécessairement une actualisatioin nulle.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Les autres facteurs importants sont dès lors liés au taux réel $\tau_R$. L’analyse de ce taux va dépendre du capital en notre possession que l’on peut dédier à l’investissement et de la capacité à emprunter. Si l’on est une entreprise avec du capital et que l’on cherche à en tirer le plus de profit possible il sera alors question de &lt;strong&gt;rendement du capital&lt;/strong&gt; (lequel peut se calculer à une époque donnée en fonction de l’échéance et du risque que l’on est près à prendre), mais la valeur que l’on peut tirer du capital est aussi une question de stratégie d’entreprise et si il est question d’entrer dans un marché, d’écraser un concurrent ou si l’on table sur une croissance forte à venir de l’entreprise, on choisira  un taux réel plutôt bas. Si l’on ne possède pas le capital en question, le taux pourra refléter une combinaison du &lt;strong&gt;taux d’intérêt&lt;/strong&gt; de différents prêts bancaires. Ainsi, on peut voir qu’un LCOE qui incluerait un taux réel relatif à un niveau de retour sur investissement minimum attendu correspond à un tarif d’achat demandé dans un appel d’offre. Dans le cas d’un contrat pour différence, comme c’est le cas pour &lt;a href=&quot;https://www.zonebourse.com/ELECTRICITE-DE-FRANCE-4998/actualite/Electricite-de-France-le-cout-d-Hinkley-Point-C-en-hausse-de-29-en-3-ans-29251492/&quot;&gt;Hinckley point&lt;/a&gt;, le tarif est indexé sur l’inflation et donc l’inflation ne doit pas être incluse dans le calcul du taux d’actualisation.
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Dans le cas où l’on actualise une dépense loingtaine, comme pour le démentellement ou la gestion des déchets, le raisonnement sous-jacent est que l’entreprise peut  mettre dès le début du projet une somme de côté (&lt;strong&gt;provisionnement&lt;/strong&gt;) pour le démantèlement et que cet argent, s’il est bien placé, rapportera une somme d’argent liée à l’actualisation. Dans ce cas l’actualisation a un lien avec la rentabilité du capital. On demande aujourd’hui au nucléaire, de consolider le provisionnement pour le démentellement et la gestion des déchets, grâce à des investissements dans des &lt;strong&gt;actifs dédiés&lt;/strong&gt;.&lt;br /&gt;
+&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Dans le cas où l’on investi dans un nouveau moyen de production, mais que la durée de construction ne permet pas de rembourser tout de suite l’argent empruntée, il faut alors pays des frais supplémentaires, sous forme d’intérêt intercallaires. Les coûts d’investissement $C_I$ devraient intégrer cet aspect, et une réduction des temps de construction peut être dans beaucoup de cas, favorable à la diminution des coûts. C’est un sujet très important pour la fillière nucléaire
+&lt;a href=&quot;https://www.larevuedelenergie.com/la-reduction-des-couts-de-construction-du-nouveau-nucleaire/&quot;&gt;RevEnergie2019&lt;/a&gt;. Si l’on suppose que l’on dépense une somme $C_{I0}$ de manière uniforme sur une durée de construction $L_I$, avec une actualisation $\alpha$, alors on doit pouvoir retrouver $C_I$ (coût d’investissement à la date où la centrale commence à produire) à partir de la formule :
+&lt;/span&gt;
+&lt;span class=&quot;mytext&quot;&gt;
+\(C_I= C_{I0} * \frac{L_I^{\alpha}}{L_I}, \;\; \text{ où }   L_I^{\alpha}= \sum_{n=1}^{L_I}(1+\alpha)^n= \frac{1+\alpha}{\alpha}((1+\alpha)^{L_C}-1)\)
+&lt;/span&gt;
+&lt;span class=&quot;mytext&quot;&gt;
+Dans l’Annexe suivante, nous donnons une Table pour $L_I^{\alpha}/L_I$ en fonction de $\alpha$ et $L_{I}$ la durée de construction (la deuxième table dans l’annexe). On peut y voir qu’une durée de construction de 15 ans correspond à une multiplication par deux des coûts d’investissement.
+&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;annexe-2--table-pour-la-durée-de-vie-corrigée&quot;&gt;Annexe 2- Table pour la durée de vie corrigée&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Table de $L^\alpha$ en fonction de la durée de vie $L$ et de $\alpha$.
+&lt;/span&gt;&lt;/p&gt;
 
 &lt;table class=&quot;mbtablestyle wrapstyle simple7&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;L-$\alpha$&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt; &lt;/th&gt;
       &lt;th style=&quot;text-align: right&quot;&gt;1E-04&lt;/th&gt;
       &lt;th style=&quot;text-align: right&quot;&gt;0.01&lt;/th&gt;
       &lt;th style=&quot;text-align: right&quot;&gt;0.02&lt;/th&gt;
@@ -701,14 +814,147 @@ Dans un prochain post je complèterai celui ci en fournissant des données écon
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
+Table pour $L_I^{\alpha}/L_I$ en fonction de $\alpha$ et $L_{I}$ la durée de construction.
+&lt;/span&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;annexe-2--durée-de-construction-et-interêts-intercallaires&quot;&gt;Annexe 2 : durée de construction et interêts intercallaires&lt;/h2&gt;
+&lt;table class=&quot;mbtablestyle wrapstyle simple5&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt; &lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;0.02&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;0.04&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;0.06&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;0.08&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;0.1&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;1&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.020000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.040000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.060000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.080000&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.100000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;2&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.030200&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.060800&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.091800&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.123200&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.155000&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;3&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.040536&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.082155&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.124872&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.168704&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.213667&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;4&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.051010&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.104081&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.159273&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.216650&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.276275&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;5&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.061624&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.126595&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.195064&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.267186&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.343122&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;6&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.072381&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.149716&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.232306&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.320467&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.414529&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;7&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.083281&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.173461&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.271067&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.376661&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.490841&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;8&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.094329&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.197849&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.311414&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.435945&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.572435&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;9&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.105525&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.222901&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.353422&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.498507&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.659714&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;10&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.116872&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.248635&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.397164&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.564549&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.753117&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;11&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.128372&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.275073&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.442722&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.634284&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.853117&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;12&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.140028&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.302237&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.490178&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.707941&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.960226&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;13&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.151841&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.330147&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.539621&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.785763&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.074999&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;14&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.163815&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.358828&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.591141&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.868008&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.198034&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;15&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.175952&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.388302&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.644835&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;1.954952&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;2.329982&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
-&lt;p&gt;En ce qui concerne la réduction des coûts du nouveau nucléaire
-&lt;a href=&quot;https://www.larevuedelenergie.com/la-reduction-des-couts-de-construction-du-nouveau-nucleaire/&quot;&gt;RevEnergie2019&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;annexe-3--démentellement-et-gestion-des-déchets-nucléaires&quot;&gt;Annexe 3 : démentellement et gestion des déchets nucléaires.&lt;/h2&gt;
-
+&lt;h2 id=&quot;annexe-3--compléments-nucléaire&quot;&gt;Annexe 3- Compléments nucléaire&lt;/h2&gt;
+&lt;h3 id=&quot;annexe-3-a-démentellement-et-gestion-des-déchets-nucléaires&quot;&gt;Annexe 3-a. Démentellement et gestion des déchets nucléaires.&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
 L’évaluation des provisions pour le démentellement et les déchets est une tâche délicate dont les tenants et aboutissants sont assez bien expliqués dans deux rapports de la cours des comptes sur la Gestion du combustible nucléaire [&lt;a href=&quot;https://www.ccomptes.fr/fr/publications/laval-du-cycle-du-combustible-nucleaire&quot;&gt;CDC2019&lt;/a&gt;] et sur le démentellement des installations [&lt;a href=&quot;https://www.ccomptes.fr/fr/publications/larret-et-le-demantelement-des-installations-nucleaires&quot;&gt;CDC2020&lt;/a&gt;]. Ces rapports font suite aux rapports plus généraux [&lt;a href=&quot;https://www.ccomptes.fr/fr/publications/les-couts-de-la-filiere-electro-nucleaire&quot;&gt;CDC2012&lt;/a&gt;] et [&lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt;CDC2014&lt;/a&gt;] sur le coût du nucléaire.
 Pour bien comprendre les chiffres donnés par ces rapports, en ce qui concerne le démentellement aussi bien que pour la gestion des déchets, il faut faire la différences entre :
@@ -750,9 +996,9 @@ Pour la &lt;strong&gt;gestion des déchets&lt;/strong&gt;, on peut déduire de c
     &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&quot;annexe-4--coûts-dun-accident-nucléaire-majeur&quot;&gt;Annexe 4 : coûts d’un accident nucléaire majeur&lt;/h2&gt;
+&lt;h3 id=&quot;annexe-3-b-coûts-dun-accident-nucléaire-majeur&quot;&gt;Annexe 3-b. Coûts d’un accident nucléaire majeur&lt;/h3&gt;
 &lt;p&gt;&lt;span class=&quot;mytext&quot;&gt;
-A l’heure actuelle, les coûts liés à une assurance vis à vis d’un éventuel accident ne sont pas vraiment intégrés puisque l’assurance correspondante est plafonnée. Une évaluation est proposée &lt;a href=&quot;https://www.irsn.fr/FR/connaissances/Installations_nucleaires/Les-accidents-nucleaires/cout-economique-accident/Pages/2-cout-economique-pour-2-scenarios.aspx#.XzqSgfgzbx4&quot;&gt; par l’IRSN,  &lt;/a&gt; pour un coût de 420 Mds d’€ dans le cas d’un accident majeur en France. Une autre étude donne un coût de 120 Mds d’€. Il semble très léger de vouloir associer une probabilité à ce type d’évenement, mais on peut par exemple dire que 400 GW de nucléaire ont été installé dans le monde avec une durée moyenne de fonctionnement autour de 30 ans. Cela a conduit à deux accidents majeurs, ce qui indique d’affecter au coût d’un accident majeur un poids de $1.6*10^{-10}/kW/an$, c’est à dire 70 €/kW/an. Cette évaluation ne tient pas compte du fonctionnement d’une assurance, et du placement de l’argent cotisé qui pourrait être fait et qui pourrait faire beaucoup baisser cette valeur. C’est ce qui est fait dans  &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt; [CDC2014] &lt;/a&gt; et qui donne lieu à des sommes négligeables, au pire quelques €/MWh. La détermination de ce poid et du coût associé soulève beaucoup de questions, le rapport de la cours des compte propose une autre approche avec un poids de 1 sur tout le parc français et un coût de 120 Mds d’€. La lecture du livre de Jean-Pierre Dupuy &lt;a href=&quot;https://www.seuil.com/ouvrage/pour-un-catastrophisme-eclaire-jean-pierre-dupuy/9782020660464&quot;&gt; “Pour un catastrophisme éclairé”&lt;/a&gt; est intéressante sur le sujet grand coût/petit poids, elle préfigure la notion de signe noir développée plus tard dans la monde de la finance. Quoi qu’il en soit, le coût de l’assurance n’est pas à l’origine d’une explosion des coûts, et même si il n’est pas non plus négligeable nous n’en tiendrons pas compte ici. Notons tout de même que ramener ce coût à un simple coût économique nous semble être une approche limitée.
+A l’heure actuelle, les coûts liés à une assurance vis à vis d’un éventuel accident ne sont pas vraiment intégrés puisque l’assurance correspondante est plafonnée. Une évaluation est proposée &lt;a href=&quot;https://www.irsn.fr/FR/connaissances/Installations_nucleaires/Les-accidents-nucleaires/cout-economique-accident/Pages/2-cout-economique-pour-2-scenarios.aspx#.XzqSgfgzbx4&quot;&gt; par l’IRSN,  &lt;/a&gt; pour un coût de 420 Mds d’€ dans le cas d’un accident majeur en France. Une autre étude donne un coût de 120 Mds d’€ (celle utilisée par la cours des comptes dans ses arpports). Il semble très léger de vouloir associer une probabilité à ce type d’évenement, mais on peut par exemple dire que 400 GW de nucléaire ont été installé dans le monde avec une durée moyenne de fonctionnement autour de 30 ans. Cela a conduit à deux accidents majeurs, ce qui indique d’affecter au coût d’un accident majeur un poids de $1.6*10^{-10}/kW/an$, c’est à dire 70 €/kW/an. Cette évaluation ne tient pas compte du fonctionnement d’une assurance, et du placement de l’argent cotisé qui pourrait être fait et qui pourrait faire beaucoup baisser cette valeur. C’est ce qui est fait dans  &lt;a href=&quot;https://www.ccomptes.fr/fr/publications/le-cout-de-production-de-lelectricite-nucleaire-actualisation-2014&quot;&gt; [CDC2014] &lt;/a&gt; et qui donne lieu à des sommes négligeables, au pire quelques €/MWh. La détermination de ce poid et du coût associé soulève beaucoup de questions, le rapport de la cours des compte propose une autre approche avec un poids de 1 sur tout le parc français et un coût de 120 Mds d’€. La lecture du livre de Jean-Pierre Dupuy &lt;a href=&quot;https://www.seuil.com/ouvrage/pour-un-catastrophisme-eclaire-jean-pierre-dupuy/9782020660464&quot;&gt; “Pour un catastrophisme éclairé”&lt;/a&gt; est intéressante sur le sujet grand coût/petit poids, elle préfigure la notion de signe noir développée plus tard dans la monde de la finance. Quoi qu’il en soit, le coût de l’assurance n’est pas à l’origine d’une explosion des coûts, et même si il n’est pas non plus négligeable nous n’en tiendrons pas compte ici. Notons tout de même que ramener ce coût à un simple coût économique nous semble être une approche limitée.
 &lt;/span&gt;&lt;/p&gt;</content><author><name>Robin Girard</name><email>robin.girard@mines-paristech.fr</email></author><category term="mix-production" /><category term="intermittence" /><category term="evolution" /><category term="lcoe" /><summary type="html">Ce post vient en complément du post “energie et puissance” [PostPrec] mais il peut être lu séparément. Il est même sans doute plus naturel de lire ce post en premier. Nous donnons une formule simple d’usage et assez classique pour le calcul du coût actualisé de l’électricité. Elle repose sur un regroupement des coûts en plusieurs catégories : les coûts d’investissement, les coûts d’exploitation et de maintenance, les coûts marginaux. Pour chacun des différents moyens de production d’électricité qui existent dans les grandes classes utilisées dans le post précédent (nucléaire, gaz, charbon, éolien, solaire, hydraulique), nous donnons ces différents coûts et quelques précisions sur les éléments impactant le facteur de charge. Ceci nous permet en outre de donner des ordres de grandeur pour le coût actualisé et de retrouver les valeurs utilisées dans [PostPrec].</summary></entry><entry><title type="html">Mix de production d’électricité – énergie et puissance.</title><link href="http://localhost:4000/2020/05/07/mix-de-production-delectricite-energie-et-puissance.html" rel="alternate" type="text/html" title="Mix de production d’électricité – énergie et puissance." /><published>2020-05-07T00:00:00+02:00</published><updated>2020-05-07T00:00:00+02:00</updated><id>http://localhost:4000/2020/05/07/mix-de-production-delectricite-energie-et-puissance</id><content type="html" xml:base="http://localhost:4000/2020/05/07/mix-de-production-delectricite-energie-et-puissance.html">&lt;div class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
 &lt;em&gt;
      L’objectif de ce post est d’introduire une base simple permettant la description du mix de production d’électricité d’un pays. Cela passe par une segmentation des moyens de production en grandes familles : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien », ou « biomasse ». La place que tient chacune de ces classes dans le mix est résumée par deux indicateurs simples, importants et complémentaires que sont d’un côté l’énergie annuelle produite et de l’autre la puissance installée. La puissance installée est décomposée entre une puissance installée pilotable et une qui ne l’est pas. Ce qui lie l’énergie annuelle produite à la puissance installée est le facteur de charge. Nous donnons une première analyse grossière des éléments qui l’influencent pour les différents moyens permettant de produire de l’électricité. Enfin, nous expliquons en quoi la puissance installée et énergie annuelle produite sont de bons paramètres pour estimer le coût économique et en termes de GES d’un système électrique. Nous donnons les paramètres permettant ces estimations dans un tableur partagé et nous l’utilisons pour estimer l’ordre de grandeur du coût (économique et en termes de GES) d’un futur mix fortement renouvelable et de celui d’un futur mix fortement nucléaire. En définitive le paramètre primordial pour l’estimation des impacts économiques et environnementaux n’est pas la puissance installée mais bien l’énergie produite. Nous ne donnons ici que des estimations grossières mais nous montrons en quoi le mix nucléaire implique des émissions de GES plus faibles que le mix fortement renouvelable mais que tous deux sont compatibles avec la stratégie nationale bas carbone visant la neutralité carbone à l’échelle de la France, pour l’horizon 2050.
