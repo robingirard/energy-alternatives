@@ -3,3 +3,4 @@
 .RData
 .Ruserdata
 .jekyll-cache/*
+_site/*
