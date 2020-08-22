@@ -412,7 +412,7 @@ Nous avons rappelé que la comparaison des moyens de production sur la plan éco
 </span>
 
 <span class="mytext">
-Pour finir, le coût du parc actuel discuté dans le post précédent [[PostPrec](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)] va certainement augmenter, que ce soit dans un contexte de carrenage ou renouvellement du parc nucléaire, ou dans une perspective de développement d'un mix renouvelable + backup. Cette augmentation pourrait être importante, mais pour la mettre en pespective, il faut rappeler que le coût de production d'électricité ne correspond qu'à environ 1/3 du coût de l'électricité. En effet il s'y ajoute des taxes (pour 1/3 environ) et le tarif d'utilisation du réseaua (pour 1/3 environ). Ainsi, même si le coût de production passait grosso modo de 50 à 80 €/MWh, cela ne se traduirait que par un passage de 150 à 180 €/MWh.
+Pour finir, le coût du parc actuel discuté dans le post précédent [[PostPrec](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)] va certainement augmenter, que ce soit dans un contexte de carrenage ou renouvellement du parc nucléaire, ou dans une perspective de développement d'un mix renouvelable + backup. Cette augmentation pourrait être importante, mais pour la mettre en pespective, il faut rappeler que le coût de production d'électricité ne correspond qu'à environ 1/3 du coût de l'électricité. En effet il s'y ajoute des taxes (pour 1/3 environ) et le tarif d'utilisation du réseaua (pour 1/3 environ). Ainsi, même si le coût de production passait grosso modo de 50 à 80 €/MWh, cela ne se traduirait que par un passage de 150 à 180 €/MWh sur le prix de l'électricité à la prise.
 </span>
 
 # Bibliographie
