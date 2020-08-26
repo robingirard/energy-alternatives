@@ -22,7 +22,7 @@ $$ \sum_i \alpha_i^{cout} E_i+\beta_i^{cout} P_i$$
 Ceci nous a permis de retrouver des ordres de grandeur pour le coût de notre système actuel et d'en donner pour le coût à l’horizon 2050 d’un système fortement renouvelable et pour celui d’un système fortement nucléaire. Des valeurs pour les coefficients $\alpha_i^{cout}$ (en [€/MWh]) et $\beta_i^{cout}$ (en [€/kW/an]) ont été proposées sans que l'on explique ce qui permet de les obtenir. Le coefficient $\alpha_i^{cout}$ est appelé coût proportionnel, c’est la part du coût proportionnel à l’énergie produite, en première approche, il dépend du coût des combustibles, des taxes et du rendement de l’installation. Le coût fixe actualisé et annualisé $\beta_i^{cout}$ s’obtient à partir de données économiques comme l’actualisation, le coût d’investissement, les coûts annuels d’exploitation d’une manière que nous allons détailler dans la première partie de ce post. Ceci nous permettra d’introduire le LCOE (levelized cost of energy) qui est très utilisé dans le domaine.
 </span>
 <span class="mytext">
-Par ailleurs, nous avons considéré de grandes familles de technologies de production : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien ». La précision des données économiques et des facteurs de charge pour chaque famille va nécessiter de donner quelques précisions sur la diversité des technologies y existants. Dans cette seconde partie, nous appliquerons à chaque famille la formule du LCOE donnée dans la première partie.
+Par ailleurs, nous avons considéré de grandes familles de technologies de production : « nucléaire », « charbon », « gaz », « hydraulique », « photovoltaïque », « éolien ». La précision des données économiques et des facteurs de charge pour chaque famille va nécessiter de donner quelques précisions sur la diversité des technologies existantes. Dans cette seconde partie, nous appliquerons à chaque famille la formule du LCOE donnée dans la première partie.
 </span>
 
 
@@ -35,11 +35,11 @@ Lorsque l’on compare le coût de systèmes de production d’électricité il 
 </span>
 
 <span class="mytext">
-Afin de pallier au premier problème, les économistes qui réfléchissent à la question du coût et les ingénieurs qui développent des projets utilisent depuis très longtemps le modèle de l’actualisation.  Il repose sur une unique hypothèse plus simple à comprendre et à formuler qu’à discuter : l’argent $ x_{n} $ que l’on gagne ou que l’on dépense à l’année $n$, a plus de valeur que l’argent $x_{n+1}$ que l’on gagne ou dépense à l’année $n+1$. Le surcroît de valeur est $x_n \alpha$, où $\alpha$ est appelé taux d’actualisation, en effet, il permet "d’actualiser" la valeur de l’argent d’une année à l’autre. Ce modèle permet de rendre comparable $x_{n+1}/(1+\alpha)$ et $x_n$, mais aussi,  puisque $\alpha$  ne dépend pas de $n$, par récurrence,  $x_{n+1}/(1+\alpha)^n$ et $x_0$. En additionnant les dépenses actualisées et en divisant par les énergies produites et actualisées elles aussi, on calcule le coût actualisé de l’énergie actualisée, ou encore levelized cost of energy noté $LCOE$. Une formule est [disponible ici](https://fr.wikipedia.org/wiki/LCOE), dans la section suivante nous en donnerons une forme alternative, elle n'a rien de révolutionnaire mais elle a l'avantage d'être synthétique et plus facile à manipuler.
+Afin de pallier au premier problème, les économistes qui réfléchissent à la question du coût et les ingénieurs qui développent des projets utilisent depuis très longtemps le modèle de l’actualisation.  Il repose sur une unique hypothèse plus simple à comprendre et à formuler qu’à discuter : l’argent $ x_{n} $ que l’on gagne ou que l’on dépense à l’année $n$, a plus de valeur que l’argent $x_{n+1}$ que l’on gagne ou dépense à l’année $n+1$. Le surcroît de valeur est $x_n r$, où $r$ est appelé taux d’actualisation, en effet, il permet "d’actualiser" la valeur de l’argent d’une année à l’autre. Ce modèle permet de rendre comparable $x_{n+1}/(1+r)$ et $x_n$, mais aussi,  puisque $r$  ne dépend pas de $n$, par récurrence,  $x_{n+1}/(1+r)^n$ et $x_0$. En additionnant les dépenses actualisées et en divisant par les énergies produites et actualisées elles aussi, on calcule le coût actualisé de l’énergie actualisée, ou encore levelized cost of energy noté $LCOE$. Une formule est [disponible ici](https://fr.wikipedia.org/wiki/LCOE), dans la section suivante nous en donnerons une forme alternative, elle n'a rien de révolutionnaire mais elle a l'avantage d'être synthétique et plus facile à manipuler.
 </span>
 
 <span class="mytext">
-Nous n'allons pas discuter plus profondément ce qui se cache derrière l'actualisation ici, c'est un très vaste sujet. Notons seulement que $\alpha$ est autour de 4-5% dans des projets portés par le public (ce taux est alors souvent encadré par la loi) et plutôt autour de 8-10% pour des projets portés par le privé. Si $\alpha$ est égal à l'inflation plus un taux de retour sur investissement, alors le LCOE correspond au tarif d'achat que le monteur de projet est susceptible de demander dans un appel d'offre (sauf dans le cas d'un contrat pour différence comme avec Hinkley Point où le prix est indéxé sur l'inflation qui ne doit pas être incluse dans le taux d'actualisation), voir [[Williams2019](https://www.sciencedirect.com/science/article/pii/S0301421518306645)].  Nous reportons quelques éléments de discussion autour de l'actualisation en Annexe 1 : prise en compte des capitaux propres de l'entreprise, de l'inflation, du taux d'intérêt long terme, de la rentabilité du capital, de la croissance d'une entreprise, des frais bancaires, des intérêts intercalaires, actualisation et décroissance...
+Nous n'allons pas discuter plus profondément ce qui se cache derrière l'actualisation ici, c'est un très vaste sujet. Notons seulement que $r$ est autour de 4-5% dans des projets portés par le public (ce taux est alors souvent encadré par la loi) et plutôt autour de 8-10% pour des projets portés par le privé. Si $r$ est égal à l'inflation plus un taux de retour sur investissement, alors le LCOE correspond au tarif d'achat que le monteur de projet est susceptible de demander dans un appel d'offre (sauf dans le cas d'un contrat pour différence comme avec Hinkley Point où le prix est indéxé sur l'inflation qui ne doit pas être incluse dans le taux d'actualisation), voir [[Williams2019](https://www.sciencedirect.com/science/article/pii/S0301421518306645)].  Nous reportons quelques éléments de discussion autour de l'actualisation en Annexe 1 : prise en compte des capitaux propres de l'entreprise, de l'inflation, du taux d'intérêt long terme, de la rentabilité du capital, de la croissance d'une entreprise, des frais bancaires, des intérêts intercalaires, actualisation et décroissance...
 </span>
 
 ## Dépenses d'un projet
@@ -77,7 +77,7 @@ $$ LCOE =\beta*\frac{P}{E}+C_M=\frac{\beta }{FC\times 8,76}+C_M$$
 Où $ \beta $ est ce que l’on peut appeler le « coût capacitaire annuel moyen actualisé » exprimé en [€/kW/an] et donné par la formule :
 </span>
 <span class="mytext">
-$$ \beta = \frac{C_c}{L^{\alpha}}+\frac{C_D}{(1+\alpha)^{L-1}}+C_F  $$
+$$ \beta = \frac{C_c}{L_{r}}+\frac{C_D}{(1+r)^{L-1}}+C_F  $$
 </span>
 <span class="mytext">
 On retrouve la formule du coût complet donnée en introduction et utilisée dans [[PostPrec](https://www.energy-alternatives.eu/2020/05/07/mix-de-production-delectricite-energie-et-puissance)], puisque pour une technologie $i$ le coût complet ramené à une année est :
@@ -86,13 +86,13 @@ On retrouve la formule du coût complet donnée en introduction et utilisée dan
 $$  LCOE_i*E_i =\beta_i*P_i+C_M*E_i=\beta^{cout}_i*P_i+\alpha^{cout}_i*E_i$$
 </span>
 <span class="mytext">
-Ici $L$ est la durée de vie du projet, et $L^{\alpha}$ donné par la formule
+Ici $L$ est la durée de vie du projet, et $L_{r}$ donné par la formule :
 </span>
 <span class="mytext">
-$$L^{\alpha}= \sum_{i=0}^{L-1}\frac{1}{(1+\alpha)^i}=\frac{1+\alpha}{\alpha}(1-(1+\alpha)^{-L}),$$
+$$L_{r}= \sum_{i=0}^{L-1}\frac{1}{(1+r)^i}=\frac{1+r}{r}(1-(1+r)^{-L}),$$
 </span>
 <span class="mytext">
-est homogène à une durée de vie qui serait comme raccourcie (économiquement) par "l'effet de l’actualisation". Nous donnons dans [l’Annexe 1](annexe-1--table-pour-la-durée-de-vie-corrigée) une table de valeurs de $ L^{\alpha} $ en fonction de $\alpha$ et de la vraie durée de vie $L$. Ce qu’il faut retenir sur cette durée de vie "corrigée" est qu’elle est plus petite que la vraie durée de vie, et que plus $\alpha$ est petit (proche de zéro), plus $L^{\alpha}$ est proche de $L$. Notons que la formule simple proposée ressemble à l'approche donnée par [[NREL2018](https://www.nrel.gov/analysis/tech-lcoe-documentation.html)] et $L^{\alpha}$ n'est pas loin d'être l'inverse de ce qui est appellé le CRF (capital recovery factor). On peut donner $L^{\alpha}$ pour les cas emblématiques suivants :
+est homogène à une durée de vie qui serait comme raccourcie (économiquement) par "l'effet de l’actualisation". Nous donnons dans [l’Annexe 1](annexe-1--table-pour-la-durée-de-vie-corrigée) une table de valeurs de $ L_{r} $ en fonction de r$ et de la vraie durée de vie $L$. Ce qu’il faut retenir sur cette durée de vie "corrigée" est qu’elle est plus petite que la vraie durée de vie, et que plus $r$ est petit (proche de zéro), plus $L_{r}$ est proche de $L$. Notons que la formule simple proposée ressemble à l'approche donnée par [[NREL2018](https://www.nrel.gov/analysis/tech-lcoe-documentation.html)] et $L_{r}$ n'est pas loin d'être l'inverse de ce qui est appellé le CRF (capital recovery factor). On peut donner $L_{r}$ pour les cas emblématiques suivants :
 </span>
 <div class="text" style="display:block; text-align: justify">
 <ul> <li> Avec une actualisation à 2%, une durée de 30 ans se corrige à 22, et une durée de 80 ans se corrige à 40 </li>
@@ -101,7 +101,7 @@ est homogène à une durée de vie qui serait comme raccourcie (économiquement)
 </ul>
 </div>
 <span class="mytext">
-On comprend dans quelle mesure les grandes valeurs de $\alpha$ correspondent à hypothéquer le futur. La réalité est évidemment bien plus complexe que ce que peut encadrer un modèle d’actualisation.
+On comprend dans quelle mesure les grandes valeurs de $r$ correspondent à hypothéquer le futur. La réalité est évidemment bien plus complexe que ce que peut encadrer un modèle d’actualisation.
 </span>
 <span class="mytext">
 Quel que soit le coût de démantèlement $C_D$ il est a un poids presque toujours négligeable du fait de l’actualisation. Ce poids sera d’autant plus négligeable que le démantèlement se fera sur une période très longue (comme dans le cas du nucléaire où des temps d’attente sont nécessaires pour laisser la radioactivité diminuer).
@@ -140,7 +140,7 @@ Pour les coûts, la transparence en France a beaucoup progressé dans le cadre d
 </div>
 
 <span class="mytext">
-Avec un facteur de charge de 75%, on peut donc évaluer les coûts suivants. Nous manquons d'élément pour chiffrer le coût d'exploitation de l'EPR, mais ces éléments donnent des ordres de grandeur et nous prendrons une valeur de 175 €/kW/an. Nous ne comptons pas de "loyer économique" pour l'EPR car ce n'est pas un coût et il s'exprimerait plutôt dans ce cas par une actualisation plus importante à 8-9%. Pour ce niveau d'actualisation nous obtenons pour Hinkley Point C un LCOE autour de 120 €/MWh. En ordre de grandeur, cela correspond à ce qui a été [obtenu par EDF au près des Anglais, 92,5 £/MWh (en monnaie 2012).](https://www.zonebourse.com/ELECTRICITE-DE-FRANCE-4998/actualite/Electricite-de-France-le-cout-d-Hinkley-Point-C-en-hausse-de-29-en-3-ans-29251492/) (c'est un contrat pour différence, CFD, le tarif est indexé sur l'inflation et donc cette dernière n'est pas incluse dans le calcul du taux d'actualisation, voir Annexe 1, mais le taux réel de rémunération attendu par EDF est annoncé autour de 9%). On peut donc noter que l'électricité nucléaire historique nous permet d'avoir un coût moyen de production en France autour de 50 €/MWh, mais qu'à l'avenir, avec le carénage ou les EPR, ces coûts vont nécessairement augmenter. Si l'on regarde le coût actuel sans loyer et le coût de Flamaville, il semble possible que même avec un effet de série, on ait un doublement du coût de production de l'énergie. La principale raison à cela est que le nucléaire actuel est amorti depuis longtemps et que son vieillissement nécessite de nouveaux investissements (soit pour carrenage, soit pour remplacement). On peut ajouter que les centrales actuelles ont été construites dans un contexte économique différent (très forte inflation dans une période de croissance, planification centralisée). Cela dit, même à 80 €/MWh, on peut dire que l'énergie nucléaire, qui a le grand intérêt d'être à la fois pilotable et décarbonée, a des coûts peuvent qui être maîtrisés à condition que son financement soit garanti par l’état (pour avoir des actualisations basses) et qu'elle soit développée massivement (effets d'échelle nécessaires pour la baisse des coûts et le maintien des compétences).
+Avec un facteur de charge de 75%, on peut donc évaluer les coûts suivants. Nous manquons d'élément pour chiffrer le coût d'exploitation de l'EPR, mais ces éléments donnent des ordres de grandeur et nous prendrons une valeur de 175 €/kW/an. Nous ne comptons pas de "loyer économique" pour l'EPR car ce n'est pas un coût et il s'exprimerait plutôt dans ce cas par une actualisation plus importante à 8-9%. Pour ce niveau d'actualisation nous obtenons pour Hinkley Point C un LCOE autour de 120 €/MWh. En ordre de grandeur, cela correspond à ce qui a été [obtenu par EDF au près des Anglais, 92,5 £/MWh (en monnaie 2012).](https://www.zonebourse.com/ELECTRICITE-DE-FRANCE-4998/actualite/Electricite-de-France-le-cout-d-Hinkley-Point-C-en-hausse-de-29-en-3-ans-29251492/) (c'est un contrat pour différence, CFD, le tarif est indexé sur l'inflation et donc cette dernière n'est pas incluse dans le calcul du taux d'actualisation, voir Annexe 1, mais le taux réel de rémunération attendu par EDF est annoncé autour de 9%). On peut donc noter que l'électricité nucléaire historique nous permet d'avoir un coût moyen de production en France autour de 50 €/MWh, mais qu'à l'avenir, avec le carénage ou les EPR, ces coûts vont nécessairement augmenter. Si l'on regarde le coût actuel sans loyer et le coût de Flamaville, il semble possible que même avec un effet de série, on ait un doublement du coût de production de l'énergie. La principale raison à cela est que le nucléaire actuel est amorti depuis longtemps et que son vieillissement nécessite de nouveaux investissements (soit pour carrenage, soit pour remplacement). On peut ajouter que les centrales actuelles ont été construites dans un contexte économique différent (très forte inflation dans une période de croissance, planification centralisée). Cela dit, même à 80 €/MWh, on peut dire que l'énergie nucléaire, qui a le grand intérêt d'être à la fois pilotable et décarbonée, a des coûts qui peuvent être maîtrisés à condition que son financement soit garanti par l’état (pour avoir des actualisations basses) et qu'elle soit développée massivement (effets d'échelle nécessaires pour la baisse des coûts et le maintien des compétences).
 </span>
 
 |Système                                         |CAPEX €/kW   |proportionnel  €/MWh    | Autre €/kW/an|Durée de vie| actualisation |  LCOE |
@@ -477,17 +477,17 @@ Dans le cas où l'on actualise une dépense lointaine, comme pour le démantèle
 
 <span class="mytext">
 Dans le cas où l'on investi dans un nouveau moyen de production, mais que la durée de construction ne permet pas de rembourser tout de suite l'argent empruntée, il faut alors pays des frais supplémentaires, sous forme d'intérêt intercalaires. Les coûts d'investissement $C_I$ devraient intégrer cet aspect, et une réduction des temps de construction peut être dans beaucoup de cas, favorable à la diminution des coûts. C'est un sujet très important pour la filière nucléaire
-[RevEnergie2019](https://www.larevuedelenergie.com/la-reduction-des-couts-de-construction-du-nouveau-nucleaire/). Si l'on suppose que l'on dépense une somme $C_{I0}$ de manière uniforme sur une durée de construction $L_I$, avec une actualisation $\alpha$, alors on doit pouvoir retrouver $C_I$ (coût d'investissement à la date où la centrale commence à produire) à partir de la formule :
+[RevEnergie2019](https://www.larevuedelenergie.com/la-reduction-des-couts-de-construction-du-nouveau-nucleaire/). Si l'on suppose que l'on dépense une somme $C_{I0}$ de manière uniforme sur une durée de construction $L_I$, avec une actualisation $r$, alors on doit pouvoir retrouver $C_I$ (coût d'investissement à la date où la centrale commence à produire) à partir de la formule :
 </span>
 <span class="mytext">
-$$C_I= C_{I0} * \frac{L_I^{\alpha}}{L_I}, \;\; \text{ où }   L_I^{\alpha}= \sum_{n=1}^{L_I}(1+\alpha)^n= \frac{1+\alpha}{\alpha}((1+\alpha)^{L_C}-1)$$
+$$C_I= C_{I0} * \frac{L_I^{r}}{L_I}, \;\; \text{ où }   L_I^{r}= \sum_{n=1}^{L_I}(1+r)^n= \frac{1+r}{r}((1+r)^{L_C}-1)$$
 </span>
 <span class="mytext">
-Dans l'Annexe suivante, nous donnons une Table pour $L_I^{\alpha}/L_I$ en fonction de $\alpha$ et $L_{I}$ la durée de construction (la deuxième table dans l'annexe). On peut y voir qu'une durée de construction de 15 ans correspond à une multiplication par deux des coûts d'investissement.
+Dans l'Annexe suivante, nous donnons une Table pour $L_{I,r}/L_I$ en fonction de $r$ et $L_{I}$ la durée de construction (la deuxième table dans l'annexe). On peut y voir qu'une durée de construction de 15 ans correspond à une multiplication par deux des coûts d'investissement.
 </span>
 ## Annexe 2- Table pour la durée de vie corrigée
 <span class="mytext">
-Table de $L^\alpha$ en fonction de la durée de vie $L$ et de $\alpha$.
+Table de $L_r$ en fonction de la durée de vie $L$ et de $r$.
 </span>
 
 ||1E-04|0.01|0.02|0.03|0.04|0.05|0.06|0.07|0.08|0.09|0.1|
@@ -508,7 +508,7 @@ Table de $L^\alpha$ en fonction de la durée de vie $L$ et de $\alpha$.
 |80|79.685|55.437|40.539|31.107|24.872|20.576|17.5|15.218|13.471|12.099|10.995|
 {: .mbtablestyle .wrapstyle .simple7}
 <span class="mytext">
-Table pour $L_I^{\alpha}/L_I$ en fonction de $\alpha$ et $L_{I}$ la durée de construction.
+Table pour $L_{I,r}/L_I$ en fonction de $r$ et $L_{I}$ la durée de construction.
 </span>
 
 |  |     0.02|     0.04|     0.06|     0.08|      0.1|
