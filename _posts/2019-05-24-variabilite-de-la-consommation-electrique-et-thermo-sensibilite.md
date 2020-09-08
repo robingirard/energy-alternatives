@@ -1,5 +1,5 @@
 ---
-title: Variabilité de la consommation électrique et thermo-sensibilité
+title: Variabilité de la consommation électrique et thermosensibilité
 key: variabilite-de-la-consommation-electrique-et-thermo-sensibilite
 tags: Thermosensibilite consommation variabilite chauffage evolution
 article_header:
@@ -25,17 +25,17 @@ ____________________________________
 <div class="text" style="display:block; text-align: justify">
      Dans la plupart des régions du monde on a coutume de découper les variations intra-annuelles de la consommation électrique en variations journalières, hebdomadaires et saisonnières. Pour les variations intra-annuelles on peut distinguer grossièrement deux types de causes :
 <ul> <li>l’emploi du temps des consommateurs qui fait varier la consommation au cours d’une journée et d’un jour de travail à un jour de congé. Cet emploi du temps peut aussi provoquer de légères variations saisonnières avec les grandes vacances d’été, surtout localement mais aussi à l’échelle du pays.</li>
-  <li>la sensibilité de la consommation à la météorologie et plus particulièrement à la température -la thermo-sensibilité- qui a de légères conséquences sur les variations de la consommation à l’échelle journalières des conséquences qui peuvent être importantes à l’échelle hebdomadaires, et surtout des conséquences très importantes à l’échelle saisonnière.</li>
+  <li>la sensibilité de la consommation à la météorologie et plus particulièrement à la température -la thermosensibilité- qui a de légères conséquences sur les variations de la consommation à l’échelle journalières, des conséquences qui peuvent être importantes à l’échelle hebdomadaire, et surtout des conséquences très importantes à l’échelle saisonnière.</li>
 </ul>
 </div>
 
 <span class="text" style="display:block; text-align: justify">
-     Je vais étudier en détail les effets de ces deux types de causes. Puis je parlerai des évolutions sur le long terme (au-delà de l’échelle intra-annuelle) de la consommation et de sa thermo-sensibilité qui ont d’autres causes.
+      Je vais étudier en détail les effets de ces deux types de causes. Puis je parlerai des évolutions sur le long terme (au-delà de l’échelle intra-annuelle) de la consommation et de sa thermosensibilité qui ont d’autres causes. Etudier la thermosensibilité est essentiel pour comprendre les contraintes qui agissent sur le système électrique, car de cette thermosensiblité va grandement dépendre le dimensionnement de notre système en puissance, mais nous verrons cela dans d'autres textes.
 </span>
 
 ## Les variations intra-annuelles de la consommation d'origine non météorologique
 <span class="text" style="display:block; text-align: justify">
-Les variations journalières peuvent différer en fonction de la saison. C’est le cas par exemple en France où l’on consomme toujours plus la journée que la nuit mais le pic journalier est atteint vers 19h en hivers et plutôt vers 14h en été ([Figure 1](#Figure1)). A l’inter-saison le pic du soir se déplace légèrement avec l’évolution de la luminosité qui joue non seulement sur notre consommation de lumière mais aussi sur notre mode de vie.
+Les variations journalières peuvent différer en fonction de la saison. C’est le cas par exemple en France où l’on consomme toujours plus la journée que la nuit mais le pic journalier est atteint vers 19h en hiver et plutôt vers 14h en été ([Figure 1](#Figure1)). A l’inter-saison le pic du soir se déplace légèrement avec l’évolution de la luminosité qui joue non seulement sur notre consommation de lumière mais aussi sur notre mode de vie.
 </span>
 
 <span class="text" id="Figure1" style="display:block;text-align:center">
@@ -57,11 +57,11 @@ Sur cet exemple particulier de la [Figure 1](#Figure1), la différence entre le 
 </span>
 
 <span class="text" style="display:block; text-align: justify">
-Les variations hebdomadaires peuvent être liées aux deux causes mentionnées en introduction de ce post. En ce qui concerne la sensibiltié de la consommation à la température nous étudierons ce phénomène dans la section suivante, à l’échelle hebdomadaire l’arrivée d’une vague de froid peut faire augmenter la consommation de quelques dizaines de GW en un jour ou deux. Pour ce qui est de l’emploi du temps des consommateurs, ce sont essentiellement les variations entre le weekend end ou les jours de congés et la semaine de travail, qui causent des variations de consommation. En générale la consommation est plus faible le week end.
+Les variations hebdomadaires peuvent être liées aux deux causes mentionnées en introduction de ce post. En ce qui concerne la sensibilité de la consommation à la température à l'échelle hebdomadaire, l’arrivée d’une vague de froid peut faire augmenter la consommation de quelques dizaines de GW en un jour ou deux, nous étudierons ce phénomène dans la section suivante. Pour ce qui est de l’emploi du temps des consommateurs, ce sont essentiellement les variations entre le week end ou les jours de congés et la semaine de travail, qui causent des variations de consommation. En général la consommation est plus faible le week end.
 </span>
 
 <span class="text" style="display:block; text-align: justify">
-On peut produire pour ces de variations hebdomadaires la même analyse que pour les variations journalières en définissant une variation à la baisse (ou à la hausse) entre la moyenne hebdomadaire et la plus petite (ou la plus grande) consommation moyenne journalière. C’est ce qui est fait Figure 3 où l’on observera que ces variations sont plus importante à la baisse. Ceci s’explique par le fait que la consommation est plus faible seulement les jours de week end et que donc la moyenne hebdomadaire reflète plutôt un jour de semaine.
+On peut produire pour ces de variations hebdomadaires la même analyse que pour les variations journalières en définissant une variation à la baisse (ou à la hausse) entre la moyenne hebdomadaire et la plus petite (ou la plus grande) consommation moyenne journalière. C’est ce qui est fait Figure 3 où l’on observera que ces variations sont plus importantes à la baisse. Ceci s’explique par le fait que la consommation est plus faible seulement les jours de week end et donc, que la moyenne hebdomadaire reflète plutôt un jour de semaine.
 </span>
 
 <span class="text" id="Figure3" style="display:block;text-align:center">
@@ -75,17 +75,17 @@ On peut produire pour ces de variations hebdomadaires la même analyse que pour 
 Au sein d’une année, la variation la plus importante est la variation saisonnière. Le pic peut dépasser les 100 GW en hiver comme lors de la vague de froid de 2012 alors qu’en été il est autour de 50 GW. L’existence et l’ampleur (presque 50 GW) de la différence entre ces pointes hivernales et les points estivales est principalement due à la sensibilité de la consommation à la température. En hiver plus il fait froid et plus nous consommons d’électricité, c’est ce que l’on appelle la **thermosensibilité** sur laquelle je vais donner plus de détails dans la section suivante.
 </span>
 
-## Sensibilité de la consommation à la température, définition de la thermo-sensibilité
+## Sensibilité de la consommation à la température, définition de la thermosensibilité
 
 <span class="text" style="display:block; text-align: justify">
-La thermosensibilité permet de quantifier la variation de la consommation avec la température. On peut voir sur la Figure 4 cette relation entre la consommation Française moyenne journalière et la température moyenne journalière. Pour des températures inférieures à 15°C elle est assez bien décrite par une droite. La pente de cette droite donne les MW additionnels de consommation qu’engendre une baisse de 1°C, c’est de cette manière que l’on quantifie la thermosensibilité. En dessous de la température seuil (ici 15 °C) la consommation dépend de la température, aussi ce seuil est parfois appelé « température de chauffage ». On peut imaginer en première approximation qu’il s’agit ici d’une température extérieure à partir de laquelle en moyenne les Français se mettent à chauffer.
+La thermosensibilité permet de quantifier la variation de la consommation avec la température. On peut voir sur la Figure 4 cette relation entre la consommation française moyenne journalière et la température moyenne journalière. Pour des températures inférieures à 15°C elle est assez bien décrite par une droite. La pente de cette droite donne les MW additionnels de consommation qu’engendre une baisse de 1°C, c’est de cette manière que l’on quantifie la thermosensibilité. En dessous de la température seuil (ici 15 °C) la consommation dépend de la température, aussi ce seuil est parfois appelé « température de chauffage ». On peut imaginer en première approximation qu’il s’agit ici d’une température extérieure à partir de laquelle en moyenne les français se mettent à chauffer à l'électricité.
 </span>
 
 <span class="text" id="Figure4" style="display:block;text-align:center">
 ![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/VarConsoFigure4.png){:.border}
 </span>
 <span class="legendtext" id="CAPFigure4" style="display:block;text-align:center">
-**Figure 4** --  Une définition de la thermo-sensibilité : pente de la droite de régression linéaire entre la moyenne journalière de la consommation et celle de la température, sur une plage de température où la relation est linéaire. Ici sur les données de consommation France de 2012 (source RTE) et avec les données de température issue de la pondération spatiale de stations météorologiques proposée par RTE.
+**Figure 4** --  Une définition de la thermosensibilité : pente de la droite de régression linéaire entre la moyenne journalière de la consommation et celle de la température, sur une plage de température où la relation est linéaire. Ici sur les données de consommation France de 2012 (source RTE) et avec les données de température issue de la pondération spatiale de stations météorologiques proposée par RTE.
 </span>
 
 <span class="text" style="display:block; text-align: justify">
@@ -93,11 +93,11 @@ Plusieurs définitions existent mais toutes reposent sur un modèle linéaire en
 </span>
 
 <span class="text" style="display:block; text-align: justify">
-La sensibilité de la consommation électrique à la température est différente selon les pays. Dans certains pays il y a aussi une température chaude au-dessus de laquelle la consommation dépend à nouveau de la température à cause de l’utilisation de climatiseurs. C’est le cas par exemple des Etats Unis ou de l’Italie, ou dans certains endroits très particulier de la France. A l’échelle de la France il n’y a pas de thermosensibilité estivale.  Entre ces plages de température (“température de chauffage” et “température de climatisation” si elle existe) la consommation est relativement indépendante de la température. Dans certaines communes du sud de la France, localement, l’effet de la thermosensibilité estivale combiné à des migrations estivales peut impliquer que les pointes de consommation annuelles locales aient lieu en été.
+La sensibilité de la consommation électrique à la température est différente selon les pays. Dans certains pays il y a aussi une température chaude au-dessus de laquelle la consommation dépend à nouveau de la température à cause de l’utilisation de climatiseurs. C’est le cas par exemple des Etats-Unis ou de l’Italie, ou dans certains endroits très particuliers de la France. A l’échelle de la France il n’y a pas de thermosensibilité estivale.  Entre ces plages de température (“température de chauffage” et “température de climatisation” si elle existe) la consommation est relativement indépendante de la température. Dans certaines communes du sud de la France, localement, l’effet de la thermosensibilité estivale combiné à des migrations estivales peut impliquer que les pointes de consommation annuelles locales aient lieu en été.
 </span>
 
 <span class="text" style="display:block; text-align: justify">
-Pour l’hiver en France, la thermosensibilité était autour de 2.3 GW/°C (l’équivalent de deux tranches nucléaires par degré) en 2013. La température de non chauffage est autour de 15°C. La relation linéaire entre consommation et température explique qu’il puisse y avoir une différence de presque 50 GW entre la consommation d’une journée d’été et celle d’une journée de grand froid où la température moyenne nationale descend au-dessous de -5°C comme cela est arrivé en 2012. La [Figure 5](#Figure5) illustre la ce phénomène dans différents pays, il est très prononcé en France : la thermosensibilité européenne, de l’ordre de 5 GW/°C est presque pour moitié française.
+Pour l’hiver en France, la thermosensibilité était autour de 2.3 GW/°C (l’équivalent de deux tranches nucléaires par degré) en 2013. La température de non chauffage est autour de 15°C. La relation linéaire entre consommation et température explique qu’il puisse y avoir une différence de presque 50 GW entre la consommation d’une journée d’été et celle d’une journée de grand froid où la température moyenne nationale descend au-dessous de -5°C comme cela est arrivé en 2012. La [Figure 5](#Figure5) illustre ce phénomène dans différents pays, il est très prononcé en France : la thermosensibilité européenne, de l’ordre de 5 GW/°C est presque pour moitié française. Cela est essentiellement du à l'utilisation du chauffage électrique qui est pour l'instant une spécificité française. Dans le contexte de la transition énergétique nous aurons tendance à utiliser de plus en plus l'électricité comme moyen de chauffage, mais également à consommer moins grâce à l'efficacité.
 </span>
 
 <span class="text" id="Figure5" style="display:block;text-align:center">
@@ -118,13 +118,13 @@ Le fait de prendre une température moyenne journalière et une consommation moy
 </div>
 
 <span class="text" style="display:block; text-align: justify">
-on obtient entre elles une faible corrélation et un coefficient directeur de la régression linéaire autour de 200MW/°C (donc beaucoup plus faible que les 2GW/°C) sans réelle évolution depuis 1996. Le code mis à disposition pour ce post permet de reproduire cette analyse.  Nous reviendrons sur ce point lorsque nous parlerons de la principale cause de la thermosensibilité, le chauffage électrique, et de l’inertie relative à cet usage.  
+on obtient entre elles une faible corrélation et un coefficient directeur de la régression linéaire autour de 0.2 GW/°C (donc beaucoup plus faible que les 2 GW/°C) sans réelle évolution depuis 1996. Le code mis à disposition pour ce post permet de reproduire cette analyse.  Nous reviendrons sur ce point lorsque nous parlerons de la principale cause de la thermosensibilité, le chauffage électrique, et de l’inertie relative à cet usage.  
 </span>
 
 ## Evolution passée de la thermosensibilité en France.
 
 <span class="text" style="display:block; text-align: justify">
-La consommation annuelle électrique depuis la création d’EDF au lendemain de la seconde guerre mondiale a augmenté de presque 5 TWh chaque année jusqu’au milieu des années 1990. Cette croissance est liée à la croissance économique aux changements du mode de vie des français. Ces augmentations sont plus liées à une évolution dans le secteur résidentiel et tertiaire que dans l’industrie mais nous discuterons les évolutions par secteur dans un autre post. Cette croissance a ensuite connu un ralentissement jusqu’à la crise de 2008 après laquelle on ne détecte pas pour l’instant d’augmentation significative.
+La consommation annuelle électrique depuis la création d’EDF au lendemain de la seconde guerre mondiale a augmenté de presque 5 TWh/an jusqu’au milieu des années 1990. Cette croissance est liée à la croissance économique et aux changements du mode de vie des français. Ces augmentations sont plus liées à une évolution dans le secteur résidentiel et tertiaire qu'à celui de l’industrie mais nous discuterons les évolutions par secteur dans un autre post. Cette croissance a ensuite connu un ralentissement jusqu’à la crise de 2008 après laquelle on ne détecte pas pour l’instant d’augmentation significative.
 </span>
 
 <span class="text" style="display:block; text-align: justify">
@@ -135,26 +135,26 @@ Durant les années 2000 à 2012 pourtant, alors même que la consommation annuel
 ![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/VarConsoFigure4.png){:.border}
 </span>
 <span class="legendtext" id="CAPFigure6" style="display:block;text-align:center">
-**Figure 6** --  Consommation horaire Française de 1996 à 2019. Entre 2000 et 2012, alors que l’énergie annuelle consommée stagne, on observe une augmentation d’environ 30% des pointes de consommation (Source RTE).
+**Figure 6** --  Consommation horaire française de 1996 à 2019. Entre 2000 et 2012, alors que l’énergie annuelle consommée stagne, on observe une augmentation d’environ 30% des pointes de consommation (Source RTE).
 </span>
 
 <span class="text" style="display:block; text-align: justify">
-La thermosensibilité est presque entièrement à l’origine de l’augmentation des pointes puisqu’elle a plus que doublé entre 2000 et 2012 passant de 800 MW/°C à 2400 MW/°C. Cela correspond en moyenne à plus de 100 MW/°C de plus chaque année. Une température d’un peu moins que 13°C en dessous des normales saisonnières provoquait une augmentation de la consommation de 10 GW en 2000 et de l’ordre de 30 GW en 2012. Ainsi, la légère augmentation de la consommation annuelle et le grand froid de 2012 expliquent presque totalement l’évolution des pics présentés à la Figure 4. La Figure 7 illustre l’évolution du phénomène de thermosensibilité de 2000 à 2012. Par ailleurs, on peut noter que les pics de consommation sont de plus en plus une conséquence directe des variations de la température (évolution de la variance expliquée par la régression linéaire, qui tourne autour de 70% ces dernières années).
+La thermosensibilité est presque entièrement à l’origine de l’augmentation des pointes puisqu’elle a triplé entre 2000 et 2012 passant de 0.8 GW/°C à 2,4 GW/°C. Cela correspond en moyenne à plus de 0.1 GW/°C de plus chaque année. Une température d’un peu moins que 13°C en dessous des normales saisonnières provoquait une augmentation de la consommation de 10 GW en 2000 et de l’ordre de 30 GW en 2012. Ainsi, la légère augmentation de la consommation annuelle et le grand froid de 2012 expliquent presque totalement l’évolution des pics présentés à la Figure 4. La Figure 7 illustre l’évolution du phénomène de thermosensibilité de 2000 à 2012. Par ailleurs, on peut noter que les pics de consommation sont de plus en plus une conséquence directe des variations de la température (évolution de la variance expliquée par la régression linéaire, qui tourne autour de 70% ces dernières années).
 </span>
 
 <span class="text" id="Figure7" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/Var-ConsoFigure5.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/Var-ConsoFigure6.png){:.border}
 </span>
 <span class="legendtext" id="CAPFigure7" style="display:block;text-align:center">
-**Figure 7** --  Evolution de la thermosensibilité de la consommation électrique Française pendant 20 ans (de 1996 à 2019), 100MW/°C de plus chaque année : pente de la relation “conso moyenne journalière”=f(Température moyenne journalière).
+**Figure 7** --  Evolution de la thermosensibilité de la consommation électrique française pendant 20 ans (de 1996 à 2019), 100MW/°C de plus chaque année : pente de la relation “conso moyenne journalière”=f(Température moyenne journalière).
 </span>
 
 <span class="text" style="display:block; text-align: justify">
-On observe donc une augmentation substantielle de la thermosensibilité. Il semble que cette augmentation ait commencé en 2000 mais les données de consommation horaires avant 1996 manquent ici à l’analyse. On peut tout de même penser que le phénomène des années 2000-2010 est nouveau dans le sens où l’évolution de la consommation d’énergie électrique annuelle depuis 1970 a connu un ralentissement progressif. La tendance d’évolution de la thermo-sensibilité n’est pas confirmée par les années 2012-2018 (cf Figure 7). Il est intéressant d’essayer de comprendre d’une part les conséquences de cette thermosensibilité sur le coût du système électrique et d’autre part ce qui est à l’origine des évolutions passées et futures de la thermo-sensibilité pour bien la modéliser dans une démarche prospective. C’est ce que je ferai dans des posts ultérieurs.
+On observe donc une augmentation substantielle de la thermosensibilité. Il semble que cette augmentation ait commencé en 2000 mais les données de consommation horaires avant 1996 manquent ici à l’analyse. On peut tout de même penser que le phénomène des années 2000-2010 est nouveau dans le sens où l’évolution de la consommation d’énergie électrique annuelle depuis 1970 a connu un ralentissement progressif. La tendance d’évolution de la thermosensibilité n’est pas confirmée par les années 2012-2018 (cf Figure 7). Il est intéressant d’essayer de comprendre d’une part les conséquences de cette thermosensibilité sur le coût du système électrique et d’autre part ce qui est à l’origine des évolutions passées et futures de la thermosensibilité pour bien la modéliser dans une démarche prospective. C’est ce que nous ferons dans des posts ultérieurs. En ce qui concerne les évolutions futures, dans un contexte de transition énergétique, elles seront guidées par un facteur d'augmentation, l'électrification du chauffage, et un facteur de baisse, l'augmentation de l'efficacité des systèmes de chauffage et de l'isolation des bâtiments. Nous discutons cela [dans ce post](https://www.energy-alternatives.eu/2020/03/22/une-contribution-a-la-reflexion-sur-la-strategie-nationale-bas-carbone-dans-le-batiment-partie-1-quels-modes-de-chauffage-a-lhorizon-2050.html).
 </span>
 
 ## Conclusion
 
 <span class="text" style="display:block; text-align: justify">
-J’ai analysé les variations de la consommation à plusieurs échelles de temps et selon plusieurs causes. J’ai donné une définition de la thermo-sensibilité, c‘est un concept simple utilisé depuis longtemps par les gestionnaires des réseaux électrique Français (transport et distribution) et depuis encore plus longtemps par les gaziers. Nous aurons l’occasion de revenir dessus dans des posts futurs. J’étudierai notamment les causes de la thermo-sensibilité (essentiellement le chauffage électrique), ainsi que les conséquences sur la gestion et la planification du système électrique des différentes formes de variations. J’étudierai aussi la variabilité de la production renouvelable et je montrerai également comment celle-ci impacte le système électrique : son fonctionnement et son dimensionnement.
+Nous avons analysé les variations de la consommation à plusieurs échelles de temps et selon plusieurs causes. Nous avons donné une définition de la thermosensibilité, c‘est un concept simple utilisé depuis longtemps par les gestionnaires des réseaux électrique français (transport et distribution) et depuis encore plus longtemps par les gaziers. Nous aurons l’occasion de revenir dessus dans des posts futurs. Nous étudierons notamment les causes de la thermosensibilité (essentiellement le chauffage électrique), ainsi que les conséquences sur la gestion et la planification du système électrique des différentes formes de variations. Nous étudierons aussi la variabilité de la production renouvelable et nous montrerons également comment celle-ci impact le système électrique : son fonctionnement et son dimensionnement.
 </span>
