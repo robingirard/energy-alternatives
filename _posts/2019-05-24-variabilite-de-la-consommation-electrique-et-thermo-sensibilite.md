@@ -132,7 +132,7 @@ Durant les années 2000 à 2012 pourtant, alors même que la consommation annuel
 </span>
 
 <span class="text" id="Figure6" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/VarConsoFigure4.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/VarConsoFigure6.png){:.border}
 </span>
 <span class="legendtext" id="CAPFigure6" style="display:block;text-align:center">
 **Figure 6** --  Consommation horaire française de 1996 à 2019. Entre 2000 et 2012, alors que l’énergie annuelle consommée stagne, on observe une augmentation d’environ 30% des pointes de consommation (Source RTE).
@@ -143,7 +143,7 @@ La thermosensibilité est presque entièrement à l’origine de l’augmentatio
 </span>
 
 <span class="text" id="Figure7" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/Var-ConsoFigure6.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2019-05-24/VarConsoFigure7.png){:.border}
 </span>
 <span class="legendtext" id="CAPFigure7" style="display:block;text-align:center">
 **Figure 7** --  Evolution de la thermosensibilité de la consommation électrique française pendant 20 ans (de 1996 à 2019), 100MW/°C de plus chaque année : pente de la relation “conso moyenne journalière”=f(Température moyenne journalière).
