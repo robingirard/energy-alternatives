@@ -216,7 +216,6 @@ defaults:
       show_subscribe: true
       pageview: true
 
-
 ## => Plugins
 ##############################
 plugins:

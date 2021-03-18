@@ -100,6 +100,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
+  jekyll-feed
   jekyll-text-theme!
   rake (~> 10.0)
 
