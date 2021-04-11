@@ -17,6 +17,10 @@
 <lastmod>2020-08-20T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/2021/04/10/france-allemagne.html</loc>
+<lastmod>2021-04-10T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about.html</loc>
 </url>
 <url>
@@ -30,5 +34,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/images/Posts/2021-04-10/biomass.html</loc>
+<lastmod>2021-04-10T14:35:07+02:00</lastmod>
 </url>
 </urlset>
