@@ -118,7 +118,7 @@ L’atout et le piège territorial de l’Allemagne, ce sont ses mines de lignit
 # Le nucléaire, une histoire d’héritage.  
 
 <span class="mytext">
-Le principal sujet de tension entre l’Allemagne et la France sur les questions énergétiques est bien celui du nucléaire. Nos voisins se sont désengagés du programme à l’origine franco-allemand de l’EPR, et ont choisi une voie (zéro carbone, zéro nucléaire) à laquelle nous avons bien du mal à souscrire. En retour, l’Allemagne ne reconnaît pas officiellement un rôle au nucléaire vis-à-vis de l’enjeu de décarbonations, même si la taxonomie verte qui se met en place à l’échelle européenne devrait inclure le nucléaire. Par ailleurs l’extension de la durée de vie des centrales françaises est mal perçue par les riverains à la France [ASN042021-riverains] et notamment pas l’Allemagne.
+Le principal sujet de tension entre l’Allemagne et la France sur les questions énergétiques est bien celui du nucléaire. Nos voisins se sont désengagés du programme à l’origine franco-allemand de l’EPR, et ont choisi une voie (zéro carbone, zéro nucléaire) à laquelle nous avons bien du mal à souscrire. En retour, l’Allemagne ne reconnaît pas officiellement un rôle au nucléaire vis-à-vis de l’enjeu de décarbonations, même si la taxonomie verte qui se met en place à l’échelle européenne devrait inclure le nucléaire. Par ailleurs l’extension de la durée de vie des centrales françaises est mal perçue par les riverains à la France [[ASN042021-riverains](http://videos.senat.fr/video.2230621_606d570f5ddd3.audition-de-m-philippe-baptiste-candidat-propose-aux-fonctions-de-president-du-conseil-dadministr?timecode=8258178)] et notamment pas l’Allemagne.
 </span>
 
 ## Une réussite industrielle indéniable
@@ -342,7 +342,7 @@ Dans chacun de ces domaines, la prise de conscience doit se traduire petit à pe
 
 [[ADEMEEmissionsBois](https://www.ademe.fr/sites/default/files/assets/documents/34702_acv_bois_dom.pdf)] ADEME - Analyse de cycle de vie du bois énergie.
 
- [[ADEMEFlammeVerte](https://www.ademe.fr/expertises/energies-renouvelables-enr-production-reseaux-stockage/passer-a-laction/produire-chaleur/dossier/bois-biomasse/bois-energie-qualite-lair)] ADEME - Bois et qualité de l'air. 
+ [[ADEMEFlammeVerte](https://www.ademe.fr/expertises/energies-renouvelables-enr-production-reseaux-stockage/passer-a-laction/produire-chaleur/dossier/bois-biomasse/bois-energie-qualite-lair)] ADEME - Bois et qualité de l'air.
 
 [[METHALAE2020](https://solagro.org/comment-la-methanisation-peut-etre-un-levier-de-l-agroecologie--les-resultats-de-methalae-40-actu-104)] Comment la méthanisation peut-être un levier de l'agroécologie ? : les résultats de MéthaLAE
 
