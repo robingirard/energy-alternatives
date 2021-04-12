@@ -20,7 +20,7 @@ Nous suivons tous un même objectif : parvenir à la neutralité carbone à l’
 </span>
 
 <span class="mytext">
-En France un plan de travail prend forme progressivement dans la stratégie nationale bas carbone (SNBC introduite dans la loi énergie-climat de 2019 [[SNBC-v032020](https://www.ecologie.gouv.fr/sites/default/files/2020-03-25_MTES_SNBC2.pdf)]) qui vise à réduire les émissions brutes liées à l’activité humaine à un niveau de de 80 Mt CO2eq/an à l’horizon 2050 là où elles sont d’environ 450 Mt CO2eq/an aujourd’hui (sans tenir compte des importations qui font partie d’un volet séparé de la SNBC), tout en contrôlant notre trajectoire à court terme. Depuis 2019 cet objectif de neutralité carbone est en fait commun à toute l’Europe, et l’on peut voir dans la lutte contre le dérèglement climatique une vraie force unificatrice.
+En France un plan de travail prend forme progressivement dans la stratégie nationale bas carbone (SNBC introduite dans la loi énergie-climat de 2019 [[SNBC-v032020](https://www.ecologie.gouv.fr/sites/default/files/2020-03-25_MTES_SNBC2.pdf)]) qui vise à réduire les émissions brutes liées à l’activité humaine à un niveau de 80 Mt CO2eq/an à l’horizon 2050 là où elles sont d’environ 450 Mt CO2eq/an aujourd’hui (sans tenir compte des importations qui font partie d’un volet séparé de la SNBC), tout en contrôlant notre trajectoire à court terme. Depuis 2019 cet objectif de neutralité carbone est en fait commun à toute l’Europe, et l’on peut voir dans la lutte contre le dérèglement climatique une vraie force unificatrice.
 </span>
 
 <span class="mytext">
