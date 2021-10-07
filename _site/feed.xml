@@ -4,18 +4,18 @@
 		<title></title>
 		<description>Vers une meilleure compréhension de notre système énergétique et de son évolution
 </description>
-		<link>http://localhost:4000</link>
-		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		<link></link>
+		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>France-Allemagne, deux visions européennes de l’énergie, sources de tensions et d’apprentissages.</title>
+				<title>32% ou 40% ? Ce qui se cache derrière nos engagements à l'horizon 2030 dans le système électrique.</title>
 				<description>&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;em&gt;Dans ce post, je propose une description croisée des transitions énergétiques françaises et allemandes en termes de production d’énergie : biogaz, bois, nucléaire, énergie renouvelable intermittente (EnRi), réseau électrique, hydrogène (en tant que vecteur énergétique), et pompes à chaleur. Je laisse de côté pour l’instant des sujets essentiels comme la rénovation de bâtiment, la sobriété, l’électrification du transport. Mon point de vue français me fait surtout parler de la France, mais toujours en cherchant ce que peut nous apporter l’expérience de l’Allemagne, qui est riche, même si nous ne prenons pas le même chemin. J’ai pas mal appris en écrivant ce texte, mais j’espère apprendre encore avec les remarques bienveillantes que je pourrai recevoir et les échanges constructifs qui pourront s’ensuivre. Deux idées pour notre système Français se sont affirmées pour moi à l’écriture : (1) L’énergie est toujours un secteur à fort impact environnemental, mais dans bien des cas, jeter le bébé avec l’eau du bain va nous amener dans le mur. Ce qu’il faut c’est augmenter l’exigence des filières par la réglementation, le recyclage, pas souhaiter leur fin sans mesurer ce que cela implique sur l’ensemble du système énergétique. (2) le vieillissement de notre parc nucléaire nous impose aujourd’hui des décisions fortes. Nous devrions développer de nouveaux moyens de production dans toutes les filières, y compris de nouveaux EPR et des renouvelables intermittents. Cela n’empêche pas la sobriété qui doit venir en premier, mais la sobriété et l’existence de notre parc nucléaire vieillissant sont de très mauvaises excuses pour ne pas développer de nouveaux moyens de production.&lt;/em&gt;
+&lt;em&gt;En 2018, le ministre François de Rugy qui venait de succéder à Nicolas Hulot annonçait que l’objectif sur la part de la production renouvelable dans notre production d’électricité passait de 32% à 40%. Certains y voient aujourd’hui une mainmise de l’Europe sur la stratégie énergétique française [&lt;a href=&quot;https://www.latribune.fr/opinions/tribunes/l-union-europeenne-a-t-elle-mis-fin-a-une-politique-commune-de-l-energie-893318.html&quot;&gt;Leveque 29-09-2021&lt;/a&gt;], mais il faut rappeler que ce n’est pas l’Europe qui a inventé ces objectifs et qu’il s’agissait alors plutôt d’une mise en cohérence avec l’objectif de 50% de nucléaire dans le mix électrique, que Nicolas Hulot avait repoussé de 2025 à 2035 et donc d’une initiative française. Certains pensent encore que ces chiffres ne sont liés à aucune réalité technique et qu’ils nous contraignent par pur dogmatisme au développement des renouvelables. L’objectif de ce court texte est de rappeler quelques ordres de grandeur en lien avec ces deux pourcentages (32% et 40%) afin d’exposer les contraintes qu’ils traduisent qui sont propres aux évolutions de notre système.&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
 </description>
-				<pubDate>Sat, 10 Apr 2021 00:00:00 +0200</pubDate>
-				<link>http://localhost:4000/2021/04/10/france-allemagne.html</link>
-				<guid isPermaLink="true">http://localhost:4000/2021/04/10/france-allemagne.html</guid>
+				<pubDate>Fri, 01 Oct 2021 00:00:00 +0200</pubDate>
+				<link>/2021/10/01/32-ou-40.html</link>
+				<guid isPermaLink="true">/2021/10/01/32-ou-40.html</guid>
 			</item>
 		
 	</channel>
