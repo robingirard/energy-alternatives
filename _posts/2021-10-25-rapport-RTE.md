@@ -9,7 +9,7 @@ article_header:
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-*Une tribune que je publie aujourd'hui dans le journal "alternatives économiques suite à la publication des scénarios de RTE sur nos futures mix énergétiques à l'horizon 2050. Mes principaux messages : (1) la vraie contrainte n'est pas économique, mais plutôt sur les rythmes de développement, pour toutes les technologies. (2) il faut lancer des EPR2 dès maintenant et se donner le rythme du N1 sur les EnR jusqu'en 2035 : 3 GW/an de photovoltaïque, 1 GW/an d’éolien en mer, et un peu plus de 1 GW/an d’éolien sur terre. (3) En 2035 nous aurons alors les éléments et la liberté de choisir entre N1, N2 et N03. (4) ça n'est pas une bataille où une vision doit gagner en écrasant une autre, nous avons surtout besoin de faire société autour d'un projet commun.*
+*Une tribune que je publie aujourd'hui dans le journal ["alternatives économiques"](https://www.alternatives-economiques.fr/scenarios-rte-nucleaire-ne-suffira/00100968) suite à la publication des scénarios de RTE sur nos futures mix énergétiques à l'horizon 2050. Mes principaux messages : (1) la vraie contrainte n'est pas économique, mais plutôt sur les rythmes de développement, pour toutes les technologies. (2) il faut lancer des EPR2 dès maintenant et se donner le rythme du N1 sur les EnR jusqu'en 2035 : 3 GW/an de photovoltaïque, 1 GW/an d’éolien en mer, et un peu plus de 1 GW/an d’éolien sur terre. (3) En 2035 nous aurons alors les éléments et la liberté de choisir entre N1, N2 et N03. (4) ça n'est pas une bataille où une vision doit gagner en écrasant une autre, nous avons surtout besoin de faire société autour d'un projet commun.*
 </span>
 <!--more-->
 <span class="mytext">
