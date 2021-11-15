@@ -8,14 +8,14 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Les scénarios RTE, un développement ambitieux du nucléaire et des renouvelables est nécessaire.</title>
+				<title>Sur le nombre de passoires énergétiques en France</title>
 				<description>&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;em&gt;Une tribune que je publie aujourd’hui dans le journal “alternatives économiques suite à la publication des scénarios de RTE sur nos futures mix énergétiques à l’horizon 2050. Mes principaux messages : (1) la vraie contrainte n’est pas économique, mais plutôt sur les rythmes de développement, pour toutes les technologies. (2) il faut lancer des EPR2 dès maintenant et se donner le rythme du N1 sur les EnR jusqu’en 2035. (3) En 2035 nous pourrons alors les éléments et la liberté de choisir entre N1, N2 et N03. (4) ça n’est pas une bataille où une vision doit gagner en écrasant une autre, nous avons surtout besoin de faire société autour d’un projet commun.&lt;/em&gt;
+&lt;em&gt;Résumé – Dans cet article, co-écrit avec Yassine Abdelouadoud, nous discutons le rôle du diagnostic de performance énergétique  (DPE) dans la transition énergétique et en particulier des estimations qu’il a permis du nombre de passoires énergétiques. Nous cherchons à expliquer l’origine les différences entre deux estimations faites par le gouvernement : celle de 2013 (8,8 millions) et celle de 2020 (4,8 millions). Une partie de cette différence s’explique par la dynamique du parc (destruction/rénovation), mais nous montrons que c’est surtout un défaut dans la base DPE utilisée en 2020 qui cause cette différence et nous proposons une méthode pour corriger ces défauts aboutit à une estimation de 7 millions de passoires. Nous discutons de l’importance de ces chiffrages vis à vis de nos objectifs de moyen et long terme dans le contexte de transition énergétique.&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
 </description>
-				<pubDate>Mon, 25 Oct 2021 00:00:00 +0200</pubDate>
-				<link>/2021/10/25/rapport-RTE.html</link>
-				<guid isPermaLink="true">/2021/10/25/rapport-RTE.html</guid>
+				<pubDate>Wed, 10 Nov 2021 00:00:00 +0100</pubDate>
+				<link>/2021/11/10/DPE-passoires.html</link>
+				<guid isPermaLink="true">/2021/11/10/DPE-passoires.html</guid>
 			</item>
 		
 	</channel>
