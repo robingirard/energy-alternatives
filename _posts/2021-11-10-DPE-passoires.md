@@ -46,9 +46,9 @@ Dans tous ces cas, pour obtenir un nombre de bâtiments dans chaque classe éner
 
 <span class="mytext">
 Ces deux méthodologies ont abouti à des écarts significatifs dans l’estimation du nombre de passoires énergétiques : 8.8 millions et 4.9 millions respectivement. Ces différence peuvent avoir plusieurs origines :
-la dynamique du parc (rénovation/destruction) entre les deux périodes analysées : (2011-2012) pour la première et (2016-2018) pour la seconde. Cela pourrait expliquer guère plus qu’une différence de l’ordre de 1 000 000 de passoires.
-la différence entre le recensement utilisé dans le 1er cas et la base Fidéli dans le 2nd cas pour inférer les performances à l’échelle du parc à partir de l’échantillon retenu. Ici on peut expliquer une différence d’environ 500 000 passoires.
-Utilisation de deux campagnes de DPE faite dans des conditions et avec des objectifs différents. Nous allons montrer que la plus grosse différence vient de là.
+(1) la dynamique du parc (rénovation/destruction) entre les deux périodes analysées : (2011-2012) pour la première et (2016-2018) pour la seconde. Cela pourrait expliquer guère plus qu’une différence de l’ordre de 1 000 000 de passoires.
+(2) la différence entre le recensement utilisé dans le 1er cas et la base Fidéli dans le 2nd cas pour inférer les performances à l’échelle du parc à partir de l’échantillon retenu. Ici on peut expliquer une différence d’environ 500 000 passoires.
+(3) Utilisation de deux campagnes de DPE faite dans des conditions et avec des objectifs différents. Nous allons montrer que la plus grosse différence vient de là.
 </span>
 
 
