@@ -8,14 +8,14 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Sur le nombre de passoires énergétiques en France</title>
+				<title>Estimation de la Performance Énergétique du Parc Résidentiel</title>
 				<description>&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;em&gt;Résumé – Dans cet article, co-écrit avec Yassine Abdelouadoud, nous discutons le rôle du diagnostic de performance énergétique  (DPE) dans la transition énergétique et en particulier des estimations qu’il a permis du nombre de passoires énergétiques. Nous cherchons à expliquer l’origine les différences entre deux estimations faites par le gouvernement : celle de 2013 (8,8 millions) et celle de 2020 (4,8 millions). Une partie de cette différence s’explique par la dynamique du parc (destruction/rénovation), mais nous montrons que c’est surtout un défaut dans la base DPE utilisée en 2020 qui cause cette différence et nous proposons une méthode pour corriger ces défauts aboutit à une estimation de 7 millions de passoires. Nous discutons de l’importance de ces chiffrages vis à vis de nos objectifs de moyen et long terme dans le contexte de transition énergétique.&lt;/em&gt;
+&lt;em&gt;Résumé – Dans un article précédent [&lt;a href=&quot;https://www.energy-alternatives.eu/2021/11/10/DPE-passoires.html&quot;&gt;PostPassoires&lt;/a&gt;], nous avons présenté avec &lt;a href=&quot;mailto:yassine@abckpi.com&quot;&gt;Yassine Abdelouadoud&lt;/a&gt; le diagnostic de performance énergétique (le DPE) et discuté son utilisation pour l’évaluation du nombre de passoires énergétiques en France. Nous avions proposé une nouvelle estimation du nombre de passoire autour de 7 millions assez différente de l’estimation officielle [&lt;a href=&quot;https://www.statistiques.developpement-durable.gouv.fr/le-parc-de-logements-par-classe-de-consommation-energetique&quot;&gt;SDES-Sept2020&lt;/a&gt;] qui est de 4.5 millions. La vraisemblance de ces résultats était confortée par une analyse de l’évolution depuis la précédente évaluation de 2013 qui comptait 8 millions de passoires et faisait consensus. La nouvelle estimation que nous proposons a été obtenue à partir d’une nouvelle méthode que nous allons présenter succinctement dans cet article et qui permet entre autres de corriger certains défauts de la base DPE. Une application possible des résultats présentés obtenus avec la méthodologie présentée dans ce post est une cartographie de l’estimation de la localisation des passoires en France&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
 </description>
-				<pubDate>Wed, 10 Nov 2021 00:00:00 +0100</pubDate>
-				<link>/2021/11/10/DPE-passoires.html</link>
-				<guid isPermaLink="true">/2021/11/10/DPE-passoires.html</guid>
+				<pubDate>Wed, 16 Mar 2022 00:00:00 +0100</pubDate>
+				<link>/2022/03/16/DPE-open-data.html</link>
+				<guid isPermaLink="true">/2022/03/16/DPE-open-data.html</guid>
 			</item>
 		
 	</channel>
