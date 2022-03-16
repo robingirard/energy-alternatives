@@ -235,7 +235,7 @@ Par construction de la méthodologie, celle-ci permet de produire des résultats
 </span>
 
 <span class="text" id="Figure9a" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2022-03-16/logements_par_classe_et_par_année.svg){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2022-03-16/logements_par_classe_et_par_annee.svg){:.border}
 </span>
 
 <span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
