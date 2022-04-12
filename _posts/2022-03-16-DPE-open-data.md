@@ -2,10 +2,6 @@
 title: Estimation de la Performance Énergétique du Parc Résidentiel
 key: DPE
 tags: bâtiment rénovation DPE transition évolution passoires énergétiques
-article_header:
-  type: cover
-  image:
-    src: /assets/images/Posts/2022-03-16/DPE_image.png
 ---
 
 <span class="summary" style="display:block; text-align: justify">
