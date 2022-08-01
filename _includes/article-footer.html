@@ -37,9 +37,21 @@
     {%- endif -%}
     {%- include article/footer/author-profile.html author=_author -%}
   {%- endif -%}
-  <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=Alternativesnergtiques', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="Alternativesnergtiques" name="uri"/><input type="hidden" name="loc" value="fr_FR"/><input type="submit" value="Subscribe" /><p>Delivered by <a href="https://feedburner.google.com" target="_blank">FeedBurner</a></p></form>
-  <div class="subscribe"><i class="fas fa-rss"></i> <a type="application/rss+xml" href="{{ _paths_rss }}">{{ _locale_nav_subscribe }}</a></div>
-
+  <form
+    action="https://formspree.io/f/maykwoga"
+    method="POST"
+  >
+    <label>
+      Your email:
+      <input type="email" name="email">
+    </label>
+    <label>
+      Your message:
+      <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
+  </form>
   {%- if _show_subscribe -%}
     <div class="article__subscribe">{%- include article/footer/subscribe.html -%}</div>
   {%- endif -%}
