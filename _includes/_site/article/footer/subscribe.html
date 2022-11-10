@@ -1,5 +1,21 @@
-{%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
-{%- include snippets/get-nav-url.html path=_paths_rss -%}
-{%- assign _paths_rss = __return -%}
-{%- include snippets/get-locale-string.html key='SUBSCRIBE' -%}
-{%- assign _locale_nav_subscribe = __return -%}
+
+<html>
+  <head>
+      <script src="https://www.google.com/recaptcha/api.js?render=6Le3IfYiAAAAAHVE-JDXPW6thOVguv1lrV7LBkDq"></script>
+      <script>
+          grecaptcha.ready(function () {
+              grecaptcha.execute('6Le3IfYiAAAAAHVE-JDXPW6thOVguv1lrV7LBkDq', {action: 'submit'}).then(function (token) {
+                  console.info("got token: " + token);
+                  document.getElementById('g-recaptcha-response').value = token;
+              });
+          });
+      </script>
+  </head>
+  <body>
+      <form action="https://formspree.io/f/maykwoga" method="POST">
+          <input name="email" type="email">
+          <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+          <input type="submit" class="btn btn-primary" value="submit"/>
+      </form>
+  </body>
+<html>
