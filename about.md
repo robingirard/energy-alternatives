@@ -18,7 +18,9 @@ titles:
 key: page-about
 ---
 
-Robin Girard, enseignant chercheur à MINES ParisTech
+Robin Girard, enseignant chercheur à MINES Paris PSL
+
+[Ma page professionnelle](wwww.robingirard.eu)
 
 [Ma page de l'école ](https://www.minesparis.psl.eu/Services/Annuaire/robin-girard)
 
