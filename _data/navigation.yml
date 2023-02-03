@@ -29,7 +29,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /conferences.html
+    url: /Conferences.html
 
   - titles:
       # @start locale config
