@@ -18,7 +18,7 @@ titles:
 key: page-about
 ---
 
-Robin Girard, enseignant chercheur à MINES Paris PSL
+Robin Girard, Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008. 
 
 [Ma page professionnelle](wwww.robingirard.eu)
 
