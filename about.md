@@ -18,9 +18,9 @@ titles:
 key: page-about
 ---
 
-Robin Girard, Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008. 
+Robin Girard, Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008.
 
-[Ma page professionnelle](wwww.robingirard.eu)
+[Ma page professionnelle](https://www.robingirard.eu/)
 
 [Ma page de l'école ](https://www.minesparis.psl.eu/Services/Annuaire/robin-girard)
 
