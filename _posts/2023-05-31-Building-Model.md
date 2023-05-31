@@ -5,14 +5,14 @@ tags: bâtiments, rénovation, consommation, énergie, territoires.
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-*Résumé -- Nous publions aujourd’hui [un article dans la revue Energy and Building](https://www.sciencedirect.com/science/article/pii/S0378778823004358?via%3Dihub) sur la modélisation énergétique des bâtiments en France. L’occasion pour moi de présenter ici l’outil python de simulation open source [Building model](https://gitlab.com/energytransition/buildingmodel) qui est utilisé dans l’article, d’évoquer les possibilités de l’outil, quelques résultats obtenus, et notre recherche à venir ici.*
+*Résumé -- Nous publions aujourd’hui [un article dans la revue Energy and Building](https://www.sciencedirect.com/science/article/pii/S0378778823004358?via%3Dihub) sur la modélisation énergétique des bâtiments en France. L’occasion pour moi de présenter ici l’outil python de simulation open source [Building model](https://gitlab.com/energytransition/buildingmodel) qui est utilisé dans l’article pour simuler l'ensemble des consommations résidentielles de tous les logements de tous les iris de France. Le modèle est ensuite calibré sur les données de consommation observées à cette échelle (les données locales de l'énergie). Ce post est aussi l'occasion d’évoquer les possibilités de l’outil, de montrer quelques résultats obtenus, et de donner quelques sujets de recherche en cours.*
 </span>
 <!--more-->
 
 
 ## Introduction
 <span class="mytext">
-Les deux personnes qui ont le plus travaillé sur building model sont d’abord [Yassine Abdelouadoud](https://www.linkedin.com/in/yassine-abdelouadoud-a4b4831b9/) et ensuite [Martin Rit](https://www.linkedin.com/in/martin-rit/) (doctorant au CSTB). J’ai déjà publié ici des choses avec Yassine sur ce blog, il est l’auteur d’une base de données permettant d’évaluer le nombre de passoires thermiques en France que nous avions mis à disposition [ici](https://www.energy-alternatives.eu/2022/03/16/DPE-open-data.html). Cette base était obtenue en redressant la base des diagnostics de performance énergétique (DPE, l’ancienne génération) dont nous avions montré les défauts. Le redressement avait été présenté [dans un autre post](https://www.energy-alternatives.eu/2021/11/10/DPE-passoires.html). Il était entre autres basé sur l’utilisation des données du recensement de l’INSEE. Ici nous allons plus loin avec un modèle un peu plus complet, qui utilise en plus la [BD TOPO](https://geoservices.ign.fr/documentation/donnees/vecteur/bdtopo) de l’IGN. Ce modèle appelé Building Model est aussi un peu plus technique à l’usage, ça n’est pas une simple base de données mais bien un code de calcul branché sur un ensemble de bases de données (essentiellement la BD TOPO, recensement et DPE).
+Il y a quelque temps, j'ai présenté ici une base de données permettant d’évaluer le nombre de passoires thermiques en France que nous avions mis à disposition [ici](https://www.energy-alternatives.eu/2022/03/16/DPE-open-data.html). Cette base était obtenue en redressant la base des diagnostics de performance énergétique (DPE, l’ancienne génération) dont nous avions montré les défauts. Le redressement avait été présenté [dans un autre post](https://www.energy-alternatives.eu/2021/11/10/DPE-passoires.html). Il était entre autres basé sur l’utilisation des données du recensement de l’INSEE. Ici nous allons plus loin avec un modèle un peu plus complet, qui utilise en plus la [BD TOPO](https://geoservices.ign.fr/documentation/donnees/vecteur/bdtopo) de l’IGN. Ce modèle appelé Building Model est aussi un peu plus technique à l’usage, ça n’est pas une simple base de données mais bien un code de calcul branché sur un ensemble de bases de données (essentiellement la BD TOPO, recensement et DPE).
 </span>
 
 ## Building Model, notre modèle de bâtiment open source.
@@ -50,6 +50,8 @@ Les niveaux d'erreurs obtenus dans ces travaux sont présentés Figure 1 et 2.</
 
 
 ## Travaux en cours/à venir
+Les deux personnes qui ont le plus travaillé sur building model, l'outil dont nous allons parler ici, sont d’abord [Yassine Abdelouadoud](https://www.linkedin.com/in/yassine-abdelouadoud-a4b4831b9/) et ensuite [Martin Rit](https://www.linkedin.com/in/martin-rit/) (doctorant au CSTB). Nous travaillons encore avec Yassine et Martin sur différents sujets.
+
 <span class="mytext">
 1- Utilisation de Building Model couplé à un outil d’optimisation de la rénovation à l’échelle des territoires dont je parlerai prochainement ici (mis en place dans la [thèse de Antoine Rogeau](https://www.theses.fr/2020UPSLM014) et publié dans [cet article de la revue Applied Energy](https://www.sciencedirect.com/science/article/pii/S0306261920301513)) pour rejouer les PCAET de certains territoires (au programme pour l’instant quelques métropoles : Lille, Grenoble, Nantes, Toulouse). Si vous souhaitez assister à la présentation de Martin Rit au séminaire des doctorants le 8 juin 2023, c’est possible en visio via le [lien donné ici](https://www.linkedin.com/posts/activity-7061965584875319296-AQVv/?utm_source=share&utm_medium=member_desktop).
 </span>
@@ -64,6 +66,10 @@ Les niveaux d'erreurs obtenus dans ces travaux sont présentés Figure 1 et 2.</
 
 <span class="mytext">
 4 - Amélioration du modèle sur des usages comme la climatisation (vaste sujet).
+</span>
+
+<span class="mytext">
+5 - Brancher building model sur des outils de planification du réseau de distribution d'électricité développés par [Roseau Technologies](https://www.roseautechnologies.com/) pour évaluer les coûts à venir de l'évolution du réseau de distribution d'électricité ainsi que la valeur de flexibilités dans ce réseau.  
 </span>
 
 
