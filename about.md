@@ -18,7 +18,7 @@ titles:
 key: page-about
 ---
 
-Robin Girard, Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008.
+Robin Girard, Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008, Head of Science au think tank [Zenon](https://www.zenon.ngo/).
 
 [Ma page professionnelle](https://www.robingirard.eu/)
 

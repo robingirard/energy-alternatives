@@ -8,14 +8,14 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Mettre la sobriété énergétique au service de la solidarité</title>
+				<title>Simulation énergétique des bâtiments à l’échelle des territoires, un outil open source calibré à l’échelle de la France.</title>
 				<description>&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;em&gt;Résumé – Ce texte est une tribune co-écrite avec Patrick Criqui, Économiste, directeur de recherche émérite au CNRS, et Alain Grandjean, Économiste et président de la fondation Nicolas Hulot. La sobriété énergétique est un levier majeur à court terme pour répondre à la crise de cet hiver comme à long terme pour atteindre la neutralité carbone. Mais il faut mettre en oeuvre des mesures d’incitation et surtout réfléchir à la répartition des contraintes et des bénéfices que va générée cette sobriété.&lt;/em&gt;
+&lt;em&gt;Résumé – Nous publions aujourd’hui &lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0378778823004358?via%3Dihub&quot;&gt;un article dans la revue Energy and Building&lt;/a&gt; sur la modélisation énergétique des bâtiments en France. L’occasion pour moi de présenter ici l’outil python de simulation open source &lt;a href=&quot;https://gitlab.com/energytransition/buildingmodel&quot;&gt;Building model&lt;/a&gt; qui est utilisé dans l’article, d’évoquer les possibilités de l’outil, quelques résultats obtenus, et notre recherche à venir ici.&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
 </description>
-				<pubDate>Sat, 29 Oct 2022 00:00:00 +0200</pubDate>
-				<link>/2022/10/29/Sobriete.html</link>
-				<guid isPermaLink="true">/2022/10/29/Sobriete.html</guid>
+				<pubDate>Wed, 31 May 2023 00:00:00 +0200</pubDate>
+				<link>/2023/05/31/Building-Model.html</link>
+				<guid isPermaLink="true">/2023/05/31/Building-Model.html</guid>
 			</item>
 		
 	</channel>

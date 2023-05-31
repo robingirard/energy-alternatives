@@ -1,7 +1,7 @@
 ---
-title: Simulation énergétique des batiments à l’échelle des territoires : un outil open source calibré à l’échelle de la France.
-key: bâtiment
-tags: bâtiment, rénovation, consommation, énergie, territoires.
+title: Simulation énergétique des bâtiments à l’échelle des territoires, un outil open source calibré à l’échelle de la France.
+key: bâtiments
+tags: bâtiments, rénovation, consommation, énergie, territoires.
 ---
 
 <span class="summary" style="display:block; text-align: justify">
@@ -12,7 +12,7 @@ tags: bâtiment, rénovation, consommation, énergie, territoires.
 
 ## Introduction
 <span class="mytext">
-Les deux personnes qui ont le plus travaillé sur building model sont d’abord Yassine Abdelouadoud et ensuite Martin Rit (doctorant au CSTB). J’ai déjà publié ici des choses avec Yassine ici, il est l’auteur d’une base de données permettant d’évaluer le nombre de passoires thermiques en France que nous avions mis à disposition [ici](https://www.energy-alternatives.eu/2022/03/16/DPE-open-data.html). Cette base était obtenue en redressant la base des diagnostics de performance énergétique (DPE, l’ancienne génération) dont nous avions montré les défauts. Le redressement avait été présenté [dans un autre post](https://www.energy-alternatives.eu/2021/11/10/DPE-passoires.html). Il était entre autres basé sur l’utilisation des données du recensement de l’INSEE. Ici nous allons plus loin avec un modèle un peu plus complet, qui utilise en plus la [BD TOPO](https://geoservices.ign.fr/documentation/donnees/vecteur/bdtopo) de l’IGN. Ce modèle appelé Building Model est aussi un peu plus technique à l’usage, ça n’est pas une simple base de données mais bien un code de calcul branché sur un ensemble de bases de données (essentiellement la BD TOPO, recensement et DPE).
+Les deux personnes qui ont le plus travaillé sur building model sont d’abord [Yassine Abdelouadoud](https://www.linkedin.com/in/yassine-abdelouadoud-a4b4831b9/) et ensuite [Martin Rit](https://www.linkedin.com/in/martin-rit/) (doctorant au CSTB). J’ai déjà publié ici des choses avec Yassine sur ce blog, il est l’auteur d’une base de données permettant d’évaluer le nombre de passoires thermiques en France que nous avions mis à disposition [ici](https://www.energy-alternatives.eu/2022/03/16/DPE-open-data.html). Cette base était obtenue en redressant la base des diagnostics de performance énergétique (DPE, l’ancienne génération) dont nous avions montré les défauts. Le redressement avait été présenté [dans un autre post](https://www.energy-alternatives.eu/2021/11/10/DPE-passoires.html). Il était entre autres basé sur l’utilisation des données du recensement de l’INSEE. Ici nous allons plus loin avec un modèle un peu plus complet, qui utilise en plus la [BD TOPO](https://geoservices.ign.fr/documentation/donnees/vecteur/bdtopo) de l’IGN. Ce modèle appelé Building Model est aussi un peu plus technique à l’usage, ça n’est pas une simple base de données mais bien un code de calcul branché sur un ensemble de bases de données (essentiellement la BD TOPO, recensement et DPE).
 </span>
 
 ## Building Model, notre modèle de bâtiment open source.
@@ -34,9 +34,18 @@ Dans [l'article](https://www.sciencedirect.com/science/article/pii/S037877882300
 1- nous exposons Building Model avec plus de détails et nous l’appliquons à toute la France pour simuler la consommation de gaz et d’électricité du secteur résidentiel sur l’ensemble des IRIS de France. La [maille IRIS](https://www.insee.fr/fr/metadonnees/definition/c1523) est une maille géographique plus fine que la commune contenant de l’ordre de 2000 habitants.
 </span>
 <span class="mytext">
- nous utilisons l’ensemble des données locales de l’énergie disponibles en open data https://www.statistiques.developpement-durable.gouv.fr/donnees-locales-de-consommation-denergie.   Ces données de consommation annuelle de gaz et d’électricité sont disponibles sur une bonne partie de la France à la maille IRIS, depuis 2017. Nous proposons une méthode statistique permettant de corriger le modèle Building Model.  Ce modèle utilise en entrée les sorties de Building Model mais aussi d’autres indicateurs statistiques comme le taux de pauvreté, l’âge moyen des habitants, …
+ 2- Nous utilisons l’ensemble des données locales de l’énergie disponibles en open data https://www.statistiques.developpement-durable.gouv.fr/donnees-locales-de-consommation-denergie.   Ces données de consommation annuelle de gaz et d’électricité sont disponibles sur une bonne partie de la France à la maille IRIS, depuis 2017. Nous proposons une méthode statistique permettant de corriger le modèle Building Model.  Ce modèle utilise en entrée les sorties de Building Model mais aussi d’autres indicateurs statistiques comme le taux de pauvreté, l’âge moyen des habitants, …
 </span>
 
+<span class="mytext">
+Les niveaux d'erreurs obtenus dans ces travaux sont présentés Figure 1 et 2.</span>
+<span class="text" id="Figure9a" style="display:block;text-align:center">
+![Image]({{site.baseurl}}/assets/images/Posts/2023-05-31/Erreur.jpg){:.border}
+</span>
+
+<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
+**Figure 1** --   Distribution des erreurs relatives (exprimées en %) de simulation de l'énergie annuelle consommée sur l'ensemble des Iris de France pour le gaz et l'électricité, avant et après calibration.
+</span>
 
 
 
@@ -55,4 +64,13 @@ Dans [l'article](https://www.sciencedirect.com/science/article/pii/S037877882300
 
 <span class="mytext">
 4 - Amélioration du modèle sur des usages comme la climatisation (vaste sujet).
+</span>
+
+
+<span class="text" id="Figure9a" style="display:block;text-align:center">
+![Image]({{site.baseurl}}/assets/images/Posts/2023-05-31/France_small.jpg){:.border}
+</span>
+
+<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
+**Figure 2** --   Répartition spatiale des erreurs relatives (exprimées en %) pour la simulation de la consommation d'électricité à la maille IRIS avant et après calibration.
 </span>
