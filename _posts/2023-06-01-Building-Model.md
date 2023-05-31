@@ -5,7 +5,7 @@ tags: bâtiment, rénovation, consommation, énergie, territoires.
 article_header:
   type: cover
   image:
-    src: /assets/images/Posts/2023-06-01/France.jpg
+    src: /assets/images/Posts/2023-06-01/France_small.jpg
 ---
 
 <span class="summary" style="display:block; text-align: justify">
