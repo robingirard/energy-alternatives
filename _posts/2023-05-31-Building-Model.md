@@ -50,8 +50,9 @@ Les niveaux d'erreurs obtenus dans ces travaux sont présentés Figure 1 et 2.</
 
 
 ## Travaux en cours/à venir
+<span class="mytext">
 Les deux personnes qui ont le plus travaillé sur building model sont d’abord [Yassine Abdelouadoud](https://www.linkedin.com/in/yassine-abdelouadoud-a4b4831b9/) et ensuite [Martin Rit](https://www.linkedin.com/in/martin-rit/) (doctorant au CSTB). Nous travaillons encore avec Yassine et Martin sur différents sujets.
-
+</span>
 <span class="mytext">
 1- Utilisation de Building Model couplé à un outil d’optimisation de la rénovation à l’échelle des territoires dont je parlerai prochainement ici (mis en place dans la [thèse de Antoine Rogeau](https://www.theses.fr/2020UPSLM014) et publié dans [cet article de la revue Applied Energy](https://www.sciencedirect.com/science/article/pii/S0306261920301513)) pour rejouer les PCAET de certains territoires (au programme pour l’instant quelques métropoles : Lille, Grenoble, Nantes, Toulouse). Si vous souhaitez assister à la présentation de Martin Rit au séminaire des doctorants le 8 juin 2023, c’est possible en visio via le [lien donné ici](https://www.linkedin.com/posts/activity-7061965584875319296-AQVv/?utm_source=share&utm_medium=member_desktop).
 </span>
