@@ -37,13 +37,7 @@ Dans [l'article](https://www.sciencedirect.com/science/article/pii/S037877882300
  nous utilisons l’ensemble des données locales de l’énergie disponibles en open data https://www.statistiques.developpement-durable.gouv.fr/donnees-locales-de-consommation-denergie.   Ces données de consommation annuelle de gaz et d’électricité sont disponibles sur une bonne partie de la France à la maille IRIS, depuis 2017. Nous proposons une méthode statistique permettant de corriger le modèle Building Model.  Ce modèle utilise en entrée les sorties de Building Model mais aussi d’autres indicateurs statistiques comme le taux de pauvreté, l’âge moyen des habitants, …
 </span>
 
-<span class="text" id="Figure9a" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2022-03-16/logements_par_classe_et_par_annee.svg){:.border}
-</span>
 
-<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
-**Figure 9-a** --   Nombre de logements par classe énergétique et par classe d’année de construction
-</span>
 
 
 ## Travaux en cours/à venir
