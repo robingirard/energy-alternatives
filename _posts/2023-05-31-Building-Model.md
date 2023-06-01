@@ -38,7 +38,7 @@ Dans [l'article](https://www.sciencedirect.com/science/article/pii/S037877882300
 </span>
 
 <span class="mytext">
-Les niveaux d'erreurs obtenus dans ces travaux sont présentés Figure 1 et 2.</span>
+Les niveaux d'erreurs obtenus dans ces travaux sont présentés Figure 1, 2 et 3. En moyenne pour le vecteur électrique, sur le modèle calibré, l'erreur est de 16%. Elle est un peu plus grande sur le vecteur gaz.  </span>
 <span class="text" id="Figure9a" style="display:block;text-align:center">
 ![Image]({{site.baseurl}}/assets/images/Posts/2023-05-31/Erreur.jpg){:.border}
 </span>
@@ -81,4 +81,11 @@ Les deux personnes qui ont le plus travaillé sur building model sont d’abord 
 
 <span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
 **Figure 2** --   Répartition spatiale des erreurs relatives (exprimées en %) pour la simulation de la consommation d'électricité à la maille IRIS avant et après calibration.
+</span>
+<span class="text" id="Figure9a" style="display:block;text-align:center">
+![Image]({{site.baseurl}}/assets/images/Posts/2023-05-31/erreur2.jpg){:.border}
+</span>
+
+<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
+**Figure 3** --   Erreurs relatives (exprimées en %) en fonction de la complexité du modèle utilisé.
 </span>
