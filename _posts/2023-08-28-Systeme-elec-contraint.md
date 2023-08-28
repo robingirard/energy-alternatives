@@ -5,7 +5,7 @@ tags: nucléaire, défaillance, RTE, transition
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-*Résumé -- Une tribune écrite en juin pour Alternatives Economiques qui a mis un peu de temps [à être publiée.](https://www.alternatives-economiques.fr/robin-girard/un-systeme-electrique-contrainte/00107458). J'y parle des contraintes passées et à venir sur notre système électrique, du fameux critère de défaillance et de la récente note de l'ASN qui vient un peu bousculer ce sujet.*
+*Résumé -- Une tribune écrite en juin pour Alternatives Economiques qui a mis un peu de temps [à être publiée](https://www.alternatives-economiques.fr/robin-girard/un-systeme-electrique-contrainte/00107458). J'y parle des contraintes passées et à venir sur notre système électrique, du fameux critère de défaillance et de la récente note de l'ASN qui vient un peu bousculer ce sujet.*
 </span>
 <!--more-->
 
