@@ -60,15 +60,15 @@ Le sujet aujourd’hui sur la table est celui du « bouclage », autrement dit l
 Il peut sembler assez simple de trancher cette question après coup : notons que la grande crainte de cet hiver s’est finalement soldée par un coût de l’électricité élevé, un peu de sobriété voulue ou subie et surtout beaucoup d’importations des pays voisins, alors que nous étions exportateurs nets depuis plus de 25 ans. Mais nous devons aujourd’hui anticiper et penser la situation en 2030. Il s’agit donc d’essayer de prévoir les volumes que nous consommerons et d’essayer de mettre en face les volumes que nous produirons.
 </span>
 
-<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
+<span class="mytext">
 La particularité avec l’électricité, c’est que cette question d’équilibre doit aussi se poser sur des échelles temporelles beaucoup plus courtes, vis-à-vis par exemple d’une vague de froid ou d’une période sans vent, et l’on doit s’y préparer. S’il n’y a pas assez de production, il faut délester (couper) certains clients, et le système électrique est organisé pour que ce délestage soit le plus indolore possible, malgré les fausses informations qui ont circulé sur ce sujet cet hiver. En outre, le délestage est courant et n’a rien à voir avec un black-out, qui est un problème grave dans lequel tout le système s’effondre.
 </span>
 
-<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
+<span class="mytext">
 La rationalité veut qu’un système bien dimensionné nous permette de faire face sans trop de délestages aux incertitudes, mais pas à toute éventualité. Il faut se préparer à une météo difficile telle que l’on en voit tous les dix ou vingt ans, à la perte d’une centrale nucléaire ou d’une interconnexion avec un pays, etc. Il serait simplement absurde de prétendre être capable d’affronter la perte de tout notre parc de manière indolore.
 </span>
 
-<span class="legendtext" id="CAPFigure9a" style="display:block;text-align:center">
+<span class="mytext">
 Thomas Veyrenc, directeur de la prospective à RTE [rappelle très bien la difficulté](http://www.youtube.com/watch?v=oUIoUJWMTaU&t=3151s) qu’il y a à communiquer sur ce fameux critère de défaillance, tant leur position de responsable d’équilibre les rend toujours trop prévoyants quand il n’arrive rien et jamais assez lorsqu’un problème surgit. Il rappelle aussi que ce critère de défaillance est réglementaire. A l’horizon 2025, le système est assez large, mais à moyen terme, les fermetures de centrales dans des pays voisins et l’électrification des usages pourraient nous mettre en difficulté.
 </span>
 
