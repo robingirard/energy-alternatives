@@ -5,10 +5,9 @@ tags: transport, vehicule électrique, décarbonation industrie
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-*Résumé -- J'ai été invité à écrire une tribune sur le véhicule électrique pour [Mobil'is](https://www.mobil-is.fr/). Pas facile mais instructif de parler de ce sujet en moins de 4000 mots. Cette tribune m'a permis de rappeler trois choses :
-- impossible d'approcher l'ambition de la neutralité carbone dans le transport sans un développement massif des véhicules électriques et une quasi-disparition du véhicule thermique
-- réduire les émissions à l'usage ne suffit pas, il faut réduire les émissions à la fabrication, par la décarbonation de l'industrie (acier, batteries, ...). C'est là que nous avons besoin d'hydrogène, pour décarboner la fabrication de l'acier par exemple.
-- il n'y a pas de solution miracle en termes de mobilité, il faut développer les transports en commun, l'auto-partage, les véhicules légers, le vélo, repenser l'urbanisation sur le plus long terme, ... .*
+Résumé -- J'ai été invité à écrire une tribune sur le véhicule électrique pour [Mobil'is](https://www.mobil-is.fr/). Pas facile mais instructif de parler de ce sujet en moins de 4000 mots. Cette tribune m'a permis de rappeler trois choses : (i) impossible d'approcher l'ambition de la neutralité carbone dans le transport sans un développement massif des véhicules électriques et une quasi-disparition du véhicule thermique
+(ii) réduire les émissions à l'usage ne suffit pas, il faut réduire les émissions à la fabrication, par la décarbonation de l'industrie (acier, batteries, ...). C'est là que nous avons besoin d'hydrogène, pour décarboner la fabrication de l'acier par exemple.
+(iii) il n'y a pas de solution miracle en termes de mobilité, il faut développer les transports en commun, l'auto-partage, les véhicules légers, le vélo, repenser l'urbanisation sur le plus long terme, ... .
 </span>
 <!--more-->
 
