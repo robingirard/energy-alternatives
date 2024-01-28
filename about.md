@@ -21,7 +21,7 @@ key: page-about
 Nous sommes des chercheurs de MINES Paris PSL, notre production n'engage pas l'école.
 
 
-## Robin Girard,
+## Robin Girard
 Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008, Head of Science au think tank [Zenon](https://www.zenon.ngo/).
 
 - [Sa page professionnelle](https://www.robingirard.eu/)

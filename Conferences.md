@@ -18,14 +18,5 @@ titles:
 key: page-conference
 ---
 
-Quelques liens vers des conférences grand public données récemments. Je partage les pptx !
-Si vous voulez en savoir plus mon activité de recherche et d'enseignement à MINES Paris PSL et à l'extérieur, [consultez ma page professionnelle](www.robingirard.eu).
-
-- 09/03/2023 Première journée du parcours "Territoire Énergie Climat" organisé par [Executive Education MINES Paris - PSL](https://executive-education.minesparis.psl.eu/) pour les services de la Première ministre. [Ma présentation en format pptx](https://cloud.minesparis.psl.eu/index.php/s/5KnaD9Zg7LLN9qO)  C’était aussi une chance d’avoir mon collègue [Damien Goetz](https://www.minesparis.psl.eu/Services/Annuaire/damien-goetz) après moi car il a pu prendre le temps de parler de la question épineuse des matériaux et j'ai pu faire l'impasse !
-
-- 02/02/2023 Séminaire [contexte à Bordeaux](https://www.math.u-bordeaux.fr/imb/seminaire-contexte?year=2023). "Le miracle de l’électrification et ses limites" -- Lien vers le fichier de la présentation : [pptx](https://cloud.minesparis.psl.eu/index.php/s/GHB2dLb9p90yJrg) - [pdf](https://cloud.minesparis.psl.eu/index.php/s/oppP08iiETekX9K).
-
-- 24/01/2023 Conférence salle Laure Ecard à Nice dans le contexte de [Science 06](https://sciencepourtous-06.fr/eolien-nucleaire-photovoltaique-quelles-energies-en-2035-2050-24-janvier-2023-nice/). "Quelles sources d'énergie bas carbone pour 2030 et 2050" -- Lien vers le fichier de la présentation : [pptx](https://cloud.minesparis.psl.eu/index.php/s/uzslt6oFtLuuuKs)-- [pdf](https://cloud.minesparis.psl.eu/index.php/s/3NF6Ljy35c9w3dG).
-
 {% highlight javascript %}
 {% endhighlight %}
