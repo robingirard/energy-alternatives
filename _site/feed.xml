@@ -8,14 +8,14 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Simulation énergétique des bâtiments à l’échelle des territoires, un outil open source calibré à l’échelle de la France.</title>
+				<title>Un système électrique sous contrainte</title>
 				<description>&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;em&gt;Résumé – Nous publions aujourd’hui &lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S0378778823004358?via%3Dihub&quot;&gt;un article dans la revue Energy and Building&lt;/a&gt; sur la modélisation énergétique des bâtiments en France. L’occasion pour moi de présenter ici l’outil python de simulation open source &lt;a href=&quot;https://gitlab.com/energytransition/buildingmodel&quot;&gt;Building model&lt;/a&gt; qui est utilisé dans l’article, d’évoquer les possibilités de l’outil, quelques résultats obtenus, et notre recherche à venir ici.&lt;/em&gt;
+&lt;em&gt;Résumé – Une tribune écrite en juin pour Alternatives Economiques qui a mis un peu de temps &lt;a href=&quot;https://www.alternatives-economiques.fr/robin-girard/un-systeme-electrique-contrainte/00107458&quot;&gt;à être publiée&lt;/a&gt;. J’y parle des contraintes passées et à venir sur notre système électrique (la question du “bouclage”), du fameux critère de défaillance et de la récente note de l’ASN qui vient un peu bousculer ce sujet.&lt;/em&gt;
 &lt;/span&gt;&lt;/p&gt;
 </description>
-				<pubDate>Wed, 31 May 2023 00:00:00 +0200</pubDate>
-				<link>/2023/05/31/Building-Model.html</link>
-				<guid isPermaLink="true">/2023/05/31/Building-Model.html</guid>
+				<pubDate>Mon, 28 Aug 2023 00:00:00 +0200</pubDate>
+				<link>/2023/08/28/Systeme-elec-contraint.html</link>
+				<guid isPermaLink="true">/2023/08/28/Systeme-elec-contraint.html</guid>
 			</item>
 		
 	</channel>
