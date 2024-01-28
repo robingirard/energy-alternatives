@@ -1,0 +1,27 @@
+---
+title: Un système électrique sous contrainte
+key: système électrique
+tags: transport, vehicule électrique, décarbonation industrie
+---
+
+<span class="summary" style="display:block; text-align: justify">
+*Résumé -- J'ai été invité à écrire une tribune sur le véhicule électrique pour [Mobil'is](https://www.mobil-is.fr/). Pas facile mais instructif de parler de ce sujet en moins de 4000 mots. Cette tribune m'a permis de rappeler trois choses :
+- impossible d'approcher l'ambition de la neutralité carbone dans le transport sans un développement massif des véhicules électriques et une quasi-disparition du véhicule thermique
+- réduire les émissions à l'usage ne suffit pas, il faut réduire les émissions à la fabrication, par la décarbonation de l'industrie (acier, batteries, ...). C'est là que nous avons besoin d'hydrogène, pour décarboner la fabrication de l'acier par exemple.
+- il n'y a pas de solution miracle en termes de mobilité, il faut développer les transports en commun, l'auto-partage, les véhicules légers, le vélo, repenser l'urbanisation sur le plus long terme, ... .*
+</span>
+<!--more-->
+
+
+
+<span class="mytext">
+Nous émettons chaque année à d’usage de nos voitures presque 100 millions de tonnes de gas à effet de serre. Ce n’est pas loin du quart de la totalité des émissions qui ont lieu en France. D’autres secteurs comme l’agriculture ou l’industrie, ou d’autres types de transport comme l’aviation sont plus difficiles à décarboner que le véhicule léger car il peut bénéficier du double avantage de l’électrification directe : un gain d’efficacité (division par deux ou trois de la consommation par rapport au moteur thermique) et la possibilité d’une source d’énergie bas carbone. On peut ainsi viser à terme la disparition des émissions liées à l’usage des voitures et une consommation d’électricité associée raisonnable. Il est inenvisageable de faire plus que la moitié de ce chemin avec le moteur thermique, et ce même avec les meilleurs efforts d’ingénierie ou de sobriété. L’hydrogène peut être produit avec de l’électricité bas carbone mais son utilisation pour le véhicule léger génère une consommation d’électricité deux à trois fois plus grande que par l’électrification directe. Le développement d’un moteur à combustion interne hydrogène ne ferait qu’empirer ce bilan. Les biocarburants et le biogaz sont disponibles en quantité trop limité pour couvrir plus qu’une petite fraction de besoins et seront plus utiles dans d’autres secteurs où l’électrification directe est difficile.
+</span>
+
+<span class="mytext">
+Mais diminuer les émissions à l’usage n’est pas suffisant, car l’industrie automobile est elle-même à l’origine d’une pollution générée par exemple lors de la production de l’acier. Pour le véhicule électrique, il faut ajouter celle relative à la fabrication des batteries. Les technologies que déployons pour diminuer nos émissions, comme le véhicule électrique, les moyens de production renouvelable, sont souvent encore fabriquées avec le système industriel du passé. Nous produisons l’acier dans des hauts fourneaux avec du charbon et jusqu’à aujourd’hui les batteries étaient produites à partir d’une énergie provenant de centrales électriques polluantes en Chine. Mais des usines géantes de fabrication de batteries, comme celle de l’entreprise Grenobloise Verkor, produisent aujourd’hui des batteries lithium-ion en France et en Europe, à partir d’une électricité moins carbonée et qui, d’ici quelques années, n’émettra presque plus de gaz à effet de serre. Les hauts fourneaux vont être progressivement remplacés par des fours qui permettront la réduction directe du minerai de fer à partir d’hydrogène bas carbone.
+</span>
+
+<span class="mytext">
+Il n’y a pas de solution miracle en matière de mobilité durable mais le moteur thermique est la pire des options. La batterie nous pousse à bien anticiper l’approvisionnement en matériaux comme le lithium et le cobalt. Les tensions à venir soulèvent des questions géopolitiques, mais aussi environnementales. Des alternatives se mettent en place comme avec l’entreprise française Tiamat qui produit des batteries au sodium. Pourtant, si l’électrification directe est une nécessité, les pressions environnementales montrent qu’elle ne suffit pas. Les collectivités ont un travail important à mener, pour mettre en place les bornes de recharge bien sûre mais aussi en termes de mobilité légère, de transport en commun, de pistes cyclables, de covoiturage, … c’est notre vision du transport qu’il faut transformer. Par ailleurs, il faut une vraie stratégie de recyclage, dès la conception, pour les batteries mais aussi l’électronique embarquée. Car dans cette économie des matériaux, contrairement à l’aire du pétrole, la réutilisation et le recyclage seront une clé de la durabilité, d’autant que la motorisation électrique doit permettre une durée de vie beaucoup plus importante de nos véhicules. L’ambition de la neutralité carbone à l’horizon 2050 est une nécessité par rapport à l’enjeu climatique, faisons en sorte qu’elle soit une source d’opportunités futures pour notre industrie et un projet d’amélioration de nos espaces de vie.
+</span>
