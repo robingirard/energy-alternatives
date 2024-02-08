@@ -19,7 +19,7 @@ Résumé -- Je profite du succès du livre de Jean-Baptiste Fressoz "Sans transi
 
 
 <span class="mytext">
-Parmi les tensions qui alimentent nos débats autour de la décarbonation de l’économie, l’opposition entre croissance et croissance verte est sans doute une des plus importantes aujourd’hui. Si l’on en reste à ces mots, la dimension idéologique du débat ne mène en général pas plus loin que la caricature et l’approximation, si ce n’est aux insultes et à l’incompréhension. La sobriété est un retour à la bougie, la croissance verte une explosion exponentielle de notre impact sur l’environnement et chacun se retrouve vite responsable de tous les maux de la société.
+Parmi les tensions qui alimentent nos débats autour de la décarbonation de l’économie, l’opposition entre décroissance et croissance verte est sans doute une des plus importantes aujourd’hui. Si l’on en reste à ces mots, la dimension idéologique du débat ne mène en général pas plus loin que la caricature et l’approximation, si ce n’est aux insultes et à l’incompréhension. La sobriété est un retour à la bougie, la croissance verte une explosion exponentielle de notre impact sur l’environnement et chacun se retrouve vite responsable de tous les maux de la société.
 </span>
 
 <span class="mytext">
