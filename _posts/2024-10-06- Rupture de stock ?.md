@@ -104,7 +104,7 @@ Mais qui parle de mettre un prix plancher au pétrole ? Pourtant la méthode est
 </span>
 
 <span class="mytext">
-Comme nous l'avons expliqué plus haut, un enjeu majeur est justement de tuer les investissements pétroliers en évitant que la demande remonte lorsque les prix baisse. Hors, la demande baisse aujourd'hui (pour des raisons indépendantes de la transition) et la demande baissera plus tard, avec la transition. Mettre un prix plancher sur le pétrole est une opportunité à court terme et un levier indispensable à long terme;
+Comme nous l'avons expliqué plus haut, un enjeu majeur est justement de tuer les investissements pétroliers en évitant que la demande remonte lorsque les prix baisse. Or, la demande baisse aujourd'hui (pour des raisons indépendantes de la transition) et la demande baissera plus tard, avec la transition. Mettre un prix plancher sur le pétrole est une opportunité à court terme et un levier indispensable à long terme;
 </span>
 
 ## En France nous gardons un attachement au pétrole.
