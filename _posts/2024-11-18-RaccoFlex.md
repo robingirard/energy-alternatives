@@ -9,7 +9,7 @@ article_header:
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-Résumé -- Ce post présente les résultats du projet RaccoFlex qui a été mené par le centre PERSEE de MINES Paris PSL et l'entreprise Roseau technologie.
+Résumé -- Ce post présente une synthèse des résultats du projet RaccoFlex qui a été mené par le centre PERSEE de MINES Paris PSL et l'entreprise Roseau Technologies. Dans ce projet nous avons mis en place une méthode permettant d'évaluer les coûts de renforcement du réseau de distribution d'électricité pour l'intégration de centrales photovoltaïques (en basse tension et en HTA). Cette méthode combine trois type de modélisation. La première est une modélisation de la charge et de son évolution. La seconde est une modélisation de l'ensemble du réseau de distribution français à partir de réseaux types. La troisième est une modélisation des stratégies de renforcement avec ou sans application de solution de flexibilité, ainsi que des coûts associés. Cette méthode a été appliquée à différents niveaux de pénétration renouvelable, pour différentes combinaisons de types de centrales (grandes centrales au sol, grandes toitures, petites toiture), et avec ou sans l'utilisation de flexibilité. Ce projet a été financé par France Relance et par Roseau Technologies.
 </span>
 <!--more-->
 
