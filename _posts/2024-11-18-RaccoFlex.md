@@ -5,13 +5,22 @@ tags: réseau de distribution d'électricité, coût renforcement, valeur de la 
 article_header:
   type: cover
   image:
-    src: /assets/images/Posts/2024-11-18/logos_roseau_mines.png
+    src: /assets/images/Posts/2024-11-18/Scenarios_PV_large.png
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-Résumé -- Ce post présente une synthèse des résultats du projet RaccoFlex qui a été mené par Yassine Abdelouadoud et coordonné par moi-même au centre PERSEE de MINES Paris PSL en partenariat avec l'entreprise Roseau Technologies. Dans ce projet nous avons mis en place une méthode permettant d'évaluer les coûts de renforcement du réseau de distribution d'électricité pour l'intégration de centrales photovoltaïques (en basse tension et en HTA). Cette méthode combine trois type de modélisation. La première est une modélisation de la charge et de son évolution. La seconde est une modélisation de l'ensemble du réseau de distribution français à partir de réseaux types. La troisième est une modélisation des stratégies de renforcement avec ou sans application de solution de flexibilité, ainsi que des coûts associés. Cette méthode a été appliquée à différents niveaux de pénétration renouvelable, pour différentes combinaisons de types de centrales (grandes centrales au sol, grandes toitures, petites toiture), et avec ou sans l'utilisation de flexibilité. Ce projet a été financé par France Relance et par Roseau Technologies.
+Résumé -- Ce post présente une synthèse des résultats du projet RaccoFlex qui a été mené par Yassine Abdelouadoud et coordonné par moi-même au centre PERSEE de MINES Paris PSL en partenariat avec l'entreprise Roseau Technologies. Dans ce projet nous avons mis en place une méthode permettant d'évaluer les coûts de renforcement du réseau de distribution d'électricité pour l'intégration de centrales photovoltaïques (en basse tension et en HTA). Cette méthode combine deux types de modélisation. La première est une modélisation à la pointe qui permet d'estimer les besoins de renforcement liés à l'intégration du PV. La deuxième est une modélisation dynamique qui permet de calculer l'énergie qui sera effectivement écrêtée en cas d'utilisation de la flexibilité. Afin de limiter les besoins de calcul, cette approche est appliquée à une sélection de 150 départs HTA dont la représentativité a été validée. Cette méthode a été appliquée à différents niveaux de pénétration renouvelable (voir Figure ci-dessus), pour différentes combinaisons de types de centrales (grandes centrales au sol, grandes toitures, petites toiture), et avec ou sans l'utilisation de flexibilité. Ce projet a été financé par France Relance et par Roseau Technologies.
 </span>
 <!--more-->
+
+
+<span class="text" id="Figure1" style="display:block;text-align:center">
+![Image]({{site.baseurl}}/assets/images/Posts/2024-11-18/cost_by_power_with_flexibility.png){:.border}
+</span>
+
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+**Figure 1** --   Coûts unitaires obtenus en fonction des différents scénarios avec et sans flexibilité
+</span>
 
 
 ## Généralités et contexte  
@@ -85,4 +94,14 @@ Dans les scénarios à forte croissance de la capacité photovoltaïque, les ord
 
 <span class="mytext">
 **La mise en œuvre de la flexibilité est particulièrement favorable dans le cas des installations sur toitures résidentielles** (par opposition aux grandes toitures et aux centrales au sol). Ceci est dû à la fois à des évitements d’investissement plus importants (13 MM€ pour le scénario “résidentiel”, 7.8 MM€ pour le scénario “centrales au sol”, ces deux scénarios visant une même puissance-cible d’environ 50 GW) et une énergie écrêtée plus faibles (0.39% contre 1.53%) du fait d’une proximité plus grande avec la consommation.
+</span>
+
+
+
+<span class="text" id="Figure2" style="display:block;text-align:center">
+![Image]({{site.baseurl}}/assets/images/Posts/2024-11-18/repartition_infrastructures.png){:.border}
+</span>
+
+<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
+**Figure 2** --   Répartition des travaux nécessaires en fonction des scénarios.
 </span>
