@@ -10,6 +10,12 @@ article_header:
 
 <span class="summary" style="display:block; text-align: justify">
 Résumé -- Ce post présente une synthèse des résultats du projet RaccoFlex qui a été mené par Yassine Abdelouadoud et coordonné par moi-même au centre PERSEE de MINES Paris PSL en partenariat avec l'entreprise Roseau Technologies. Dans ce projet nous avons mis en place une méthode permettant d'évaluer les coûts de renforcement du réseau de distribution d'électricité pour l'intégration de centrales photovoltaïques (en basse tension et en HTA). Cette méthode combine deux types de modélisation. La première est une modélisation à la pointe qui permet d'estimer les besoins de renforcement liés à l'intégration du PV. La deuxième est une modélisation dynamique qui permet de calculer l'énergie qui sera effectivement écrêtée en cas d'utilisation de la flexibilité. Afin de limiter les besoins de calcul, cette approche est appliquée à une sélection de 150 départs HTA dont la représentativité a été validée. Cette méthode a été appliquée à différents niveaux de pénétration renouvelable (voir Figure ci-dessus), pour différentes combinaisons de types de centrales (grandes centrales au sol, grandes toitures, petites toiture), et avec ou sans l'utilisation de flexibilité. Ce projet a été financé par France Relance et par Roseau Technologies. Le rapport final sera publié prochainement.
+Quelques points importants des résultats :
+
+- le coût pour des scénarios à 150 GWc reste en dessous de 150€/kW, c'est plus cher qu'aujourd'hui mais pour des grandes centrales au sol le coût total des projets est autour de 800 €/kW.
+- La flexibilité est importante, elle permet de diviser les coûts par deux si l'on vise plus de 100 GWc
+- Le coût dépend de ce que l'on installe et de où on installe les centrales. Avoir plus de grandes centrales au sol permet de limiter les coûts de renforcement contrairement à ce qu'on entend souvent.
+- Monter à 250 GWc pourrait impliquer des coûts plus importants, mais nous pensons que des analyses complémentaires avec d'autres mix devraient être faites.
 </span>
 <!--more-->
 
