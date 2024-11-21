@@ -1,5 +1,5 @@
 ---
-title: Résultats du projet RaccoFlex
+title: Résultats du projet RaccoFlex : évaluation du coût de renforcement du réseau de distribution pour l'accueil du PV et valeur de la flexibilité.  
 key: photovoltaïque
 tags: réseau de distribution d'électricité, coût renforcement, valeur de la fléxibilité, photovoltaïque, transition, énergies renouvelables,
 article_header:
