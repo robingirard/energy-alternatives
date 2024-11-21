@@ -9,7 +9,7 @@ article_header:
 ---
 
 <span class="summary" style="display:block; text-align: justify">
-Résumé -- Ce post présente une synthèse des résultats du projet RaccoFlex qui a été mené par Yassine Abdelouadoud et coordonné par moi-même au centre PERSEE de MINES Paris PSL en partenariat avec l'entreprise Roseau Technologies. Dans ce projet nous avons mis en place une méthode permettant d'évaluer les coûts de renforcement du réseau de distribution d'électricité pour l'intégration de centrales photovoltaïques (en basse tension et en HTA). Cette méthode combine deux types de modélisation. La première est une modélisation à la pointe qui permet d'estimer les besoins de renforcement liés à l'intégration du PV. La deuxième est une modélisation dynamique qui permet de calculer l'énergie qui sera effectivement écrêtée en cas d'utilisation de la flexibilité. Afin de limiter les besoins de calcul, cette approche est appliquée à une sélection de 150 départs HTA dont la représentativité a été validée. Cette méthode a été appliquée à différents niveaux de pénétration renouvelable (voir Figure ci-dessus), pour différentes combinaisons de types de centrales (grandes centrales au sol, grandes toitures, petites toiture), et avec ou sans l'utilisation de flexibilité. Ce projet a été financé par France Relance et par Roseau Technologies.
+Résumé -- Ce post présente une synthèse des résultats du projet RaccoFlex qui a été mené par Yassine Abdelouadoud et coordonné par moi-même au centre PERSEE de MINES Paris PSL en partenariat avec l'entreprise Roseau Technologies. Dans ce projet nous avons mis en place une méthode permettant d'évaluer les coûts de renforcement du réseau de distribution d'électricité pour l'intégration de centrales photovoltaïques (en basse tension et en HTA). Cette méthode combine deux types de modélisation. La première est une modélisation à la pointe qui permet d'estimer les besoins de renforcement liés à l'intégration du PV. La deuxième est une modélisation dynamique qui permet de calculer l'énergie qui sera effectivement écrêtée en cas d'utilisation de la flexibilité. Afin de limiter les besoins de calcul, cette approche est appliquée à une sélection de 150 départs HTA dont la représentativité a été validée. Cette méthode a été appliquée à différents niveaux de pénétration renouvelable (voir Figure ci-dessus), pour différentes combinaisons de types de centrales (grandes centrales au sol, grandes toitures, petites toiture), et avec ou sans l'utilisation de flexibilité. Ce projet a été financé par France Relance et par Roseau Technologies. Le rapport final sera publié prochainement. 
 </span>
 <!--more-->
 
@@ -100,8 +100,4 @@ Dans les scénarios à forte croissance de la capacité photovoltaïque, les ord
 
 <span class="text" id="Figure2" style="display:block;text-align:center">
 ![Image]({{site.baseurl}}/assets/images/Posts/2024-11-18/repartition_infrastructures.png){:.border}
-</span>
-
-<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
-**Figure 2** --   Répartition des travaux nécessaires en fonction des scénarios.
 </span>
