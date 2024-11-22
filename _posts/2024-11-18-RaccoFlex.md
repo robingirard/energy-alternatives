@@ -1,7 +1,7 @@
 ---
 title: Valorisation technico-économique de la flexibilité de la production photovoltaïque dans les réseaux de distribution en France.   
 key: photovoltaïque
-tags: réseau de distribution d'électricité, coût renforcement, valeur de la fléxibilité, photovoltaïque, transition, énergies renouvelables,
+tags: réseau de distribution d'électricité, coût renforcement, valeur de la flexibilité, photovoltaïque, transition, énergies renouvelables,
 article_header:
   type: cover
   image:
@@ -44,7 +44,7 @@ La flexibilité de la production photovoltaïque est fréquemment présentée co
 </span>
 
 <span class="mytext">
-Faute de tels éléments, l’incertitude domine, il n’émerge pas de consensus entre les différentes parties prenantes (Producteurs, Collectivités Concédantes, Gestionnaires de Réseau, Régulateur national, différents services de l’Etat…), et la flexibilité de la production photovoltaïque reste pratiquement inexploitée en France (3 PTF émises et acceptées en 2022 par Enedis, cf rapport CRE, et aucune exploitation de la flexibilité dans les réseaux Basse Tension).
+Faute de tels éléments, l’incertitude domine, il n’émerge pas de consensus entre les différentes parties prenantes (Producteurs, Collectivités Concédantes, Gestionnaires de Réseau, Régulateur national, différents services de l’Etat…), et la flexibilité de la production photovoltaïque reste pratiquement inexploitée en France (3 PTF émises et acceptées en 2022 par Enedis, cf rapport CRE, et aucune exploitation de la flexibilité pour éviter des contraintes dans les réseaux Basse Tension).
 </span>
 
 <span class="mytext">
@@ -66,21 +66,21 @@ On compare les coûts avec et sans recours à la flexibilité. En l’absence de
 </span>
 
 
-## Principaux résultats obtenus qui ne sont pas liés directement au sujet de la fléxibilité  
+## Principaux résultats obtenus qui ne sont pas liés directement au sujet de la flexibilité  
 
 <span class="mytext">
 Avec ou sans recours à la flexibilité, la profondeur du réservoir de projets dont on dispose pour atteindre une certaine puissance-cible totale influence considérablement le montant à investir dans le réseau : les coûts unitaires (€/W) moyens de raccordement sont en effet extrêmement différents selon que l’on dispose d’un réservoir important de projets PV, et que l’on atteint la puissance-cible en ne réalisant que ceux pour lesquels le raccordement au réseau est favorable ; ou que l’on ne dispose pas d’un tel réservoir et que l’on doit, pour atteindre la puissance-cible, réaliser tous les projets PV dont on dispose, y compris ceux pour lesquels le raccordement au réseau est défavorable. Pour le scénario “rupture”, par exemple, renoncer à installer 15% du potentiel PV (17 GW) permettrait d’économiser 49% des coûts de renforcement (coût total de 42 MM€ pour 99GW, soit 0.42 €/W au lieu de 0.70€/W en raccordant la totalité des 116 GW du scénario “rupture”) tandis que renoncer à 34 % (39 GW) du potentiel PV permettrait d’économiser 79% des coûts (coût total de 17 MM€ pour 77GW, soit 0.22 €/W). **L’existence d’un vaste réservoir de projets PV, dépassant amplement la puissance-cible, est donc cruciale pour limiter les coûts d’investissement dans le réseau.**
 </span>
 
 <span class="mytext">
-Dans tous les cas (avec ou sans recours à la flexibilité, et que l’on dispose ou non d’un vaste réservoir de projets PV), **les coûts unitaires (c’est-à-dire en €/W) de renforcement de réseau augmentent fortement dans les scénarios 3 (“expansion modérée”) et 4 (“rupture”) par rapport aux scénarios 1 (continuité) et 2 (expansion limitée).**
+Dans tous les cas (avec ou sans recours à la flexibilité, et que l’on dispose ou non d’un vaste réservoir de projets PV), **les coûts unitaires (c’est-à-dire en €/W) de renforcement de réseau augmentent fortement dans les scénarios 3 (“expansion modérée”) et 4 (“rupture”) par rapport aux scénarios 1 ("continuité"") et 2 ("expansion limitée").**
 </span>
 
 <span class="mytext">
 Le type d’installation de production (résidentiel, grande toiture ou centrale au sol) influence fortement la nature des renforcements à effectuer : impact majeur sur le réseau BT pour les scénarios avec fort développement du PV résidentiel ; impact majeur sur les postes HTA/BT pour les scénarios avec fort développement du PV sur grandes toitures ; et impact majeur sur le réseau HTA pour les scénarios avec fort développement des centrales au sol. De façon remarquable néanmoins, pour la capacité PV raccordée de l’ordre de 50 GW sur laquelle cette comparaison a été effectuée, on obtient des coûts totaux assez proches pour ces trajectoires de renforcement pourtant très différentes. **A puissance égale, les coûts d’investissement dans le réseau sont peu dépendants de la typologie d’installations photovoltaïques (résidentiel, grande toiture ou centrale au sol).**
 </span>
 
-## Principaux résultats obtenus sur le sujet spécifique de la fléxibilité
+## Principaux résultats obtenus sur le sujet spécifique de la flexibilité
 
 <span class="mytext">
 **La flexibilité de la production permet des gains d’investissement substantiels dans tous les cas étudiés**, c’est-à-dire quel que soit le scénario de déploiement étudié, et que l’on dispose ou non d’un vaste réservoir de projets PV. En ordre de grandeur, **la flexibilité permet de réduire d’au moins 30% et parfois de plus de 60%, les coûts de renforcement au prix d’un effacement de l’ordre de 1% du productible photovoltaïque**.
@@ -101,9 +101,14 @@ Dans les scénarios à forte croissance de la capacité photovoltaïque, les ord
 <span class="mytext">
 **La mise en œuvre de la flexibilité est particulièrement favorable dans le cas des installations sur toitures résidentielles** (par opposition aux grandes toitures et aux centrales au sol). Ceci est dû à la fois à des évitements d’investissement plus importants (13 MM€ pour le scénario “résidentiel”, 7.8 MM€ pour le scénario “centrales au sol”, ces deux scénarios visant une même puissance-cible d’environ 50 GW) et une énergie écrêtée plus faibles (0.39% contre 1.53%) du fait d’une proximité plus grande avec la consommation.
 </span>
-
-
+<span class="mytext">
+Les résultats techniques de l'étude et la description complète de la méthodologie seront publiés ultérieurement.
+</span>
 
 <span class="text" id="Figure2" style="display:block;text-align:center">
 ![Image]({{site.baseurl}}/assets/images/Posts/2024-11-18/repartition_infrastructures.png){:.border}
+</span>
+
+<span class="text" id="Figure2" style="display:block;text-align:center">
+![Image]({{site.baseurl}}/assets/images/Posts/2024-11-18/logo_france_relance.png){:.border}
 </span>
