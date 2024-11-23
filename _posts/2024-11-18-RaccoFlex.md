@@ -15,7 +15,7 @@ Quelques points importants des résultats :
 <!--more-->
 - le coût pour des scénarios à 150 GWc reste en dessous de 150€/kW, c'est plus cher qu'aujourd'hui mais pour des grandes centrales au sol le coût total des projets est autour de 800 €/kW.
 - La flexibilité est importante, elle permet de diviser les coûts par deux si l'on vise plus de 100 GWc
-- Le coût dépend de ce que l'on installe et de où on installe les centrales. Avoir plus de grandes centrales au sol permet de limiter les coûts de renforcement contrairement à ce qu'on entend souvent.
+- Le coût dépend de ce que l'on installe et de où on installe les centrales. Avoir plus de grandes centrales au sol n'augmente pas les coûts de renforcement contrairement à ce qu'on entend souvent.
 - Monter à 250 GWc pourrait impliquer des coûts plus importants, mais nous pensons que des analyses complémentaires avec d'autres mix devraient être faites.
 
 
