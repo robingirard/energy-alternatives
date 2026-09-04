@@ -1,6 +1,7 @@
 ---
 title: Un système électrique sous contrainte
 key: système électrique
+ref: systeme-elec-contraint
 tags: nucléaire, défaillance, RTE, transition
 ---
 

@@ -1,0 +1,6 @@
+{%- comment -%}
+Description du site dans la langue de la page courante (cle SITE_DESCRIPTION de
+_data/locale.yml), avec repli sur `site.description`.
+{%- endcomment -%}
+{%- include snippets/get-locale-string.html key='SITE_DESCRIPTION' -%}
+{%- assign __return = __return | default: site.description -%}

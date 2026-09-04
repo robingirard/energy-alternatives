@@ -1,6 +1,7 @@
 ---
 title: Les scénarios RTE, un développement ambitieux du nucléaire et des renouvelables est nécessaire.
 key: RTE
+ref: rapport-rte
 tags: mix-production transition evolution RTE
 article_header:
   type: cover

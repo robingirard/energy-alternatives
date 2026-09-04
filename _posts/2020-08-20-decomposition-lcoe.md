@@ -1,6 +1,7 @@
 ---
 title: Evaluer le coût économique de la production d'électricité
 key: decomposition-lcoe
+ref: decomposition-lcoe
 tags: mix-production intermittence evolution lcoe
 article_header:
   type: cover

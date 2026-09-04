@@ -1,0 +1,28 @@
+{%- comment -%}
+Resout une source de donnees ecrite sous forme de chemin pointe
+("site.posts", "site.posts_en", "paginator.posts", ...) et retourne la liste
+correspondante dans `__return`.
+
+Parametres :
+  data_source : le chemin pointe (chaine de caracteres)
+{%- endcomment -%}
+{%- assign _get_articles_keys = include.data_source | split: '.' -%}
+{%- assign __return = nil -%}
+{%- for _get_articles_key in _get_articles_keys -%}
+  {%- if forloop.first -%}
+    {%- case _get_articles_key -%}
+      {%- when 'site' -%}
+        {%- assign __return = site -%}
+      {%- when 'page' -%}
+        {%- assign __return = page -%}
+      {%- when 'layout' -%}
+        {%- assign __return = layout -%}
+      {%- when 'paginator' -%}
+        {%- assign __return = paginator -%}
+      {%- else -%}
+        {%- assign __return = site[_get_articles_key] -%}
+    {%- endcase -%}
+  {%- else -%}
+    {%- assign __return = __return[_get_articles_key] -%}
+  {%- endif -%}
+{%- endfor -%}

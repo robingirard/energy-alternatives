@@ -1,6 +1,7 @@
 ---
 title: Sur le nombre de passoires énergétiques en France
 key: DPE
+ref: dpe-passoires
 tags: bâtiment rénovation DPE transition évolution passoires énergétiques
 article_header:
   type: cover

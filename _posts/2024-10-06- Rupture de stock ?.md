@@ -1,6 +1,7 @@
 ---
 title: Rupture de stock ?    
 key: pétrole-gaz
+ref: rupture-de-stock
 tags: pétrole, gaz, réserve, taxe, TIPP
 article_header:
   type: cover

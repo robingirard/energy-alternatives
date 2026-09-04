@@ -20,6 +20,12 @@ en: &EN
   EMAIL_ME                : "Send me an Email."
   EMAIL_US                : "Send us an Email."
   COPYRIGHT_DATES         : "2020"
+  SHOW_ALL                : "Show All"
+  SEARCH_GROUP_POSTS      : "Posts"
+  SITE_TITLE              : "Energy alternatives"
+  SITE_DESCRIPTION        : "Towards a better understanding of our energy system and how it is changing"
+  SUBSCRIBE_PROMPT        : "To subscribe, enter your email address and click \"Subscribe\""
+  SUBSCRIBE_BUTTON        : "Subscribe"
 
 en-GB:
   <<: *EN
@@ -133,6 +139,12 @@ fr: &FR
   EMAIL_US                : "Envoyez-nous un courriel"
   COPYRIGHT_DATES         : "2020"
   DONATE                  : "Faites un don de [NAME]."
+  SHOW_ALL                : "Tout afficher"
+  SEARCH_GROUP_POSTS      : "Articles"
+  SITE_TITLE              : "Alternatives énergétiques"
+  SITE_DESCRIPTION        : "Vers une meilleure compréhension de notre système énergétique et de son évolution"
+  SUBSCRIBE_PROMPT        : "Pour vous abonner, donnez votre email et cliquez sur \"M'abonner\""
+  SUBSCRIBE_BUTTON        : "M'abonner"
 
 fr-BE:
   <<: *FR

@@ -1,3 +1,15 @@
+{%- include snippets/get-lang-code.html -%}
+{%- assign _header_lang = __return -%}
+
+{%- comment -%} Page d'accueil de la langue courante (voir `languages` dans _config.yml). {%- endcomment -%}
+{%- include snippets/get-language-path.html key='home' lang=_header_lang -%}
+{%- assign _header_home = __return -%}
+
+{%- include snippets/get-site-title.html -%}
+{%- assign _header_site_title = __return -%}
+{%- include snippets/get-site-description.html -%}
+{%- assign _header_site_description = __return -%}
+
 {%- if include.theme == 'dark' -%}
   <header class="header header--dark" {%- if include.background -%} style="background: {{ include.background }};" {%- endif -%}>
 {%- elsif include.theme == 'light' -%}
@@ -9,10 +21,10 @@
       <div class="header__title">
         <div class="header__brand">
           {%- include svg/logo.svg -%}
-          {%- assign _paths_root = site.paths.root | default: site.data.variables.default.paths.root  -%}
+          {%- assign _paths_root = _header_home | default: site.paths.root | default: site.data.variables.default.paths.root  -%}
           {%- include snippets/get-nav-url.html path=_paths_root -%}
-          {%- if site.title -%}
-            <a title="{%- if site.description -%}{{ site.description }}{%- endif -%}" href="{{ __return }}">{{ site.title }}</a>
+          {%- if _header_site_title -%}
+            <a title="{%- if _header_site_description -%}{{ _header_site_description }}{%- endif -%}" href="{{ __return }}">{{ _header_site_title }}</a>
           {%- endif -%}
         </div>
         {%- if site.search.provider -%}
@@ -23,7 +35,19 @@
       <nav class="navigation">
         <ul>
           {%- for _item in site.data.navigation.header -%}
-            {%- include snippets/get-nav-url.html path=_item.url -%}
+            {%- comment -%}
+            Une entree de menu peut declarer une URL par langue via `urls` :
+              urls:
+                fr: /about.html
+                en: /en/about.html
+            `url` reste utilise comme repli (et pour les liens externes communs).
+            {%- endcomment -%}
+            {%- if _item.urls and _item.urls[_header_lang] -%}
+              {%- assign _item_url = _item.urls[_header_lang] -%}
+            {%- else -%}
+              {%- assign _item_url = _item.url -%}
+            {%- endif -%}
+            {%- include snippets/get-nav-url.html path=_item_url -%}
             {%- assign _nav_url = __return -%}
             {%- include snippets/get-nav-url.html path=page.url -%}
             {%- assign _page_url = __return -%}
@@ -34,6 +58,7 @@
               <li class="navigation__item"><a href="{{ _nav_url }}">{%- if _item.title -%}{{ _item.title }}{%- else -%}{{ __return }}{%- endif -%}</a></li>
             {%- endif -%}
           {%- endfor -%}
+          {%- include lang-switcher.html -%}
           {%- if site.search.provider -%}
             <li><button class="button button--secondary button--circle search-button js-search-toggle"><i class="fas fa-search"></i></button></li>
           {%- endif -%}

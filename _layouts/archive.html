@@ -23,12 +23,22 @@ titles:
   fr-FR   : *FR
   fr-LU   : *FR
   # @end locale config
+articles:
+  data_source: site.posts
 ---
 
+{%- comment -%}
+  La source peut etre surchargee dans le front matter de la page :
+  /en/archive.html utilise `articles: { data_source: site.posts_en }`.
+{%- endcomment -%}
+{%- assign _archive_data_source = page.articles.data_source | default: layout.articles.data_source -%}
+{%- include snippets/get-articles.html data_source=_archive_data_source -%}
+{%- assign _archive_articles = __return -%}
+
 <div class="layout--archive js-all">
-  {%- include tags.html -%}
+  {%- include tags.html articles=_archive_articles -%}
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=_archive_articles type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
 </div>
 

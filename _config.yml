@@ -30,6 +30,26 @@ description: > # this means to ignore newlines until "Language & timezone"
 lang: "fr" # the language of your site, default as "en"
 timezone: "Europe/Paris" # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
+## Langues proposees par le selecteur de langue du bandeau (voir _includes/lang-switcher.html).
+## `code`  : code de langue (doit correspondre au `lang` des pages / articles)
+## `name`  : nom affiche dans l'infobulle
+## `label` : texte du bouton
+## `home`  : page d'accueil de cette langue
+## `archive`, `rss` : pages d'archives et flux RSS de cette langue
+languages:
+  - code   : fr
+    name   : Français
+    label  : FR
+    home   : /
+    archive: /archive.html
+    rss    : /feed.xml
+  - code   : en
+    name   : English
+    label  : EN
+    home   : /en/
+    archive: /en/archive.html
+    rss    : /en/feed.xml
+
 
 ## => Author and Social
 ##############################
@@ -202,12 +222,38 @@ exclude:
   - '*.Rmd'
   - .Rproj.user/*
 
+## Les articles francais vivent dans _posts (URL /AAAA/MM/JJ/titre.html),
+## les articles anglais dans _posts_en (URL /en/AAAA/MM/JJ/titre.html).
+collections:
+  posts_en:
+    output: true
+    permalink: /en/:year/:month/:day/:title:output_ext
+
 defaults:
   - scope:
       path: ""
       type: posts
     values:
       layout: article
+      lang: fr
+      sharing: true
+      license: false
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_subscribe: true
+      pageview: true
+  - scope:
+      path: "en"
+      type: pages
+    values:
+      lang: en
+  - scope:
+      path: ""
+      type: posts_en
+    values:
+      layout: article
+      lang: en
       sharing: true
       license: false
       aside:

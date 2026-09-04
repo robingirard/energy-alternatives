@@ -1,6 +1,7 @@
 ---
 title: France-Allemagne, deux visions européennes de l’énergie, sources de tensions et d’apprentissages.
 key: france-allemagne
+ref: france-allemagne
 tags: mix-production transition evolution France-Allemagne Energiewende
 article_header:
   type: cover

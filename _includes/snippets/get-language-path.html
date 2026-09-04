@@ -1,0 +1,21 @@
+{%- comment -%}
+Retourne dans `__return` un chemin declare pour une langue dans _config.yml
+(cle `languages`), ou nil si la langue n'y figure pas.
+
+Parametres :
+  key  : 'home', 'archive' ou 'rss'
+  lang : code de langue sur 2 lettres (defaut : la langue de la page courante)
+{%- endcomment -%}
+{%- if include.lang -%}
+  {%- assign _lp_lang = include.lang -%}
+{%- else -%}
+  {%- include snippets/get-lang-code.html -%}
+  {%- assign _lp_lang = __return -%}
+{%- endif -%}
+{%- assign __return = nil -%}
+{%- for _lp_language in site.languages -%}
+  {%- if _lp_language.code == _lp_lang -%}
+    {%- assign __return = _lp_language[include.key] -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}

@@ -2,15 +2,36 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-{%- include snippets/get-article-title.html article=page -%}
-<title>{%- if __return -%}{{ __return }} - {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
+{%- include snippets/get-site-title.html -%}
+{%- assign _head_site_title = __return -%}
+{%- include snippets/get-site-description.html -%}
+{%- assign _head_site_description = __return -%}
 
-<meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ site.description }}{%- endif -%}">
+{%- include snippets/get-article-title.html article=page -%}
+<title>{%- if __return -%}{{ __return }} - {{ _head_site_title }}{%- else -%}{{ _head_site_title }}{%- endif -%}</title>
+
+<meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ _head_site_description }}{%- endif -%}">
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
 
-{%- assign _paths_rss = site.paths.rss | default: site.data.variables.default.paths.rss -%}
+{%- comment -%} Versions de cette page dans les autres langues (SEO). {%- endcomment -%}
+{%- include snippets/get-lang-code.html -%}
+{%- assign _head_lang = __return -%}
+{%- for _head_language in site.languages -%}
+  {%- unless _head_language.code == _head_lang -%}
+    {%- include snippets/get-translation-url.html lang=_head_language.code -%}
+    {%- if __return -%}
+      {%- include snippets/prepend-baseurl.html path=__return -%}
+      <link rel="alternate" hreflang="{{ _head_language.code }}" href="{{ __return | prepend: site.url }}">
+    {%- endif -%}
+  {%- endunless -%}
+{%- endfor -%}
+<link rel="alternate" hreflang="{{ _head_lang }}" href="{%- include snippets/page-url.html -%}">
+
+{%- comment -%} Flux RSS de la langue de la page. {%- endcomment -%}
+{%- include snippets/get-language-path.html key='rss' lang=_head_lang -%}
+{%- assign _paths_rss = __return | default: site.paths.rss | default: site.data.variables.default.paths.rss -%}
 {%- include snippets/get-nav-url.html path=_paths_rss -%}
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ __return }}">
+<link rel="alternate" type="application/rss+xml" title="{{ _head_site_title }}" href="{{ __return }}">
 
 
 {%- include head/favicon.html -%}

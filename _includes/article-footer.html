@@ -37,16 +37,21 @@
     {%- endif -%}
     {%- include article/footer/author-profile.html author=_author -%}
   {%- endif -%}
+  {%- comment -%} Formulaire d'abonnement, libelle dans la langue de l'article. {%- endcomment -%}
+  {%- include snippets/get-locale-string.html key='SUBSCRIBE_PROMPT' -%}
+  {%- assign _subscribe_prompt = __return -%}
+  {%- include snippets/get-locale-string.html key='SUBSCRIBE_BUTTON' -%}
+  {%- assign _subscribe_button = __return -%}
   <form
     action="https://formspree.io/f/maykwoga"
     method="POST"
   >
     <label>
-      Pour vous abonner, donnez votre email et cliquez sur "M'abonner"
+      {{ _subscribe_prompt }}
       <input type="email" name="email">
     </label>
     <!-- your other form fields go here -->
-    <button type="submit">M'abonner</button>
+    <button type="submit">{{ _subscribe_button }}</button>
   </form>
   {%- if _show_subscribe -%}
     <div class="article__subscribe">{%- include article/footer/subscribe.html -%}</div>

@@ -1,0 +1,29 @@
+{%- comment -%}
+Selecteur de langue affiche dans le bandeau de navigation.
+
+Les langues proposees sont declarees dans _config.yml (cle `languages`). Pour
+chaque langue autre que celle de la page courante, on pointe vers la traduction
+de la page si elle existe (voir snippets/get-translation-url.html), sinon vers
+la page d'accueil de cette langue.
+{%- endcomment -%}
+{%- if site.languages and site.languages.size > 1 -%}
+  {%- include snippets/get-lang-code.html -%}
+  {%- assign _ls_current = __return -%}
+
+  {%- for _ls_language in site.languages -%}
+    {%- unless _ls_language.code == _ls_current -%}
+      {%- include snippets/get-translation-url.html lang=_ls_language.code -%}
+      {%- assign _ls_target = __return -%}
+      {%- if _ls_target == nil -%}
+        {%- include snippets/get-language-path.html key='home' lang=_ls_language.code -%}
+        {%- assign _ls_target = __return | default: '/' -%}
+      {%- endif -%}
+      {%- include snippets/get-nav-url.html path=_ls_target -%}
+      <li class="navigation__item navigation__item--lang">
+        <a href="{{ __return }}" hreflang="{{ _ls_language.code }}" lang="{{ _ls_language.code }}"
+           title="{{ _ls_language.name }}" rel="alternate">
+          <i class="fas fa-globe"></i>&nbsp;{{ _ls_language.label | default: _ls_language.code | upcase }}</a>
+      </li>
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}

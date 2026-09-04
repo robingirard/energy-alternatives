@@ -1,0 +1,26 @@
+{%- comment -%}
+Retourne dans `__return` l'URL de la version de la page courante dans la langue
+demandee, ou nil s'il n'y en a pas.
+
+Parametres :
+  lang : code de langue sur 2 lettres ("fr", "en", ...)
+
+Deux facons de relier deux pages entre elles :
+  * `ref: <cle>` dans le front matter des deux versions (methode recommandee) ;
+  * `translations: { en: /en/... }` pour pointer une URL explicite.
+{%- endcomment -%}
+{%- assign _tr_lang = include.lang -%}
+{%- assign __return = nil -%}
+{%- if page.translations and page.translations[_tr_lang] -%}
+  {%- assign __return = page.translations[_tr_lang] -%}
+{%- elsif page.ref -%}
+  {%- assign _tr_documents = site.pages | concat: site.posts | concat: site.posts_en -%}
+  {%- assign _tr_siblings = _tr_documents | where: 'ref', page.ref -%}
+  {%- for _tr_sibling in _tr_siblings -%}
+    {%- assign _tr_sibling_lang = _tr_sibling.lang | default: site.lang | slice: 0, 2 -%}
+    {%- if _tr_sibling_lang == _tr_lang -%}
+      {%- assign __return = _tr_sibling.url -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}

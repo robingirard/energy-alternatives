@@ -1,0 +1,6 @@
+{%- comment -%}
+Titre du site dans la langue de la page courante (cle SITE_TITLE de _data/locale.yml),
+avec repli sur `site.title`.
+{%- endcomment -%}
+{%- include snippets/get-locale-string.html key='SITE_TITLE' -%}
+{%- assign __return = __return | default: site.title -%}

@@ -16,6 +16,7 @@ titles:
   ko      : &KO       소개
   ko-KR   : *KO
 key: page-conference
+ref: conferences
 ---
 
 {% highlight javascript %}

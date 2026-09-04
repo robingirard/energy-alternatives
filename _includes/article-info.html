@@ -33,7 +33,10 @@
     {%- assign _pageview = false -%}
   {%- endif -%}
 
-  {%- assign _paths_archive = site.paths.archive | default: site.data.variables.default.paths.archive -%}
+  {%- comment -%} Les tags renvoient vers la page d'archives de la langue de l'article. {%- endcomment -%}
+  {%- assign _article_lang = include.article.lang | default: site.lang | slice: 0, 2 -%}
+  {%- include snippets/get-language-path.html key='archive' lang=_article_lang -%}
+  {%- assign _paths_archive = __return | default: site.paths.archive | default: site.data.variables.default.paths.archive -%}
 
   {%- if _show_tags or _show_author or _show_date or _pageview -%}
     <div class="article__info clearfix">

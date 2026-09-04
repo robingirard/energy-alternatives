@@ -1,0 +1,6 @@
+{%- comment -%}
+Retourne dans `__return` le code de langue sur 2 lettres de la page courante
+("fr", "en", ...), quelle que soit la variante regionale declaree ("fr-FR", "en-GB").
+{%- endcomment -%}
+{%- include snippets/get-lang.html -%}
+{%- assign __return = __return | slice: 0, 2 -%}

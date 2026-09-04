@@ -1,29 +1,57 @@
+{%- comment -%}
+Nuage de tags cliquable de la page d'archives.
+
+Parametres :
+  articles : liste d'articles a depouiller (defaut : site.posts, c'est-a-dire les
+             articles francais). La page /en/archive.html passe site.posts_en.
+
+Les compteurs sont recalcules a partir de la liste recue plutot que de `site.tags`,
+qui ne couvre que les articles de _posts.
+{%- endcomment -%}
+{%- assign _tags_articles = include.articles | default: site.posts -%}
+
+{%- comment -%} 1. Liste dedoublonnee des tags presents dans ces articles. {%- endcomment -%}
+{%- assign _tags_buffer = '' -%}
+{%- for _tags_article in _tags_articles -%}
+  {%- for _tag in _tags_article.tags -%}
+    {%- assign _tags_buffer = _tags_buffer | append: _tag | append: '||' -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- assign _tags = _tags_buffer | split: '||' | uniq | sort -%}
+
+{%- comment -%} 2. Effectif de chaque tag, et bornes du nuage. {%- endcomment -%}
 {%- assign _tag_max_size = 1 -%}
 {%- assign _tag_min_size = 1 -%}
-{%- assign _tag_cur_size = 1 -%}
-{%- assign _tags = site.tags | sort -%}
+{%- assign _tag_sizes_buffer = '' -%}
 {%- for _tag in _tags -%}
-  {%- assign _tag_cur_size = _tag[1].size -%}
+  {%- assign _tag_cur_size = _tags_articles | where_exp: '_a', '_a.tags contains _tag' | size -%}
+  {%- assign _tag_sizes_buffer = _tag_sizes_buffer | append: _tag_cur_size | append: '||' -%}
   {%- if _tag_cur_size > _tag_max_size -%}
-    {%- assign _tag_max_size =  _tag_cur_size -%}
+    {%- assign _tag_max_size = _tag_cur_size -%}
   {%- endif -%}
   {%- if _tag_cur_size < _tag_min_size -%}
     {%- assign _tag_min_size = _tag_cur_size -%}
   {%- endif -%}
 {%- endfor -%}
+{%- assign _tag_sizes = _tag_sizes_buffer | split: '||' -%}
+
 {%- assign _tag_gap_size =  _tag_max_size | minus: _tag_min_size | plus: 1 | divided_by: 4 -%}
 {%- if _tag_gap_size < 1 -%}
   {%- assign _tag_gap_size = 1 -%}
 {%- endif -%}
+
+{%- include snippets/get-locale-string.html key='SHOW_ALL' -%}
+{%- assign _locale_show_all = __return | default: 'Show All' -%}
+
 <div class="site-tags js-tags">
   <ul class="menu">
     <li>
       <button type="button" class="button button--secondary button--pill tag-button tag-button--all" data-encode="">
-        Show All<div class="tag-button__count">{{ site.posts | size }}</div>
+        {{ _locale_show_all }}<div class="tag-button__count">{{ _tags_articles | size }}</div>
       </button>
     </li>
     {%- for _tag in _tags -%}
-      {%- assign _tag_cur_size = _tag[1].size -%}
+      {%- assign _tag_cur_size = _tag_sizes[forloop.index0] | plus: 0 -%}
       {%- assign _tag_min_1 = _tag_min_size -%}
       {%- assign _tag_max_1 = _tag_min_1 | plus: _tag_gap_size -%}
       {%- assign _tag_min_2 = _tag_max_1 -%}
@@ -43,8 +71,8 @@
       {%- else -%}
         {%- assign _c_index = 4 -%}
       {%- endif -%}
-      <li><button type="button" class="button button--pill tag-button tag-button-{{ _c_index }}" data-encode="{{ _tag[0] | strip | url_encode }}">
-          <span>{{ _tag[0] | strip }}</span><div class="tag-button__count">{{ _tag[1].size }}</div>
+      <li><button type="button" class="button button--pill tag-button tag-button-{{ _c_index }}" data-encode="{{ _tag | strip | url_encode }}">
+          <span>{{ _tag | strip }}</span><div class="tag-button__count">{{ _tag_cur_size }}</div>
         </button>
       </li>
     {%- endfor -%}

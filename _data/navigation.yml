@@ -30,6 +30,9 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /Conferences.html
+    urls:
+      fr: /Conferences.html
+      en: /en/Conferences.html
 
   - titles:
       # @start locale config
@@ -55,6 +58,9 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /archive.html
+    urls:
+      fr: /archive.html
+      en: /en/archive.html
 
   - titles:
       # @start locale config
@@ -80,3 +86,6 @@ header:
       fr-LU   : *FR
       # @end locale config
     url: /about.html
+    urls:
+      fr: /about.html
+      en: /en/about.html

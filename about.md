@@ -16,6 +16,7 @@ titles:
   ko      : &KO       소개
   ko-KR   : *KO
 key: page-about
+ref: about
 ---
 
 Nous sommes des chercheurs de MINES Paris PSL, notre production n'engage pas l'école.

@@ -1,6 +1,7 @@
 ---
 title: Variabilité de la consommation électrique et thermosensibilité
 key: variabilite-de-la-consommation-electrique-et-thermo-sensibilite
+ref: thermosensibilite
 tags: Thermosensibilite consommation variabilite chauffage evolution
 article_header:
   type: cover

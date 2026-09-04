@@ -1,6 +1,7 @@
 ---
 title: Sobriété, technologie et transition énergétique   
 key: sobriete-technologie
+ref: sobriete-technologie
 tags: sobriété, technologie, transition énergétique, fressoz
 article_header:
   type: cover
