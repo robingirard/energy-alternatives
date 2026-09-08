@@ -1,0 +1,208 @@
+---
+title: "PFAS, heat pumps and air conditioning: a refrigerant will have to be chosen"
+key: pfas
+ref: pfas-pompes-a-chaleur
+tags: PFAS, forever chemicals, heat pumps, air conditioning, refrigerants, European regulation, F-gas, TFA, buildings
+article_header:
+  type: cover
+  image:
+    src: /assets/images/Posts/2026-09-04/pfas_emissions_banner_en.png
+---
+
+<span class="summary" style="display:block; text-align: justify">
+Summary -- PFAS, the so-called "forever chemicals", entered the debate on heat pumps and air conditioning when a column by Jean-Baptiste Fressoz in Le Monde [\[1\]](#note-1) pointed out that most PFAS emissions in Europe come from the fluorinated gases we use as refrigerants. Europe is preparing a near-universal restriction on PFAS, expected around 2028, on top of the F-gas Regulation on fluorinated greenhouse gases. At the same time we need to deploy heat pumps on a large scale to move away from gas and oil, and air conditioning to adapt to heat waves. I explain here what PFAS are and why they are a problem, what goes into a heat pump and why no refrigerant is perfect, and then what the European Chemicals Agency's dossier actually says: not all uses are equivalent, and the aggregate figure in circulation hides a very uneven reality. My conclusion is that the right trade-off depends on the use. We should move fast where the alternatives are mature, that is for small equipment and for mobile air conditioning, where the shift to electric vehicles will incidentally reduce leakage, and allow some time where substitution threatens the pace of decarbonisation, that is for large-capacity equipment. In every case, the first lever is not the refrigerant of new machines, but leakage from the installed base and recovery of the refrigerant at end of life.
+</span>
+<!--more-->
+
+## Why are PFAS being discussed in connection with heat pumps?
+
+<span class="mytext">
+**A column and a striking figure.** On 6 June, Jean-Baptiste Fressoz published a column in Le Monde headlined "Heat pumps and air conditioning are the leading source of PFAS emissions in Europe" [\[1\]](#note-1). The figure comes from the PFAS restriction dossier under examination by the European Chemicals Agency (ECHA): of roughly 68,000 tonnes of PFAS emitted each year in Europe, close to 39,000 come from fluorinated gases, that is essentially from the refrigerants circulating in our air conditioners, heat pumps and refrigeration plants. The headline is not wrong, but it aggregates very different realities, and I will come back to that below. Let us start at the beginning: what are we talking about?
+</span>
+
+<span class="mytext">
+**PFAS, a family of more than 10,000 molecules.** Per- and polyfluoroalkyl substances are organic molecules in which fluorine atoms have replaced hydrogen on at least one carbon atom. The carbon-fluorine bond, one of the strongest in chemistry, gives them highly sought-after properties (non-stick, water-repellent, heat-resistant) and one major flaw: almost nothing degrades them in the environment, hence their nickname of "forever chemicals". They are found in cookware, waterproof textiles, firefighting foams and therefore also in fluorinated gases. For the most studied ones, such as PFOA and PFOS, health effects are demonstrated by epidemiological studies in humans: reduced immune response, effects on the thyroid, the liver and cholesterol, and cancers, PFOA having been classified as carcinogenic to humans by the International Agency for Research on Cancer in 2023 [\[2\]](#note-2). They are already banned. Exposure occurs through water and food, but also through indoor air and household dust, where a recent review by the CSTB shows widespread contamination whose sources are still poorly quantified [\[3\]](#note-3).
+</span>
+
+<span class="text" id="Figure1" style="display:block;text-align:center">
+![A PFAS molecule and its life cycle]({{site.baseurl}}/assets/images/Posts/2026-09-04/pfas_molecule_cycle_en.png){:.border width="90%"}
+</span>
+
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+**Figure 1** -- A PFAS molecule, here PFOA, one of the more than 10,000 molecules in the family, and the life cycle of these substances: the strength of the carbon-fluorine bond means that once emitted, they do not degrade and accumulate in the environment. For long-chain PFAS such as PFOA, the effects on human health are demonstrated.
+</span>
+
+<span class="mytext">
+**But why is there a fluid in these machines in the first place?** A heat pump, a refrigerator and an air conditioner are the same machine: they move heat from a cold place to a warm one, which heat never does spontaneously. To achieve this, a fluid is circulated and made to change state: it evaporates at low temperature, absorbing heat on one side, it is compressed, and it then condenses at higher temperature, releasing that heat on the other side. This fluid is not a fuel and it is not consumed: it goes round and round in a closed circuit, and it only becomes a problem when it escapes. It must, however, change state at the right temperatures, be neither toxic nor flammable, not decompose inside the machine and not attack the circuit's materials: a specification that fluorinated molecules meet remarkably well, which is precisely why they were chosen. I return to this below, because this is where the whole trade-off lies.
+</span>
+
+<span class="mytext">
+**The PFAS that these fluorinated fluids produce is a problem of an entirely different nature: it is called TFA.** Refrigerant gases do not themselves accumulate in organisms. Some of them degrade in the atmosphere, within days for the most recent ones, producing trifluoroacetic acid (TFA), an "ultra-short-chain" PFAS, extremely soluble and mobile, which is now found in rainwater, groundwater, tap water and even in wine. Its concentration in German rainfall is several times what it was 25 years ago [\[4\]](#note-4), and we do not know how to remove it from water at a reasonable cost. Its toxicity is a different matter from that of long-chain PFAS. At the concentrations measured in the environment today, no effect is demonstrated, neither on aquatic ecosystems, where a 2024 synthesis judges the risk negligible even by 2100 [\[5\]](#note-5), nor in humans. What changed in 2025 and 2026 is of another nature: a study in rabbits showed malformations in the offspring at high doses, and on that basis Germany proposed, and ECHA's Committee for Risk Assessment endorsed in June 2026, a classification of TFA as toxic for reproduction and "very persistent, very mobile" [\[7\]](#note-7). This is a hazard classification, that is a property of the molecule observed in animals, and not a demonstration of risk at the doses to which we are exposed.
+</span>
+
+<span class="mytext">
+**Let us put numbers on "high doses", because they are rarely given.** In rabbits, eye malformations appear from the lowest dose tested, **180 milligrams per kilogram of body weight per day**. In July 2026 the European Food Safety Authority also lowered the tolerable daily intake for humans from 0.05 to **0.014 mg per kilogram per day**, that is 14 micrograms, on the basis of an effect on thyroid hormones in rats and applying a safety factor of 500 [\[7\]](#note-7). Compare that with what we drink: tap water sampled in 2024 in eleven European countries contained on average 0.74 microgram of TFA per litre, with a maximum of 4.1. For a 60 kg adult drinking two litres a day, that is 0.025 microgram per kilogram per day on average, 0.14 in the worst case: **100 to 600 times below the tolerable intake, and about a million times below the dose that causes malformations in rabbits**. German rainwater, for its part, has reached monthly averages of 4.87 µg/L, and annual deposition has tripled to quadrupled since the mid-1990s [\[4\]](#note-4). Two caveats to this reassuring arithmetic: drinking water is not the only exposure route, food matters too, and the tolerable intake itself has just been divided by 3.5 — the margin we think we have is both large and fragile, because the health consequences remain little studied and the estimate of what we are exposed to is very imprecise.
+</span>
+
+<span class="mytext">
+**Why regulate, then, if we are so far below toxic doses?** Because concentrations are rising everywhere, we do not know how to bring them down, and researchers warn of an irreversible accumulation whose threshold of harm is unknown [\[6\]](#note-6). The regulator's reasoning therefore rests less on demonstrated damage than on precaution in the face of irreversibility: once TFA is in the water cycle, it cannot be taken out, and if an effect at these doses were ever discovered, it would be too late.
+</span>
+
+<span class="text" id="Figure2" style="display:block;text-align:center">
+![From refrigerant to TFA]({{site.baseurl}}/assets/images/Posts/2026-09-04/tfa_cycle_en.png){:.border width="90%"}
+</span>
+
+<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
+**Figure 2** -- From refrigerant to TFA. R1234yf leaking from a circuit degrades within about ten days in the atmosphere and turns almost entirely into TFA, which falls back with the rain and accumulates in soils and groundwater. No effect of TFA is demonstrated at current concentrations; its 2026 classification as toxic for reproduction rests on animal testing at high doses. R32, by contrast, degrades without forming any TFA.
+</span>
+
+## We need heat pumps and air conditioning
+
+<span class="mytext">
+**Space heating is one of the big pieces of decarbonisation.** I have written about it several times on this blog, for instance [here]({{site.baseurl}}/2020/03/22/une-contribution-a-la-reflexion-sur-la-strategie-nationale-bas-carbone-dans-le-batiment-partie-1-quels-modes-de-chauffage-a-lhorizon-2050.html) (in French). In France, space heating still relies mostly on gas and oil, and every carbon-neutrality scenario, including the most frugal ones, gives a major role to heat pumps, because they deliver 3 to 4 kWh of heat per kWh of electricity and make it possible to electrify heating without an explosion in electricity demand. The argument is not only about efficiency: it is about resources. A heat pump makes it possible to heat with electricity, which France already produces in quantity and with low carbon content, rather than with a molecule we will not have enough of. The biogas potential that can realistically be mobilised in France will probably be below 100 TWh, whereas we currently consume around 400 TWh of gas; and those 100 TWh will be contested by uses that have no equally simple alternative: industry, district heating, perhaps part of peak power generation and heavy transport. Heating homes with green gas would therefore mean spending, on the use that is easiest to electrify, a scarce resource that other sectors will need. Sufficiency and renovation are indispensable, but they do not replace the change of energy carrier, as I explained [in this post]({{site.baseurl}}/en/2024/02/08/sufficiency-technology-transition.html). Air conditioning, for its part, is becoming an adaptation issue: with more frequent and more intense heat waves, homes, schools, care homes and hospitals have to remain liveable. That need can and must be limited through insulation, solar shading or night ventilation, but it would be illusory to think we will do without it, and a reversible heat pump does both jobs anyway. These machines are therefore tools of both mitigation and adaptation. That is what makes the PFAS question delicate: one cannot simply say "let us ban them".
+</span>
+
+## Inside a heat pump there is a fluid, and that fluid is a trade-off
+
+<span class="mytext">
+**A century of substitutions.** The specification recalled above — the right phase-change temperatures, neither flammable, nor toxic, nor expensive, nor harmful to the environment — has never been met in full. None of the fluids we have used so far, nor of those envisaged for tomorrow, ticks every box, and the history of refrigerants is a succession of trade-offs. The earliest fluids, toxic ammonia or very-high-pressure CO2, were succeeded in the 1930s by CFCs, the famous Freon, safe but destructive of the ozone layer. The Montreal Protocol had them replaced by HFCs, harmless to ozone but powerful greenhouse gases: R410A, still dominant in the installed air-conditioning base, warms about 2,000 times more than CO2. At each step, the problem solved was replaced by another one, discovered a decade or two later.
+</span>
+
+<span class="mytext">
+**Two paths ahead, and this is the heart of the current debate.** The European F-gas Regulation has been organising the phase-down of HFCs since 2014, and two families are available to replace them: HFOs, synthetic fluids with almost no greenhouse effect but which degrade into TFA, or so-called natural refrigerants (propane, CO2, ammonia), with no significant greenhouse effect and no PFAS but which reintroduce flammability, toxicity or cost. As Fressoz recalls, quoting the biologist Barry Commoner, *there is no such thing as a free lunch*.
+</span>
+
+<div class="text" id="Table1" markdown="1">
+
+| Refrigerant | Typical use | Greenhouse effect (GWP) | PFAS? | Degradation into TFA | Safety | Main obstacle |
+|---|---|---|---|---|---|---|
+| **R410A** (HFC) | installed base of air conditioners and heat pumps | ~2,000 | yes (R125 component) | partial | non-flammable | greenhouse effect, PFAS |
+| **R32** (HFC) | recent air conditioners and heat pumps | 675 | **no** | **none** | mildly flammable | greenhouse effect |
+| **R1234yf** (HFO) | mobile air conditioning | ~1 | yes | **~100 %** | mildly flammable | TFA |
+| **R290** propane | monobloc heat pumps, fridges, commercial refrigeration | 3 | no | none | **highly flammable** | charge limit, installer training |
+| **R744** CO2 | domestic hot water, commercial refrigeration | 1 | no | none | high pressure | summer efficiency, cost ×2 |
+| **R717** ammonia | industrial refrigeration | 0 | no | none | **toxic** | confined uses |
+| **R718** water | research | 0 | no | none | no hazard | not mature |
+{:.fluides}
+
+</div>
+
+<span class="legendtext" id="CAPTable1" style="display:block;text-align:center">
+**Table 1** -- Main refrigerants and their trade-offs. GWP: global warming potential over 100 years, relative to CO2. PFAS status and TFA degradation yield from the opinion of ECHA's Committee for Risk Assessment [\[8\]](#note-8); the R1234yf yield is also documented in the atmospheric literature [\[9\]](#note-9). The overview of natural refrigerants draws on a presentation by Egoi Ortego Sampedro (Mines Paris PSL, Centre for Energy Efficiency of Processes) at the Café Carnot in February 2025.
+</span>
+
+<span class="mytext">
+**Three things to take away from this table.** First, R32, which is used in most air conditioners and heat pumps sold in recent years, is not a PFAS within the meaning of the restriction and does not degrade into TFA, as ECHA states explicitly [\[8\]](#note-8); its problem is its greenhouse effect, which falls under the F-gas Regulation. Second, R1234yf, used in virtually all new mobile air conditioning since 2017, degrades entirely into TFA. Third, propane is an excellent refrigerant, but its flammability limits the charge admissible in a circuit, hence the capacity of the machines, and requires installer training; as for CO2, it cools poorly when the outdoor temperature is very high and costs about twice as much.
+</span>
+
+## Not all uses are equivalent
+
+<span class="text" id="Figure3" style="display:block;text-align:center">
+![Breakdown of PFAS emissions in Europe by use]({{site.baseurl}}/assets/images/Posts/2026-09-04/pfas_emissions_europe_en.png){:.border width="100%"}
+</span>
+
+<span class="legendtext" id="CAPFigure3" style="display:block;text-align:center">
+**Figure 3** -- Where the 68,000 tonnes of PFAS emitted each year in Europe come from. In blue, the uses linked to refrigeration, air conditioning and heat pumps. Source: opinion of ECHA's Committee for Risk Assessment, sectoral evaluations "fluorinated gases" and "transport" [\[8\]](#note-8). The "stationary air conditioning and heat pumps" line includes, by convention, R32, which is not a PFAS (see text).
+</span>
+
+<span class="mytext">
+**The 39,000-tonne figure covers stationary uses only.** Reading ECHA's opinions [\[8\]](#note-8), one first discovers that the "fluorinated gases" sector covers only stationary equipment. Mobile air conditioning is counted separately, under "transport". Yet it alone accounts for 17,000 tonnes per year, a quarter of European PFAS emissions. It is the leading item, ahead of air conditioning and heat pumps in buildings (13,300 tonnes, 19.5 %) and commercial refrigeration (13,000 tonnes, 19 %). If one looks not at tonnes of gas but at the TFA actually produced, mobile air conditioning accounts for 75 % of the TFA formed in Europe, according to work by the German environment agency taken up by ECHA [\[4\]](#note-4). The reason is simple: its refrigerant, R1234yf, degrades entirely into TFA, and a car air-conditioning circuit, with its flexible hoses and its belt-driven compressor, leaks far more than the hermetic circuit of a heat pump.
+</span>
+
+<span class="mytext">
+**The same tonnage does not contain the same pollutant.** In tonnes of refrigerant, the top three uses are almost tied: 17,000 tonnes per year for mobile air conditioning, 13,300 for stationary air conditioning and heat pumps, 13,000 for commercial refrigeration. In TFA they have nothing in common any more, because the degradation yield depends entirely on the molecule: the R1234yf of mobile air conditioning converts almost entirely into TFA, whereas the HFCs of the stationary base produce only a fraction, and R32 none at all (Table 1). The same dossier therefore places buildings just behind mobile air conditioning if one counts tonnes of gas emitted, but attributes 75 % of European TFA to mobile air conditioning alone: same data, opposite priority depending on what one decides to count.
+</span>
+
+<span class="mytext">
+**The buildings figure is moreover overstated.** The 13,300 tonnes for stationary air conditioning and heat pumps include R32, which is not a PFAS. ECHA counts it by convention, assuming it will be replaced tomorrow by an HFO [\[8\]](#note-8), whereas for small equipment the trajectory drawn by the F-gas Regulation points rather towards propane. ECHA does not provide the breakdown by refrigerant, but a substantial share of that item is therefore not, today, a PFAS emission. What genuinely is, is the older base running on R410A, and above all its leakage and its end of life: of those 13,300 tonnes, 9,000 come from leakage from operating equipment and 4,200 from incomplete recovery of the refrigerant at dismantling, against less than 100 tonnes for charging new machines. The most immediate lever is therefore not the refrigerant of new machines, but containment of existing circuits and recovery of the refrigerant at end of life.
+</span>
+
+<span class="mytext">
+**Mobile air conditioning is on a favourable trajectory, but not a fast enough one.** ECHA's dossier notes that the leak rate of air conditioning in new cars has fallen from about 6.5 % per year twenty years ago to 1.2 % today, even if the average of the circulating fleet remains much higher, and that "the most significant emission reduction can be achieved through the use of an electric compressor, typically hermetically sealed" [\[10\]](#note-10). That is the compressor of electric vehicles, which are also the only ones where CO2 can replace R1234yf. The growth of the electric vehicle will therefore mechanically reduce leakage from mobile air conditioning, whatever refrigerant is chosen. Electrifying the car fleet, which I argue for here [for other reasons]({{site.baseurl}}/en/2024/01/28/electric-vehicles.html), therefore also solves a good part of the TFA problem. Paradoxically, the European directive on vehicle air conditioning caps leakage only for high-GWP refrigerants, so R1234yf escapes it; the dossier proposes reinstating caps for new vehicles, which seems sensible.
+</span>
+
+<span class="mytext">
+**Large-capacity equipment is the real sticking point.** For buildings, ECHA distinguishes equipment below 12 kW, for which substitution by propane is considered feasible and is already organised by the F-gas Regulation, from systems above 12 kW (multi-family buildings, commercial buildings, industry), for which the Committee for Socio-Economic Analysis acknowledges a low substitution potential at the entry into force of the restriction [\[8\]](#note-8). For these machines, the propane charge required exceeds what safety standards allow, CO2 is expensive and inefficient in summer, and ammonia or water are not mature. That is where a ban without derogation would have a cost: economic, but also for the pace of decarbonisation of heating in multi-family and commercial buildings, which is precisely where we are furthest behind.
+</span>
+
+## What Europe is preparing: two overlapping regulations
+
+<span class="mytext">
+**The F-gas Regulation targets the climate.** Regulation (EU) 2024/573 [\[11\]](#note-11) organises the progressive reduction of the quantities of HFCs placed on the market until they disappear in 2050, and bans in stages the placing on the market of equipment using fluorinated gases above a given greenhouse effect, from 2027 for the most emitting small air conditioners and heat pumps, then progressively for larger ones, with exceptions where safety requires them. Its criterion is warming potential, so it lets HFOs through — TFA precursors, in which manufacturers have therefore invested. The PFAS restriction now calls that choice into question.
+</span>
+
+<span class="mytext">
+**The PFAS restriction targets persistence.** Submitted in January 2023 by five countries (Germany, the Netherlands, Denmark, Sweden and Norway) under the REACH Regulation, it proposes to ban the roughly 10,000 PFAS in one go, as a group, rather than substance by substance, so that each ban is not circumvented by a cousin molecule [\[12\]](#note-12). It hits HFCs containing a CF3 group, such as R125, as well as HFOs, but neither R32 nor propane. After a public consultation with more than 5,600 contributions, the Committee for Risk Assessment (RAC) adopted its opinion on 2 March 2026 and the Committee for Socio-Economic Analysis (SEAC) put its draft opinion out for consultation until 25 May 2026 [\[13\]](#note-13). These are the "two opinions" referred to in the Le Monde column. SEAC's final opinion is expected at the end of 2026, after which the European Commission and the Member States will have to decide. Entry into force is expected around 2028.
+</span>
+
+<span class="mytext">
+**Two options on the table, and the regulator itself rules out the harder one.** The dossier compares a general ban with an 18-month transition, which would cut the sector's emissions by about 95 %, and a ban with targeted derogations of 5 or 12 years depending on the use, which would cut them by about 83 %. Contrary to what the public debate suggests, RAC writes that the first option "is likely not implementable and thus not manageable", and that the second is preferable [\[8\]](#note-8). SEAC, for its part, reasons by equipment category: no derogation for small equipment, already covered by the F-gas Regulation, but recognition of the difficulties for large capacities. The real debate of the next two years will therefore not be about the principle of the ban, but about the calibration of the derogations, use by use.
+</span>
+
+## What these estimates do not yet know
+
+<span class="mytext">
+**Almost everything rests on a leak rate that is not a measurement.** The tonnages that open this post are stock emissions: a number of machines, an average charge, an annual leak rate. The third term is the weak link. For stationary air conditioning and heat pumps, the rate used by ECHA, about 4.5 % per year, does not come from a measurement campaign: it is the ratio between the emissions attributed to the installed base and the volume of that base, that is a consequence of the inventory rather than an observation supporting it [\[8\]](#note-8). Commercial and industrial refrigeration are assigned, by the same method, 11 % and 8.9 % per year. The 5 % figure found all over the grey literature belongs to this family.
+</span>
+
+<span class="mytext">
+**Yet the average is a poor summary of what actually happens.** The only large field study I have, carried out in the United Kingdom from the regulatory log books of 528 installations, gives an average rate of 3.5 % per year for domestic heat pumps and 3.8 % for the others — but above all, it shows how that number is made [\[14\]](#note-14). About nine machines out of ten lose nothing in a given year. Among those that leak, half lose more than half their charge, that is they break down. And those failures account for 75 to 92 % of all the refrigerant mass lost. The fleet average is therefore not the tightness of an ordinary machine: it is a handful of accidents spread over the whole fleet. A residential heat pump that has never been recharged in ten years is not a virtuous exception, it is the normal case.
+</span>
+
+<span class="mytext">
+**This shifts the lever rather than cancelling it.** If most of the mass lost comes from outright failures, then marginally improving the tightness of new circuits achieves little, whereas leak detection and rapid intervention address three quarters of the problem — and these measures are independent of the refrigerant, so they are just as valid under the F-gas Regulation as under the PFAS restriction. It should be added that even if leakage were revised downwards, the other half of the subject does not move: of the 13,300 tonnes from stationary equipment, 4,200 come from incomplete recovery of refrigerant at dismantling, and we know that end of life even less well than we know leakage.
+</span>
+
+<span class="mytext">
+**An independent check is possible, and it has not really been done.** Leakage can be estimated other than by postulating it: by comparing the quantities of refrigerant actually sold for recharging installations with the bank of refrigerant contained in the installed base. The French refrigerant inventory, which covers forty applications across eight domains, publishes both terms [\[15\]](#note-15). For R410A, the refrigerant of the air-conditioning and heat-pump base: about 15,600 tonnes in the bank in 2020, against an annual servicing demand of 374 tonnes, that is of the order of 2.4 % per year. This is a lower bound rather than a measurement, since part of the demand is met by recovered and recycled refrigerant, which is therefore never sold. But the gap with ECHA's 4.5 % is of the right order of magnitude to deserve investigation, and the French inventory itself notes that emission rates for stationary air conditioning are "relatively low".
+</span>
+
+<span class="mytext">
+**These are the questions we are now trying to quantify.** With my team I am building a stock model, machine by machine and vintage by vintage, which follows the refrigerant from placing on the market to dismantling, and translates those flows into TFA, into CO2 and into cost, for each regulatory option on the table. Three questions are open there and I would be glad to exchange with anyone who has evidence: separating residential from commercial buildings properly, which public data currently treat as a single block although everything separates them — a hermetic machine sealed in a factory on one side, refrigerant lines assembled on site on the other; documenting the failure regime of commercial and industrial refrigeration, where the published rates are twice as high and where I have no field knowledge; and measuring what is actually recovered at end of life. As long as these three points rest on inventory conventions, the estimates put to me, like those I present here, are orders of magnitude, and they should be read as such.
+</span>
+
+## What trade-off?
+
+<span class="mytext">
+**Move fast where TFA is large and the alternatives are mature, allow time elsewhere.** Moving fast is possible for mobile air conditioning, by far the leading source of TFA, where electrification brings a hermetic compressor compatible with CO2 and where leakage caps for new vehicles can apply without delay. It is also possible for air conditioners and heat pumps below 12 kW, for which propane is available and already pushed by the F-gas Regulation; the issue there is installer training and safety rules, not technology. For machines above 12 kW, on the other hand, time-limited transitional derogations, conditional on leak checks and on recovery of the refrigerant at end of life, seem to me preferable to an outright ban that would delay the exit from gas in multi-family and commercial buildings. A heat pump running on an HFO that replaces a gas boiler remains a good deal for the climate, provided its circuit does not leak, and research on large propane, CO2 and water machines must be supported in parallel.
+</span>
+
+<span class="mytext">
+**Target the refrigerant and the leaks, not the machine.** The "heat pump equals PFAS" narrative is misleading for a new machine running on R32 or propane, which emits none, and both the restriction and the public debate would gain from that granularity. Above all, two thirds of the emissions from stationary equipment come from leakage of the operating base and close to one third from dismantling: tightness, leak checks, recovery and destruction of the refrigerant at end of life are immediate levers, independent of the choice of refrigerant, cheaper than a rushed substitution, and good for the climate since the current base runs on R410A.
+</span>
+
+<span class="mytext">
+**A debate about essential uses.** Fressoz is right that the debate will shift towards the democratic definition of the "essential uses" of PFAS. Heating our buildings without fossil fuels and protecting ourselves from heat waves seem to me to be among them. That does not mean in any manner whatsoever, nor forever: the question is not whether fluorinated refrigerants should be taken out of our heat pumps, but in what order and at what pace, so as not to sacrifice one emergency to another. The first great difficulty of the transition we have to carry out does not lie with the technologies to be developed, since most of the solutions already exist; it lies in bringing 8 billion people into a shared project. That will require navigating between the radicalism of the objective — reaching carbon neutrality within planetary boundaries — and a sincerely unifying discourse able to resist the temptation of positions of principle or divisive shortcuts.
+</span>
+
+## Notes
+
+<span id="note-1">[1]</span> Jean-Baptiste Fressoz, ["Pompes à chaleur et climatisation sont la première source d'émissions de PFAS en Europe"](https://www.lemonde.fr/idees/article/2026/06/06/pompes-a-chaleur-et-climatisation-sont-la-premiere-source-d-emissions-de-pfas-en-europe_6696594_3233.html), column, Le Monde, 6 June 2026 (in French).
+
+<span id="note-2">[2]</span> See ECHA's overview page on PFAS: [Per- and polyfluoroalkyl substances (PFAS)](https://echa.europa.eu/hot-topics/perfluoroalkyl-chemicals-pfas). In 2020 EFSA set a tolerable weekly intake for the sum of four PFAS (PFOA, PFOS, PFNA, PFHxS) of 4.4 ng per kg of body weight, based on the immune effect observed in children. In 2023 the International Agency for Research on Cancer classified PFOA as "carcinogenic to humans" (group 1) and PFOS as "possibly carcinogenic" (group 2B), see [the IARC statement](https://www.iarc.who.int/news-events/iarc-monographs-evaluate-the-carcinogenicity-of-perfluorooctanoic-acid-pfoa-and-perfluorooctanesulfonic-acid-pfos/).
+
+<span id="note-3">[3]</span> A. Della-Puppa, M. Douard, M. Nicolas, "Poly- and perfluoroalkyl substances (PFAS) contamination of indoor air and dust: a review of the literature", Atmospheric Environment, vol. 377, 122057, 2026. See also the [presentation of this work by the CSTB](https://www.cstb.fr/toutes-les-actualites/exposition-polluants-eternels).
+
+<span id="note-4">[4]</span> Umweltbundesamt (German Environment Agency), [Trifluoroacetic acid from fluorinated refrigerants contaminates rainwater](https://www.umweltbundesamt.de/en/press/pressinformation/trifluoroacetic-acid-from-fluorinated-refrigerants) and [TFA as degradation product of fluorinated greenhouse gases](https://www.umweltbundesamt.de/en/topics/climate-energy/fluorinated-greenhouse-gases-fully-halogenated-cfcs/emissions-degradation-products/tfa-as-degradation-product-of-fluorinated). The figure of 75 % of European TFA attributed to mobile air conditioning comes from UBA report 73/2021, cited in RAC's sectoral evaluation "Transport".
+
+<span id="note-5">[5]</span> M. Hanson et al., ["Trifluoroacetic Acid in the Environment: Consensus, Gaps, and Next Steps"](https://onlinelibrary.wiley.com/doi/full/10.1002/etc.5963), Environmental Toxicology and Chemistry, 43(10), 2024.
+
+<span id="note-6">[6]</span> H.P. Arp et al., ["The Global Threat from the Irreversible Accumulation of Trifluoroacetic Acid (TFA)"](https://pubs.acs.org/doi/full/10.1021/acs.est.4c06189), Environmental Science & Technology, 58(45), 2024.
+
+<span id="note-7">[7]</span> The classification as toxic for reproduction, category 1B, rests on a developmental toxicity study in rabbits, at doses far above environmental exposures; it is a hazard classification under the CLP Regulation, independent of the actual exposure level. Harmonised classification proposal submitted by Germany in 2025 (see the [BfR statement](https://www.bfr.bund.de/en/press-release/trifluoroacetic-acid-tfa-assessment-for-classification-in-new-hazard-classes-submitted/)), endorsed by ECHA's Committee for Risk Assessment at its June 2026 session (see for instance [this report](https://foodpackagingforum.org/news/echa-committee-recommends-stricter-hazard-classification-of-forever-chemical-tfa)). The doses quoted in the text: in rabbits, the most sensitive species, eye malformations (retinal folding, absence of aqueous or vitreous humour) are observed from the lowest dose tested, 180 mg/kg body weight per day, a dose at which the mothers show only a minimal liver effect. The tolerable daily intake of 0.014 mg/kg/day was published by EFSA on 23 July 2026, replacing the previous value of 0.05: ["Consumer health-based guidance values for trifluoroacetic acid"](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10227), EFSA Journal, 2026 (point of departure: BMDL20 of 8.6 mg/kg/day on the decrease in thyroxine in rats in an extended one-generation reproductive toxicity study; total uncertainty factor of 500, including a factor of 5 for the absence of a long-term carcinogenicity study and the gaps on developmental immunotoxicity). The tap-water concentrations come from the campaign carried out by the Karlsruhe water technology centre for PAN Europe in 2024 (TFA detected in 34 samples out of 36, across eleven countries, mean 0.74 µg/L, maximum 4.1 µg/L); a BUND campaign the same year finds 0.05 to 1.1 µg/L in tap water in several German cities. The German health guidance value for drinking water is currently 60 µg/L, and should be revised following the EFSA opinion.
+
+<span id="note-8">[8]</span> Opinion of the Committee for Risk Assessment (RAC) and draft opinion of the Committee for Socio-Economic Analysis (SEAC) on the proposed PFAS restriction, together with the sectoral evaluations "Applications of fluorinated gases" and "Transport", available on the [dossier page in ECHA's registry of restriction intentions](https://echa.europa.eu/registry-of-restriction-intentions/-/dislist/details/0b0236e18663449b). The TFA degradation yields adopted by RAC are 100 % for R1234yf, 2 to 30 % for R1234ze and 0 for R32, of which RAC writes that it "does not meet the PFAS definition" and "does not degrade to TFA".
+
+<span id="note-9">[9]</span> D. Luecken et al., ["Ozone and TFA impacts in North America from degradation of 2,3,3,3-tetrafluoropropene (HFO-1234yf), a potential greenhouse gas replacement"](https://pubs.acs.org/doi/10.1021/es902481f), Environmental Science & Technology, 44(1), 2010.
+
+<span id="note-10">[10]</span> Background Document of the restriction proposal, Annex E (emissions), same ECHA page as note [\[8\]](#note-8). The modern leak rate (1.2 % per year) is a geometric mean computed from mandatory reporting data of the State of Minnesota (2021-2023).
+
+<span id="note-11">[11]</span> [Regulation (EU) 2024/573 of 7 February 2024 on fluorinated greenhouse gases](https://eur-lex.europa.eu/eli/reg/2024/573/oj), repealing Regulation (EU) 517/2014.
+
+<span id="note-12">[12]</span> The definition used is the OECD one: any substance containing at least one fully fluorinated carbon atom, methyl (CF3) or methylene (CF2). R32 (CH2F2) contains none; R125 (CHF2-CF3) and R1234yf (CF3-CF=CH2) do.
+
+<span id="note-13">[13]</span> See the timetable on the ECHA dossier page (note [\[8\]](#note-8)) and, for a summary, [this overview](https://www.lawbc.com/rac-and-draft-seac-opinions-support-reach-pfas-restriction-with-targeted-derogations-comments-on-draft-seac-opinion-due-may-25/).
+
+<span id="note-14">[14]</span> Eunomia Research & Consulting for the Department of Energy and Climate Change (United Kingdom), *Impacts of Leakage from Refrigerants in Heat Pumps*, [final report](https://assets.publishing.service.gov.uk/media/5a7e1935ed915d74e622417e/Eunomia_-_DECC_Refrigerants_in_Heat_Pumps_Final_Report.pdf). The data come from log books kept under the F-gas Regulation, collected from six organisations and covering 528 installations. Equivalent fleet rate: 3.48 % per year for domestic installations (leak frequency 10.0 %, median loss 35 % of the charge when a leak occurs) and 3.77 % for non-domestic ones (frequency 8.97 %, median loss 42 %). Failures exceeding 50 % of the charge account for 92 % and 75 % of the total mass lost. The authors' caveat: log books do not capture micro-leakage, which is reported as zero.
+
+<span id="note-15">[15]</span> AFCE and Citepa, *Inventaire des émissions de fluides frigorigènes pour la France métropole — résultats 2020*, June 2022, [report](https://www.afce.asso.fr/wp-content/uploads/2022/07/Rapport-AFCE-2022-08-31.pdf) (in French). Total bank in 2020: 58,869 tonnes, of which 15,581 tonnes of R410A, used 70 % in stationary air conditioning, 20 % in reversible heat pumps and 10 % in chillers. Annual servicing demand for R410A: 374 tonnes (table 9). The report also compares, refrigerant by refrigerant, the demand it reconstructs with the markets declared to SNEFCCA, which is precisely the kind of check that is missing at European level.
