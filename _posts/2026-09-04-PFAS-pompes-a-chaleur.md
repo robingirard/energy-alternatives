@@ -110,6 +110,10 @@ Résumé -- Les PFAS, ces « polluants éternels », sont entrés dans le débat
 </span>
 
 <span class="mytext">
+**Le même tonnage ne contient pas le même polluant.** En tonnes de fluide, les trois premiers usages sont presque à égalité : 17 000 tonnes par an pour la climatisation automobile, 13 300 pour la climatisation et les pompes à chaleur fixes, 13 000 pour la réfrigération commerciale. En TFA, ils n'ont plus rien à voir, parce que le rendement de dégradation dépend entièrement de la molécule : le R1234yf de l'automobile se convertit quasi intégralement en TFA, quand les HFC du parc fixe n'en produisent qu'une fraction, et le R32 pas du tout (tableau 1). Le même dossier place donc les bâtiments juste derrière l'automobile si l'on compte les tonnes de gaz émises, mais attribue à la seule climatisation automobile 75 % du TFA européen : mêmes données, priorité inverse selon ce que l'on décide de compter.
+</span>
+
+<span class="mytext">
 **Le chiffre des bâtiments est en outre surestimé.** Les 13 300 tonnes de la climatisation et des pompes à chaleur fixes incluent le R32, qui n'est pas un PFAS. L'ECHA le compte par convention en supposant qu'il sera remplacé demain par un HFO [\[8\]](#note-8), alors que pour les petits équipements la trajectoire dessinée par le F-gas est plutôt celle du propane. L'ECHA ne fournit pas la ventilation par fluide, mais une part importante de ce poste n'est donc pas, aujourd'hui, une émission de PFAS. Ce qui en est vraiment, c'est le parc ancien au R410A, et surtout ses fuites et sa fin de vie : sur ces 13 300 tonnes, 9 000 viennent des fuites d'équipements en fonctionnement et 4 200 de la récupération incomplète du fluide au démontage, contre moins de 100 tonnes pour le remplissage des machines neuves. Le levier le plus immédiat n'est donc pas le fluide des machines neuves, mais le confinement des circuits existants et la récupération du fluide en fin de vie.
 </span>
 
