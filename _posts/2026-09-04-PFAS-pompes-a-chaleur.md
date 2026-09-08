@@ -98,7 +98,7 @@ Résumé -- Les PFAS, ces « polluants éternels », sont entrés dans le débat
 ## Tous les usages ne se valent pas
 
 <span class="text" id="Figure3" style="display:block;text-align:center">
-![Répartition des émissions de PFAS en Europe par usage]({{site.baseurl}}/assets/images/Posts/2026-09-04/pfas_emissions_europe.png){:.border width="85%"}
+![Répartition des émissions de PFAS en Europe par usage]({{site.baseurl}}/assets/images/Posts/2026-09-04/pfas_emissions_europe.png){:.border width="100%"}
 </span>
 
 <span class="legendtext" id="CAPFigure3" style="display:block;text-align:center">
