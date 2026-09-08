@@ -1,0 +1,204 @@
+---
+title: "PFAS, pompes à chaleur et climatisation : il va falloir choisir un fluide"
+key: pfas
+ref: pfas-pompes-a-chaleur
+tags: PFAS, polluants éternels, pompes à chaleur, climatisation, fluides frigorigènes, réglementation européenne, F-gas, TFA, bâtiment
+article_header:
+  type: cover
+  image:
+    src: /assets/images/Posts/2026-09-04/pfas_emissions_banner.png
+---
+
+<span class="summary" style="display:block; text-align: justify">
+Résumé -- Les PFAS, ces « polluants éternels », sont entrés dans le débat sur les pompes à chaleur et la climatisation depuis qu'une chronique de Jean-Baptiste Fressoz dans Le Monde [\[1\]](#note-1) a rappelé qu'en Europe la majorité des émissions de PFAS provient des gaz fluorés que nous utilisons comme fluides frigorigènes. L'Europe prépare une restriction quasi universelle des PFAS, attendue vers 2028, qui vient s'ajouter au règlement F-gas sur les gaz à effet de serre fluorés. Dans le même temps, il nous faut déployer massivement les pompes à chaleur pour sortir du gaz et du fioul, et la climatisation pour nous adapter aux canicules. J'explique ici ce que sont les PFAS et pourquoi ils posent problème, ce que l'on met dans une pompe à chaleur et pourquoi aucun fluide n'est parfait, puis ce que dit vraiment le dossier de l'agence européenne des produits chimiques : tous les usages ne se valent pas, et le chiffre agrégé qui circule cache une réalité très inégale. Ma conclusion est que le compromis à faire dépend de l'usage. Il faut aller vite là où les alternatives sont mûres, c'est-à-dire pour les petits équipements et pour la climatisation automobile, où le passage au véhicule électrique va d'ailleurs réduire les fuites, et se donner un peu de temps là où la substitution menace le rythme de la décarbonation, c'est-à-dire pour les grosses puissances. Dans tous les cas, le premier levier n'est pas le fluide des machines neuves, mais les fuites du parc existant et la récupération du fluide en fin de vie.
+</span>
+<!--more-->
+
+## Pourquoi parle-t-on des PFAS à propos des pompes à chaleur ?
+
+<span class="mytext">
+**Une chronique et un chiffre choc.** Le 6 juin dernier, Jean-Baptiste Fressoz titrait dans Le Monde : « Pompes à chaleur et climatisation sont la première source d'émissions de PFAS en Europe » [\[1\]](#note-1). Le chiffre vient du dossier de restriction des PFAS examiné par l'Agence européenne des produits chimiques (ECHA) : sur environ 68 000 tonnes de PFAS émises chaque année en Europe, près de 39 000 proviennent des gaz fluorés, c'est-à-dire pour l'essentiel des fluides frigorigènes qui circulent dans nos climatiseurs, nos pompes à chaleur et nos installations de froid. Le titre n'est pas faux, mais il agrège des réalités très différentes, et j'y reviendrai plus bas. Commençons par le début : de quoi parle-t-on ?
+</span>
+
+<span class="mytext">
+**Les PFAS, une famille de plus de 10 000 molécules.** Les substances per- et polyfluoroalkylées sont des molécules organiques dans lesquelles des atomes de fluor ont remplacé l'hydrogène sur au moins un atome de carbone. La liaison carbone-fluor, l'une des plus solides de la chimie, leur donne des propriétés très recherchées (antiadhésif, imperméabilisant, résistance à la chaleur) et un défaut majeur : rien, ou presque, ne les dégrade dans l'environnement, d'où leur surnom de « polluants éternels ». On les trouve dans les poêles, les textiles imperméables, les mousses anti-incendie et donc aussi dans les gaz fluorés. Pour les plus étudiés, comme le PFOA et le PFOS, les effets sur la santé sont démontrés par des études épidémiologiques chez l'homme : baisse de la réponse immunitaire, effets sur la thyroïde, le foie et le cholestérol, et cancers, le PFOA étant classé cancérogène avéré par le Centre international de recherche sur le cancer depuis 2023 [\[2\]](#note-2). Ils sont déjà interdits. L'exposition passe par l'eau et l'alimentation, mais aussi par l'air intérieur et les poussières de nos logements, où une revue récente du CSTB montre une contamination généralisée dont les sources sont encore mal quantifiées [\[3\]](#note-3).
+</span>
+
+<span class="text" id="Figure1" style="display:block;text-align:center">
+![Molécule de PFAS et cycle de vie]({{site.baseurl}}/assets/images/Posts/2026-09-04/pfas_molecule_cycle.png){:.border width="90%"}
+</span>
+
+<span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
+**Figure 1** -- Une molécule de PFAS, ici le PFOA, l'une des plus de 10 000 molécules de la famille, et le cycle de vie de ces substances : la solidité de la liaison carbone-fluor fait qu'une fois émises, elles ne se dégradent pas et s'accumulent dans l'environnement. Pour les PFAS à chaîne longue comme le PFOA, les effets sur la santé humaine sont démontrés.
+</span>
+
+<span class="mytext">
+**Mais au fait, pourquoi met-on un fluide dans ces machines ?** Une pompe à chaleur, un réfrigérateur et un climatiseur sont la même machine : ils déplacent de la chaleur d'un endroit froid vers un endroit chaud, ce que la chaleur ne fait jamais spontanément. Pour y arriver, on fait circuler un fluide qui change d'état : il s'évapore à basse température en absorbant de la chaleur d'un côté, on le comprime, puis il se condense à plus haute température en la restituant de l'autre. Ce fluide n'est pas un carburant et il n'est pas consommé : il tourne en boucle dans un circuit fermé, et il ne pose problème que lorsqu'il s'en échappe. Encore faut-il qu'il change d'état aux bonnes températures, qu'il ne soit ni toxique ni inflammable, qu'il ne se dégrade pas dans la machine et qu'il n'attaque pas les matériaux du circuit : un cahier des charges que les molécules fluorées remplissent remarquablement bien, et c'est bien pour cela qu'on les a choisies. J'y reviens plus loin, car c'est là que se joue tout le compromis.
+</span>
+
+<span class="mytext">
+**Le PFAS que produisent ces fluides fluorés, lui, pose un problème d'une tout autre nature : il s'appelle TFA.** Les gaz fluorés du froid ne s'accumulent pas eux-mêmes dans les organismes. Une partie d'entre eux se dégrade dans l'atmosphère, en quelques jours pour les plus récents, en produisant de l'acide trifluoroacétique (TFA), un PFAS à chaîne « ultracourte », extrêmement soluble et mobile, que l'on retrouve aujourd'hui dans l'eau de pluie, les nappes, l'eau du robinet et jusque dans le vin. Sa concentration dans les pluies allemandes est plusieurs fois supérieure à ce qu'elle était il y a 25 ans [\[4\]](#note-4), et on ne sait pas l'enlever de l'eau à un coût raisonnable. Sa toxicité est une autre affaire que celle des PFAS à chaîne longue. Aux concentrations mesurées aujourd'hui dans l'environnement, aucun effet n'est démontré, ni sur les écosystèmes aquatiques, où une synthèse de 2024 juge le risque négligeable même à l'horizon 2100 [\[5\]](#note-5), ni chez l'homme. Ce qui a changé en 2025 et 2026 est d'une autre nature : une étude chez le lapin a montré des malformations chez les petits à fortes doses, et sur cette base l'Allemagne a proposé, puis le comité d'évaluation des risques de l'ECHA a validé en juin 2026, un classement du TFA comme toxique pour la reproduction et « très persistant, très mobile » [\[7\]](#note-7). C'est un classement de danger, c'est-à-dire une propriété de la molécule observée chez l'animal, et non la démonstration d'un risque aux doses auxquelles nous sommes exposés.
+</span>
+
+<span class="mytext">
+**Mettons des chiffres sur ce « à fortes doses », car ils sont rarement donnés.** Chez le lapin, les malformations oculaires apparaissent dès la plus faible dose testée, **180 milligrammes par kilo de poids corporel et par jour**. En juillet 2026, l'autorité européenne de sécurité des aliments a par ailleurs abaissé la dose journalière admissible pour l'homme de 0,05 à **0,014 mg par kilo et par jour**, soit 14 microgrammes, sur la base d'un effet sur les hormones thyroïdiennes chez le rat et en appliquant un facteur de sécurité de 500 [\[7\]](#note-7). Rapportons-y ce que nous buvons : les eaux du robinet analysées en 2024 dans onze pays européens contenaient en moyenne 0,74 microgramme de TFA par litre, au maximum 4,1. Pour un adulte de 60 kg buvant deux litres par jour, cela représente 0,025 microgramme par kilo et par jour en moyenne, 0,14 dans le pire cas : **100 à 600 fois moins que la dose admissible, et environ un million de fois moins que la dose qui provoque des malformations chez le lapin**. L'eau de pluie allemande, elle, a atteint des moyennes mensuelles de 4,87 µg/L, et les quantités déposées chaque année ont triplé à quadruplé depuis le milieu des années 1990 [\[4\]](#note-4). Deux réserves à cette arithmétique rassurante : l'eau de boisson n'est pas la seule voie d'exposition, l'alimentation compte aussi, et la dose admissible elle-même vient d'être divisée par 3,5 — la marge que l'on croit avoir est à la fois grande et fragile, car les conséquences pour la santé restent peu étudiées et l'estimation de ce à quoi nous sommes exposés est très imprécise.
+</span>
+
+<span class="mytext">
+**Pourquoi réglementer, alors, si nous sommes si loin des doses toxiques ?** Parce que les concentrations augmentent partout, on ne sait pas les faire baisser, et des chercheurs alertent sur une accumulation irréversible dont on ne connaît pas le seuil de nocivité [\[6\]](#note-6). Le raisonnement du régulateur repose donc moins sur un dommage avéré que sur la précaution face à l'irréversibilité : une fois le TFA dans le cycle de l'eau, on ne l'en sort plus, et si l'on découvrait un jour un effet à ces doses, il serait trop tard.
+</span>
+
+<span class="text" id="Figure2" style="display:block;text-align:center">
+![Du fluide frigorigène au TFA]({{site.baseurl}}/assets/images/Posts/2026-09-04/tfa_cycle.png){:.border width="90%"}
+</span>
+
+<span class="legendtext" id="CAPFigure2" style="display:block;text-align:center">
+**Figure 2** -- Du fluide frigorigène au TFA. Le R1234yf qui fuit d'un circuit se dégrade en une dizaine de jours dans l'atmosphère et se transforme presque intégralement en TFA, qui retombe avec la pluie et s'accumule dans les sols et les nappes. Aucun effet du TFA n'est démontré aux concentrations actuelles ; son classement de 2026 comme toxique pour la reproduction repose sur des essais chez l'animal à fortes doses. Le R32, lui, se dégrade sans former de TFA.
+</span>
+
+## Nous avons besoin des pompes à chaleur et de la climatisation
+
+<span class="mytext">
+**Le chauffage des bâtiments est l'un des gros morceaux de la décarbonation.** J'en ai parlé à plusieurs reprises sur ce blog, par exemple [ici]({{site.baseurl}}/2020/03/22/une-contribution-a-la-reflexion-sur-la-strategie-nationale-bas-carbone-dans-le-batiment-partie-1-quels-modes-de-chauffage-a-lhorizon-2050.html). En France, le chauffage des bâtiments repose encore majoritairement sur le gaz et le fioul, et tous les scénarios de neutralité carbone, y compris les plus sobres, font une place massive aux pompes à chaleur, parce qu'elles produisent 3 à 4 kWh de chaleur pour 1 kWh d'électricité et permettent d'électrifier le chauffage sans faire exploser la demande d'électricité. L'argument n'est pas seulement un argument de rendement : c'est un argument de ressource. La pompe à chaleur permet de chauffer avec l'électricité, que la France produit déjà en quantité et à faible contenu carbone, plutôt qu'avec une molécule dont nous n'aurons pas assez. Le gisement de biogaz mobilisable en France sera vraisemblablement inférieur à 100 TWh, quand nous consommons aujourd'hui environ 400 TWh de gaz ; et ces 100 TWh seront disputés par des usages qui, eux, n'ont pas d'alternative aussi simple : l'industrie, la chaleur des réseaux urbains, peut-être une part de la production d'électricité de pointe et des transports lourds. Chauffer les logements au gaz vert reviendrait donc à consommer, pour l'usage le plus facile à électrifier, une ressource rare dont d'autres secteurs auront besoin. La sobriété et la rénovation sont indispensables, mais elles ne remplacent pas le changement de vecteur énergétique, comme je l'expliquais [dans ce post]({{site.baseurl}}/2024/02/08/sobriete-technologie.html). La climatisation devient de son côté un enjeu d'adaptation : avec des canicules plus fréquentes et plus intenses, les logements, les écoles, les EHPAD ou les hôpitaux doivent rester vivables. On peut et on doit limiter ce besoin par l'isolation, les protections solaires ou la ventilation nocturne, mais il serait illusoire de penser que l'on s'en passera, et une pompe à chaleur réversible fait d'ailleurs les deux. Ces machines sont donc à la fois des outils d'atténuation et d'adaptation au changement climatique. C'est ce qui rend la question des PFAS délicate : on ne peut pas se contenter de dire « interdisons ».
+</span>
+
+## Dans une pompe à chaleur il y a un fluide, et ce fluide est un compromis
+
+<span class="mytext">
+**Un siècle de substitutions.** Le cahier des charges rappelé plus haut — bonnes températures de changement d'état, ni inflammable, ni toxique, ni cher, ni nocif pour l'environnement — n'a jamais été rempli en entier. Aucun des fluides que l'on a utilisés jusqu'ici, ni de ceux que l'on envisage pour demain, ne coche toutes les cases, et l'histoire des frigorigènes est une succession de compromis. Aux premiers fluides, ammoniac toxique ou CO2 à très haute pression, ont succédé dans les années 1930 les CFC, le fameux fréon, sûrs mais destructeurs de la couche d'ozone. Le protocole de Montréal les a fait remplacer par les HFC, inoffensifs pour l'ozone mais puissants gaz à effet de serre : le R410A, encore majoritaire dans le parc de climatiseurs, réchauffe environ 2 000 fois plus que le CO2. À chaque étape, le problème résolu a été remplacé par un autre, découvert une ou deux décennies plus tard.
+</span>
+
+<span class="mytext">
+**Deux voies pour la suite, et c'est le cœur du débat actuel.** Le règlement européen F-gas organise depuis 2014 la sortie des HFC, et deux familles s'offrent pour les remplacer : les HFO, fluides de synthèse à effet de serre quasi nul mais qui se dégradent en TFA, ou les fluides dits naturels (propane, CO2, ammoniac), sans effet de serre notable ni PFAS mais qui réintroduisent l'inflammabilité, la toxicité ou le coût. Comme le rappelle Fressoz en citant le biologiste Barry Commoner, *there is no such thing as a free lunch*.
+</span>
+
+<div class="text" id="Table1" markdown="1">
+
+| Fluide | Usage typique | Effet de serre (PRG) | PFAS ? | Dégradation en TFA | Sécurité | Verrou principal |
+|---|---|---|---|---|---|---|
+| **R410A** (HFC) | parc de climatiseurs et PAC | ~2 000 | oui (composant R125) | partielle | non inflammable | effet de serre, PFAS |
+| **R32** (HFC) | climatiseurs et PAC récents | 675 | **non** | **aucune** | peu inflammable | effet de serre |
+| **R1234yf** (HFO) | climatisation automobile | ~1 | oui | **~100 %** | peu inflammable | TFA |
+| **R290** propane | PAC monobloc, frigos, froid commercial | 3 | non | aucune | **très inflammable** | charge limitée, formation |
+| **R744** CO2 | eau chaude sanitaire, froid commercial | 1 | non | aucune | haute pression | rendement en été, coût ×2 |
+| **R717** ammoniac | froid industriel | 0 | non | aucune | **toxique** | usages confinés |
+| **R718** eau | recherche | 0 | non | aucune | aucun risque | non mature |
+{:.fluides}
+
+</div>
+
+<span class="legendtext" id="CAPTable1" style="display:block;text-align:center">
+**Tableau 1** -- Principaux fluides frigorigènes et leurs compromis. PRG : pouvoir de réchauffement global à 100 ans, relatif au CO2. Statut PFAS et rendement de dégradation en TFA d'après l'avis du comité d'évaluation des risques de l'ECHA [\[8\]](#note-8) ; le rendement du R1234yf est aussi documenté dans la littérature atmosphérique [\[9\]](#note-9). Le panorama des fluides naturels s'appuie sur une présentation d'Egoi Ortego Sampedro (Mines Paris PSL, Centre d'efficacité énergétique des procédés) au Café Carnot de février 2025.
+</span>
+
+<span class="mytext">
+**Trois choses à retenir de ce tableau.** D'abord, le R32, qui équipe l'essentiel des climatiseurs et pompes à chaleur vendus depuis quelques années, n'est pas un PFAS au sens de la restriction et ne se dégrade pas en TFA, l'ECHA l'écrit explicitement [\[8\]](#note-8) ; son problème est son effet de serre, qui relève du F-gas. Ensuite, le R1234yf, qui équipe la quasi-totalité des climatisations automobiles neuves depuis 2017, se dégrade intégralement en TFA. Enfin, le propane est un excellent fluide, mais son inflammabilité limite la quantité admissible dans un circuit, donc la puissance des machines, et impose de former les installateurs ; quant au CO2, il climatise mal quand il fait très chaud dehors et coûte environ deux fois plus cher.
+</span>
+
+## Tous les usages ne se valent pas
+
+<span class="text" id="Figure3" style="display:block;text-align:center">
+![Répartition des émissions de PFAS en Europe par usage]({{site.baseurl}}/assets/images/Posts/2026-09-04/pfas_emissions_europe.png){:.border width="85%"}
+</span>
+
+<span class="legendtext" id="CAPFigure3" style="display:block;text-align:center">
+**Figure 3** -- D'où viennent les 68 000 tonnes de PFAS émises chaque année en Europe. En bleu, les usages liés au froid, à la climatisation et aux pompes à chaleur. Source : avis du comité d'évaluation des risques de l'ECHA, évaluations sectorielles « gaz fluorés » et « transport » [\[8\]](#note-8). Le poste « climatisation et PAC fixes » inclut par convention le R32, qui n'est pas un PFAS (voir texte).
+</span>
+
+<span class="mytext">
+**Le chiffre de 39 000 tonnes ne concerne que les usages fixes.** En lisant les avis de l'ECHA [\[8\]](#note-8), on découvre d'abord que le secteur « gaz fluorés » ne couvre que les équipements stationnaires. La climatisation automobile est comptée à part, dans le secteur « transport ». Or elle représente à elle seule 17 000 tonnes par an, soit un quart des émissions européennes de PFAS. C'est le premier poste, devant la climatisation et les pompes à chaleur des bâtiments (13 300 tonnes, 19,5 %) et la réfrigération commerciale (13 000 tonnes, 19 %). Si l'on regarde non plus les tonnes de gaz mais le TFA effectivement produit, la climatisation automobile pèse 75 % du TFA formé en Europe d'après les travaux de l'agence allemande de l'environnement repris par l'ECHA [\[4\]](#note-4). La raison est simple : son fluide, le R1234yf, se dégrade intégralement en TFA, et un circuit de climatisation de voiture, avec ses flexibles et son compresseur entraîné par une courroie, fuit bien plus qu'un circuit hermétique de pompe à chaleur.
+</span>
+
+<span class="mytext">
+**Le chiffre des bâtiments est en outre surestimé.** Les 13 300 tonnes de la climatisation et des pompes à chaleur fixes incluent le R32, qui n'est pas un PFAS. L'ECHA le compte par convention en supposant qu'il sera remplacé demain par un HFO [\[8\]](#note-8), alors que pour les petits équipements la trajectoire dessinée par le F-gas est plutôt celle du propane. L'ECHA ne fournit pas la ventilation par fluide, mais une part importante de ce poste n'est donc pas, aujourd'hui, une émission de PFAS. Ce qui en est vraiment, c'est le parc ancien au R410A, et surtout ses fuites et sa fin de vie : sur ces 13 300 tonnes, 9 000 viennent des fuites d'équipements en fonctionnement et 4 200 de la récupération incomplète du fluide au démontage, contre moins de 100 tonnes pour le remplissage des machines neuves. Le levier le plus immédiat n'est donc pas le fluide des machines neuves, mais le confinement des circuits existants et la récupération du fluide en fin de vie.
+</span>
+
+<span class="mytext">
+**L'automobile suit une trajectoire favorable, mais pas assez vite.** Le dossier de l'ECHA note que le taux de fuite des climatisations des voitures neuves est passé d'environ 6,5 % par an il y a vingt ans à 1,2 % aujourd'hui, même si la moyenne du parc en circulation reste bien plus élevée, et que « la réduction la plus significative peut être obtenue par l'usage d'un compresseur électrique, typiquement hermétique » [\[10\]](#note-10). C'est le compresseur des véhicules électriques, qui sont aussi les seuls où le CO2 puisse remplacer le R1234yf. Le développement du véhicule électrique va donc mécaniquement diminuer les fuites de la climatisation automobile, indépendamment du fluide choisi. L'électrification du parc automobile, que je défends ici [pour d'autres raisons]({{site.baseurl}}/2024/01/28/vehicule-elec.html), résout donc aussi une bonne part du problème du TFA. Paradoxalement, la directive européenne sur la climatisation des véhicules ne plafonne les fuites que pour les fluides à fort effet de serre, si bien que le R1234yf y échappe ; le dossier propose de rétablir des plafonds pour les véhicules neufs, ce qui paraît de bon sens.
+</span>
+
+<span class="mytext">
+**Les grosses puissances sont le vrai point dur.** Pour les bâtiments, l'ECHA distingue les équipements de moins de 12 kW, pour lesquels la substitution par le propane est jugée faisable et déjà organisée par le règlement F-gas, et les systèmes de plus de 12 kW (immeubles collectifs, tertiaire, industrie), pour lesquels le comité d'analyse socio-économique reconnaît un faible potentiel de substitution à l'entrée en vigueur de la restriction [\[8\]](#note-8). Pour ces machines, la charge de propane nécessaire dépasse ce que les normes de sécurité autorisent, le CO2 est cher et peu efficace en été, et l'ammoniac ou l'eau ne sont pas mûrs. C'est là qu'une interdiction sans dérogation aurait un coût : économique, mais aussi pour le rythme de décarbonation du chauffage collectif et tertiaire, sur lequel nous sommes justement le plus en retard.
+</span>
+
+## Ce que prépare l'Europe : deux réglementations qui se superposent
+
+<span class="mytext">
+**Le règlement F-gas vise le climat.** Le règlement (UE) 2024/573 [\[11\]](#note-11) organise la réduction progressive des quantités de HFC mises sur le marché jusqu'à leur disparition en 2050, et interdit par étapes la mise sur le marché d'équipements utilisant des gaz fluorés au-delà d'un certain effet de serre, dès 2027 pour les petits climatiseurs et pompes à chaleur les plus émetteurs, puis progressivement pour les plus gros, avec des exceptions lorsque la sécurité l'exige. Son critère est le pouvoir de réchauffement, si bien qu'il laisse passer les HFO, précurseurs de TFA, dans lesquels les industriels ont donc investi. La restriction PFAS vient aujourd'hui remettre en cause ce choix.
+</span>
+
+<span class="mytext">
+**La restriction PFAS vise la persistance.** Déposée en janvier 2023 par cinq pays (Allemagne, Pays-Bas, Danemark, Suède et Norvège) dans le cadre du règlement REACH, elle propose d'interdire les quelque 10 000 PFAS d'un seul coup, par groupe, plutôt que substance par substance, afin d'éviter que chaque interdiction ne soit contournée par une molécule cousine [\[12\]](#note-12). Elle frappe les HFC contenant un groupement CF3, comme le R125, ainsi que les HFO, mais ni le R32 ni le propane. Après une consultation publique de plus de 5 600 contributions, le comité d'évaluation des risques (RAC) a adopté son avis le 2 mars 2026 et le comité d'analyse socio-économique (SEAC) a mis son projet d'avis en consultation jusqu'au 25 mai 2026 [\[13\]](#note-13). Ce sont les « deux avis » dont parle la chronique du Monde. L'avis final du SEAC est attendu fin 2026, puis la Commission européenne et les États membres devront décider. L'entrée en vigueur est attendue autour de 2028.
+</span>
+
+<span class="mytext">
+**Deux options sur la table, et le régulateur lui-même écarte la plus dure.** Le dossier compare une interdiction générale avec 18 mois de transition, qui réduirait les émissions du secteur d'environ 95 %, et une interdiction assortie de dérogations ciblées de 5 ou 12 ans selon les usages, qui les réduirait d'environ 83 %. Contrairement à ce que laisse entendre le débat public, le RAC écrit que la première option « n'est probablement pas applicable, et donc pas gérable », et que la seconde lui est préférable [\[8\]](#note-8). Le SEAC, de son côté, raisonne par catégorie d'équipement : pas de dérogation pour les petits équipements, déjà traités par le F-gas, mais reconnaissance des difficultés pour les grosses puissances. Le vrai débat des deux prochaines années ne portera donc pas sur le principe de l'interdiction, mais sur le calibrage des dérogations, usage par usage.
+</span>
+
+## Ce que ces bilans ne savent pas encore
+
+<span class="mytext">
+**Presque tout repose sur un taux de fuite qui n'est pas une mesure.** Les tonnages qui ouvrent ce billet sont des émissions de parc : un nombre de machines, une charge moyenne, un taux de fuite annuel. Le troisième terme est le maillon faible. Pour la climatisation et les pompes à chaleur fixes, le taux retenu par l'ECHA, environ 4,5 % par an, n'est pas issu d'une campagne de mesure : c'est le rapport entre les émissions attribuées au parc et le volume de ce parc, c'est-à-dire une conséquence de l'inventaire plus qu'une observation qui le fonderait [\[8\]](#note-8). Le froid commercial et le froid industriel se voient appliquer, par la même méthode, 11 % et 8,9 % par an. Le chiffre de 5 % que l'on retrouve un peu partout dans la littérature grise appartient à cette famille.
+</span>
+
+<span class="mytext">
+**Or la moyenne est un mauvais résumé de ce qui se passe réellement.** La seule étude de terrain d'ampleur dont je dispose, réalisée au Royaume-Uni à partir des carnets d'entretien réglementaires de 528 installations, donne un taux moyen de 3,5 % par an pour les pompes à chaleur domestiques et 3,8 % pour les autres — mais surtout, elle montre comment ce nombre se fabrique [\[14\]](#note-14). Environ neuf machines sur dix ne perdent rien au cours d'une année donnée. Parmi celles qui fuient, la moitié perd plus de la moitié de sa charge, c'est-à-dire tombe en panne. Et ces ruptures représentent 75 à 92 % de toute la masse de fluide perdue. La moyenne de parc n'est donc pas le taux d'étanchéité d'une machine ordinaire : c'est une poignée d'accidents étalés sur l'ensemble du parc. Une pompe à chaleur résidentielle qui n'a jamais été rechargée en dix ans n'est pas une exception vertueuse, c'est le cas normal.
+</span>
+
+<span class="mytext">
+**Cela déplace le levier plutôt qu'il ne l'annule.** Si l'essentiel de la masse perdue vient de ruptures franches, alors améliorer à la marge l'étanchéité des circuits neufs ne sert pas à grand-chose, tandis que la détection de fuite et l'intervention rapide attaquent les trois quarts du problème — et ces mesures sont indépendantes du fluide, donc elles valent aussi bien sous le F-gas que sous la restriction PFAS. Il faut ajouter que même en révisant les fuites à la baisse, l'autre moitié du sujet ne bouge pas : sur les 13 300 tonnes des équipements fixes, 4 200 viennent de la récupération incomplète du fluide au démontage, et nous connaissons cette fin de vie encore plus mal que les fuites.
+</span>
+
+<span class="mytext">
+**Une vérification indépendante est possible, et elle n'a pas vraiment été faite.** On peut estimer les fuites autrement qu'en les postulant : en confrontant les quantités de fluide effectivement vendues pour la recharge des installations à la banque de fluide contenue dans le parc. L'inventaire français des fluides frigorigènes, qui recense quarante applications réparties en huit domaines, publie les deux termes [\[15\]](#note-15). Pour le R410A, le fluide du parc de climatisation et de pompes à chaleur : environ 15 600 tonnes en banque en 2020, contre un besoin annuel de maintenance de 374 tonnes, soit de l'ordre de 2,4 % par an. C'est une borne basse plutôt qu'une mesure, puisqu'une partie du besoin est couverte par du fluide récupéré et recyclé, donc jamais vendue. Mais l'écart avec les 4,5 % de l'ECHA est du bon ordre de grandeur pour mériter d'être creusé, et l'inventaire français note d'ailleurs de lui-même que les taux d'émission de la climatisation fixe sont « relativement faibles ».
+</span>
+
+<span class="mytext">
+**Ce sont les questions que nous cherchons maintenant à quantifier.** Nous construisons avec mon équipe un modèle de parc, machine par machine et millésime par millésime, qui suit le fluide depuis la mise sur le marché jusqu'au démontage, et qui traduit ces flux en TFA, en CO2 et en coût, pour chaque option réglementaire sur la table. Trois questions y sont ouvertes et je serais heureux d'échanger avec ceux qui ont des éléments : distinguer proprement le résidentiel du tertiaire, que les données publiques traitent aujourd'hui comme un seul bloc alors que tout les sépare — une machine hermétique fermée en usine d'un côté, des liaisons frigorifiques assemblées sur chantier de l'autre ; documenter le régime de défaillance du froid commercial et industriel, où les taux affichés sont deux fois plus élevés et où je n'ai pas de connaissance de terrain ; et mesurer ce qui est réellement récupéré en fin de vie. Tant que ces trois points reposent sur des conventions d'inventaire, les bilans que l'on m'oppose comme ceux que je présente ici sont des ordres de grandeur, et il faut les lire comme tels.
+</span>
+
+## Quel compromis ?
+
+<span class="mytext">
+**Aller vite là où le TFA est massif et les alternatives mûres, se donner du temps ailleurs.** Aller vite, c'est possible pour la climatisation automobile, de loin premier poste de TFA, où l'électrification apporte un compresseur hermétique compatible avec le CO2 et où des plafonds de fuite pour les véhicules neufs peuvent s'appliquer sans attendre. C'est possible aussi pour les climatiseurs et pompes à chaleur de moins de 12 kW, pour lesquels le propane est disponible et déjà poussé par le F-gas ; le sujet y est la formation des installateurs et les règles de sécurité, pas la technologie. Pour les machines de plus de 12 kW en revanche, des dérogations transitoires bornées dans le temps, conditionnées au contrôle des fuites et à la récupération du fluide en fin de vie, me paraissent préférables à une interdiction sèche qui retarderait la sortie du gaz dans le collectif et le tertiaire. Une pompe à chaleur au HFO qui remplace une chaudière à gaz reste une bonne opération pour le climat, à condition que son circuit ne fuie pas, et la recherche sur les grosses machines au propane, au CO2 et à l'eau doit être soutenue en parallèle.
+</span>
+
+<span class="mytext">
+**Cibler le fluide et les fuites, pas la machine.** Le récit « pompe à chaleur égale PFAS » est trompeur pour une machine neuve au R32 ou au propane, qui n'en émet pas, et la restriction comme le débat public gagneraient à cette granularité. Surtout, les deux tiers des émissions des équipements fixes viennent des fuites du parc en service et près d'un tiers du démontage : étanchéité, contrôles de fuite, récupération et destruction du fluide en fin de vie sont des leviers immédiats, indépendants du choix de fluide, moins coûteux qu'une substitution précipitée, et bons pour le climat puisque le parc actuel est au R410A.
+</span>
+
+<span class="mytext">
+**Un débat sur les usages essentiels.** Fressoz a raison de dire que le débat va se déplacer vers la définition démocratique des « usages essentiels » des PFAS. Chauffer nos bâtiments sans fossiles et nous protéger des canicules me semblent en faire partie. Cela ne veut pas dire n'importe comment, ni pour toujours : la question n'est pas de savoir s'il faut sortir les fluides fluorés de nos pompes à chaleur, mais dans quel ordre et à quel rythme, pour ne pas sacrifier une urgence à une autre. La première grande difficulté de la transition que nous devons mener n'est pas du côté des technologies qu'il faut développer, car la plupart des solutions existent déjà, elle est d'embarquer 8 milliards d'individus dans un projet fédérateur. Cela demandera de savoir naviguer entre la radicalité du projet — viser la neutralité carbone en respectant les limites planétaires — et un discours sincèrement fédérateur qui sache résister à la tentation des positions de principe ou des raccourcis clivants.
+</span>
+
+## Notes
+
+<span id="note-1">[1]</span> Jean-Baptiste Fressoz, [« Pompes à chaleur et climatisation sont la première source d'émissions de PFAS en Europe »](https://www.lemonde.fr/idees/article/2026/06/06/pompes-a-chaleur-et-climatisation-sont-la-premiere-source-d-emissions-de-pfas-en-europe_6696594_3233.html), chronique, Le Monde, 6 juin 2026.
+
+<span id="note-2">[2]</span> Voir la page de synthèse de l'ECHA sur les PFAS : [Per- and polyfluoroalkyl substances (PFAS)](https://echa.europa.eu/fr/hot-topics/perfluoroalkyl-chemicals-pfas). L'EFSA a fixé en 2020 une dose hebdomadaire tolérable pour la somme de quatre PFAS (PFOA, PFOS, PFNA, PFHxS) de 4,4 ng par kg de poids corporel, sur la base de l'effet immunitaire observé chez l'enfant. Le Centre international de recherche sur le cancer a classé en 2023 le PFOA « cancérogène pour l'homme » (groupe 1) et le PFOS « peut-être cancérogène » (groupe 2B), voir [le communiqué du CIRC](https://www.iarc.who.int/news-events/iarc-monographs-evaluate-the-carcinogenicity-of-perfluorooctanoic-acid-pfoa-and-perfluorooctanesulfonic-acid-pfos/).
+
+<span id="note-3">[3]</span> A. Della-Puppa, M. Douard, M. Nicolas, « Poly- and perfluoroalkyl substances (PFAS) contamination of indoor air and dust: a review of the literature », Atmospheric Environment, vol. 377, 122057, 2026. Voir aussi la [présentation de ces travaux par le CSTB](https://www.cstb.fr/toutes-les-actualites/exposition-polluants-eternels).
+
+<span id="note-4">[4]</span> Umweltbundesamt (agence allemande de l'environnement), [Trifluoroacetic acid from fluorinated refrigerants contaminates rainwater](https://www.umweltbundesamt.de/en/press/pressinformation/trifluoroacetic-acid-from-fluorinated-refrigerants) et [TFA as degradation product of fluorinated greenhouse gases](https://www.umweltbundesamt.de/en/topics/climate-energy/fluorinated-greenhouse-gases-fully-halogenated-cfcs/emissions-degradation-products/tfa-as-degradation-product-of-fluorinated). Le chiffre de 75 % du TFA européen attribué à la climatisation automobile provient du rapport UBA 73/2021, cité dans l'évaluation sectorielle « transport » du RAC.
+
+<span id="note-5">[5]</span> M. Hanson et al., [« Trifluoroacetic Acid in the Environment: Consensus, Gaps, and Next Steps »](https://onlinelibrary.wiley.com/doi/full/10.1002/etc.5963), Environmental Toxicology and Chemistry, 43(10), 2024.
+
+<span id="note-6">[6]</span> H.P. Arp et al., [« The Global Threat from the Irreversible Accumulation of Trifluoroacetic Acid (TFA) »](https://pubs.acs.org/doi/full/10.1021/acs.est.4c06189), Environmental Science & Technology, 58(45), 2024.
+
+<span id="note-7">[7]</span> Le classement en toxique pour la reproduction de catégorie 1B repose sur une étude de toxicité pour le développement chez le lapin, à des doses très supérieures aux expositions environnementales ; c'est un classement de danger au sens du règlement CLP, indépendant du niveau d'exposition réel. Proposition de classification harmonisée déposée par l'Allemagne en 2025 (voir le [communiqué du BfR](https://www.bfr.bund.de/en/press-release/trifluoroacetic-acid-tfa-assessment-for-classification-in-new-hazard-classes-submitted/)), validée par le comité d'évaluation des risques de l'ECHA lors de sa session de juin 2026 (voir par exemple [ce compte rendu](https://foodpackagingforum.org/news/echa-committee-recommends-stricter-hazard-classification-of-forever-chemical-tfa)). Les doses citées dans le texte : chez le lapin, espèce la plus sensible, des malformations oculaires (repliement de la rétine, absence d'humeur aqueuse ou vitrée) sont observées dès la plus faible dose testée, 180 mg/kg de poids corporel par jour, dose à laquelle les mères ne présentent qu'un effet hépatique minime. La dose journalière admissible de 0,014 mg/kg/jour a été publiée par l'EFSA le 23 juillet 2026, en remplacement de la valeur antérieure de 0,05 : [« Consumer health-based guidance values for trifluoroacetic acid »](https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10227), EFSA Journal, 2026 (point de départ : BMDL20 de 8,6 mg/kg/jour sur la baisse de thyroxine chez le rat dans une étude de reprotoxicité sur une génération étendue ; facteur d'incertitude total de 500, dont un facteur 5 pour l'absence d'étude de cancérogénèse à long terme et les lacunes sur l'immunotoxicité développementale). Les concentrations dans l'eau du robinet viennent de la campagne réalisée par le centre de technologie de l'eau de Karlsruhe pour PAN Europe en 2024 (TFA détecté dans 34 échantillons sur 36, dans onze pays, moyenne 0,74 µg/L, maximum 4,1 µg/L) ; une campagne du BUND la même année trouve 0,05 à 1,1 µg/L dans l'eau du robinet de plusieurs villes allemandes. La valeur guide sanitaire allemande pour l'eau potable est aujourd'hui de 60 µg/L, et devrait être révisée à la suite de l'avis de l'EFSA.
+
+<span id="note-8">[8]</span> Avis du comité d'évaluation des risques (RAC) et projet d'avis du comité d'analyse socio-économique (SEAC) sur la proposition de restriction des PFAS, avec les évaluations sectorielles « Applications of fluorinated gases » et « Transport », disponibles sur la [page du dossier dans le registre des intentions de restriction de l'ECHA](https://echa.europa.eu/fr/registry-of-restriction-intentions/-/dislist/details/0b0236e18663449b). Les rendements de dégradation en TFA retenus par le RAC sont de 100 % pour le R1234yf, de 2 à 30 % pour le R1234ze et de 0 pour le R32, dont le RAC écrit qu'il « ne répond pas à la définition des PFAS » et « ne se dégrade pas en TFA ».
+
+<span id="note-9">[9]</span> D. Luecken et al., [« Ozone and TFA impacts in North America from degradation of 2,3,3,3-tetrafluoropropene (HFO-1234yf), a potential greenhouse gas replacement »](https://pubs.acs.org/doi/10.1021/es902481f), Environmental Science & Technology, 44(1), 2010.
+
+<span id="note-10">[10]</span> Background Document de la proposition de restriction, annexe E (émissions), même page ECHA que la note [\[8\]](#note-8). Le taux de fuite moderne (1,2 % par an) est une moyenne géométrique calculée sur des données de déclaration obligatoire de l'État du Minnesota (2021-2023).
+
+<span id="note-11">[11]</span> [Règlement (UE) 2024/573 du 7 février 2024 relatif aux gaz à effet de serre fluorés](https://eur-lex.europa.eu/eli/reg/2024/573/oj), qui abroge le règlement (UE) 517/2014.
+
+<span id="note-12">[12]</span> La définition retenue est celle de l'OCDE : toute substance contenant au moins un atome de carbone entièrement fluoré, méthyle (CF3) ou méthylène (CF2). Le R32 (CH2F2) n'en contient pas, le R125 (CHF2-CF3) et le R1234yf (CF3-CF=CH2) oui.
+
+<span id="note-13">[13]</span> Voir le calendrier sur la page du dossier ECHA (note [\[8\]](#note-8)) et, pour une synthèse, [ce résumé](https://www.lawbc.com/rac-and-draft-seac-opinions-support-reach-pfas-restriction-with-targeted-derogations-comments-on-draft-seac-opinion-due-may-25/).
+
+<span id="note-14">[14]</span> Eunomia Research & Consulting pour le Department of Energy and Climate Change (Royaume-Uni), *Impacts of Leakage from Refrigerants in Heat Pumps*, [rapport final](https://assets.publishing.service.gov.uk/media/5a7e1935ed915d74e622417e/Eunomia_-_DECC_Refrigerants_in_Heat_Pumps_Final_Report.pdf). Les données proviennent des carnets de bord tenus au titre du règlement F-gas, collectés auprès de six organisations et couvrant 528 installations. Taux équivalent de parc : 3,48 % par an en domestique (fréquence de fuite 10,0 %, perte médiane 35 % de la charge quand une fuite survient) et 3,77 % en non-domestique (fréquence 8,97 %, perte médiane 42 %). Les défaillances dépassant 50 % de la charge représentent 92 % et 75 % de la masse totale perdue. Réserve des auteurs : les carnets de bord ne captent pas les micro-fuites, déclarées à zéro.
+
+<span id="note-15">[15]</span> AFCE et Citepa, *Inventaire des émissions de fluides frigorigènes pour la France métropole — résultats 2020*, juin 2022, [rapport](https://www.afce.asso.fr/wp-content/uploads/2022/07/Rapport-AFCE-2022-08-31.pdf). Banque totale 2020 : 58 869 tonnes, dont 15 581 tonnes de R410A, utilisé à 70 % en climatisation fixe, 20 % en pompes à chaleur réversibles et 10 % en groupes refroidisseurs. Besoin annuel de maintenance en R410A : 374 tonnes (tableau 9). Le rapport confronte par ailleurs, fluide par fluide, la demande qu'il reconstitue aux marchés déclarés au SNEFCCA, ce qui est précisément le type de vérification qui manque au niveau européen.
