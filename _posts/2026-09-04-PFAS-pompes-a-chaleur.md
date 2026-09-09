@@ -84,7 +84,7 @@ Résumé -- Les PFAS, ces « polluants éternels », sont entrés dans le débat
 | **R1336mzz** (HFO) | PAC haute température, cycles ORC | ~2 | oui | **4 à 60 %** | non inflammable | disponibilité, coût |
 | **R290** propane | PAC monobloc, frigos, froid commercial | 3 | non | aucune | **très inflammable** | charge limitée, formation |
 | **R744** CO2 | eau chaude sanitaire, froid commercial | 1 | non | aucune | haute pression | rendement en été, coût ×2 |
-| **R717** ammoniac | froid industriel | 0 | non | aucune | **toxique** | usages confinés |
+| **R717** ammoniac | froid industriel | 0 | non | aucune | **caustique** (irritant) | espaces occupés |
 | **R718** eau | recherche | 0 | non | aucune | aucun risque | non mature |
 {:.fluides}
 
@@ -125,7 +125,7 @@ Résumé -- Les PFAS, ces « polluants éternels », sont entrés dans le débat
 </span>
 
 <span class="mytext">
-**Les grosses puissances sont le vrai point dur.** Pour les bâtiments, l'ECHA distingue les équipements de moins de 12 kW, pour lesquels la substitution par le propane est jugée faisable et déjà organisée par le règlement F-gas, et les systèmes de plus de 12 kW (immeubles collectifs, tertiaire, industrie), pour lesquels le comité d'analyse socio-économique reconnaît un faible potentiel de substitution à l'entrée en vigueur de la restriction [\[8\]](#note-8). Pour ces machines, la charge de propane nécessaire dépasse ce que les normes de sécurité autorisent, le CO2 est cher et peu efficace en été, et l'ammoniac ou l'eau ne sont pas mûrs. C'est là qu'une interdiction sans dérogation aurait un coût : économique, mais aussi pour le rythme de décarbonation du chauffage collectif et tertiaire, sur lequel nous sommes justement le plus en retard.
+**Les grosses puissances sont le vrai point dur.** Pour les bâtiments, l'ECHA distingue les équipements de moins de 12 kW, pour lesquels la substitution par le propane est jugée faisable et déjà organisée par le règlement F-gas, et les systèmes de plus de 12 kW (immeubles collectifs, tertiaire, industrie), pour lesquels le comité d'analyse socio-économique reconnaît un faible potentiel de substitution à l'entrée en vigueur de la restriction [\[8\]](#note-8). Pour ces machines, la charge de propane nécessaire dépasse ce que les normes de sécurité autorisent, et le CO2 est cher et peu efficace en été. L'ammoniac, lui, n'est pas un fluide immature : c'est au contraire le fluide de référence du froid industriel, des abattoirs aux patinoires en passant par les entrepôts frigorifiques et les laiteries. Mais sa causticité impose une salle des machines et, en pratique, une boucle secondaire, ce que les normes de sécurité en espace occupé (EN 378, remplacée en 2025 par l'ISO 5149) n'autorisent guère dans un immeuble d'habitation ou un hôtel. Quant à l'eau, elle reste peu mature. Le point dur est donc la climatisation et les pompes à chaleur des grands bâtiments, pas le froid industriel : c'est là qu'une interdiction sans dérogation aurait un coût, économique mais aussi pour le rythme de décarbonation du chauffage collectif et tertiaire, sur lequel nous sommes justement le plus en retard.
 </span>
 
 ## Ce que prépare l'Europe : deux réglementations qui se superposent

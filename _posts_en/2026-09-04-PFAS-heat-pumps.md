@@ -84,7 +84,7 @@ Summary -- PFAS, the so-called "forever chemicals", entered the debate on heat p
 | **R1336mzz** (HFO) | high-temperature heat pumps, ORC cycles | ~2 | yes | **4 to 60 %** | non-flammable | availability, cost |
 | **R290** propane | monobloc heat pumps, fridges, commercial refrigeration | 3 | no | none | **highly flammable** | charge limit, installer training |
 | **R744** CO2 | domestic hot water, commercial refrigeration | 1 | no | none | high pressure | summer efficiency, cost ×2 |
-| **R717** ammonia | industrial refrigeration | 0 | no | none | **toxic** | confined uses |
+| **R717** ammonia | industrial refrigeration | 0 | no | none | **caustic** (irritant) | occupied spaces |
 | **R718** water | research | 0 | no | none | no hazard | not mature |
 {:.fluides}
 
@@ -125,7 +125,7 @@ Summary -- PFAS, the so-called "forever chemicals", entered the debate on heat p
 </span>
 
 <span class="mytext">
-**Large-capacity equipment is the real sticking point.** For buildings, ECHA distinguishes equipment below 12 kW, for which substitution by propane is considered feasible and is already organised by the F-gas Regulation, from systems above 12 kW (multi-family buildings, commercial buildings, industry), for which the Committee for Socio-Economic Analysis acknowledges a low substitution potential at the entry into force of the restriction [\[8\]](#note-8). For these machines, the propane charge required exceeds what safety standards allow, CO2 is expensive and inefficient in summer, and ammonia or water are not mature. That is where a ban without derogation would have a cost: economic, but also for the pace of decarbonisation of heating in multi-family and commercial buildings, which is precisely where we are furthest behind.
+**Large-capacity equipment is the real sticking point.** For buildings, ECHA distinguishes equipment below 12 kW, for which substitution by propane is considered feasible and is already organised by the F-gas Regulation, from systems above 12 kW (multi-family buildings, commercial buildings, industry), for which the Committee for Socio-Economic Analysis acknowledges a low substitution potential at the entry into force of the restriction [\[8\]](#note-8). For these machines, the propane charge required exceeds what safety standards allow, and CO2 is expensive and inefficient in summer. Ammonia, on the other hand, is not an immature fluid: it is the reference refrigerant of industrial refrigeration, from slaughterhouses and ice rinks to cold stores and dairies. But its caustic nature calls for a machine room and, in practice, a secondary loop, which safety standards for occupied spaces (EN 378, replaced in 2025 by ISO 5149) hardly allow in a residential building or a hotel. Water, for its part, remains immature. The sticking point is therefore air conditioning and heat pumps in large buildings, not industrial refrigeration: that is where a ban without derogation would have a cost, economic but also for the pace of decarbonisation of heating in multi-family and commercial buildings, which is precisely where we are furthest behind.
 </span>
 
 ## What Europe is preparing: two overlapping regulations
