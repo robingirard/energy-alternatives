@@ -1,0 +1,13 @@
+barre,gco2e_par_kwh,base,source
+Essence (Euro-95),300,PCI,"ADEME Base Empreinte, essence SP95-E10, ~2,7 kgCO2e/l amont inclus, 8,9 kWh/l ; ordre de grandeur"
+Gazole (routier),315,PCI,"ADEME Base Empreinte, gazole B7, ~3,1 kgCO2e/l amont inclus, 9,9 kWh/l ; ordre de grandeur"
+E85 (superethanol),170,PCI,"ADEME Base Empreinte, E85, ~1,1 kgCO2e/l, 6,4 kWh/l ; ordre de grandeur"
+Biocarburants (incorpores),,,"non renseigné : trop dépendant de la filière (colza, canne, huiles usagées)"
+Fioul domestique,324,PCI,"ADEME Base Empreinte, fioul domestique, amont inclus"
+Kerosene soutes internationales,315,PCI,"ADEME Base Empreinte, kérosène, ~3,0 kgCO2e/l amont inclus, 9,6 kWh/l ; ordre de grandeur"
+Electricite menages,52,,"ADEME Base Empreinte, électricité France mix moyen consommation ; la valeur marginale en hiver est plus élevée"
+Electricite industrie,52,,"idem"
+Gaz naturel menages,205,PCS,"ADEME Base Empreinte, gaz naturel 0,227 kgCO2e/kWh PCI amont inclus, ramené au PCS (÷1,11) car Eurostat tarife le gaz en PCS"
+Gaz naturel industrie,205,PCS,"idem"
+Biomethane injecte,40,PCS,"ADEME Base Empreinte, biométhane injecté ~0,044 kgCO2e/kWh PCI, ramené au PCS"
+Bois de chauffage menages,30,PCI,"ADEME Base Empreinte, bûches, hors CO2 biogénique"

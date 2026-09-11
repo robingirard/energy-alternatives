@@ -22,6 +22,14 @@ tags: ["fiscalité", "prix de l'énergie", "électricité", "gaz", "bois", "carb
 <figcaption><small>France, 2024, euros par MWh livré, TTC. Quatre postes par vecteur et par type de client : énergie et fourniture, réseau, accises et taxes, TVA. Le pourcentage en bout de barre est la part des prélèvements (accises + TVA) dans le prix ; le réseau n'en fait pas partie.</small></figcaption>
 </figure>
 
+## La même figure, à explorer
+
+Choisissez l'année, l'unité, et surtout la lecture : par MWh livré, comme sur la figure, ou par MWh de chaleur utile selon l'usage, en euros ou en CO₂. Avec une pompe à chaleur, un MWh d'électricité fait trois MWh de chaleur, et la comparaison avec le gaz se retourne. Survolez une barre pour le détail ; la vue « tableau » donne les nombres. Le graphique est engendré depuis le CSV ci-dessous par `build_interactif.py`.
+
+<iframe src="{{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/interactif_facture.html?lang=fr" title="La même figure, à explorer" loading="lazy" style="width:100%;height:640px;border:0;"></iframe>
+
+<small><a href="{{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/interactif_facture.html?lang=fr" target="_blank">Ouvrir le graphique dans un onglet</a></small>
+
 > Le millésime est 2024, le dernier pour lequel le biométhane injecté et le kérosène des soutes internationales sont publiés. La version 2025 de la figure, sans ces deux barres, se refait avec la même commande en omettant `--annee 2024` : l'électricité des ménages y est à 262 €/MWh dont 77 de prélèvements (l'accise, en cours de rétablissement après le bouclier tarifaire, passe de 25 à 37 €/MWh), le gaz à 136 dont 40.
 
 ## Le texte du post
@@ -48,6 +56,7 @@ Sources : Eurostat (nrg_pc_204_c et 205_c) pour l'électricité et le gaz, Weekl
 
 ## Données
 
+- [`facteurs_co2.csv`]({{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/facteurs_co2.csv) — Les facteurs d'émission utilisés par le graphique interactif (kg CO₂e par MWh, ADEME Base Empreinte, amont inclus), avec leur base PCI/PCS et leur source.
 - [`donnees_facture_fr_mwh_2024_2025.csv`]({{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/donnees_facture_fr_mwh_2024_2025.csv) — Les douze barres de la figure, millésimes 2024 et 2025, en €/MWh : énergie, réseau, accises, TVA, prix TTC, prélèvements et leur part.
 
 ## Code

@@ -22,6 +22,14 @@ tags: ["taxation", "energy prices", "electricity", "gas", "wood", "fuels", "Fran
 <figcaption><small>France, 2024, euros per MWh delivered, all taxes included. Four components per energy carrier and customer type: energy and supply, network, excise and other taxes, VAT. The percentage at the end of each bar is the share of levies (excise + VAT) in the price; the network is not counted as a levy.</small></figcaption>
 </figure>
 
+## The same figure, to explore
+
+Choose the year, the unit and, above all, the reading: per MWh delivered, as in the figure, or per MWh of useful heat depending on the use, in euros or in CO₂. With a heat pump, one MWh of electricity makes three MWh of heat, and the comparison with gas turns around. Hover a bar for the detail; the "table" view gives the numbers. The chart is generated from the CSV below by `build_interactif.py`.
+
+<iframe src="{{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/interactif_facture.html?lang=en" title="The same figure, to explore" loading="lazy" style="width:100%;height:640px;border:0;"></iframe>
+
+<small><a href="{{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/interactif_facture.html?lang=en" target="_blank">Open the chart in its own tab</a></small>
+
 > The vintage is 2024, the last year for which grid-injected biomethane and international bunker kerosene are published. The 2025 version of the figure, without those two bars, is produced by the same command without `--annee 2024`: household electricity is then at 262 €/MWh including 77 of levies (the excise, being restored after the tariff shield, rises from 25 to 37 €/MWh), gas at 136 including 40.
 
 ## The text of the post
@@ -48,6 +56,7 @@ Sources: Eurostat (nrg_pc_204_c and 205_c) for electricity and gas, the European
 
 ## Data
 
+- [`facteurs_co2.csv`]({{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/facteurs_co2.csv) — The emission factors used by the interactive chart (kg CO₂e per MWh, ADEME Base Empreinte, upstream included), with their LHV/GCV basis and source.
 - [`donnees_facture_fr_mwh_2024_2025.csv`]({{ site.baseurl }}/assets/linkedin/2026-09-10-taxes-energie/donnees_facture_fr_mwh_2024_2025.csv) — The twelve bars of the figure, 2024 and 2025 vintages, in €/MWh: energy, network, excise, VAT, price incl. taxes, levies and their share.
 
 ## Code

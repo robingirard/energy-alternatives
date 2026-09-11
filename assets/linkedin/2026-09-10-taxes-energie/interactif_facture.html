@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ce que paie un consommateur d'énergie en France</title>
+<style>
+  :root { color-scheme: light; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --surf:#fcfcfb;
+          --energie:#5b7d92; --reseau:#a9bcc7; --accises:#8c2c26; --tva:#e8cdbf; }
+  html,body { margin:0; background:var(--surf); color:var(--ink);
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif; }
+  .wrap { padding: 8px 4px 4px; }
+  .controls { display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; margin: 0 0 8px; font-size:13px; }
+  .controls label { color:var(--ink2); }
+  .seg { display:inline-flex; border:1px solid var(--grid); border-radius:6px; overflow:hidden; vertical-align:middle; }
+  .seg button { border:0; background:transparent; padding:4px 9px; font:inherit; color:var(--ink2); cursor:pointer; }
+  .seg button[aria-pressed="true"] { background:#e9eef2; color:var(--ink); font-weight:600; }
+  .seg button + button { border-left:1px solid var(--grid); }
+  .legend { display:flex; flex-wrap:wrap; gap:4px 16px; margin:4px 0 2px; font-size:12.5px; color:var(--ink2); }
+  .legend span::before { content:""; display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:6px; vertical-align:-1px; background:var(--c); }
+  svg { width:100%; height:auto; display:block; }
+  .grid line { stroke:var(--grid); stroke-width:1; }
+  .axis text { fill:var(--muted); font-size:11.5px; }
+  .xlab text { fill:var(--ink2); font-size:11px; text-anchor:middle; }
+  .cap text { fill:var(--ink); font-size:12px; text-anchor:middle; font-weight:600; }
+  .pct text { fill:var(--accises); font-size:11px; text-anchor:middle; }
+  .seglab { font-size:11px; text-anchor:middle; pointer-events:none; }
+  .bar rect { transition: y .35s ease, height .35s ease; }
+  .hit { fill:transparent; cursor:default; }
+  .bar:hover rect.seg-rect { filter:brightness(.93); }
+  #tip { position:absolute; pointer-events:none; background:#fff; border:1px solid var(--grid); border-radius:6px;
+         padding:8px 10px; font-size:12.5px; box-shadow:0 2px 8px rgba(0,0,0,.08); display:none; min-width:190px; z-index:2; }
+  #tip b { display:block; margin-bottom:4px; }
+  #tip .row { display:flex; justify-content:space-between; gap:12px; }
+  #tip .row i { display:inline-block; width:14px; height:3px; border-radius:2px; vertical-align:middle; margin-right:6px; background:var(--c); }
+  #tip .tot { border-top:1px solid var(--grid); margin-top:4px; padding-top:4px; font-weight:600; }
+  .note { color:var(--muted); font-size:12px; margin:6px 0 0; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; margin-top:6px; }
+  th, td { text-align:right; padding:4px 8px; border-bottom:1px solid var(--grid); white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; }
+  th { color:var(--ink2); font-weight:600; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap" id="app">
+  <div class="controls">
+    <label id="l-annee"></label><span class="seg" id="s-annee"></span>
+    <label id="l-unite"></label><span class="seg" id="s-unite"></span>
+    <label id="l-lecture"></label><span class="seg" id="s-lecture"></span>
+    <label id="l-vue"></label><span class="seg" id="s-vue"></span>
+  </div>
+  <div class="legend" id="legend"></div>
+  <div id="chart" style="position:relative"><svg id="svg" viewBox="0 0 1080 470" role="img"></svg><div id="tip"></div></div>
+  <div id="table" class="hidden"></div>
+  <p class="note" id="note"></p>
+</div>
+<script>
+const DATA = {"rows": [{"annee": "2024", "id": "Essence (Euro-95)", "fr": "Essence, SP95", "en": "Petrol, E95", "energie": 95.2, "reseau": 0.0, "accises": 79.6, "tva": 35.0, "co2": 300.0}, {"annee": "2024", "id": "Gazole (routier)", "fr": "Gazole, routier", "en": "Diesel, road", "energie": 81.5, "reseau": 0.0, "accises": 61.8, "tva": 28.7, "co2": 315.0}, {"annee": "2024", "id": "E85 (superethanol)", "fr": "Superéthanol, E85", "en": "Superethanol, E85", "energie": 87.8, "reseau": 0.0, "accises": 17.9, "tva": 21.1, "co2": 170.0}, {"annee": "2024", "id": "Biocarburants (incorpores)", "fr": "Biocarburants, incorporés", "en": "Biofuels, blended", "energie": 128.8, "reseau": 0.0, "accises": 66.8, "tva": 39.1, "co2": null}, {"annee": "2024", "id": "Fioul domestique", "fr": "Fioul, domestique", "en": "Heating oil, households", "energie": 85.7, "reseau": 0.0, "accises": 15.8, "tva": 20.3, "co2": 324.0}, {"annee": "2024", "id": "Kerosene soutes internationales", "fr": "Kérosène, soutes intl.", "en": "Jet fuel, intl. bunkers", "energie": 70.6, "reseau": 0.0, "accises": 0.0, "tva": 0.0, "co2": 315.0}, {"annee": "2024", "id": "Electricite menages", "fr": "Électricité, ménages", "en": "Electricity, households", "energie": 152.3, "reseau": 69.8, "accises": 25.0, "tva": 41.5, "co2": 52.0}, {"annee": "2024", "id": "Electricite industrie", "fr": "Électricité, industrie", "en": "Electricity, industry", "energie": 131.7, "reseau": 29.9, "accises": 17.8, "tva": 33.6, "co2": 52.0}, {"annee": "2024", "id": "Gaz naturel menages", "fr": "Gaz naturel, ménages", "en": "Natural gas, households", "energie": 61.9, "reseau": 26.3, "accises": 19.3, "tva": 17.8, "co2": 205.0}, {"annee": "2024", "id": "Gaz naturel industrie", "fr": "Gaz naturel, industrie", "en": "Natural gas, industry", "energie": 50.2, "reseau": 7.5, "accises": 11.6, "tva": 12.8, "co2": 205.0}, {"annee": "2024", "id": "Biomethane injecte", "fr": "Biométhane, injecté", "en": "Biomethane, grid-injected", "energie": 127.2, "reseau": 26.3, "accises": 19.3, "tva": 28.6, "co2": 40.0}, {"annee": "2024", "id": "Bois de chauffage menages", "fr": "Bois bûches, ménages", "en": "Firewood, households", "energie": 47.3, "reseau": 0.0, "accises": 0.0, "tva": 3.9, "co2": 30.0}, {"annee": "2025", "id": "Essence (Euro-95)", "fr": "Essence, SP95", "en": "Petrol, E95", "energie": 86.0, "reseau": 0.0, "accises": 79.7, "tva": 33.1, "co2": 300.0}, {"annee": "2025", "id": "Gazole (routier)", "fr": "Gazole, routier", "en": "Diesel, road", "energie": 75.0, "reseau": 0.0, "accises": 61.8, "tva": 27.4, "co2": 315.0}, {"annee": "2025", "id": "E85 (superethanol)", "fr": "Superéthanol, E85", "en": "Superethanol, E85", "energie": 74.4, "reseau": 0.0, "accises": 17.9, "tva": 18.5, "co2": 170.0}, {"annee": "2025", "id": "Biocarburants (incorpores)", "fr": "Biocarburants, incorporés", "en": "Biofuels, blended", "energie": 114.2, "reseau": 0.0, "accises": 67.6, "tva": 36.4, "co2": null}, {"annee": "2025", "id": "Fioul domestique", "fr": "Fioul, domestique", "en": "Heating oil, households", "energie": 80.0, "reseau": 0.0, "accises": 15.8, "tva": 19.1, "co2": 324.0}, {"annee": "2025", "id": "Electricite menages", "fr": "Électricité, ménages", "en": "Electricity, households", "energie": 108.8, "reseau": 75.9, "accises": 37.1, "tva": 40.1, "co2": 52.0}, {"annee": "2025", "id": "Electricite industrie", "fr": "Électricité, industrie", "en": "Electricity, industry", "energie": 105.0, "reseau": 32.3, "accises": 22.5, "tva": 28.8, "co2": 52.0}, {"annee": "2025", "id": "Gaz naturel menages", "fr": "Gaz naturel, ménages", "en": "Natural gas, households", "energie": 64.5, "reseau": 30.8, "accises": 19.9, "tva": 20.6, "co2": 205.0}, {"annee": "2025", "id": "Gaz naturel industrie", "fr": "Gaz naturel, industrie", "en": "Natural gas, industry", "energie": 45.3, "reseau": 9.7, "accises": 11.5, "tva": 11.9, "co2": 205.0}, {"annee": "2025", "id": "Bois de chauffage menages", "fr": "Bois bûches, ménages", "en": "Firewood, households", "energie": 48.2, "reseau": 0.0, "accises": 0.0, "tva": 3.9, "co2": 30.0}], "usages": {"pac": {"Electricite menages": 3.0, "Gaz naturel menages": 0.9, "Biomethane injecte": 0.9, "Fioul domestique": 0.85, "Bois de chauffage menages": 0.75}, "joule": {"Electricite menages": 1.0, "Gaz naturel menages": 0.9, "Biomethane injecte": 0.9, "Fioul domestique": 0.85, "Bois de chauffage menages": 0.75}, "cuisson": {"Electricite menages": 0.85, "Gaz naturel menages": 0.45, "Biomethane injecte": 0.45}}};
+const LANG = (new URLSearchParams(location.search).get("lang") || "fr").slice(0,2) === "en" ? "en" : "fr";
+document.documentElement.lang = LANG;
+const T = {
+  fr: { annee:"Année", unite:"Unité", lecture:"Rapporté à", vue:"Vue",
+        mwh:"€ / MWh", pct:"% de la facture", co2:"kg CO₂e / MWh", eurt:"€ de prélèvements / t CO₂e",
+        livre:"MWh livré", pac:"chaleur utile, pompe à chaleur", joule:"chaleur utile, radiateur électrique", cuisson:"chaleur utile, cuisson",
+        graph:"graphique", table:"tableau",
+        energie:"Énergie & fourniture", reseau:"Réseau", accises:"Accises & taxes", tva:"TVA",
+        total:"Total TTC", prel:"Prélèvements (accises + TVA)", barre:"Vecteur",
+        ylab_mwh:"€ par MWh, TTC", ylab_pct:"% du prix TTC", ylab_co2:"kg CO₂e par MWh", ylab_eurt:"€ de prélèvements par tonne de CO₂e",
+        co2lab:"Émissions", eurtlab:"Prélèvements par tonne de CO₂e", nd:"n.d.",
+        note_co2:" Facteurs d'émission ADEME Base Empreinte, amont inclus, CO₂ biogénique exclu (électricité : mix moyen français, 52 g/kWh ; gaz : 205 g/kWh PCS ; biocarburants incorporés non renseignés) ; ce sont des ordres de grandeur, voir facteurs_co2.csv.",
+        note_eurt:" Les prélèvements par tonne de CO₂e ne dépendent pas du rendement : numérateur et dénominateur sont divisés par le même facteur.",
+        note_livre:"France, prix TTC par MWh livré. Le pourcentage au sommet de chaque barre est la part des prélèvements (accises et TVA) ; le réseau n'en fait pas partie. Sources : Eurostat (nrg_pc_204_c, 205_c), Weekly Oil Bulletin, bilan énergétique SDES.",
+        note_pac:"Même prix, divisé par le rendement de l'usage chauffage : pompe à chaleur COP 3, chaudière gaz 90 %, fioul 85 %, poêle à bois 75 %. Par MWh de chaleur, l'électricité est alors moins taxée que le gaz.",
+        note_joule:"Même prix, divisé par le rendement de l'usage chauffage avec un radiateur électrique (rendement 1) : chaudière gaz 90 %, fioul 85 %, poêle à bois 75 %.",
+        note_cuisson:"Même prix, divisé par le rendement de la cuisson : plaque à induction 85 %, plaque gaz 45 % (les sources vont de 40 à 50 %). Par MWh de chaleur dans la casserole, les deux sont à égalité.",
+        note_pct:" En pourcentage, le rendement ne change pas la répartition.",
+      },
+  en: { annee:"Year", unite:"Unit", lecture:"Per", vue:"View",
+        mwh:"€ / MWh", pct:"% of the bill", co2:"kg CO₂e / MWh", eurt:"€ of levies / t CO₂e",
+        livre:"MWh delivered", pac:"useful heat, heat pump", joule:"useful heat, electric radiator", cuisson:"useful heat, cooking",
+        graph:"chart", table:"table",
+        energie:"Energy & supply", reseau:"Network", accises:"Excise & taxes", tva:"VAT",
+        total:"Total incl. taxes", prel:"Levies (excise + VAT)", barre:"Carrier",
+        ylab_mwh:"€ per MWh, incl. taxes", ylab_pct:"% of price incl. taxes", ylab_co2:"kg CO₂e per MWh", ylab_eurt:"€ of levies per tonne of CO₂e",
+        co2lab:"Emissions", eurtlab:"Levies per tonne of CO₂e", nd:"n/a",
+        note_co2:" Emission factors from ADEME Base Empreinte, upstream included, biogenic CO₂ excluded (electricity: French average mix, 52 g/kWh; gas: 205 g/kWh GCV; blended biofuels not filled in); orders of magnitude, see facteurs_co2.csv.",
+        note_eurt:" Levies per tonne of CO₂e do not depend on efficiency: numerator and denominator are divided by the same factor.",
+        note_livre:"France, price incl. taxes per MWh delivered. The percentage at the top of each bar is the share of levies (excise and VAT); the network is not counted as a levy. Sources: Eurostat (nrg_pc_204_c, 205_c), Weekly Oil Bulletin, SDES energy balance.",
+        note_pac:"Same price, divided by the efficiency of the heating use: heat pump COP 3, gas boiler 90 %, oil 85 %, wood stove 75 %. Per MWh of heat, electricity is then taxed less than gas.",
+        note_joule:"Same price, divided by the efficiency of heating with an electric radiator (efficiency 1): gas boiler 90 %, oil 85 %, wood stove 75 %.",
+        note_cuisson:"Same price, divided by the cooking efficiency: induction hob 85 %, gas hob 45 % (sources range from 40 to 50 %). Per MWh of heat in the pan, the two are level.",
+        note_pct:" In percentage terms, efficiency does not change the split.",
+      },
+}[LANG];
+const COMP = ["energie","reseau","accises","tva"];
+const COLOR = { energie:"var(--energie)", reseau:"var(--reseau)", accises:"var(--accises)", tva:"var(--tva)" };
+const INK_ON = { energie:"#fff", reseau:"#0b0b0b", accises:"#fff", tva:"#0b0b0b" };
+const state = { annee:"2024", unite:"mwh", lecture:"livre", vue:"graph" };
+const fmt = (v, d=0) => v.toLocaleString(LANG === "fr" ? "fr-FR" : "en-GB", {maximumFractionDigits:d, minimumFractionDigits:d});
+
+function seg(id, key, options) {
+  const el = document.getElementById(id); el.textContent = "";
+  for (const [val, label] of options) {
+    const b = document.createElement("button"); b.type = "button"; b.textContent = label;
+    b.setAttribute("aria-pressed", String(state[key] === val));
+    b.addEventListener("click", () => { state[key] = val; render(); });
+    el.appendChild(b);
+  }
+}
+function controls() {
+  document.getElementById("l-annee").textContent = T.annee;
+  document.getElementById("l-unite").textContent = T.unite;
+  document.getElementById("l-lecture").textContent = T.lecture;
+  document.getElementById("l-vue").textContent = T.vue;
+  seg("s-annee", "annee", [["2024","2024"],["2025","2025"]]);
+  seg("s-unite", "unite", [["mwh",T.mwh],["pct",T.pct],["co2",T.co2],["eurt",T.eurt]]);
+  seg("s-lecture", "lecture", [["livre",T.livre],["pac",T.pac],["joule",T.joule],["cuisson",T.cuisson]]);
+  seg("s-vue", "vue", [["graph",T.graph],["table",T.table]]);
+  const lg = document.getElementById("legend"); lg.textContent = "";
+  for (const c of COMP) { const s = document.createElement("span"); s.style.setProperty("--c", COLOR[c]); s.textContent = T[c]; lg.appendChild(s); }
+}
+function series() {
+  let rows = DATA.rows.filter(r => r.annee === state.annee);
+  if (state.lecture !== "livre") {
+    const eff = DATA.usages[state.lecture];
+    rows = rows.filter(r => eff[r.id] !== undefined).map(r => {
+      const o = {...r}; for (const c of COMP) o[c] = r[c] / eff[r.id]; if (r.co2 != null) o.co2 = r.co2 / eff[r.id]; return o; });
+  }
+  const CARB = state.unite === "co2" || state.unite === "eurt";
+  if (CARB) rows = rows.filter(r => r.co2 != null);
+  return rows.map(r => {
+    const total = COMP.reduce((s,c) => s + r[c], 0);
+    const prel = r.accises + r.tva;
+    const o = { id:r.id, label:r[LANG], total, prel, part: total ? 100*prel/total : 0, v:{} };
+    for (const c of COMP) o.v[c] = state.unite === "pct" ? (total ? 100*r[c]/total : 0) : r[c];
+    o.tot = state.unite === "pct" ? 100 : total;
+    o.co2 = r.co2; o.eurt = r.co2 ? 1000 * prel / r.co2 : null;
+    if (state.unite === "co2") { o.single = r.co2; o.tot = r.co2; }
+    if (state.unite === "eurt") { o.single = o.eurt; o.tot = o.eurt; }
+    return o;
+  });
+}
+function niceStep(max) { for (const st of [5,10,20,25,50,100,200,250,500,1000,2000]) if (max/st <= 7) return st; return 5000; }
+function render() {
+  controls();
+  const rows = series();
+  const svg = document.getElementById("svg"); svg.textContent = "";
+  const W = 1080, H = 470, m = {t:34, r:12, b:56, l:60};
+  const iw = W - m.l - m.r, ih = H - m.t - m.b;
+  const CARB = state.unite === "co2" || state.unite === "eurt";
+  const ymax = state.unite === "pct" ? 100 : Math.max(...rows.map(r => r.tot)) * 1.08;
+  const step = state.unite === "pct" ? 20 : niceStep(ymax);
+  const top = Math.ceil(ymax/step)*step;
+  const y = v => m.t + ih - ih * v / top;
+  const slot = iw / rows.length, bw = Math.min(34, slot*0.55);
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a, parent) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); (parent||svg).appendChild(e); return e; };
+  const grid = el("g", {class:"grid"}), axis = el("g", {class:"axis"});
+  for (let v = 0; v <= top + 1e-9; v += step) {
+    el("line", {x1:m.l, x2:W-m.r, y1:y(v), y2:y(v)}, grid);
+    const t = el("text", {x:m.l-8, y:y(v)+4, "text-anchor":"end"}, axis); t.textContent = fmt(v);
+  }
+  const yl = el("text", {x:14, y:m.t+ih/2, transform:`rotate(-90 14 ${m.t+ih/2})`, "text-anchor":"middle"}, axis);
+  yl.textContent = T["ylab_" + state.unite];
+  const tip = document.getElementById("tip");
+  rows.forEach((r, i) => {
+    const cx = m.l + slot*(i+0.5), g = el("g", {class:"bar"});
+    let acc = 0;
+    const comps = CARB ? ["single"] : COMP;
+    comps.forEach((c, k) => {
+      if (CARB) { const v = r.single, x = cx - bw/2, y1 = y(v), h = y(0) - y1, rr = 4;
+        el("path", {d:`M${x},${y1+h} V${y1+rr} a${rr},${rr} 0 0 1 ${rr},-${rr} H${x+bw-rr} a${rr},${rr} 0 0 1 ${rr},${rr} V${y1+h} Z`,
+                    fill: state.unite === "co2" ? "var(--ink2)" : "var(--accises)", class:"seg-rect"}, g); return; }
+      const v = r.v[c]; if (v <= 0) return;
+      const y1 = y(acc + v), y0 = y(acc); acc += v;
+      const isTop = COMP.slice(k+1).every(cc => r.v[cc] <= 0);
+      const gap = 2, h = Math.max(0, y0 - y1 - (k ? gap : 0));
+      const yy = y1 + (isTop ? 0 : 0);
+      const rr = isTop ? 4 : 0;
+      const x = cx - bw/2;
+      // rectangle avec coin arrondi seulement en haut (extrémité de donnée)
+      const d = rr ? `M${x},${yy+h} V${yy+rr} a${rr},${rr} 0 0 1 ${rr},-${rr} H${x+bw-rr} a${rr},${rr} 0 0 1 ${rr},${rr} V${yy+h} Z`
+                   : `M${x},${yy} H${x+bw} V${yy+h} H${x} Z`;
+      el("path", {d, fill:COLOR[c], class:"seg-rect"}, g);
+      if (h >= 15 && bw >= 30) {
+        const t = el("text", {x:cx, y:yy + h/2 + 4, class:"seglab", fill:INK_ON[c]}, g);
+        t.textContent = fmt(v, 0);
+      }
+    });
+    const capY = y(r.tot) - 8;
+    const cap = el("text", {x:cx, y:capY, class:"cap"}, el("g", {class:"cap"}, g));
+    cap.textContent = state.unite === "pct" ? `${fmt(r.part,0)} %` : CARB ? fmt(r.tot,0) : `${fmt(r.tot,0)} €`;
+    if (state.unite === "mwh") { const p = el("text", {x:cx, y:capY-14, class:"pct"}, el("g",{class:"pct"},g)); p.textContent = `${fmt(r.part,0)} %`; }
+    const [l1, l2] = r.label.split(", ");
+    const xl = el("text", {x:cx, y:m.t+ih+16}, el("g", {class:"xlab"}, g));
+    const s1 = el("tspan", {x:cx, dy:0}, xl); s1.textContent = l1;
+    if (l2) { const s2 = el("tspan", {x:cx, dy:14}, xl); s2.textContent = l2; }
+    const hit = el("rect", {x:cx-slot/2, y:m.t, width:slot, height:ih+m.b, class:"hit", tabindex:0}, g);
+    const show = (ev) => {
+      tip.textContent = "";
+      const b = document.createElement("b"); b.textContent = r.label; tip.appendChild(b);
+      for (const c of COMP) { const d = document.createElement("div"); d.className="row";
+        const a = document.createElement("span"); const ii = document.createElement("i"); ii.style.setProperty("--c", COLOR[c]); a.appendChild(ii); a.appendChild(document.createTextNode(T[c]));
+        const vv = document.createElement("span"); vv.textContent = state.unite === "pct" ? `${fmt(r.v[c],1)} %` : `${fmt(r.v[c],1)} €`;
+        d.appendChild(a); d.appendChild(vv); tip.appendChild(d); }
+      const tot = document.createElement("div"); tot.className = "row tot";
+      const ta = document.createElement("span"); ta.textContent = T.total; const tv = document.createElement("span"); tv.textContent = `${fmt(r.total,1)} €`;
+      tot.appendChild(ta); tot.appendChild(tv); tip.appendChild(tot);
+      const pr = document.createElement("div"); pr.className = "row";
+      const pa = document.createElement("span"); pa.textContent = T.prel; const pv = document.createElement("span"); pv.textContent = `${fmt(r.prel,1)} € · ${fmt(r.part,0)} %`;
+      pr.appendChild(pa); pr.appendChild(pv); tip.appendChild(pr);
+      const c2 = document.createElement("div"); c2.className = "row";
+      const ca = document.createElement("span"); ca.textContent = T.co2lab; const cv = document.createElement("span");
+      cv.textContent = r.co2 != null ? `${fmt(r.co2,0)} kg CO₂e/MWh` : T.nd; c2.appendChild(ca); c2.appendChild(cv); tip.appendChild(c2);
+      const e2 = document.createElement("div"); e2.className = "row";
+      const ea = document.createElement("span"); ea.textContent = T.eurtlab; const ev2 = document.createElement("span");
+      ev2.textContent = r.eurt != null ? `${fmt(r.eurt,0)} €/t` : T.nd; e2.appendChild(ea); e2.appendChild(ev2); tip.appendChild(e2);
+      tip.style.display = "block";
+      const box = document.getElementById("chart").getBoundingClientRect();
+      const px = (ev && ev.clientX ? ev.clientX - box.left : cx*box.width/W), py = (ev && ev.clientY ? ev.clientY - box.top : y(r.tot)*box.height/H);
+      tip.style.left = Math.min(px + 14, box.width - tip.offsetWidth - 4) + "px";
+      tip.style.top = Math.max(0, py - 10) + "px";
+    };
+    hit.addEventListener("pointermove", show); hit.addEventListener("focus", show);
+    hit.addEventListener("pointerleave", () => tip.style.display = "none"); hit.addEventListener("blur", () => tip.style.display = "none");
+  });
+  // vue tableau
+  const tb = document.getElementById("table"); tb.textContent = "";
+  const table = document.createElement("table"); const thead = table.createTHead().insertRow();
+  for (const h of [T.barre, ...COMP.map(c => T[c]), T.total, T.prel, T.co2, T.eurt]) { const th = document.createElement("th"); th.textContent = h; thead.appendChild(th); }
+  const tbody = table.createTBody();
+  for (const r of rows) { const tr = tbody.insertRow(); tr.insertCell().textContent = r.label;
+    for (const c of COMP) tr.insertCell().textContent = state.unite === "pct" ? `${fmt(r.v[c],1)} %` : fmt(r.v[c],1);
+    tr.insertCell().textContent = fmt(r.total,1); tr.insertCell().textContent = `${fmt(r.prel,1)} (${fmt(r.part,0)} %)`;
+    tr.insertCell().textContent = r.co2 != null ? fmt(r.co2,0) : T.nd; tr.insertCell().textContent = r.eurt != null ? fmt(r.eurt,0) : T.nd; }
+  tb.appendChild(table);
+  document.getElementById("chart").classList.toggle("hidden", state.vue !== "graph");
+  document.getElementById("legend").classList.toggle("hidden", state.vue !== "graph" || CARB);
+  tb.classList.toggle("hidden", state.vue !== "table");
+  document.getElementById("note").textContent = T["note_" + state.lecture]
+    + (state.unite === "pct" && state.lecture !== "livre" ? T.note_pct : "")
+    + (CARB ? T.note_co2 : "") + (state.unite === "eurt" && state.lecture !== "livre" ? T.note_eurt : "");
+}
+render();
+</script>
+</body>
+</html>
