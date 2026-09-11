@@ -9,7 +9,7 @@ aside:
   toc: false
 ---
 
-Here you will find all my [LinkedIn](https://www.linkedin.com/in/robin-girard-a88baa4/) posts since September 2026. A figure is a claim, and a claim without its computation cannot be checked. This page therefore gathers, for each post: the text, the figure in English and in French, the primary sources, the prepared data and the code that reproduces the figure.
+Here you will find all my [LinkedIn](https://www.linkedin.com/in/robin-girard-a88baa4/) posts since September 2026. A figure is a claim, and a claim without its computation cannot be checked. This page therefore gathers, for each post: the text, the figure in English and in French, the primary sources, the prepared data and the code that reproduces the figure. More often than not, the figure also comes in an extended version: interactive, over other years, other countries, other units or other readings than the one in the post.
 
 These pages are not blog articles: subscribers receive no email for them, and comments happen on LinkedIn. The longer articles stay on the [home page]({{ site.baseurl }}/en/).
 
