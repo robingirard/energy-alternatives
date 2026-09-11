@@ -164,3 +164,13 @@ traduites sont `404.html`, `consommation.html` (page de test) et le doublon
 ```bash
 bundle exec jekyll serve
 ```
+
+## Les pages « Posts LinkedIn » (ajout du 11 septembre 2026)
+
+Deux collections de plus, `_linkedin/` (FR) et `_linkedin_en/` (EN), listées par
+`linkedin.md` et `en/linkedin.md` et reliées par `ref:` comme les billets. Elles
+sont **entièrement engendrées** par `~/Documents/Communication/Linkedin/publier.py`
+à partir des dossiers de posts : ne rien y éditer à la main. Elles ne sont ni
+dans les flux RSS ni sur les pages d'accueil (qui ne lisent que `site.posts` et
+`site.posts_en`). Le bouton FR/EN les connaît : `snippets/get-translation-url.html`
+concatène les deux collections aux documents cherchés.

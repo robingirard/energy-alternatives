@@ -14,7 +14,7 @@ Deux facons de relier deux pages entre elles :
 {%- if page.translations and page.translations[_tr_lang] -%}
   {%- assign __return = page.translations[_tr_lang] -%}
 {%- elsif page.ref -%}
-  {%- assign _tr_documents = site.pages | concat: site.posts | concat: site.posts_en -%}
+  {%- assign _tr_documents = site.pages | concat: site.posts | concat: site.posts_en | concat: site.linkedin | concat: site.linkedin_en -%}
   {%- assign _tr_siblings = _tr_documents | where: 'ref', page.ref -%}
   {%- for _tr_sibling in _tr_siblings -%}
     {%- assign _tr_sibling_lang = _tr_sibling.lang | default: site.lang | slice: 0, 2 -%}

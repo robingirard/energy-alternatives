@@ -1,5 +1,24 @@
 header:
 
+  - titles:
+      # @start locale config
+      en      : &EN       LinkedIn
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      fr      : &FR       LinkedIn
+      fr-BE   : *FR
+      fr-CA   : *FR
+      fr-CH   : *FR
+      fr-FR   : *FR
+      fr-LU   : *FR
+      # @end locale config
+    url: /linkedin.html
+    urls:
+      fr: /linkedin.html
+      en: /en/linkedin.html
+
 #  - titles:
       # @start locale config
 #      fr      : &FR       Consommation

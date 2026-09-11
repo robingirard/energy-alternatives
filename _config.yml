@@ -228,6 +228,14 @@ collections:
   posts_en:
     output: true
     permalink: /en/:year/:month/:day/:title:output_ext
+  ## Les pages « Posts LinkedIn, avec données et code » : deux collections
+  ## engendrées par ~/Documents/Communication/Linkedin/publier.py (ne pas
+  ## éditer à la main). Hors flux RSS et hors page d'accueil : les abonnés ne
+  ## sont pas prévenus. Le permalink est posé dans chaque page.
+  linkedin:
+    output: true
+  linkedin_en:
+    output: true
 
 defaults:
   - scope:
@@ -261,6 +269,34 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+  - scope:
+      path: ""
+      type: linkedin
+    values:
+      layout: article
+      lang: fr
+      sharing: true
+      license: false
+      comment: false
+      aside:
+        toc: false
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: false
+  - scope:
+      path: ""
+      type: linkedin_en
+    values:
+      layout: article
+      lang: en
+      sharing: true
+      license: false
+      comment: false
+      aside:
+        toc: false
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: false
 
 ## => Plugins
 ##############################
