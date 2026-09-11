@@ -9,7 +9,7 @@ aside:
   toc: false
 ---
 
-Depuis septembre 2026, je publie presque chaque jour [sur LinkedIn](https://www.linkedin.com/in/robin-girard-a88baa4/) une figure tirée de la préparation de mon cours d'introduction à l'énergie. Une figure est une affirmation, et une affirmation sans son calcul ne se vérifie pas. Cette page rassemble donc, pour chaque post : le texte, la figure en français et en anglais, les sources primaires, les données préparées et le code qui refait la figure.
+Vous trouverez ici l'ensemble de mes posts [LinkedIn](https://www.linkedin.com/in/robin-girard-a88baa4/) depuis septembre 2026. Une figure est une affirmation, et une affirmation sans son calcul ne se vérifie pas. Cette page rassemble donc, pour chaque post : le texte, la figure en français et en anglais, les sources primaires, les données préparées et le code qui refait la figure.
 
 Ces pages ne sont pas des billets : les abonnés du blog ne reçoivent pas de courriel pour elles, et les commentaires se font sur LinkedIn. Les billets, plus longs, restent sur la [page d'accueil]({{ site.baseurl }}/).
 

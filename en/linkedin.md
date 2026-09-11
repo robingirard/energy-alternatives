@@ -9,7 +9,7 @@ aside:
   toc: false
 ---
 
-Since September 2026 I have been posting almost daily [on LinkedIn](https://www.linkedin.com/in/robin-girard-a88baa4/) a figure drawn from the preparation of my introductory energy course. A figure is a claim, and a claim without its computation cannot be checked. This page therefore gathers, for each post: the text, the figure in English and in French, the primary sources, the prepared data and the code that reproduces the figure.
+Here you will find all my [LinkedIn](https://www.linkedin.com/in/robin-girard-a88baa4/) posts since September 2026. A figure is a claim, and a claim without its computation cannot be checked. This page therefore gathers, for each post: the text, the figure in English and in French, the primary sources, the prepared data and the code that reproduces the figure.
 
 These pages are not blog articles: subscribers receive no email for them, and comments happen on LinkedIn. The longer articles stay on the [home page]({{ site.baseurl }}/en/).
 
