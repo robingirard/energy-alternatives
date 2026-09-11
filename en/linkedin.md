@@ -28,4 +28,4 @@ These pages are not blog articles: subscribers receive no email for them, and co
 {% endfor %}
 </div>
 
-<small>The code of the figures is published in the repository [bachelor_intro_to_energy_figures](https://git.persee.minesparis.psl.eu/energy-alternatives/bachelor_intro_to_energy_figures); the courses it comes from are on [my teaching page](https://www.robingirard.eu/Teaching.html).</small>
+<small>The code of the figures, the prepared data and the scripts of the interactive charts are in the public repository [linkedinposts](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts); the courses these figures come from are on [my teaching page](https://www.robingirard.eu/Teaching.html).</small>

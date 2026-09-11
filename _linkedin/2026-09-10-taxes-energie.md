@@ -61,12 +61,12 @@ Sources : Eurostat (nrg_pc_204_c et 205_c) pour l'électricité et le gaz, Weekl
 
 ## Code
 
-Le code qui produit la figure est dans le dépôt public du cours, [bachelor_intro_to_energy_figures](https://git.persee.minesparis.psl.eu/energy-alternatives/bachelor_intro_to_energy_figures/-/tree/main/python/energy_taxes), dossier `python/energy_taxes`.
+Le code qui produit la figure est dans le dépôt public [linkedinposts](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts/-/tree/main/energy_taxes), dossier `energy_taxes`.
 
 Pour refaire la figure :
 
 ```bash
-cd python/energy_taxes
+cd energy_taxes
 python3 prepare_eurostat.py      # électricité et gaz, API Eurostat
 python3 prepare_carburants.py    # carburants et fioul, Weekly Oil Bulletin
 python3 prepare_bilan_sdes.py    # bois de chauffage, bilan SDES
@@ -75,5 +75,7 @@ python3 plot_facture.py --unite mwh --paysage --annee 2024   # version anglaise
 ```
 
 Les trois scripts `prepare_*` téléchargent les sources et écrivent les CSV de `data/processed/` ; ceux-ci sont dans le dépôt, donc `plot_facture.py` se lance directement.
+
+Tous les fichiers de ce post (figures, données, scripts) sont dans le dossier [2026-09-10-taxes-energie](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts/-/tree/main/posts/2026-09-10-taxes-energie) du dépôt public.
 
 <small>Code sous licence MIT ; textes et figures sous CC BY 4.0 ; les données restent sous la licence de leur producteur.</small>

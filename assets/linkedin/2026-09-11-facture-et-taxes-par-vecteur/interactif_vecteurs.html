@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balance commerciale, consommation et taxes par vecteur, France 2011-2024</title>
+<style>
+  :root { color-scheme: light; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --surf:#fcfcfb; }
+  html,body { margin:0; background:var(--surf); color:var(--ink); font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif; }
+  .wrap { padding: 8px 4px 4px; }
+  .controls { display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; margin: 0 0 8px; font-size:13px; }
+  .controls label { color:var(--ink2); }
+  .seg { display:inline-flex; flex-wrap:wrap; border:1px solid var(--grid); border-radius:6px; overflow:hidden; vertical-align:middle; }
+  .seg button { border:0; background:transparent; padding:4px 9px; font:inherit; color:var(--ink2); cursor:pointer; }
+  .seg button[aria-pressed="true"] { background:#e9eef2; color:var(--ink); font-weight:600; }
+  .seg button + button { border-left:1px solid var(--grid); }
+  .legend { display:flex; flex-wrap:wrap; gap:4px 14px; margin:4px 0 2px; font-size:12.5px; color:var(--ink2); }
+  .legend button { border:0; background:none; font:inherit; color:inherit; cursor:pointer; padding:2px 4px; border-radius:4px; }
+  .legend button::before { content:""; display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:6px; vertical-align:-1px; background:var(--c); }
+  .legend button[aria-pressed="false"] { opacity:.4; text-decoration:line-through; }
+  svg { width:100%; height:auto; display:block; }
+  .grid line { stroke:var(--grid); stroke-width:1; }
+  .zero { stroke:var(--ink); stroke-width:1; }
+  .axis text { fill:var(--muted); font-size:11.5px; }
+  .xlab text { fill:var(--ink2); font-size:11.5px; text-anchor:middle; }
+  .cap text { fill:var(--ink); font-size:11.5px; text-anchor:middle; font-weight:600; }
+  .net line { stroke:var(--ink); stroke-width:2; }
+  .hit { fill:transparent; }
+  .line { fill:none; stroke-width:2; stroke-linejoin:round; stroke-linecap:round; }
+  .dot { stroke:var(--surf); stroke-width:2; }
+  .endlab text { font-size:11.5px; fill:var(--ink2); }
+  #tip { position:absolute; pointer-events:none; background:#fff; border:1px solid var(--grid); border-radius:6px; padding:8px 10px; font-size:12.5px; box-shadow:0 2px 8px rgba(0,0,0,.08); display:none; min-width:220px; z-index:2; }
+  #tip b { display:block; margin-bottom:4px; }
+  #tip .row { display:flex; justify-content:space-between; gap:12px; }
+  #tip .row i { display:inline-block; width:14px; height:3px; border-radius:2px; vertical-align:middle; margin-right:6px; background:var(--c); }
+  #tip .tot { border-top:1px solid var(--grid); margin-top:4px; padding-top:4px; font-weight:600; }
+  .note { color:var(--muted); font-size:12px; margin:6px 0 0; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; margin-top:6px; }
+  th, td { text-align:right; padding:4px 8px; border-bottom:1px solid var(--grid); white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; } th { color:var(--ink2); font-weight:600; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="controls">
+    <label id="l-mesure"></label><span class="seg" id="s-mesure"></span>
+    <label id="l-vue"></label><span class="seg" id="s-vue"></span>
+  </div>
+  <div class="legend" id="legend"></div>
+  <div id="chart" style="position:relative"><svg id="svg" viewBox="0 0 1080 480" role="img"></svg><div id="tip"></div></div>
+  <div id="table" class="hidden"></div>
+  <p class="note" id="note"></p>
+</div>
+<script>
+const DATA = {"rows": [{"annee": 2011, "bill": {"coal": 2.388, "oil": 50.475, "gas": 13.434, "elec": -2.578, "bio": -0.031}, "tax": {"coal": 0.016, "oil": 33.857, "gas": 1.845, "elec": 8.586, "bio": 0.106}, "vol": {"coal": 14.16, "oil": 814.178, "gas": 349.975, "elec": 424.492, "bio": 141.278}, "total_bill": 63.688, "total_tax": 44.41, "total_vol": 1744.083}, {"annee": 2012, "bill": {"coal": 2.435, "oil": 54.35, "gas": 14.74, "elec": -1.686, "bio": -0.025}, "tax": {"coal": 0.015, "oil": 33.851, "gas": 2.135, "elec": 9.854, "bio": 0.145}, "vol": {"coal": 15.46, "oil": 806.51, "gas": 372.29, "elec": 443.797, "bio": 161.398}, "total_bill": 69.813, "total_tax": 46.0, "total_vol": 1799.454}, {"annee": 2013, "bill": {"coal": 1.91, "oil": 50.901, "gas": 14.945, "elec": -1.706, "bio": -0.022}, "tax": {"coal": 0.015, "oil": 33.674, "gas": 2.372, "elec": 12.295, "bio": 0.175}, "vol": {"coal": 13.296, "oil": 804.4, "gas": 386.791, "elec": 450.918, "bio": 175.435}, "total_bill": 66.029, "total_tax": 48.532, "total_vol": 1830.84}, {"annee": 2014, "bill": {"coal": 1.418, "oil": 45.278, "gas": 11.558, "elec": -2.152, "bio": 0.016}, "tax": {"coal": 0.013, "oil": 32.896, "gas": 2.111, "elec": 12.618, "bio": 0.208}, "vol": {"coal": 12.201, "oil": 780.031, "gas": 324.818, "elec": 425.402, "bio": 150.197}, "total_bill": 56.118, "total_tax": 47.848, "total_vol": 1692.65}, {"annee": 2015, "bill": {"coal": 1.296, "oil": 30.231, "gas": 10.141, "elec": -2.337, "bio": -0.001}, "tax": {"coal": 0.018, "oil": 34.411, "gas": 2.658, "elec": 13.86, "bio": 0.224}, "vol": {"coal": 12.896, "oil": 786.951, "gas": 333.28, "elec": 435.032, "bio": 162.995}, "total_bill": 39.329, "total_tax": 51.171, "total_vol": 1731.154}, {"annee": 2016, "bill": {"coal": 1.14, "oil": 23.634, "gas": 7.734, "elec": -1.073, "bio": 0.012}, "tax": {"coal": 0.016, "oil": 35.379, "gas": 3.088, "elec": 15.38, "bio": 0.204}, "vol": {"coal": 12.503, "oil": 777.703, "gas": 349.625, "elec": 442.743, "bio": 181.254}, "total_bill": 31.448, "total_tax": 54.068, "total_vol": 1763.828}, {"annee": 2017, "bill": {"coal": 2.061, "oil": 29.641, "gas": 8.517, "elec": -1.307, "bio": 0.011}, "tax": {"coal": 0.019, "oil": 37.783, "gas": 3.515, "elec": 15.277, "bio": 0.207}, "vol": {"coal": 13.041, "oil": 780.448, "gas": 340.324, "elec": 439.365, "bio": 182.06}, "total_bill": 38.923, "total_tax": 56.801, "total_vol": 1755.239}, {"annee": 2018, "bill": {"coal": 1.9, "oil": 35.881, "gas": 10.658, "elec": -2.844, "bio": 0.029}, "tax": {"coal": 0.019, "oil": 40.76, "gas": 4.084, "elec": 15.286, "bio": 0.201}, "vol": {"coal": 13.45, "oil": 767.313, "gas": 335.951, "elec": 437.102, "bio": 182.905}, "total_bill": 45.624, "total_tax": 60.351, "total_vol": 1736.721}, {"annee": 2019, "bill": {"coal": 1.637, "oil": 35.84, "gas": 8.602, "elec": -2.017, "bio": 0.07}, "tax": {"coal": 0.02, "oil": 40.414, "gas": 4.4, "elec": 15.56, "bio": 0.211}, "vol": {"coal": 11.023, "oil": 761.273, "gas": 325.919, "elec": 431.705, "bio": 188.499}, "total_bill": 44.131, "total_tax": 60.605, "total_vol": 1718.419}, {"annee": 2020, "bill": {"coal": 0.868, "oil": 19.928, "gas": 5.112, "elec": -1.169, "bio": 0.072}, "tax": {"coal": 0.015, "oil": 33.739, "gas": 4.003, "elec": 15.397, "bio": 0.202}, "vol": {"coal": 9.715, "oil": 626.644, "gas": 306.44, "elec": 411.359, "bio": 181.449}, "total_bill": 24.811, "total_tax": 53.357, "total_vol": 1535.606}, {"annee": 2021, "bill": {"coal": 1.377, "oil": 32.051, "gas": 14.63, "elec": -2.674, "bio": 0.103}, "tax": {"coal": 0.016, "oil": 38.968, "gas": 4.216, "elec": 15.838, "bio": 0.248}, "vol": {"coal": 11.242, "oil": 690.331, "gas": 336.235, "elec": 432.837, "bio": 213.065}, "total_bill": 45.487, "total_tax": 59.286, "total_vol": 1683.71}, {"annee": 2022, "bill": {"coal": 3.267, "oil": 59.318, "gas": 47.465, "elec": 7.42, "bio": 0.213}, "tax": {"coal": 0.018, "oil": 42.32, "gas": 4.173, "elec": 8.949, "bio": 0.236}, "vol": {"coal": 8.083, "oil": 718.737, "gas": 284.355, "elec": 414.276, "bio": 203.468}, "total_bill": 117.684, "total_tax": 55.697, "total_vol": 1628.919}, {"annee": 2023, "bill": {"coal": 1.975, "oil": 46.897, "gas": 26.261, "elec": -3.961, "bio": 0.25}, "tax": {"coal": 0.01, "oil": 40.633, "gas": 4.096, "elec": 6.845, "bio": 0.293}, "vol": {"coal": 6.725, "oil": 700.489, "gas": 261.975, "elec": 397.5, "bio": 207.466}, "total_bill": 71.421, "total_tax": 51.877, "total_vol": 1574.155}, {"annee": 2024, "bill": {"coal": 1.417, "oil": 43.829, "gas": 17.366, "elec": -5.175, "bio": 0.315}, "tax": {"coal": 0.007, "oil": 40.399, "gas": 5.611, "elec": 13.399, "bio": 0.247}, "vol": {"coal": 5.481, "oil": 704.16, "gas": 263.33, "elec": 398.264, "bio": 208.478}, "total_bill": 57.752, "total_tax": 59.664, "total_vol": 1579.713}], "vecteurs": [{"k": "coal", "fr": "Charbon", "en": "Coal", "c": "#3f3f3f"}, {"k": "oil", "fr": "Pétrole & biocarburants", "en": "Oil & biofuels", "c": "#8b5e3c"}, {"k": "gas", "fr": "Gaz naturel", "en": "Natural gas", "c": "#e3a35c"}, {"k": "elec", "fr": "Électricité", "en": "Electricity", "c": "#4a7fa5"}, {"k": "bio", "fr": "Biomasse, chaleur & autres", "en": "Biomass, heat & other", "c": "#6a9d5b"}]};
+const LANG = (new URLSearchParams(location.search).get("lang") || "fr").slice(0,2) === "en" ? "en" : "fr";
+document.documentElement.lang = LANG;
+const T = {
+  fr: { mesure:"Mesure", vue:"Vue", graph:"graphique", table:"tableau", annee:"Année", total:"Total", net:"Solde net",
+        bill:"Balance commerciale (Md€)", tax:"Taxes (Md€)", vol:"Consommation finale (TWh)", rate:"Taux implicite de taxe (€/MWh)",
+        y_bill:"Md€ courants (positif = déficit)", y_tax:"Md€ courants, TVA comprise", y_vol:"TWh, usage énergétique", y_rate:"€ par MWh consommé",
+        n_bill:"Contribution de chaque vecteur à la balance commerciale, somme des soldes par produit (Md€ courants). Positif = déficit, négatif = excédent ; le trait noir marque le solde net de l'année. Source : SDES, bilan énergétique de la France, séries longues 2011-2024.",
+        n_tax:"Taxes brutes sur l'énergie, TVA comprise, par vecteur (Md€ courants), avant les subventions du bouclier tarifaire. Le charbon est à moins de 20 M€ par an. Source : SDES, bilan énergétique de la France, séries longues.",
+        n_vol:"Consommation finale à usage énergétique par vecteur (TWh), soutes internationales comprises dans le pétrole. Source : SDES, bilan énergétique de la France, séries longues.",
+        n_rate:"Taxes divisées par la consommation, en € par MWh. Ce n'est pas un tarif légal : moyenne d'usages hétérogènes, TVA incluse, gaz en TWh PCI alors que l'accise est en €/MWh PCS. Le charbon est omis (taxes négligeables).",
+      },
+  en: { mesure:"Measure", vue:"View", graph:"chart", table:"table", annee:"Year", total:"Total", net:"Net balance",
+        bill:"Trade balance (€bn)", tax:"Taxes (€bn)", vol:"Final consumption (TWh)", rate:"Implicit tax rate (€/MWh)",
+        y_bill:"€bn, current (positive = deficit)", y_tax:"€bn, current, incl. VAT", y_vol:"TWh, energy use", y_rate:"€ per MWh consumed",
+        n_bill:"Contribution of each carrier to the trade balance, sum of the balances by product (current €bn). Positive = deficit, negative = surplus; the black tick marks the year's net balance. Source: SDES, energy balance of France, long series 2011-2024.",
+        n_tax:"Gross energy taxes including VAT, by carrier (current €bn), before the tariff-shield subsidies. Coal is below €20m a year. Source: SDES, energy balance of France, long series.",
+        n_vol:"Final energy consumption by carrier (TWh), international bunkers included in oil. Source: SDES, energy balance of France, long series.",
+        n_rate:"Taxes divided by consumption, in € per MWh. Not a legal tariff: an average over heterogeneous uses, VAT included, gas in TWh LHV while the excise is in €/MWh GCV. Coal is omitted (negligible taxes).",
+      },
+}[LANG];
+const V = DATA.vecteurs, COLOR = Object.fromEntries(V.map(v => [v.k, v.c]));
+const state = { mesure:"bill", vue:"graph", on: Object.fromEntries(V.map(v => [v.k, true])) };
+const fmt = (v, d=1) => v.toLocaleString(LANG === "fr" ? "fr-FR" : "en-GB", {maximumFractionDigits:d, minimumFractionDigits:d});
+function seg(id, key, options) {
+  const el = document.getElementById(id); el.textContent = "";
+  for (const [val, label] of options) { const b = document.createElement("button"); b.type = "button"; b.textContent = label;
+    b.setAttribute("aria-pressed", String(state[key] === val)); b.addEventListener("click", () => { state[key] = val; render(); }); el.appendChild(b); }
+}
+function controls() {
+  document.getElementById("l-mesure").textContent = T.mesure; document.getElementById("l-vue").textContent = T.vue;
+  seg("s-mesure", "mesure", [["bill",T.bill],["tax",T.tax],["vol",T.vol],["rate",T.rate]]);
+  seg("s-vue", "vue", [["graph",T.graph],["table",T.table]]);
+  const lg = document.getElementById("legend"); lg.textContent = "";
+  for (const v of V) { if (state.mesure === "rate" && v.k === "coal") continue;
+    const b = document.createElement("button"); b.type = "button"; b.style.setProperty("--c", v.c); b.textContent = v[LANG];
+    b.setAttribute("aria-pressed", String(state.on[v.k])); b.addEventListener("click", () => { state.on[v.k] = !state.on[v.k]; render(); }); lg.appendChild(b); }
+}
+function value(r, k) { return state.mesure === "rate" ? (r.vol[k] ? 1000 * r.tax[k] / r.vol[k] : null) : r[state.mesure][k]; }
+function active() { return V.filter(v => state.on[v.k] && !(state.mesure === "rate" && v.k === "coal")); }
+function render() {
+  controls();
+  const rows = DATA.rows, act = active(), m = state.mesure, RATE = m === "rate";
+  const svg = document.getElementById("svg"); svg.textContent = "";
+  const W = 1080, H = 480, mg = {t:30, r:RATE ? 150 : 16, b:44, l:64};
+  const iw = W - mg.l - mg.r, ih = H - mg.t - mg.b;
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a, parent) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); (parent||svg).appendChild(e); return e; };
+  // étendue
+  let lo = 0, hi = 0;
+  for (const r of rows) {
+    if (RATE) { for (const v of act) { const x = value(r, v.k); if (x != null) hi = Math.max(hi, x); } }
+    else { let p = 0, n = 0; for (const v of act) { const x = value(r, v.k); if (x >= 0) p += x; else n += x; } hi = Math.max(hi, p); lo = Math.min(lo, n); }
+  }
+  hi *= 1.1; lo = lo < 0 ? lo * 1.15 : 0;
+  const step = [1,2,5,10,20,25,50,100,200,250,500,1000].find(s => (hi - lo)/s <= 8) || 2000;
+  const top = Math.ceil(hi/step)*step, bot = Math.floor(lo/step)*step;
+  const y = v => mg.t + ih - ih * (v - bot) / (top - bot);
+  const slot = iw / rows.length, xc = i => mg.l + slot*(i+0.5);
+  const grid = el("g", {class:"grid"}), axis = el("g", {class:"axis"});
+  for (let v = bot; v <= top + 1e-9; v += step) { el("line", {x1:mg.l, x2:W-mg.r, y1:y(v), y2:y(v), class: v === 0 ? "zero" : ""}, v === 0 ? svg : grid);
+    const t = el("text", {x:mg.l-8, y:y(v)+4, "text-anchor":"end"}, axis); t.textContent = fmt(v, 0); }
+  const yl = el("text", {x:14, y:mg.t+ih/2, transform:`rotate(-90 14 ${mg.t+ih/2})`, "text-anchor":"middle"}, axis); yl.textContent = T["y_" + m];
+  const xl = el("g", {class:"xlab"});
+  rows.forEach((r, i) => { const t = el("text", {x:xc(i), y:mg.t+ih+18}, xl); t.textContent = r.annee; });
+  const tip = document.getElementById("tip");
+  const showTip = (r, i, ev) => {
+    tip.textContent = ""; const b = document.createElement("b"); b.textContent = r.annee; tip.appendChild(b); let tot = 0;
+    for (const v of act) { const x = value(r, v.k); if (x == null) continue; tot += x; const d = document.createElement("div"); d.className = "row";
+      const a = document.createElement("span"); const ii = document.createElement("i"); ii.style.setProperty("--c", v.c); a.appendChild(ii); a.appendChild(document.createTextNode(v[LANG]));
+      const s = document.createElement("span"); s.textContent = fmt(x, RATE ? 0 : 1); d.appendChild(a); d.appendChild(s); tip.appendChild(d); }
+    if (!RATE) { const d = document.createElement("div"); d.className = "row tot"; const a = document.createElement("span"); a.textContent = m === "bill" ? T.net : T.total;
+      const s = document.createElement("span"); s.textContent = fmt(tot, 1); d.appendChild(a); d.appendChild(s); tip.appendChild(d); }
+    tip.style.display = "block"; const box = document.getElementById("chart").getBoundingClientRect();
+    const px = ev.clientX - box.left, py = ev.clientY - box.top;
+    tip.style.left = Math.min(px + 14, box.width - tip.offsetWidth - 4) + "px"; tip.style.top = Math.max(0, py - 10) + "px";
+  };
+  if (!RATE) {
+    const bw = Math.min(34, slot*0.6);
+    rows.forEach((r, i) => {
+      const g = el("g", {class:"bar"}); let up = 0, dn = 0, net = 0;
+      act.forEach(v => { const x = value(r, v.k); if (!x) return; net += x;
+        let y0, y1; if (x >= 0) { y1 = y(up + x); y0 = y(up); up += x; } else { y0 = y(dn); y1 = y(dn + x); dn += x; }
+        const yy = Math.min(y0, y1), h = Math.max(0, Math.abs(y0 - y1) - 2);
+        el("rect", {x:xc(i)-bw/2, y: x >= 0 ? yy : yy + 2, width:bw, height:h, fill:v.c, rx:0}, g); });
+      if (m === "bill") el("line", {x1:xc(i)-bw/2-4, x2:xc(i)+bw/2+4, y1:y(net), y2:y(net)}, el("g", {class:"net"}, g));
+      if (act.length) { const c = el("text", {x:xc(i), y:y(up) - 6}, el("g", {class:"cap"}, g)); c.textContent = fmt(m === "bill" ? net : up, 0); }
+      const hit = el("rect", {x:xc(i)-slot/2, y:mg.t, width:slot, height:ih, class:"hit"}, g);
+      hit.addEventListener("pointermove", ev => showTip(r, i, ev)); hit.addEventListener("pointerleave", () => tip.style.display = "none");
+    });
+  } else {
+    for (const v of act) {
+      const pts = rows.map((r, i) => [xc(i), value(r, v.k)]).filter(p => p[1] != null);
+      el("path", {d: pts.map((p, j) => (j ? "L" : "M") + p[0] + "," + y(p[1])).join(" "), stroke:v.c, class:"line"});
+      for (const p of pts) el("circle", {cx:p[0], cy:y(p[1]), r:4, fill:v.c, class:"dot"});
+      const last = pts[pts.length-1]; const lab = el("text", {x:last[0]+10, y:y(last[1])+4}, el("g", {class:"endlab"}));
+      lab.textContent = `${v[LANG]} · ${fmt(last[1],0)}`;
+    }
+    rows.forEach((r, i) => { const hit = el("rect", {x:xc(i)-slot/2, y:mg.t, width:slot, height:ih, class:"hit"});
+      hit.addEventListener("pointermove", ev => showTip(r, i, ev)); hit.addEventListener("pointerleave", () => tip.style.display = "none"); });
+  }
+  // tableau
+  const tb = document.getElementById("table"); tb.textContent = "";
+  const table = document.createElement("table"); const hr = table.createTHead().insertRow();
+  for (const h of [T.annee, ...act.map(v => v[LANG]), ...(RATE ? [] : [m === "bill" ? T.net : T.total])]) { const th = document.createElement("th"); th.textContent = h; hr.appendChild(th); }
+  const tbody = table.createTBody();
+  for (const r of rows) { const tr = tbody.insertRow(); tr.insertCell().textContent = r.annee; let tot = 0;
+    for (const v of act) { const x = value(r, v.k); if (x != null) tot += x; tr.insertCell().textContent = x == null ? "" : fmt(x, RATE ? 1 : 2); }
+    if (!RATE) tr.insertCell().textContent = fmt(tot, 2); }
+  tb.appendChild(table);
+  document.getElementById("chart").classList.toggle("hidden", state.vue !== "graph");
+  tb.classList.toggle("hidden", state.vue !== "table");
+  document.getElementById("note").textContent = T["n_" + m];
+}
+render();
+</script>
+</body>
+</html>

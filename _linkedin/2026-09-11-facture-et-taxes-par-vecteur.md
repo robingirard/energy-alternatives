@@ -22,6 +22,14 @@ tags: ["fiscalité", "balance commerciale", "gaz", "électricité", "pétrole", 
 <figcaption><small>France, 2012 à 2024 (pas bisannuel jusqu'en 2020, annuel ensuite). Pour chaque année, trois barres : la contribution à la balance commerciale (milliards d'euros courants, le trait noir marque le solde net), la consommation finale à usage énergétique (TWh, barre pointillée, axe de droite) et les taxes brutes TVA comprise (milliards d'euros, barre hachurée). Mêmes couleurs par vecteur dans les trois barres.</small></figcaption>
 </figure>
 
+## La même figure, à explorer
+
+Les trois barres du post, une mesure à la fois, sur toutes les années 2011-2024 et non plus une année sur deux, avec en plus le taux implicite de taxe (taxes divisées par la consommation, en €/MWh). Cliquez sur un vecteur dans la légende pour le retirer ou le remettre ; survolez une année pour le détail ; la vue « tableau » donne les nombres. Engendré depuis le CSV ci-dessous par `build_interactif.py`.
+
+<iframe src="{{ site.baseurl }}/assets/linkedin/2026-09-11-facture-et-taxes-par-vecteur/interactif_vecteurs.html?lang=fr" title="La même figure, à explorer" loading="lazy" style="width:100%;height:620px;border:0;"></iframe>
+
+<small><a href="{{ site.baseurl }}/assets/linkedin/2026-09-11-facture-et-taxes-par-vecteur/interactif_vecteurs.html?lang=fr" target="_blank">Ouvrir le graphique dans un onglet</a></small>
+
 ## Le texte du post
 
 Asymétrie entre vecteurs énergétiques (2/2). Pétrole, gaz, électricité : comment chacun pèse sur la balance commerciale, ce que chacun rapporte comme taxes à l'État et ce à quoi il contribue en énergie finale.
@@ -57,17 +65,19 @@ Source : bilan énergétique du SDES, séries longues 2011-2024.
 
 ## Code
 
-Le code qui produit la figure est dans le dépôt public du cours, [bachelor_intro_to_energy_figures](https://git.persee.minesparis.psl.eu/energy-alternatives/bachelor_intro_to_energy_figures/-/tree/main/python/energy_taxes), dossier `python/energy_taxes`.
+Le code qui produit la figure est dans le dépôt public [linkedinposts](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts/-/tree/main/energy_taxes), dossier `energy_taxes`.
 
 Pour refaire la figure :
 
 ```bash
-cd python/energy_taxes
+cd energy_taxes
 python3 prepare_bilan_sdes.py                  # lit le classeur SDES des séries longues
 python3 plot_facture_taxes_vecteur.py --lang fr
 python3 plot_facture_taxes_vecteur.py          # version anglaise ; --toutes : 2011-2024 année par année
 ```
 
 Le CSV préparé est dans le dépôt : le script de tracé tourne sans l'étape `prepare`. Le classeur SDES (média 9283) doit être déposé à la main dans `bibliographie/xlsx/` pour la refaire.
+
+Tous les fichiers de ce post (figures, données, scripts) sont dans le dossier [2026-09-11-facture-et-taxes-par-vecteur](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts/-/tree/main/posts/2026-09-11-facture-et-taxes-par-vecteur) du dépôt public.
 
 <small>Code sous licence MIT ; textes et figures sous CC BY 4.0 ; les données restent sous la licence de leur producteur.</small>

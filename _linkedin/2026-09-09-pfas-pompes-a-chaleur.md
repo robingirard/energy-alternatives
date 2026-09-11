@@ -60,4 +60,6 @@ python3 fig_emissions_pfas_europe.py fr   # ou `en`
 
 Les tonnages sont saisis dans le script lui-même, avec la source de chacun ; il n'y a pas d'autre donnée à télécharger. Toutes les figures du billet sont détaillées dans le billet lui-même.
 
+Tous les fichiers de ce post (figures, données, scripts) sont dans le dossier [2026-09-09-pfas-pompes-a-chaleur](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts/-/tree/main/posts/2026-09-09-pfas-pompes-a-chaleur) du dépôt public.
+
 <small>Code sous licence MIT ; textes et figures sous CC BY 4.0 ; les données restent sous la licence de leur producteur.</small>

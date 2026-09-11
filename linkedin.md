@@ -28,4 +28,4 @@ Ces pages ne sont pas des billets : les abonnés du blog ne reçoivent pas de co
 {% endfor %}
 </div>
 
-<small>Le code des figures est publié dans le dépôt [bachelor_intro_to_energy_figures](https://git.persee.minesparis.psl.eu/energy-alternatives/bachelor_intro_to_energy_figures) ; les cours dont il vient sont sur [ma page d'enseignement](https://www.robingirard.eu/Enseignement.html).</small>
+<small>Le code des figures, les données préparées et les scripts des graphiques interactifs sont dans le dépôt public [linkedinposts](https://git.persee.minesparis.psl.eu/energy-alternatives/linkedinposts) ; les cours dont viennent ces figures sont sur [ma page d'enseignement](https://www.robingirard.eu/Enseignement.html).</small>
