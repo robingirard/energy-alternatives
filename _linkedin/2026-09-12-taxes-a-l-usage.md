@@ -46,6 +46,8 @@ https://www.energy-alternatives.eu/linkedin.html
 
 Sources : Eurostat, Weekly Oil Bulletin et bilan du SDES pour les prix ; ADEME, Flamme Verte, DGAC et SNCF pour les rendements et consommations. Tout y est, hypothèse par hypothèse.
 
+EDIT, suite à une question en commentaire : la hauteur d'une barre n'est pas un prix au litre, c'est le prix TTC de l'énergie pour une unité de service — 100 km pour les voitures, 100 passagers-km pour l'avion et le train, un MWh de chaleur utile pour le chauffage. Le chiffre rouge au-dessus est le total des taxes dans cette même unité. Une voiture essence à 6,5 l/100 km : 11,84 € aux 100 km, dont 6,5 € de taxes.
+
 ## Quatre précisions sur la figure
 
 - Le facteur six entre la voiture électrique et la voiture essence compare des prélèvements par 100 km, pas des taux : une voiture essence paie 55 % de taxes dans son prix à la pompe, une voiture électrique rechargée à domicile 23 % dans sa facture d'électricité. Le facteur six vient d'abord du rendement du moteur (17 contre 56 kWh aux 100 km), ensuite du barème.

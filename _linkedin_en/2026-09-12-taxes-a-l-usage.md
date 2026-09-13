@@ -46,6 +46,8 @@ https://www.energy-alternatives.eu/en/linkedin.html
 
 Sources: Eurostat, the Weekly Oil Bulletin and the SDES energy balance for prices; ADEME, Flamme Verte, DGAC and SNCF for efficiencies and consumptions. Everything is there, assumption by assumption.
 
+EDIT, following a question in the comments: the height of a bar is not a price per litre, it is the price of energy including taxes for one unit of service — 100 km for cars, 100 passenger-km for plane and train, one MWh of useful heat for heating. The red figure above it is the total of taxes in that same unit. A petrol car at 6.5 l/100 km: 11.84 € per 100 km, of which 6.5 € of taxes.
+
 ## Four clarifications about the figure
 
 - The factor six between the electric and the petrol car compares levies per 100 km, not rates: a petrol car pays 55 % of taxes in its pump price, an electric car charged at home 23 % in its electricity bill. The factor six comes first from the efficiency of the motor (17 against 56 kWh per 100 km), then from the tax schedule.
