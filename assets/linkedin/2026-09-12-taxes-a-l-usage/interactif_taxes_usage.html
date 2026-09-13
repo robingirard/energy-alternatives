@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taxes sur l'énergie par unité de service — France, 2024 et 2025</title>
+<style>
+  :root { color-scheme: light; --ink:#0b0b0b; --ink2:#52514e; --muted:#898781; --grid:#e1e0d9; --surf:#fcfcfb; --rouge:#8c2c26; }
+  html,body { margin:0; background:var(--surf); color:var(--ink); font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif; }
+  .wrap { padding: 8px 4px 4px; }
+  .controls { display:flex; flex-wrap:wrap; gap:6px 18px; align-items:center; margin: 0 0 8px; font-size:13px; }
+  .controls label { color:var(--ink2); }
+  .seg { display:inline-flex; flex-wrap:wrap; border:1px solid var(--grid); border-radius:6px; overflow:hidden; vertical-align:middle; }
+  .seg button { border:0; background:transparent; padding:4px 9px; font:inherit; color:var(--ink2); cursor:pointer; }
+  .seg button[aria-pressed="true"] { background:#e9eef2; color:var(--ink); font-weight:600; }
+  .seg button + button { border-left:1px solid var(--grid); }
+  .legend { display:flex; flex-wrap:wrap; gap:4px 14px; margin:4px 0 2px; font-size:12.5px; color:var(--ink2); }
+  .legend span::before { content:""; display:inline-block; width:12px; height:12px; border-radius:2px; margin-right:6px; vertical-align:-1px; background:var(--c); }
+  svg { width:100%; height:auto; display:block; }
+  .grid line { stroke:var(--grid); stroke-width:1; }
+  .zero { stroke:var(--ink); stroke-width:1; }
+  .axis text { fill:var(--muted); font-size:11.5px; }
+  .ylab text { fill:var(--ink2); font-size:11.5px; }
+  .xlab text { fill:var(--ink2); font-size:11.5px; text-anchor:middle; }
+  .xlab text.hyp { fill:var(--muted); }
+  .cap text { fill:var(--rouge); font-size:13px; text-anchor:middle; font-weight:700; }
+  .hit { fill:transparent; }
+  #tip { position:absolute; pointer-events:none; background:#fff; border:1px solid var(--grid); border-radius:6px; padding:8px 10px; font-size:12.5px; box-shadow:0 2px 8px rgba(0,0,0,.08); display:none; min-width:230px; z-index:2; }
+  #tip b { display:block; margin-bottom:4px; }
+  #tip .row { display:flex; justify-content:space-between; gap:12px; }
+  #tip .row i { display:inline-block; width:14px; height:3px; border-radius:2px; vertical-align:middle; margin-right:6px; background:var(--c); }
+  #tip .tot { border-top:1px solid var(--grid); margin-top:4px; padding-top:4px; font-weight:600; }
+  #tip .pre { color:var(--rouge); font-weight:600; }
+  .note { color:var(--muted); font-size:12px; margin:6px 0 0; }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; margin-top:6px; }
+  th, td { text-align:right; padding:4px 8px; border-bottom:1px solid var(--grid); white-space:nowrap; }
+  th:first-child, td:first-child { text-align:left; white-space:normal; } th { color:var(--ink2); font-weight:600; }
+  .hidden { display:none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="controls">
+    <label id="l-annee"></label><span class="seg" id="s-annee"></span>
+    <label id="l-usage"></label><span class="seg" id="s-usage"></span>
+    <label id="l-vue"></label><span class="seg" id="s-vue"></span>
+  </div>
+  <div class="legend" id="legend"></div>
+  <div id="chart" style="position:relative"><svg id="svg" viewBox="0 0 1080 520" role="img"></svg><div id="tip"></div></div>
+  <div id="table" class="hidden"></div>
+  <p class="note" id="note"></p>
+</div>
+<script>
+const DATA = {"rows": [{"annee": "2024", "usage": "transport", "machine": "ve_domicile", "ordre": 1, "fr": "Voiture électrique, à domicile", "en": "Electric car, home charging", "hyp_fr": "17 kWh/100 km", "hyp_en": "17 kWh/100 km", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 2.5891, "reseau": 1.1866, "accises_et_taxes": 0.425, "tva": 0.7055}, "tot": 4.9062, "pre": 1.1305}, {"annee": "2024", "usage": "transport", "machine": "ve_borne", "ordre": 2, "fr": "Voiture électrique, borne rapide", "en": "Electric car, public fast charger", "hyp_fr": "0,50 €/kWh", "hyp_en": "0.50 €/kWh", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 6.7807, "reseau": 0.0, "accises_et_taxes": 0.3026, "tva": 1.4167}, "tot": 8.5, "pre": 1.7193}, {"annee": "2024", "usage": "transport", "machine": "essence", "ordre": 3, "fr": "Voiture essence", "en": "Petrol car", "hyp_fr": "6,5 l/100 km", "hyp_en": "6.5 l/100 km", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 5.3694, "reseau": 0.0, "accises_et_taxes": 4.4934, "tva": 1.9726}, "tot": 11.8354, "pre": 6.466}, {"annee": "2024", "usage": "transport", "machine": "gazole", "ordre": 4, "fr": "Voiture diesel", "en": "Diesel car", "hyp_fr": "5,5 l/100 km", "hyp_en": "5.5 l/100 km", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 4.4217, "reseau": 0.0, "accises_et_taxes": 3.3489, "tva": 1.5541}, "tot": 9.3247, "pre": 4.9031}, {"annee": "2024", "usage": "avion_train", "machine": "avion", "ordre": 1, "fr": "Avion, moyen-courrier", "en": "Plane, medium-haul", "hyp_fr": "3,5 l/100 pass.-km", "hyp_en": "3.5 l/100 pass.-km", "u_fr": "€ par 100 passagers-km", "u_en": "€ per 100 passenger-km", "d": 2, "c": {"energie_et_fourniture": 2.3729, "reseau": 0.0, "accises_et_taxes": 0.0, "tva": 0.0}, "tot": 2.3729, "pre": 0.0}, {"annee": "2024", "usage": "avion_train", "machine": "voiture_essence", "ordre": 2, "fr": "Voiture essence", "en": "Petrol car", "hyp_fr": "6,5 l/100 km ; 1,5 pers. à bord", "hyp_en": "6.5 l/100 km ; 1.5 occupants", "u_fr": "€ par 100 passagers-km", "u_en": "€ per 100 passenger-km", "d": 2, "c": {"energie_et_fourniture": 3.5796, "reseau": 0.0, "accises_et_taxes": 2.9956, "tva": 1.315}, "tot": 7.8903, "pre": 4.3107}, {"annee": "2024", "usage": "avion_train", "machine": "tgv", "ordre": 3, "fr": "Train à grande vitesse", "en": "High-speed train", "hyp_fr": "0,04 kWh/pass.-km", "hyp_en": "0.04 kWh/pass.-km", "u_fr": "€ par 100 passagers-km", "u_en": "€ per 100 passenger-km", "d": 2, "c": {"energie_et_fourniture": 0.5268, "reseau": 0.1196, "accises_et_taxes": 0.0712, "tva": 0.1344}, "tot": 0.852, "pre": 0.2056}, {"annee": "2024", "usage": "chauffage", "machine": "pac", "ordre": 1, "fr": "Pompe à chaleur", "en": "Heat pump", "hyp_fr": "COP 3", "hyp_en": "COP 3", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 50.7667, "reseau": 23.2667, "accises_et_taxes": 8.3333, "tva": 13.8333}, "tot": 96.2, "pre": 22.1667}, {"annee": "2024", "usage": "chauffage", "machine": "radiateur", "ordre": 2, "fr": "Radiateur électrique", "en": "Electric radiator", "hyp_fr": "1,00", "hyp_en": "1.00", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 152.3, "reseau": 69.8, "accises_et_taxes": 25.0, "tva": 41.5}, "tot": 288.6, "pre": 66.5}, {"annee": "2024", "usage": "chauffage", "machine": "chaudiere_gaz", "ordre": 3, "fr": "Chaudière gaz à condensation", "en": "Gas condensing boiler", "hyp_fr": "0,90", "hyp_en": "0.90", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 68.7778, "reseau": 29.2222, "accises_et_taxes": 21.4444, "tva": 19.7778}, "tot": 139.2222, "pre": 41.2222}, {"annee": "2024", "usage": "chauffage", "machine": "chaudiere_fioul", "ordre": 4, "fr": "Chaudière fioul", "en": "Oil boiler", "hyp_fr": "0,85", "hyp_en": "0.85", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 100.7714, "reseau": 0.0, "accises_et_taxes": 18.6374, "tva": 23.8818}, "tot": 143.2905, "pre": 42.5191}, {"annee": "2024", "usage": "chauffage", "machine": "poele_bois", "ordre": 5, "fr": "Poêle à bûches", "en": "Wood stove", "hyp_fr": "0,75", "hyp_en": "0.75", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 63.0293, "reseau": 0.0, "accises_et_taxes": 0.0, "tva": 5.1869}, "tot": 68.2162, "pre": 5.1869}, {"annee": "2024", "usage": "cuisson", "machine": "induction", "ordre": 1, "fr": "Plaque à induction", "en": "Induction hob", "hyp_fr": "0,85", "hyp_en": "0.85", "u_fr": "€ par MWh de chaleur dans la casserole", "u_en": "€ per MWh of heat in the pan", "d": 0, "c": {"energie_et_fourniture": 179.1765, "reseau": 82.1176, "accises_et_taxes": 29.4118, "tva": 48.8235}, "tot": 339.5294, "pre": 78.2353}, {"annee": "2024", "usage": "cuisson", "machine": "plaque_gaz", "ordre": 2, "fr": "Plaque gaz", "en": "Gas hob", "hyp_fr": "0,45", "hyp_en": "0.45", "u_fr": "€ par MWh de chaleur dans la casserole", "u_en": "€ per MWh of heat in the pan", "d": 0, "c": {"energie_et_fourniture": 137.5556, "reseau": 58.4444, "accises_et_taxes": 42.8889, "tva": 39.5556}, "tot": 278.4444, "pre": 82.4444}, {"annee": "2025", "usage": "transport", "machine": "ve_domicile", "ordre": 1, "fr": "Voiture électrique, à domicile", "en": "Electric car, home charging", "hyp_fr": "17 kWh/100 km", "hyp_en": "17 kWh/100 km", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 1.8496, "reseau": 1.2903, "accises_et_taxes": 0.6307, "tva": 0.6817}, "tot": 4.4523, "pre": 1.3124}, {"annee": "2025", "usage": "transport", "machine": "ve_borne", "ordre": 2, "fr": "Voiture électrique, borne rapide", "en": "Electric car, public fast charger", "hyp_fr": "0,50 €/kWh", "hyp_en": "0.50 €/kWh", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 6.7807, "reseau": 0.0, "accises_et_taxes": 0.3026, "tva": 1.4167}, "tot": 8.5, "pre": 1.7193}, {"annee": "2025", "usage": "transport", "machine": "essence", "ordre": 3, "fr": "Voiture essence", "en": "Petrol car", "hyp_fr": "6,5 l/100 km", "hyp_en": "6.5 l/100 km", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 4.8534, "reseau": 0.0, "accises_et_taxes": 4.4954, "tva": 1.8698}, "tot": 11.2186, "pre": 6.3652}, {"annee": "2025", "usage": "transport", "machine": "gazole", "ordre": 4, "fr": "Voiture diesel", "en": "Diesel car", "hyp_fr": "5,5 l/100 km", "hyp_en": "5.5 l/100 km", "u_fr": "€ par 100 km", "u_en": "€ per 100 km", "d": 1, "c": {"energie_et_fourniture": 4.0678, "reseau": 0.0, "accises_et_taxes": 3.3506, "tva": 1.4837}, "tot": 8.9021, "pre": 4.8343}, {"annee": "2025", "usage": "avion_train", "machine": "voiture_essence", "ordre": 1, "fr": "Voiture essence", "en": "Petrol car", "hyp_fr": "6,5 l/100 km ; 1,5 pers. à bord", "hyp_en": "6.5 l/100 km ; 1.5 occupants", "u_fr": "€ par 100 passagers-km", "u_en": "€ per 100 passenger-km", "d": 2, "c": {"energie_et_fourniture": 3.2356, "reseau": 0.0, "accises_et_taxes": 2.9969, "tva": 1.2465}, "tot": 7.4791, "pre": 4.2434}, {"annee": "2025", "usage": "avion_train", "machine": "tgv", "ordre": 2, "fr": "Train à grande vitesse", "en": "High-speed train", "hyp_fr": "0,04 kWh/pass.-km", "hyp_en": "0.04 kWh/pass.-km", "u_fr": "€ par 100 passagers-km", "u_en": "€ per 100 passenger-km", "d": 2, "c": {"energie_et_fourniture": 0.42, "reseau": 0.1292, "accises_et_taxes": 0.09, "tva": 0.1152}, "tot": 0.7544, "pre": 0.2052}, {"annee": "2025", "usage": "chauffage", "machine": "pac", "ordre": 1, "fr": "Pompe à chaleur", "en": "Heat pump", "hyp_fr": "COP 3", "hyp_en": "COP 3", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 36.2667, "reseau": 25.3, "accises_et_taxes": 12.3667, "tva": 13.3667}, "tot": 87.3, "pre": 25.7333}, {"annee": "2025", "usage": "chauffage", "machine": "radiateur", "ordre": 2, "fr": "Radiateur électrique", "en": "Electric radiator", "hyp_fr": "1,00", "hyp_en": "1.00", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 108.8, "reseau": 75.9, "accises_et_taxes": 37.1, "tva": 40.1}, "tot": 261.9, "pre": 77.2}, {"annee": "2025", "usage": "chauffage", "machine": "chaudiere_gaz", "ordre": 3, "fr": "Chaudière gaz à condensation", "en": "Gas condensing boiler", "hyp_fr": "0,90", "hyp_en": "0.90", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 71.6667, "reseau": 34.2222, "accises_et_taxes": 22.1111, "tva": 22.8889}, "tot": 150.8889, "pre": 45.0}, {"annee": "2025", "usage": "chauffage", "machine": "chaudiere_fioul", "ordre": 4, "fr": "Chaudière fioul", "en": "Oil boiler", "hyp_fr": "0,85", "hyp_en": "0.85", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 94.0609, "reseau": 0.0, "accises_et_taxes": 18.5415, "tva": 22.5205}, "tot": 135.1228, "pre": 41.062}, {"annee": "2025", "usage": "chauffage", "machine": "poele_bois", "ordre": 5, "fr": "Poêle à bûches", "en": "Wood stove", "hyp_fr": "0,75", "hyp_en": "0.75", "u_fr": "€ par MWh de chaleur utile", "u_en": "€ per MWh of useful heat", "d": 0, "c": {"energie_et_fourniture": 64.2221, "reseau": 0.0, "accises_et_taxes": 0.0, "tva": 5.2113}, "tot": 69.4334, "pre": 5.2113}, {"annee": "2025", "usage": "cuisson", "machine": "induction", "ordre": 1, "fr": "Plaque à induction", "en": "Induction hob", "hyp_fr": "0,85", "hyp_en": "0.85", "u_fr": "€ par MWh de chaleur dans la casserole", "u_en": "€ per MWh of heat in the pan", "d": 0, "c": {"energie_et_fourniture": 128.0, "reseau": 89.2941, "accises_et_taxes": 43.6471, "tva": 47.1765}, "tot": 308.1176, "pre": 90.8235}, {"annee": "2025", "usage": "cuisson", "machine": "plaque_gaz", "ordre": 2, "fr": "Plaque gaz", "en": "Gas hob", "hyp_fr": "0,45", "hyp_en": "0.45", "u_fr": "€ par MWh de chaleur dans la casserole", "u_en": "€ per MWh of heat in the pan", "d": 0, "c": {"energie_et_fourniture": 143.3333, "reseau": 68.4444, "accises_et_taxes": 44.2222, "tva": 45.7778}, "tot": 301.7778, "pre": 90.0}], "annees": ["2024", "2025"], "postes": [{"k": "energie_et_fourniture", "fr": "Énergie & fourniture", "en": "Energy & supply", "c": "#5b7d92"}, {"k": "reseau", "fr": "Réseau", "en": "Network", "c": "#a9bcc7"}, {"k": "accises_et_taxes", "fr": "Accises & taxes", "en": "Excise & levies", "c": "#8c2c26"}, {"k": "tva", "fr": "TVA", "en": "VAT", "c": "#e8cdbf"}], "usages": [{"k": "transport", "fr": "Transport", "en": "Transport"}, {"k": "avion_train", "fr": "Avion et train", "en": "Plane and train"}, {"k": "chauffage", "fr": "Chauffage", "en": "Heating"}, {"k": "cuisson", "fr": "Cuisson", "en": "Cooking"}]};
+const LANG = (new URLSearchParams(location.search).get("lang") || "fr").slice(0,2) === "en" ? "en" : "fr";
+document.documentElement.lang = LANG;
+const T = {
+  fr: { annee:"Millésime", usage:"Usage", vue:"Vue", graph:"graphique", table:"tableau",
+        machine:"Machine", hypothese:"Hypothèse", total:"Prix TTC", prelevements:"Prélèvements", part:"Part",
+        n_general:"Le chiffre rouge au-dessus de chaque barre est le total des prélèvements (accises + TVA) par unité de service ; le réseau n'en fait pas partie. Sous chaque machine : sa consommation, ou son rendement en MWh utile par MWh livré (COP pour la pompe à chaleur). Prix moyens France, TTC, par MWh livré (Eurostat nrg_pc_204_c et 205_c, Weekly Oil Bulletin, bilan SDES), divisés par ce rendement.",
+        n_transport:"Recharge rapide publique : 0,50 €/kWh TTC, hypothèse ; seules la TVA et l'accise non-ménage y sont identifiables, le tarif d'acheminement de la borne et la marge sont comptés avec l'énergie — ses prélèvements sont une borne basse.",
+        n_avion_train:"Cent passagers-km, et non cent kilomètres de véhicule : les barres de ce panneau ne se comparent pas à celles du panneau « transport ». Avion : kérosène des soutes internationales, ni accise (art. L. 312-58 du CIBS) ni TVA ; un vol intérieur a la même barre, ce qu'il paie en plus porte sur le billet, pas sur l'énergie. Train : prix de l'électricité des industriels faute de prix ferroviaire publié, TVA comprise — l'opérateur achète moins cher et la déduit, la barre est un majorant.",
+        n_chauffage:"Un MWh de chaleur utile, c'est-à-dire la chaleur qui arrive dans la pièce. La pompe à chaleur est prise à COP 3 (moyenne saisonnière) ; les rendements du gaz et du bois sont ceux d'appareils récents.",
+        n_cuisson:"Un MWh de chaleur dans la casserole. L'induction est à 0,85 (norme EN 60350-2), la plaque gaz à 0,45 mesuré au niveau de la casserole : c'est ce rendement qui compense l'écart de fiscalité.",
+        n_2025:"En 2025, la barre « avion » disparaît : la dépense française en soutes aériennes internationales n'est pas publiée pour ce millésime, et une barre absente vaut mieux qu'une barre inventée.",
+        n_accise:"Millésime 2024 : l'accise sur l'électricité est encore réduite par le bouclier tarifaire (25,0 €/MWh contre 37,1 en 2025). C'est le millésime le plus favorable à l'électricité — et celui de la figure du post.",
+      },
+  en: { annee:"Vintage", usage:"Use", vue:"View", graph:"chart", table:"table",
+        machine:"Appliance", hypothese:"Assumption", total:"Price incl. taxes", prelevements:"Levies", part:"Share",
+        n_general:"The red figure above each bar is the total of levies (excise + VAT) per unit of service; the network is not part of it. Below each appliance: its consumption, or its efficiency in MWh of useful output per MWh delivered (COP for the heat pump). Average France prices, incl. taxes, per MWh delivered (Eurostat nrg_pc_204_c and 205_c, Weekly Oil Bulletin, SDES energy balance), divided by that efficiency.",
+        n_transport:"Public fast charging: 0.50 €/kWh incl. VAT, an assumption; only VAT and the non-household excise are identifiable in it, the charger's network tariff and the operator's margin are counted with energy — its levies are a lower bound.",
+        n_avion_train:"One hundred passenger-km, not one hundred vehicle-km: the bars of this panel do not compare with those of the \"transport\" panel. Plane: international bunker kerosene, neither excise (art. L. 312-58 of the CIBS) nor VAT; a domestic flight has the same bar, what it pays on top falls on the ticket, not on the energy. Train: industrial electricity price for want of a published rail price, VAT included — the operator buys cheaper and deducts it, the bar is an upper bound.",
+        n_chauffage:"One MWh of useful heat, that is, the heat that reaches the room. The heat pump is taken at COP 3 (seasonal average); gas and wood efficiencies are those of recent appliances.",
+        n_cuisson:"One MWh of heat in the pan. The induction hob is at 0.85 (EN 60350-2), the gas hob at 0.45 measured at the pan: it is that efficiency which offsets the gap in taxation.",
+        n_2025:"In 2025 the \"plane\" bar disappears: French expenditure on international aviation bunkers is not published for that vintage, and a missing bar is better than an invented one.",
+        n_accise:"2024 vintage: the excise on electricity is still reduced by the price shield (25.0 €/MWh against 37.1 in 2025). It is the vintage most favourable to electricity — and the one of the post's figure.",
+      },
+}[LANG];
+const P = DATA.postes, U = DATA.usages;
+const state = { annee: DATA.annees[0], usage: "transport", vue: "graph" };
+const fmt = (v, d) => v.toLocaleString(LANG === "fr" ? "fr-FR" : "en-GB", {maximumFractionDigits:d, minimumFractionDigits:d});
+// Un zéro **exact** s'écrit « 0 € » et non « 0,00 € » : le kérosène des soutes
+// n'est pas arrondi à zéro, il est exonéré. Même règle que la figure du post.
+const euro = (v, d) => Math.abs(v) < 1e-9 ? "0 €" : fmt(v, d) + " €";
+const nom = o => o[LANG], hyp = o => o["hyp_" + LANG], unite = o => o["u_" + LANG];
+function barres(annee, usage) {
+  return DATA.rows.filter(r => r.annee === annee && r.usage === usage).sort((a,b) => a.ordre - b.ordre);
+}
+// L'échelle est prise sur les deux millésimes, et partagée entre chauffage et
+// cuisson : changer d'année doit faire bouger les barres, pas l'axe.
+function echelle(usage) {
+  const groupe = (usage === "chauffage" || usage === "cuisson") ? ["chauffage","cuisson"] : [usage];
+  let m = 0;
+  for (const a of DATA.annees) for (const u of groupe) for (const r of barres(a, u)) m = Math.max(m, r.tot);
+  return m * 1.16;
+}
+function seg(id, key, options) {
+  const el = document.getElementById(id); el.textContent = "";
+  for (const [val, label] of options) { const b = document.createElement("button"); b.type = "button"; b.textContent = label;
+    b.setAttribute("aria-pressed", String(state[key] === val)); b.addEventListener("click", () => { state[key] = val; render(); }); el.appendChild(b); }
+}
+function controls() {
+  document.getElementById("l-annee").textContent = T.annee;
+  document.getElementById("l-usage").textContent = T.usage;
+  document.getElementById("l-vue").textContent = T.vue;
+  seg("s-annee", "annee", DATA.annees.map(a => [a, a]));
+  seg("s-usage", "usage", U.map(u => [u.k, nom(u)]));
+  seg("s-vue", "vue", [["graph", T.graph], ["table", T.table]]);
+  const lg = document.getElementById("legend"); lg.textContent = "";
+  for (const p of P) { const s = document.createElement("span"); s.style.setProperty("--c", p.c); s.textContent = nom(p); lg.appendChild(s); }
+}
+// Repli d'une étiquette en lignes d'au plus `n` caractères (les <tspan> de SVG
+// ne se replient pas tout seuls).
+function replier(texte, n) {
+  const out = []; let ligne = "";
+  for (const mot of texte.split(" ")) {
+    if (ligne && (ligne + " " + mot).length > n) { out.push(ligne); ligne = mot; }
+    else ligne = ligne ? ligne + " " + mot : mot;
+  }
+  if (ligne) out.push(ligne);
+  return out;
+}
+function render() {
+  controls();
+  const rows = barres(state.annee, state.usage), dec = rows.length ? rows[0].d : 1;
+  const top = echelle(state.usage);
+  const svg = document.getElementById("svg"); svg.textContent = "";
+  const W = 1080, H = 520, mg = {t:26, r:16, b:118, l:78};
+  const iw = W - mg.l - mg.r, ih = H - mg.t - mg.b;
+  const NS = "http://www.w3.org/2000/svg";
+  const el = (n, a, parent) => { const e = document.createElementNS(NS, n); for (const k in a) e.setAttribute(k, a[k]); (parent||svg).appendChild(e); return e; };
+  const y = v => mg.t + ih - ih * v / top;
+  const slot = iw / Math.max(rows.length, 1), xc = i => mg.l + slot*(i+0.5);
+  const pas = [0.5,1,2,2.5,5,10,20,25,50,100,200,250].find(s => top/s <= 8) || 500;
+  const grid = el("g", {class:"grid"}), axis = el("g", {class:"axis"});
+  for (let v = 0; v <= top + 1e-9; v += pas) { el("line", {x1:mg.l, x2:W-mg.r, y1:y(v), y2:y(v), class: v === 0 ? "zero" : ""}, v === 0 ? svg : grid);
+    const t = el("text", {x:mg.l-8, y:y(v)+4, "text-anchor":"end"}, axis); t.textContent = fmt(v, v < 10 && pas < 1 ? 1 : 0); }
+  const ul = el("text", {x:16, y:mg.t+ih/2, transform:`rotate(-90 16 ${mg.t+ih/2})`, "text-anchor":"middle"}, el("g", {class:"ylab"}));
+  ul.textContent = rows.length ? unite(rows[0]) : "";
+  const tip = document.getElementById("tip");
+  const showTip = (r, ev) => {
+    tip.textContent = ""; const b = document.createElement("b"); b.textContent = nom(r) + " · " + state.annee; tip.appendChild(b);
+    for (const p of P) { const x = r.c[p.k]; const d = document.createElement("div"); d.className = "row";
+      const a = document.createElement("span"); const ii = document.createElement("i"); ii.style.setProperty("--c", p.c); a.appendChild(ii); a.appendChild(document.createTextNode(nom(p)));
+      const s = document.createElement("span"); s.textContent = euro(x, dec); d.appendChild(a); d.appendChild(s); tip.appendChild(d); }
+    for (const [lab, val, cls] of [[T.total, euro(r.tot, dec), "tot"],
+                                   [T.prelevements, euro(r.pre, dec) + " · " + Math.round(100*r.pre/r.tot) + " %", "pre"]]) {
+      const d = document.createElement("div"); d.className = "row " + cls;
+      const a = document.createElement("span"); a.textContent = lab; const s = document.createElement("span"); s.textContent = val;
+      d.appendChild(a); d.appendChild(s); tip.appendChild(d); }
+    tip.style.display = "block"; const box = document.getElementById("chart").getBoundingClientRect();
+    const px = ev.clientX - box.left, py = ev.clientY - box.top;
+    tip.style.left = Math.min(px + 14, box.width - tip.offsetWidth - 4) + "px"; tip.style.top = Math.max(0, py - 10) + "px";
+  };
+  const bw = Math.min(120, slot*0.62);
+  const largeur_etiquette = Math.max(10, Math.round(slot / 7.2));
+  rows.forEach((r, i) => {
+    const g = el("g"); let bas = 0;
+    for (const p of P) { const x = r.c[p.k]; if (!x) continue;
+      el("rect", {x:xc(i)-bw/2, y:y(bas + x), width:bw, height:Math.max(0, y(bas) - y(bas + x)), fill:p.c, stroke:"#fcfcfb", "stroke-width":0.8}, g);
+      bas += x; }
+    const c = el("text", {x:xc(i), y:y(r.tot) - 8}, el("g", {class:"cap"}, g)); c.textContent = euro(r.pre, dec);
+    const lab = el("g", {class:"xlab"}, g); let ligne = 0;
+    for (const l of replier(nom(r), largeur_etiquette)) { const t = el("text", {x:xc(i), y:mg.t+ih+20+ligne*15}, lab); t.textContent = l; ligne++; }
+    for (const l of replier(hyp(r).replace(" ; ", " ; "), largeur_etiquette)) { const t = el("text", {x:xc(i), y:mg.t+ih+20+ligne*15, class:"hyp"}, lab); t.textContent = l; ligne++; }
+    const hit = el("rect", {x:xc(i)-slot/2, y:mg.t, width:slot, height:ih, class:"hit"}, g);
+    hit.addEventListener("pointermove", ev => showTip(r, ev)); hit.addEventListener("pointerleave", () => tip.style.display = "none");
+  });
+  // tableau
+  const tb = document.getElementById("table"); tb.textContent = "";
+  const table = document.createElement("table"); const hr = table.createTHead().insertRow();
+  for (const h of [T.machine, T.hypothese, ...P.map(nom), T.total, T.prelevements, T.part]) { const th = document.createElement("th"); th.textContent = h; hr.appendChild(th); }
+  const tbody = table.createTBody();
+  for (const r of rows) { const tr = tbody.insertRow();
+    tr.insertCell().textContent = nom(r); tr.insertCell().textContent = hyp(r);
+    for (const p of P) tr.insertCell().textContent = euro(r.c[p.k], dec);
+    tr.insertCell().textContent = euro(r.tot, dec); tr.insertCell().textContent = euro(r.pre, dec);
+    tr.insertCell().textContent = Math.round(100*r.pre/r.tot) + " %"; }
+  tb.appendChild(table);
+  document.getElementById("chart").classList.toggle("hidden", state.vue !== "graph");
+  tb.classList.toggle("hidden", state.vue !== "table");
+  const notes = [rows.length ? unite(rows[0]) + ". " + T["n_" + state.usage] : "", T.n_general];
+  if (state.annee === "2025" && state.usage === "avion_train") notes.push(T.n_2025);
+  if (state.annee === "2024") notes.push(T.n_accise);
+  document.getElementById("note").textContent = notes.filter(Boolean).join(" ");
+}
+render();
+</script>
+</body>
+</html>

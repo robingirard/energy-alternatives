@@ -1,0 +1,28 @@
+annee,usage,ordre,machine,libelle_fr,libelle_en,hypothese_fr,hypothese_en,unite_fr,unite_en,decimales,energie_et_fourniture,reseau,accises_et_taxes,tva,total,prelevements
+2024,transport,1,ve_domicile,"Voiture électrique, à domicile","Electric car, home charging",17 kWh/100 km,17 kWh/100 km,€ par 100 km,€ per 100 km,1,2.5891,1.1866,0.4250,0.7055,4.9062,1.1305
+2024,transport,2,ve_borne,"Voiture électrique, borne rapide","Electric car, public fast charger","0,50 €/kWh",0.50 €/kWh,€ par 100 km,€ per 100 km,1,6.7807,0.0000,0.3026,1.4167,8.5000,1.7193
+2024,transport,3,essence,Voiture essence,Petrol car,"6,5 l/100 km",6.5 l/100 km,€ par 100 km,€ per 100 km,1,5.3694,0.0000,4.4934,1.9726,11.8354,6.4660
+2024,transport,4,gazole,Voiture diesel,Diesel car,"5,5 l/100 km",5.5 l/100 km,€ par 100 km,€ per 100 km,1,4.4217,0.0000,3.3489,1.5541,9.3247,4.9031
+2024,avion_train,1,avion,"Avion, moyen-courrier","Plane, medium-haul","3,5 l/100 pass.-km",3.5 l/100 pass.-km,€ par 100 passagers-km,€ per 100 passenger-km,2,2.3729,0.0000,0.0000,0.0000,2.3729,0.0000
+2024,avion_train,2,voiture_essence,Voiture essence,Petrol car,"6,5 l/100 km ; 1,5 pers. à bord",6.5 l/100 km ; 1.5 occupants,€ par 100 passagers-km,€ per 100 passenger-km,2,3.5796,0.0000,2.9956,1.3150,7.8903,4.3107
+2024,avion_train,3,tgv,Train à grande vitesse,High-speed train,"0,04 kWh/pass.-km",0.04 kWh/pass.-km,€ par 100 passagers-km,€ per 100 passenger-km,2,0.5268,0.1196,0.0712,0.1344,0.8520,0.2056
+2024,chauffage,1,pac,Pompe à chaleur,Heat pump,COP 3,COP 3,€ par MWh de chaleur utile,€ per MWh of useful heat,0,50.7667,23.2667,8.3333,13.8333,96.2000,22.1667
+2024,chauffage,2,radiateur,Radiateur électrique,Electric radiator,"1,00",1.00,€ par MWh de chaleur utile,€ per MWh of useful heat,0,152.3000,69.8000,25.0000,41.5000,288.6000,66.5000
+2024,chauffage,3,chaudiere_gaz,Chaudière gaz à condensation,Gas condensing boiler,"0,90",0.90,€ par MWh de chaleur utile,€ per MWh of useful heat,0,68.7778,29.2222,21.4444,19.7778,139.2222,41.2222
+2024,chauffage,4,chaudiere_fioul,Chaudière fioul,Oil boiler,"0,85",0.85,€ par MWh de chaleur utile,€ per MWh of useful heat,0,100.7714,0.0000,18.6374,23.8818,143.2905,42.5191
+2024,chauffage,5,poele_bois,Poêle à bûches,Wood stove,"0,75",0.75,€ par MWh de chaleur utile,€ per MWh of useful heat,0,63.0293,0.0000,0.0000,5.1869,68.2162,5.1869
+2024,cuisson,1,induction,Plaque à induction,Induction hob,"0,85",0.85,€ par MWh de chaleur dans la casserole,€ per MWh of heat in the pan,0,179.1765,82.1176,29.4118,48.8235,339.5294,78.2353
+2024,cuisson,2,plaque_gaz,Plaque gaz,Gas hob,"0,45",0.45,€ par MWh de chaleur dans la casserole,€ per MWh of heat in the pan,0,137.5556,58.4444,42.8889,39.5556,278.4444,82.4444
+2025,transport,1,ve_domicile,"Voiture électrique, à domicile","Electric car, home charging",17 kWh/100 km,17 kWh/100 km,€ par 100 km,€ per 100 km,1,1.8496,1.2903,0.6307,0.6817,4.4523,1.3124
+2025,transport,2,ve_borne,"Voiture électrique, borne rapide","Electric car, public fast charger","0,50 €/kWh",0.50 €/kWh,€ par 100 km,€ per 100 km,1,6.7807,0.0000,0.3026,1.4167,8.5000,1.7193
+2025,transport,3,essence,Voiture essence,Petrol car,"6,5 l/100 km",6.5 l/100 km,€ par 100 km,€ per 100 km,1,4.8534,0.0000,4.4954,1.8698,11.2186,6.3652
+2025,transport,4,gazole,Voiture diesel,Diesel car,"5,5 l/100 km",5.5 l/100 km,€ par 100 km,€ per 100 km,1,4.0678,0.0000,3.3506,1.4837,8.9021,4.8343
+2025,avion_train,1,voiture_essence,Voiture essence,Petrol car,"6,5 l/100 km ; 1,5 pers. à bord",6.5 l/100 km ; 1.5 occupants,€ par 100 passagers-km,€ per 100 passenger-km,2,3.2356,0.0000,2.9969,1.2465,7.4791,4.2434
+2025,avion_train,2,tgv,Train à grande vitesse,High-speed train,"0,04 kWh/pass.-km",0.04 kWh/pass.-km,€ par 100 passagers-km,€ per 100 passenger-km,2,0.4200,0.1292,0.0900,0.1152,0.7544,0.2052
+2025,chauffage,1,pac,Pompe à chaleur,Heat pump,COP 3,COP 3,€ par MWh de chaleur utile,€ per MWh of useful heat,0,36.2667,25.3000,12.3667,13.3667,87.3000,25.7333
+2025,chauffage,2,radiateur,Radiateur électrique,Electric radiator,"1,00",1.00,€ par MWh de chaleur utile,€ per MWh of useful heat,0,108.8000,75.9000,37.1000,40.1000,261.9000,77.2000
+2025,chauffage,3,chaudiere_gaz,Chaudière gaz à condensation,Gas condensing boiler,"0,90",0.90,€ par MWh de chaleur utile,€ per MWh of useful heat,0,71.6667,34.2222,22.1111,22.8889,150.8889,45.0000
+2025,chauffage,4,chaudiere_fioul,Chaudière fioul,Oil boiler,"0,85",0.85,€ par MWh de chaleur utile,€ per MWh of useful heat,0,94.0609,0.0000,18.5415,22.5205,135.1228,41.0620
+2025,chauffage,5,poele_bois,Poêle à bûches,Wood stove,"0,75",0.75,€ par MWh de chaleur utile,€ per MWh of useful heat,0,64.2221,0.0000,0.0000,5.2113,69.4334,5.2113
+2025,cuisson,1,induction,Plaque à induction,Induction hob,"0,85",0.85,€ par MWh de chaleur dans la casserole,€ per MWh of heat in the pan,0,128.0000,89.2941,43.6471,47.1765,308.1176,90.8235
+2025,cuisson,2,plaque_gaz,Plaque gaz,Gas hob,"0,45",0.45,€ par MWh de chaleur dans la casserole,€ per MWh of heat in the pan,0,143.3333,68.4444,44.2222,45.7778,301.7778,90.0000
