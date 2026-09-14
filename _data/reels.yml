@@ -1,0 +1,101 @@
+# Les vidéos courtes, une entrée par épisode, la plus récente en bas.
+#
+# Rendue par `reels.md` (/reels.html) et `en/reels.md` (/en/reels.html). Ce n'est
+# volontairement PAS une collection Jekyll comme `_linkedin/` : une collection sert
+# quand chaque épisode mérite sa propre page. Tant que six épisodes tiennent sur une
+# page, un fichier de données suffit — et le jour où il en faudra une par épisode,
+# c'est ce fichier qui nourrira le générateur.
+#
+# `youtube` : l'IDENTIFIANT de la vidéo, pas son URL (`dQw4w9WgXcQ`, pas
+# `youtube.com/watch?v=…`). La page en fabrique le lecteur encapsulé et le lien. Tant
+# qu'il est vide, elle affiche la couverture et « bientôt en ligne » à la place.
+#
+# `code` : le chemin de l'épisode dans le dépôt public
+# git.persee.minesparis.psl.eu/energy-alternatives/reels. Vide = lien vers la racine.
+#
+# Pas de champ Instagram par épisode : le lien vers le compte est donné une fois, en
+# tête de page. Un lien par vidéo n'apporterait rien — on vient d'Instagram, on n'y
+# retourne pas.
+#
+# ATTENTION : tout texte contenant un « : » doit passer par un scalaire replié (`>-`),
+# sinon YAML le lit comme une clé et la construction du site échoue. Les sources en
+# contiennent presque toutes, d'où la forme ci-dessous.
+
+- id: acier-1
+  serie: Acier
+  numero: 1/6
+  duree: 1 min 51
+  couverture: /assets/reels/acier_1.jpg
+  titre: Comment on fabrique de l'acier
+  titre_en: How steel is made
+  accroche: >-
+    Une des plus grandes usines de France, six cent soixante-quinze terrains de
+    football, trois mille personnes — et une seule chose à faire : arracher son
+    oxygène au minerai de fer. La cokerie, le haut fourneau, le convertisseur, le
+    laminoir, jusqu'à la bobine.
+  accroche_en: >-
+    One of France's largest industrial sites, six hundred and seventy-five football
+    pitches, three thousand people — and a single job to do: strip the oxygen out of
+    iron ore. From the coke ovens to the blast furnace, the converter, the rolling
+    mill and the coil.
+  youtube: vdDnOQ00wUU
+  code:
+  sources:
+    - >-
+      Températures, durées et teneurs en carbone — cokerie à 1100 °C pendant 16 à 20 h,
+      vent chaud à 1200 °C, creuset à 1500 °C, fonte à 4,5 % de carbone ramenée à 0,05 %
+      au convertisseur — note de procédés industriels, valeurs d'ingénierie 2025.
+    - >-
+      6,8 Mt d'acier par an à Dunkerque — ArcelorMittal, projet de décarbonation ;
+      14 Mt de demande intermédiaire française — France Stratégie, « Coûts d'abattement
+      — Acier », octobre 2024.
+    - >-
+      Emprise de 482 ha mesurée sur OpenStreetMap, soit 675 terrains FIFA ; ArcelorMittal
+      annonce 550 ha, soit 770. Vue aérienne — orthophoto IGN / Géoplateforme (Licence
+      Ouverte) et emprise OpenStreetMap (ODbL).
+    - >-
+      Brame de 150 à 350 mm, bande de 1,25 à 13 mm en sortie, bobinage jusqu'à 20 m/s —
+      Techniques de l'Ingénieur, ArcelorMittal Belgique, IspatGuru.
+    - >-
+      Le nombre de coulées par jour est le seul chiffre calculé et non cité — 6,8 Mt/an
+      sur trois hauts fourneaux, à 500 t la coulée, donne une dizaine de coulées par jour
+      et par four. Il dépend du nombre de fours en campagne.
+  licence: >-
+    Photographies d'atelier issues de Wikimedia Commons, auteur et licence crédités sur
+    chaque image ; onze d'entre elles étant sous CC BY-SA, cette vidéo est elle-même
+    diffusée sous licence CC BY-SA 4.0.
+
+- id: acier-2
+  serie: Acier
+  numero: 2/6
+  duree: 1 min 57
+  couverture: /assets/reels/acier_2.jpg
+  titre: D'où vient le CO₂ de l'acier
+  titre_en: Where steel's CO₂ comes from
+  accroche: >-
+    Deux tonnes dix de CO₂ par tonne d'acier. On descend la ligne atelier par atelier
+    en faisant monter le compteur, et on découvre que plus de la moitié vient d'un
+    carbone qui n'est pas là pour chauffer, mais pour prendre l'oxygène du minerai.
+  accroche_en: >-
+    Two point one tonnes of CO₂ per tonne of steel. We walk down the line workshop by
+    workshop with a running counter, and find that more than half comes from carbon
+    that is not there to heat anything, but to take the oxygen out of the ore.
+  youtube: am0zCuWP318
+  code:
+  sources:
+    - >-
+      La cascade, en tCO₂ par tonne d'acier brut, périmètre cradle-to-gate, amont du
+      combustible compris — mines et fret 0,25, cokerie 0,20, agglomération 0,15,
+      haut fourneau 1,20, convertisseur 0,20, coulée et laminoir 0,10, soit 2,10.
+    - >-
+      Décomposition du total — chimie de réduction 1,30, combustibles 0,55, amont 0,25.
+      « Un quart du problème » porte sur le combustible seul (0,55 / 2,10 = 26 %), pas
+      sur combustible + amont (0,80, soit 38 %).
+    - >-
+      Réaction citée — Fe₂O₃ + 3 CO → 2 Fe + 3 CO₂, et 300 à 350 kg de coke par tonne
+      de fonte.
+    - >-
+      Le four électrique de Dunkerque — 2 Mt de capacité, mise en service annoncée pour
+      2029-2030, 0,6 tCO₂/t contre 2,10, arrêt définitif d'un haut fourneau.
+      ArcelorMittal France, communiqué du 10 février 2026.
+  licence:

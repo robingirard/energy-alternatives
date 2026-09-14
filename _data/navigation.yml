@@ -19,6 +19,25 @@ header:
       fr: /linkedin.html
       en: /en/linkedin.html
 
+  - titles:
+      # @start locale config
+      en      : &EN_R     Videos
+      en-GB   : *EN_R
+      en-US   : *EN_R
+      en-CA   : *EN_R
+      en-AU   : *EN_R
+      fr      : &FR_R     Vidéos
+      fr-BE   : *FR_R
+      fr-CA   : *FR_R
+      fr-CH   : *FR_R
+      fr-FR   : *FR_R
+      fr-LU   : *FR_R
+      # @end locale config
+    url: /reels.html
+    urls:
+      fr: /reels.html
+      en: /en/reels.html
+
 #  - titles:
       # @start locale config
 #      fr      : &FR       Consommation
