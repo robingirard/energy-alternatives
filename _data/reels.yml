@@ -103,7 +103,7 @@
 - id: acier-3
   serie: Acier
   numero: 3/6
-  duree: 1 min 54
+  duree: 1 min 58
   couverture: /assets/reels/acier_3.jpg
   titre: La ferraille, et pourquoi le recyclage plafonne
   titre_en: Scrap, and why recycling hits a ceiling
@@ -140,10 +140,21 @@
       surtout en Chine.
     - >-
       Le cuivre est un élément résiduel, qu'on ne sait pas retirer du bain une fois
-      qu'il y est, contrairement au carbone ou au phosphore. Au-delà d'environ 0,1 % en
-      masse il provoque la « hot shortness » et fissure la surface au laminage à chaud ;
-      les aciers de carrosserie demandent moins de 0,20 %. Daehn, Cabrera Serrenho et
-      Allwood, Environmental Science & Technology 51(11), 2017.
+      qu'il y est, contrairement au carbone, au silicium ou au phosphore que
+      l'oxydation emporte. Ce que la ferraille en porte, en pourcentage de la masse :
+      chutes de l'aciérie 0,021, emballages 0,05, ferraille lourde de démolition 0,234,
+      voitures broyées 0,23 — Olivier, Becker et Nylén, KIMAB, 2006. Ce que le produit
+      tolère : armatures de béton 0,40, barres, tubes et fil 0,10, tôle d'automobile et
+      emboutissage profond 0,06 — Daehn, Cabrera Serrenho et Allwood, Environmental
+      Science & Technology 51(11), 2017, et Schrade et al., 2006. Une voiture broyée
+      porte donc près de quatre fois ce qu'une tôle d'automobile tolère, et seules les
+      armatures acceptent une telle teneur.
+    - >-
+      Le gisement, et la part qui grossit : 650 Mt de ferraille refondues chaque année
+      pour faire de l'acier, sur 1 869 Mt d'acier brut, dont environ 400 Mt de fin de
+      vie en 2019 — et 600 attendues en 2030, 900 en 2050. Durée de vie moyenne d'un
+      produit en acier : 40 ans, de quelques semaines pour un emballage à cent ans pour
+      un bâtiment. worldsteel, « Scrap use in the steel industry », mai 2021.
     - >-
       Cette source dit plus que le reel n'en retient — le cuivre reste gérable à
       l'échelle mondiale jusque vers 2050, mais à condition d'un commerce de ferraille
