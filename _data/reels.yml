@@ -103,7 +103,7 @@
 - id: acier-3
   serie: Acier
   numero: 3/6
-  duree: 1 min 58
+  duree: 1 min 59
   couverture: /assets/reels/acier_3.jpg
   titre: La ferraille, et pourquoi le recyclage plafonne
   titre_en: Scrap, and why recycling hits a ceiling
@@ -162,8 +162,8 @@
       « increasingly impractical ».
   licence: >-
     Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
-    image ; onze des seize étant sous CC BY-SA, cette vidéo est elle-même diffusée sous
-    licence CC BY-SA 4.0.
+    image ; la couverture reprend le grappin de Visitor7, CC BY-SA 3.0. Huit des dix
+    étant sous CC BY-SA, cette vidéo est elle-même diffusée sous licence CC BY-SA 4.0.
 
 - id: acier-4
   serie: Acier
