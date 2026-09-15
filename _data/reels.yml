@@ -99,3 +99,227 @@
       2029-2030, 0,6 tCO₂/t contre 2,10, arrêt définitif d'un haut fourneau.
       ArcelorMittal France, communiqué du 10 février 2026.
   licence:
+
+- id: acier-3
+  serie: Acier
+  numero: 3/6
+  duree: 1 min 54
+  couverture: /assets/reels/acier_3.jpg
+  titre: La ferraille, et pourquoi le recyclage plafonne
+  titre_en: Scrap, and why recycling hits a ceiling
+  accroche: >-
+    Refondre de la ferraille émet 0,16 tonne de CO₂ par tonne d'acier, contre 2,10 par
+    le haut fourneau. Alors pourquoi ne pas tout faire comme ça ? Parce que la ferraille
+    vient du passé, et que le passé était plus petit — et parce qu'elle traîne du
+    cuivre, qu'on ne sait pas retirer d'un bain d'acier.
+  accroche_en: >-
+    Remelting scrap emits 0.16 tonnes of CO₂ per tonne of steel, against 2.10 by the
+    blast furnace route. So why not do it everywhere? Because scrap comes from the past,
+    and the past was smaller — and because it carries copper, which cannot be taken back
+    out of a steel melt.
+  youtube:
+  code:
+  sources:
+    - >-
+      Émissions — 0,16 tCO₂/t pour le four à arc sur ferraille et 2,10 pour la route
+      intégrée, avec une électricité sans émissions des deux côtés ; sur le réseau UE-27
+      à 240 gCO₂/kWh, 0,32 et 2,24. Périmètre cradle-to-gate, amont du combustible
+      compris.
+    - >-
+      Production mondiale d'acier brut — 189 Mt en 1950, 719 en 1985, 1 887 en 2024
+      (worldsteel, World Steel in Figures 2026). Le 38 % est le rapport 719 / 1 887,
+      c'est-à-dire l'acier produit en 1985 rapporté à la demande d'aujourd'hui, donc une
+      borne haute ; le 30 % est le gisement effectivement disponible, plus bas parce
+      qu'une partie de cet acier est encore en service.
+    - >-
+      Taux de collecte de 80 à 90 % — ordre de grandeur du secteur, arrondi vers le bas.
+    - >-
+      Part du four à arc par pays en 2020 — Chine 9 %, Union européenne 44 %, Inde 56 %,
+      Japon 25 %, États-Unis 71 %, Russie 33 %. JRC d'après World Steel Association,
+      2021 ; graphique redessiné à partir des valeurs. Ces parts ont bougé depuis,
+      surtout en Chine.
+    - >-
+      Le cuivre est un élément résiduel, qu'on ne sait pas retirer du bain une fois
+      qu'il y est, contrairement au carbone ou au phosphore. Au-delà d'environ 0,1 % en
+      masse il provoque la « hot shortness » et fissure la surface au laminage à chaud ;
+      les aciers de carrosserie demandent moins de 0,20 %. Daehn, Cabrera Serrenho et
+      Allwood, Environmental Science & Technology 51(11), 2017.
+    - >-
+      Cette source dit plus que le reel n'en retient — le cuivre reste gérable à
+      l'échelle mondiale jusque vers 2050, mais à condition d'un commerce de ferraille
+      parfaitement coordonné et d'une dilution massive, stratégie qu'elle juge
+      « increasingly impractical ».
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; onze des seize étant sous CC BY-SA, cette vidéo est elle-même diffusée sous
+    licence CC BY-SA 4.0.
+
+- id: acier-4
+  serie: Acier
+  numero: 4/6
+  duree: 1 min 50
+  couverture: /assets/reels/acier_4.jpg
+  titre: L'hydrogène, et le four qui tourne déjà
+  titre_en: Hydrogen, and the furnace that already runs
+  accroche: >-
+    Il existe déjà une autre façon de faire du fer, et elle n'a rien d'expérimental :
+    141 millions de tonnes en 2024, sept pour cent de l'acier mondial. On ne fond plus
+    le minerai, on le réduit à l'état solide — sauf que le gaz qui le réduit est du
+    méthane. Changer ce gaz suffit à faire disparaître le CO₂ de réduction, à une
+    condition : l'électricité.
+  accroche_en: >-
+    There is already another way to make iron, and nothing experimental about it:
+    141 million tonnes in 2024, seven percent of world steel. The ore is no longer
+    melted but reduced in the solid state — except that the gas doing the reducing is
+    methane. Changing that gas is enough to make the reduction CO₂ disappear, on one
+    condition: the electricity.
+  youtube:
+  code:
+  sources:
+    - >-
+      Fer préréduit — 140,8 Mt en 2024, un record, contre 135,7 en 2023 (Midrex).
+      Rapporté aux 1 887 Mt d'acier brut mondial, cela fait 7,5 %. Par pays — Inde
+      54,7 Mt, Iran 34,7, Russie 8,0, Arabie saoudite 6,6, Égypte 6,4.
+    - >-
+      La part au gaz est calculée, et c'est le seul chiffre du reel qui le soit — Midrex
+      publie 76,2 Mt pour ses usines, « 54,1 % du total » et « 80,1 % du fer sorti de
+      fours à cuve », donc 95,1 Mt de cuves, soit 68 % des 140,8. Le tiers restant,
+      environ 46 Mt, est au charbon, et l'Inde en fait presque tout : 54,7 Mt dont
+      environ 80 % en fours rotatifs au charbon.
+    - >-
+      Émissions, en tCO₂ par tonne d'acier brut — réduction directe au gaz naturel plus
+      four à arc, 0,90 ; à l'hydrogène, 0,07 avec une électricité sans émissions et 0,91
+      sur le réseau UE-27 à 240 gCO₂/kWh ; route intégrée, 2,10. Le facteur trente est
+      2,10 / 0,07.
+    - >-
+      Électricité — environ 3,5 MWh par tonne d'acier pour la route hydrogène, dont 2,6
+      pour l'électrolyse et 0,6 pour le four à arc. Sur le réseau français (56 gCO₂/kWh)
+      la route retombe à 0,27 ; sur la moyenne mondiale (480 g) elle monte à 1,75, soit
+      plus que le gaz naturel. C'est pourquoi le reel dit « bas carbone » et non
+      « électrique ».
+    - >-
+      Le mélange progressif — le gaz réducteur d'une cuve au gaz naturel est déjà à
+      55 mol % d'hydrogène ; jusqu'à 30 % du gaz naturel peut être remplacé sans
+      modifier les équipements, et au-delà les modifications ne touchent ni le four de
+      réduction, ni les scrubbers, ni le reformeur. Midrex Technologies, « MIDREX NG
+      with H2 Addition ». C'est un document d'équipementier, à lire comme des
+      spécifications de procédé et non comme une évaluation économique.
+  licence: >-
+    Deux photographies issues de Wikimedia Commons, toutes deux sous CC BY-SA 3.0 ;
+    cette vidéo est donc diffusée sous licence CC BY-SA 4.0.
+
+- id: acier-5
+  serie: Acier
+  numero: 5/6
+  duree: 1 min 58
+  couverture: /assets/reels/acier_5.jpg
+  titre: L'électrolyse, ou supprimer le réducteur
+  titre_en: Electrolysis, or doing away with the reductant
+  accroche: >-
+    Le haut fourneau réduit le minerai avec du carbone, la réduction directe avec de
+    l'hydrogène. Il existe une troisième voie : ne rien mettre du tout. C'est ce qu'on
+    fait pour l'aluminium depuis 1886, et deux familles de cellules le font pour le fer —
+    à 1600 °C et à 110 °C. Même bilan carbone que l'hydrogène, une conversion au lieu de
+    deux, et le stade pilote pour limite.
+  accroche_en: >-
+    The blast furnace reduces ore with carbon, direct reduction with hydrogen. There is a
+    third way: putting nothing in at all. It is what aluminium has done since 1886, and
+    two families of cells now do it for iron — at 1600 °C and at 110 °C. Same carbon
+    balance as hydrogen, one conversion instead of two, and pilot scale as the limit.
+  youtube:
+  code:
+  sources:
+    - >-
+      Réaction commune, sans carbone — 2 Fe₂O₃ → 4 Fe + 3 O₂ ; le sous-produit est de
+      l'oxygène. Le 0,07 tCO₂/t résiduel est le carbone de carburation : un acier
+      contient du carbone par définition.
+    - >-
+      Les trois routes électriques, en tCO₂ par tonne d'acier brut et en MWh par tonne —
+      électrolyse en oxyde fondu 0,07 et 4,20 MWh (1,08 sur le réseau UE-27) ;
+      électrogagnage alcalin 0,07 et 3,60 MWh (0,93) ; réduction directe à l'hydrogène
+      0,07 et 3,50 MWh (0,91). Le réseau UE-27 est pris à 240 gCO₂/kWh en 2023, valeur
+      périssable qui baisse.
+    - >-
+      Le minimum thermodynamique de la réduction du fer est d'environ 2,6 MWh par tonne.
+      L'oxyde fondu à 4,2 et l'électrogagnage à 3,6 en sont à un facteur 1,4 à 1,6, quand
+      les 3,5 MWh de la route hydrogène incluent déjà les pertes de l'électrolyseur.
+      C'est là que se joue la marge de progrès.
+    - >-
+      Boston Metal (Woburn, Massachusetts), électrolyse en oxyde fondu — cellule
+      industrielle mise en service en mars 2025, environ une tonne d'acier sur la plus
+      longue campagne. En mai 2026 la société lève 75 M$ et recentre ses moyens sur les
+      métaux critiques.
+    - >-
+      Volteron (ArcelorMittal et John Cockerill), électrogagnage alcalin, suite
+      industrielle du projet européen SIDERWIN achevé — annoncé le 14 juin 2023, une
+      première usine de 40 000 à 80 000 t/an de plaques de fer visant 2027, puis 300 000 t
+      à 1 Mt/an. Un pilote a été mis en service en avril 2025. Le reel s'arrête au
+      pilote, et pas à la date de 2027 : ni le site ni la décision d'investissement ne
+      sont publics.
+    - >-
+      Cinq cents tonnes par coulée de haut fourneau, contre quelques tonnes par jour pour
+      une cellule pilote. Ces routes ne sont pas équivalentes en disponibilité, et c'est
+      tout le propos de la dernière phrase.
+  licence: >-
+    Aucune photographie dans la vidéo, seulement une planche dessinée pour la série. La
+    couverture montre une série de cuves d'électrolyse d'aluminium (Albasmelter,
+    CC BY-SA 4.0) : l'acier n'en a pas encore à cette échelle, et c'est l'argument même
+    de l'épisode.
+
+- id: acier-6
+  serie: Acier
+  numero: 6/6
+  duree: 2 min 04
+  couverture: /assets/reels/acier_6.jpg
+  titre: Sobriété ou technologie ?
+  titre_en: Sufficiency or technology?
+  accroche: >-
+    Une objection revient toujours : l'acier à l'hydrogène consommerait trop
+    d'électricité. Elle est sérieuse, et le chiffre — 4 000 TWh par an, la production
+    électrique des États-Unis — est juste. Ce qui manque, c'est ce qu'on met en face. Et
+    au bout du calcul de la sobriété, il resterait encore plus d'un milliard et demi de
+    tonnes de CO₂ par an.
+  accroche_en: >-
+    One objection keeps coming back: hydrogen steel would use too much electricity. It
+    is a serious one, and the figure — 4,000 TWh a year, the electricity output of the
+    United States — is right. What is missing is what you put on the other side of the
+    scale. And at the end of the sufficiency arithmetic, more than one and a half
+    billion tonnes of CO₂ a year would still be left.
+  youtube:
+  code:
+  sources:
+    - >-
+      Les 4 000 TWh par an et l'équivalence avec la production électrique des États-Unis
+      sont les chiffres de l'auteur discuté, repris sans être contestés. Le reel ne
+      discute pas le calcul, il discute ce qu'on met en face.
+    - >-
+      L'acier — 3,5 GtCO₂ par an, près de 10 % des émissions mondiales, et environ 14 %
+      du charbon consommé dans le monde. La sidérurgie a consommé 1,14 Gt de charbon en
+      2022 (755 Mt de charbon à coke et 389 Mt de charbon vapeur) sur les 8,5 Gt
+      mondiales. Global Efficiency Intelligence, « Steel and Coal » ; AIE pour le total.
+    - >-
+      Le billet de 2024 disait « un quart du charbon consommé dans le monde, plus de
+      2 Gt par an » : c'était faux des deux côtés, et il est corrigé. L'erreur venait
+      probablement du tonnage d'acier, environ 2 Gt par an, cité plus loin dans le même
+      billet et reporté par mégarde sur le charbon.
+    - >-
+      Les deux dénominateurs des graphiques de mise en perspective sont des hypothèses
+      de cadrage et non des valeurs citées — 37 GtCO₂ d'émissions mondiales et
+      45 000 TWh d'électricité bas carbone en 2050. Ce sont les deux seules valeurs de
+      la série dans ce cas.
+    - >-
+      L'acier des éoliennes — entre 15 et 25 Mt par an. L'écart vient de l'intensité
+      matière retenue pour l'éolien terrestre ; la conclusion tient dans les deux cas,
+      puisqu'on compare à 1 900 Mt produites.
+    - >-
+      Énergie primaire mondiale depuis 1800 — Our World in Data, méthode de
+      substitution. La biomasse traditionnelle passe de 5 556 TWh en 1800 à 11 111 en
+      2024, elle a doublé, pendant que le charbon passait de 97 à 45 931, rejoint par le
+      pétrole puis le gaz. Rien n'a remplacé rien.
+    - >-
+      Fer préréduit — 140,8 Mt en 2024 (Midrex). Le reel dit « en 2024 » et non « l'an
+      dernier », la statistique de 2025 n'étant pas encore publiée.
+  licence: >-
+    Aucune photographie dans la vidéo ; les graphiques sont redessinés aux couleurs de
+    la série à partir des valeurs, et la série Our World in Data est citée sur la figure.
+    La couverture est sous CC0 (Daniel Olah).
