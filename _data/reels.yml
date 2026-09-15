@@ -17,6 +17,12 @@
 # tête de page. Un lien par vidéo n'apporterait rien — on vient d'Instagram, on n'y
 # retourne pas.
 #
+# `serie` et `numero` : deux formes. Un **arc fermé** porte son total (« Acier »,
+# « 3/6 » : les six reels du procédé, de la fabrication à la sobriété). Une **série
+# parallèle**, reprise filière après filière, se compte dans son secteur
+# (« Acier · Économie », « 1/2 ») — sans quoi tout total écrit aujourd'hui serait
+# faux le jour où une filière s'ajoute. Voir la règle 1.10 de la charte.
+#
 # ATTENTION : tout texte contenant un « : » doit passer par un scalaire replié (`>-`),
 # sinon YAML le lit comme une clé et la construction du site échoue. Les sources en
 # contiennent presque toutes, d'où la forme ci-dessous.
@@ -341,3 +347,75 @@
     Aucune photographie dans la vidéo ; les graphiques sont redessinés aux couleurs de
     la série à partir des valeurs, et la série Our World in Data est citée sur la figure.
     La couverture est sous CC0 (Daniel Olah).
+
+- id: acier-eco-1
+  serie: Acier · Économie
+  numero: 1/2
+  duree: 1 min 16
+  couverture: /assets/reels/acier_eco_1.jpg
+  titre: Décarboner l'acier, ça coûte combien ?
+  titre_en: What does decarbonising steel cost?
+  accroche: >-
+    Les six vidéos précédentes ont montré comment on décarbone l'acier. Aucune n'a dit
+    ce que ça coûte — et c'est pourtant ce qui décide de ce qui se construit. Trois
+    routes, de 75 à 192 € la tonne de CO₂ évitée, quand le quota en vaut 80. D'où la
+    décision de Dunkerque : la brique la moins chère, et pas un pas de plus.
+  accroche_en: >-
+    The previous six videos showed how steel can be decarbonised. None said what it
+    costs — and cost is what decides what actually gets built. Three routes, €75 to
+    €192 per tonne of CO₂ avoided, against an allowance price of €80. Hence the
+    Dunkirk decision: the cheapest brick, and not one step further.
+  youtube:
+  code:
+  sources:
+    - >-
+      Coûts d'abattement — France Stratégie, « Les coûts d'abattement — Partie 7 :
+      Acier », rapport de la commission présidée par Alain Quinet, octobre 2024.
+      Réduction directe au gaz naturel 75 à 123 €/tCO₂ évitée pour 40 % d'émissions
+      en moins ; avec capture et stockage 161 € pour 65 % ; électrolyse directe du
+      minerai 192 €. Horizon 2030.
+    - >-
+      La valeur de référence du carbone est de 295 €/tCO₂ en 2030 (France Stratégie,
+      rapport Quinet actualisé), quand le quota européen s'échange autour de 80 € :
+      c'est l'écart qui explique qu'aucune route ne soit rentable au prix du marché.
+    - >-
+      Dunkerque — four électrique confirmé en février 2026, 1,3 Md€, 2 Mt/an, mise en
+      service visée en 2029, ≈ 0,6 tCO₂ par tonne d'acier sur un mix ferraille, fer
+      préréduit et fonte. Le projet de réduction directe à l'hydrogène est suspendu.
+  licence: >-
+    Vue aérienne : orthophoto IGN / Géoplateforme (Licence Ouverte) et emprise
+    OpenStreetMap (ODbL). Aucune photographie sous CC BY-SA dans cette vidéo, qui est
+    donc diffusée sous licence CC BY 4.0 ; sa couverture reprend la même vue aérienne.
+
+- id: acier-eco-2
+  serie: Acier · Économie
+  numero: 2/2
+  duree: 1 min 29
+  couverture: /assets/reels/acier_eco_2.jpg
+  titre: La règle qui manque
+  titre_en: The missing rule
+  accroche: >-
+    Aucune route de décarbonation de l'acier n'est rentable au prix du quota. Alors
+    qu'est-ce qui ferait bouger l'industriel quand même ? Le bâtiment a sa RE2020 :
+    une règle sur le carbone du produit fini. Pour une voiture, la même exigence
+    coûterait quelques dixièmes de pour cent du prix.
+  accroche_en: >-
+    No steel decarbonisation route pays for itself at the allowance price. So what
+    would make an industrial firm move anyway? Buildings have their own rule on the
+    embodied carbon of the finished product. For a car, the same requirement would
+    cost a few tenths of a percent of the price.
+  youtube:
+  code:
+  sources:
+    - >-
+      Les coûts d'abattement et le prix du quota sont ceux de l'épisode précédent —
+      France Stratégie, octobre 2024.
+    - >-
+      La RE2020 fixe un seuil de carbone sur le bâtiment fini, pas sur chaque
+      matériau : c'est l'instrument dont le reel compare le principe à ce qui manque
+      pour l'acier.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; la couverture reprend l'atelier de carrosserie de l'usine BMW de Leipzig
+    (BMW Werk Leipzig, CC BY-SA 2.0 de). Les deux clichés étant sous CC BY-SA, cette
+    vidéo est elle-même diffusée sous licence CC BY-SA 4.0.
