@@ -352,19 +352,21 @@
 - id: acier-eco-1
   serie: Acier · Économie
   numero: 1/2
-  duree: 1 min 16
+  duree: 1 min 30
   couverture: /assets/reels/acier_eco_1.jpg
   titre: Décarboner l'acier, ça coûte combien ?
   titre_en: What does decarbonising steel cost?
   accroche: >-
     Les six vidéos précédentes ont montré comment on décarbone l'acier. Aucune n'a dit
-    ce que ça coûte — et c'est pourtant ce qui décide de ce qui se construit. Trois
-    routes, de 75 à 192 € la tonne de CO₂ évitée, quand le quota en vaut 80. D'où la
-    décision de Dunkerque : la brique la moins chère, et pas un pas de plus.
+    ce que ça coûte — et c'est pourtant ce qui décide de ce qui se construit. Cinq
+    routes, de 117 à 392 € la tonne de CO₂ évitée, quand le quota en vaut 80 — et
+    l'hydrogène tient les deux extrêmes, selon qu'il est importé ou produit en France.
+    D'où la décision de Dunkerque : la brique la moins chère, et pas un pas de plus.
   accroche_en: >-
     The previous six videos showed how steel can be decarbonised. None said what it
-    costs — and cost is what decides what actually gets built. Three routes, €75 to
-    €192 per tonne of CO₂ avoided, against an allowance price of €80. Hence the
+    costs — and cost is what decides what actually gets built. Five routes, €117 to
+    €392 per tonne of CO₂ avoided, against an allowance price of €80 — with hydrogen
+    at both ends, depending on whether it is imported or made in France. Hence the
     Dunkirk decision: the cheapest brick, and not one step further.
   youtube:
   code:
@@ -373,8 +375,15 @@
       Coûts d'abattement — France Stratégie, « Les coûts d'abattement — Partie 7 :
       Acier », rapport de la commission présidée par Alain Quinet, octobre 2024.
       Réduction directe au gaz naturel 75 à 123 €/tCO₂ évitée pour 40 % d'émissions
-      en moins ; avec capture et stockage 161 € pour 65 % ; électrolyse directe du
-      minerai 192 €. Horizon 2030.
+      en moins ; avec capture et stockage 161 € pour 65 % ; hydrogène produit à
+      l'étranger 117 € pour 65 % ; électrolyse directe du minerai 192 €. Horizon 2030.
+    - >-
+      La cinquième barre est la seule qui ne vienne pas du tableau 1. Le rapport ne
+      chiffre pas la réduction directe à l'hydrogène produit en France, qu'il dit
+      « fortement dépendante de la mise en œuvre » : son hypothèse centrale est un
+      hydrogène à 5 €/kg, et dans le cas qui lui est le plus favorable — 3 €/kg, gaz
+      à 50 €/MWh — le coût d'abattement ressort à 392 €/tCO₂. C'est cette valeur qui
+      est à l'écran, sans pourcentage de réduction à côté, faute d'être publiée.
     - >-
       La valeur de référence du carbone est de 295 €/tCO₂ en 2030 (France Stratégie,
       rapport Quinet actualisé), quand le quota européen s'échange autour de 80 € :
