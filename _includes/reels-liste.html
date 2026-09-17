@@ -1,0 +1,100 @@
+{%- comment -%}
+La liste des vidéos courtes, groupée : domaine (Industrie, un jour Transport…) puis
+filière (Acier, Ciment…). Nourrie par `_data/reels.yml`, dont l'ordre fait l'ordre de
+la page : l'arc du procédé de 1 à N, puis la série « Économie ». Le titre de domaine
+n'apparaît que s'il y en a plus d'un ; le sommaire, que s'il y a plus d'une filière.
+Paramètre : `lang` = "fr" ou "en". Utilisé par `reels.md` et `en/reels.md`.
+{%- endcomment -%}
+{%- assign lang = include.lang | default: "fr" -%}
+{%- assign _reels = site.data.reels -%}
+{%- assign _domaines = _reels | map: "domaine" | uniq -%}
+{%- assign _toutes_filieres = _reels | map: "filiere" | uniq -%}
+{%- if lang == "en" -%}
+  {%- assign t_voir = "Watch on YouTube" -%}
+  {%- assign t_bientot = "Coming soon." -%}
+  {%- assign t_code = "the code that builds it" -%}
+  {%- assign t_sources = "The numbers, and where they come from" -%}
+{%- else -%}
+  {%- assign t_voir = "Voir sur YouTube" -%}
+  {%- assign t_bientot = "Bientôt en ligne." -%}
+  {%- assign t_code = "le code qui la fabrique" -%}
+  {%- assign t_sources = "Les chiffres, et d'où ils viennent" -%}
+{%- endif -%}
+
+{%- if _toutes_filieres.size > 1 %}
+<p><small>
+{%- for d in _domaines -%}
+  {%- assign _dans = _reels | where: "domaine", d -%}
+  {%- assign _fils = _dans | map: "filiere" | uniq -%}
+  {%- if _domaines.size > 1 -%}
+    {%- if lang == "en" %}{{ _dans[0].domaine_en | default: d }}:{% else %}{{ d }} :{% endif %}
+  {%- endif %}
+  {%- for f in _fils -%}
+    {%- assign _bloc = _dans | where: "filiere", f -%}
+    {%- assign _nom = f -%}{%- if lang == "en" -%}{%- assign _nom = _bloc[0].filiere_en | default: f -%}{%- endif %}
+    <a href="#{{ f | slugify }}">{{ _nom }}</a> ({{ _bloc.size }}){% unless forloop.last %} · {% endunless %}
+  {%- endfor -%}
+  {%- unless forloop.last %}<br>{% endunless -%}
+{%- endfor %}
+</small></p>
+{%- endif %}
+
+<div class="reels-list">
+{%- for d in _domaines -%}
+  {%- assign _dans = _reels | where: "domaine", d -%}
+  {%- assign _fils = _dans | map: "filiere" | uniq -%}
+  {%- if _domaines.size > 1 %}
+<h2 id="{{ d | slugify }}" style="margin-top:3rem;">{% if lang == "en" %}{{ _dans[0].domaine_en | default: d }}{% else %}{{ d }}{% endif %}</h2>
+  {%- endif -%}
+  {%- for f in _fils -%}
+    {%- assign _bloc = _dans | where: "filiere", f -%}
+    {%- assign _nom = f -%}{%- if lang == "en" -%}{%- assign _nom = _bloc[0].filiere_en | default: f -%}{%- endif %}
+    {%- if _domaines.size > 1 %}
+<h3 id="{{ f | slugify }}" style="margin-top:2.4rem;">{{ _nom }}</h3>
+    {%- else %}
+<h2 id="{{ f | slugify }}" style="margin-top:3rem;">{{ _nom }}</h2>
+    {%- endif %}
+    {%- for r in _bloc -%}
+      {%- assign _serie = r.serie -%}{%- assign _titre = r.titre -%}{%- assign _accroche = r.accroche -%}
+      {%- if lang == "en" -%}
+        {%- assign _serie = r.serie_en | default: r.serie -%}
+        {%- assign _titre = r.titre_en | default: r.titre -%}
+        {%- assign _accroche = r.accroche_en | default: r.accroche -%}
+      {%- endif %}
+<div class="reels-item" style="display:flex;flex-wrap:wrap;gap:1.4rem;margin:2.6rem 0;align-items:flex-start;">
+  <div style="flex:0 0 220px;max-width:100%;">
+  {%- if r.youtube %}
+    <div style="position:relative;width:220px;max-width:100%;aspect-ratio:9/16;">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ r.youtube }}" title="{{ _serie }} {{ r.numero }} — {{ _titre }}" style="position:absolute;inset:0;width:100%;height:100%;border:1px solid #e1e0d9;" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  {%- else %}
+    <img src="{{ r.couverture | relative_url }}" alt="{{ _serie }} {{ r.numero }} — {{ _titre }}" style="width:220px;max-width:100%;height:auto;border:1px solid #e1e0d9;">
+  {%- endif %}
+  </div>
+  <div style="flex:1 1 280px;">
+    <small>{{ _serie }} {{ r.numero }} · {{ r.duree }}</small>
+    <h3 style="margin:.2rem 0 .5rem;">{{ _titre }}</h3>
+    <p style="margin:0 0 .6rem;">{{ _accroche }}</p>
+    <p style="margin:0 0 .6rem;"><small>
+    {%- if r.youtube -%}
+      <a href="https://www.youtube.com/watch?v={{ r.youtube }}" target="_blank" rel="noopener">{{ t_voir }}</a> ·
+    {%- else -%}
+      <em>{{ t_bientot }}</em> ·
+    {%- endif %}
+    <a href="{{ include.depot }}{% if r.code %}/-/tree/main/{{ r.code }}{% endif %}" target="_blank" rel="noopener">{{ t_code }}</a>
+    </small></p>
+    {% if r.sources %}
+    <details>
+      <summary><small>{{ t_sources }}</small></summary>
+      <ul style="margin:.6rem 0 0;">
+      {% for s in r.sources %}<li><small>{{ s }}</small></li>{% endfor %}
+      </ul>
+      {% if r.licence %}<p style="margin:.6rem 0 0;"><small>{{ r.licence }}</small></p>{% endif %}
+    </details>
+    {% endif %}
+  </div>
+</div>
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor %}
+</div>

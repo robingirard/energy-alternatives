@@ -1,4 +1,5 @@
-# Les vidéos courtes, une entrée par épisode, la plus récente en bas.
+# Les vidéos courtes, une entrée par épisode, dans l'ordre où la page les montre :
+# par filière, l'arc du procédé puis la série « Économie ».
 #
 # Rendue par `reels.md` (/reels.html) et `en/reels.md` (/en/reels.html). Ce n'est
 # volontairement PAS une collection Jekyll comme `_linkedin/` : une collection sert
@@ -23,12 +24,24 @@
 # (« Acier · Économie », « 1/2 ») — sans quoi tout total écrit aujourd'hui serait
 # faux le jour où une filière s'ajoute. Voir la règle 1.10 de la charte.
 #
+# `domaine` et `filiere` : les deux niveaux de la page. Le domaine (« Industrie », un
+# jour « Transport », « Bâtiment », « Système électrique ») n'apparaît en titre que
+# lorsqu'il y en a plus d'un ; la filière (« Acier », « Ciment »…) fait un bloc, dans
+# lequel les épisodes se lisent **dans l'ordre de ce fichier** : l'arc du procédé de 1
+# à N, puis la série « Économie ». C'est le découpage des playlists YouTube. Les
+# variantes `_en` servent la page anglaise ; à défaut, le français est repris.
+#
 # ATTENTION : tout texte contenant un « : » doit passer par un scalaire replié (`>-`),
 # sinon YAML le lit comme une clé et la construction du site échoue. Les sources en
 # contiennent presque toutes, d'où la forme ci-dessous.
 
 - id: acier-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier
+  serie_en: Steel
   numero: 1/6
   duree: 1 min 51
   couverture: /assets/reels/acier_1.jpg
@@ -72,7 +85,12 @@
     diffusée sous licence CC BY-SA 4.0.
 
 - id: acier-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier
+  serie_en: Steel
   numero: 2/6
   duree: 1 min 57
   couverture: /assets/reels/acier_2.jpg
@@ -107,7 +125,12 @@
   licence:
 
 - id: acier-3
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier
+  serie_en: Steel
   numero: 3/6
   duree: 1 min 59
   couverture: /assets/reels/acier_3.jpg
@@ -172,7 +195,12 @@
     étant sous CC BY-SA, cette vidéo est elle-même diffusée sous licence CC BY-SA 4.0.
 
 - id: acier-4
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier
+  serie_en: Steel
   numero: 4/6
   duree: 1 min 51
   couverture: /assets/reels/acier_4.jpg
@@ -227,7 +255,12 @@
     est donc diffusée sous licence CC BY-SA 4.0.
 
 - id: acier-5
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier
+  serie_en: Steel
   numero: 5/6
   duree: 2 min 01
   couverture: /assets/reels/acier_5.jpg
@@ -244,7 +277,7 @@
     third way: putting nothing in at all. It is what aluminium has done since 1886, and
     two families of cells now do it for iron — at 1600 °C and at 110 °C. Same carbon
     balance as hydrogen, one conversion instead of two, and pilot scale as the limit.
-  youtube:
+  youtube: HH_pnIT5M5w
   code:
   sources:
     - >-
@@ -286,7 +319,12 @@
     de l'épisode.
 
 - id: acier-6
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier
+  serie_en: Steel
   numero: 6/6
   duree: 2 min 06
   couverture: /assets/reels/acier_6.jpg
@@ -350,7 +388,12 @@
     La couverture est sous CC0 (Daniel Olah).
 
 - id: acier-eco-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier · Économie
+  serie_en: Steel · Economics
   numero: 1/2
   duree: 1 min 30
   couverture: /assets/reels/acier_eco_1.jpg
@@ -398,7 +441,12 @@
     donc diffusée sous licence CC BY 4.0 ; sa couverture reprend la même vue aérienne.
 
 - id: acier-eco-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Acier
+  filiere_en: Steel
   serie: Acier · Économie
+  serie_en: Steel · Economics
   numero: 2/2
   duree: 1 min 29
   couverture: /assets/reels/acier_eco_2.jpg
