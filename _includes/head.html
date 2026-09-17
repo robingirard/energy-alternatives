@@ -10,7 +10,7 @@
 {%- include snippets/get-article-title.html article=page -%}
 <title>{%- if __return -%}{{ __return }} - {{ _head_site_title }}{%- else -%}{{ _head_site_title }}{%- endif -%}</title>
 
-<meta name="description" content="{%- if page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ _head_site_description }}{%- endif -%}">
+<meta name="description" content="{%- if page.accroche -%}{{ page.accroche | strip_html | strip_newlines | strip | truncate: 160 }}{%- elsif page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ _head_site_description }}{%- endif -%}">
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
 
 {%- comment -%} Versions de cette page dans les autres langues (SEO). {%- endcomment -%}
