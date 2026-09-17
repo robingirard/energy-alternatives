@@ -1,0 +1,75 @@
+{%- comment -%}
+  Données structurées schema.org, en JSON-LD.
+
+  C'est la seule couche « invisible au lecteur, lue par Google » qui soit
+  légitime : Google la documente et s'en sert pour comprendre de quoi parle la
+  page (auteur, date, langue, image, sujet). Elle ne remplace pas le contenu
+  visible et n'affirme rien qui ne soit sur la page — c'est la règle, et la
+  violer (dire ici ce que la page ne dit pas) est sanctionné comme du spam.
+
+  À NE PAS confondre avec <meta name="keywords">, que Google ignore depuis 2009,
+  ni avec du texte caché bourré de mots-clés, qui est une infraction.
+{%- endcomment -%}
+
+{%- comment -%}
+  Uniquement les vrais billets : un titre ET une date. Les pages d'index
+  (`/linkedin.html`, `Conferences.html`…) utilisent la même mise en page mais
+  n'ont pas de date — les déclarer « BlogPosting » serait décrire faux, ce que
+  Google traite comme du balisage trompeur.
+
+  NB : les URL sont absolues parce que GitHub Pages injecte `site.url` à la
+  construction. En local `url:` n'est pas dans `_config.yml`, donc elles y
+  sortent relatives : c'est normal, vérifié sur le site publié le 18/09.
+{%- endcomment -%}
+{%- if page.date and page.title -%}
+  {%- include snippets/get-lang-code.html -%}
+  {%- assign _sd_lang = __return -%}
+  {%- include snippets/page-url.html -%}
+  {%- assign _sd_url = __return -%}
+  {%- include snippets/get-article-title.html article=page -%}
+  {%- assign _sd_titre = __return -%}
+
+  {%- if page.accroche -%}
+    {%- assign _sd_desc = page.accroche -%}
+  {%- elsif page.excerpt -%}
+    {%- assign _sd_desc = page.excerpt -%}
+  {%- endif -%}
+
+  {%- if page.cover -%}
+    {%- include snippets/prepend-baseurl.html path=page.cover -%}
+    {%- assign _sd_image = __return | prepend: site.url -%}
+  {%- endif -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ _sd_titre | strip_html | strip_newlines | strip | truncate: 110 | jsonify }},
+  "inLanguage": {{ _sd_lang | jsonify }},
+  "mainEntityOfPage": { "@type": "WebPage", "@id": {{ _sd_url | jsonify }} },
+  "url": {{ _sd_url | jsonify }},
+  {%- if _sd_desc %}
+  "description": {{ _sd_desc | strip_html | strip_newlines | strip | truncate: 300 | jsonify }},
+  {%- endif %}
+  {%- if _sd_image %}
+  "image": [{{ _sd_image | jsonify }}],
+  {%- endif %}
+  "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  "dateModified": {{ page.last_modified_at | default: page.date | date_to_xmlschema | jsonify }},
+  {%- if page.tags and page.tags != empty %}
+  "keywords": {{ page.tags | join: ", " | jsonify }},
+  {%- endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "affiliation": { "@type": "Organization", "name": "MINES Paris - PSL, centre PERSEE" },
+    "url": "https://www.robingirard.eu"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": {{ site.author.name | jsonify }},
+    "url": "https://www.robingirard.eu"
+  }
+}
+</script>
+{%- endif -%}

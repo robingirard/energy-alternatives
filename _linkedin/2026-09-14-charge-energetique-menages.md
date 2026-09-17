@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-14-charge-energetique-menages.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:share:7505166973262098432/
 cover: /assets/linkedin/2026-09-14-charge-energetique-menages/figure_charge_vingtiemes_et_serie_fr_fr.png
 accroche: "La part du revenu que les Français consacrent à l'énergie bouge peu depuis 1960 ; mais en 2020, 12 % des ménages passent le seuil de précarité énergétique sur la seule énergie du logement, et 56 % dans le vingtième le plus modeste."
+titre_recherche: "Précarité énergétique : quelle part du revenu en France ?"
 tags: ["ménages", "revenu", "précarité énergétique", "distribution", "inégalités", "France"]
 ---
 

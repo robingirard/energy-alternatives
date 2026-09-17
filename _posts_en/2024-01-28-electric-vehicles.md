@@ -1,5 +1,6 @@
 ---
 title: The end of the internal combustion car, one of the keys to decarbonising our transport
+titre_recherche: "Why ending the petrol car is key for transport CO2"
 key: Electric vehicle
 ref: vehicule-elec
 tags: transport, electric vehicle, decarbonisation industry

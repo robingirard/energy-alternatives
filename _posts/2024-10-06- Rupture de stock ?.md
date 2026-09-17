@@ -1,5 +1,6 @@
 ---
 title: Rupture de stock ?    
+titre_recherche: "Pétrole, gaz, charbon : en manque-t-on vraiment ?"
 key: pétrole-gaz
 ref: rupture-de-stock
 tags: pétrole, gaz, réserve, taxe, TIPP

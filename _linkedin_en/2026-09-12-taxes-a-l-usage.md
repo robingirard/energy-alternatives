@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-12-taxes-a-l-usage.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7504436929250246656/
 cover: /assets/linkedin/2026-09-12-taxes-a-l-usage/figure_taxes_usage_fr_2024_paysage_en.png
 accroche: "A MWh of electricity is taxed more than a MWh of gas, but the two do not compare: between the MWh delivered and the service rendered there is the efficiency of the appliance. Per 100 km, per 100 passenger-km, per MWh of useful heat, per pan, the ranking changes — and the plane pays nothing at all."
+titre_recherche: "Is electricity taxed more than gas? Per MWh of useful heat"
 tags: ["taxation", "energy prices", "heat pump", "electric vehicle", "aviation", "rail", "cooking", "efficiency", "France"]
 ---
 

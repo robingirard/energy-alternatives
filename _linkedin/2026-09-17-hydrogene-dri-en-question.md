@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-17-hydrogene-dri-en-question.html
 linkedin: https://www.linkedin.com/posts/activity-7506236956503232512-juYk
 cover: /assets/linkedin/2026-09-17-hydrogene-dri-en-question/figure_chaine_fr.png
 accroche: "ArcelorMittal a laissé 1,3 milliard d'euros de subventions allemandes plutôt que de construire ses deux usines de réduction directe à l'hydrogène, et investit le même montant à Dunkerque dans un four électrique. Ce n'est pas le coût d'investissement qui bloque : c'est un prix du carbone trop faible et un hydrogène trop cher. Pendant ce temps, l'électrolyse directe du minerai — SIDERWIN devenu Volteron — sort de son pilote."
+titre_recherche: "Pourquoi ArcelorMittal a renoncé à l'acier à l'hydrogène"
 tags: ["acier", "hydrogène", "réduction directe", "électrolyse", "ArcelorMittal", "thyssenkrupp", "Volteron", "ammoniac", "NEOM", "coût d'abattement"]
 ---
 

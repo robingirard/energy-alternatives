@@ -1,5 +1,6 @@
 ---
 title: Building energy simulation at territorial scale, an open source tool calibrated for the whole of France.
+titre_recherche: "Open-source building energy model for the whole of France"
 key: buildings
 ref: building-model
 tags: buildings, renovation, consumption, energy, territories.

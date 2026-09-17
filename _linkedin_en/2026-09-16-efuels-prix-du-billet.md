@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-16-efuels-prix-du-billet.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7505879344637140992/
 cover: /assets/linkedin/2026-09-16-efuels-prix-du-billet/figure_billet_en.png
 accroche: "In 2026 aviation's fuel bill goes from 252 to 350 billion dollars on flat consumption. Airlines passed on 70 %, demand did not blink, and net profit per passenger fell from 9.10 to 4.50 dollars. What that says about e-fuels, whose European projects show abatement costs of the order of 1,500 €/tCO2: ticket prices will have to rise."
+titre_recherche: "What will e-fuels add to a plane ticket? ReFuelEU to 2050"
 tags: ["e-fuels", "SAF", "aviation", "kerosene", "taxation", "ReFuelEU", "elasticity", "Europe"]
 ---
 

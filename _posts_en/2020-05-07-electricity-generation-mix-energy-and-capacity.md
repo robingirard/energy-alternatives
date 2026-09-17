@@ -1,5 +1,6 @@
 ---
 title: The electricity generation mix – energy and capacity.
+titre_recherche: "Electricity mix: energy or capacity, what's the difference?"
 key: electricity-generation-mix-energy-and-capacity
 ref: mix-energie-puissance
 tags: generation-mix intermittency evolution

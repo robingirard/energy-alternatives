@@ -1,5 +1,6 @@
 ---
 title: "PFAS, heat pumps and air conditioning: a refrigerant will have to be chosen"
+titre_recherche: "PFAS and heat pumps: which refrigerant to choose?"
 key: pfas
 ref: pfas-pompes-a-chaleur
 tags: PFAS, forever chemicals, heat pumps, air conditioning, refrigerants, European regulation, F-gas, TFA, buildings

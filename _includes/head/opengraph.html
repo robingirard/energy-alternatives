@@ -1,0 +1,56 @@
+{%- comment -%}
+  Open Graph et Twitter Card : ce que LinkedIn, Bluesky, Mastodon, Slack et
+  WhatsApp lisent pour fabriquer l'aperçu d'un lien. Sans ces balises, la carte
+  sort nue — titre de l'onglet et rien d'autre.
+
+  Ce n'est pas du texte caché non plus : ces balises répètent ce que la page dit
+  déjà (son titre, son accroche, sa figure). Elles ne doivent jamais annoncer
+  autre chose que ce que le lecteur trouvera en cliquant.
+
+  Le titre de la carte suit `titre_recherche` quand il existe, comme le <title>.
+{%- endcomment -%}
+
+{%- include snippets/get-site-title.html -%}
+{%- assign _og_site = __return -%}
+{%- include snippets/get-article-title.html article=page -%}
+{%- assign _og_titre_page = __return -%}
+{%- assign _og_titre = page.titre_recherche | default: _og_titre_page | default: _og_site -%}
+
+{%- if page.accroche -%}
+  {%- assign _og_desc = page.accroche -%}
+{%- elsif page.excerpt -%}
+  {%- assign _og_desc = page.excerpt -%}
+{%- else -%}
+  {%- assign _og_desc = site.description -%}
+{%- endif -%}
+
+{%- include snippets/page-url.html -%}
+{%- assign _og_url = __return -%}
+{%- include snippets/get-lang-code.html -%}
+{%- assign _og_lang = __return -%}
+
+<meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ _og_site }}">
+<meta property="og:locale" content="{% if _og_lang == 'fr' %}fr_FR{% else %}en_GB{% endif %}">
+<meta property="og:title" content="{{ _og_titre | strip_html | strip_newlines | strip | escape }}">
+<meta property="og:description" content="{{ _og_desc | strip_html | strip_newlines | strip | truncate: 200 | escape }}">
+<meta property="og:url" content="{{ _og_url }}">
+{%- if page.date %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+<meta property="article:author" content="{{ site.author.name | escape }}">
+{%- endif %}
+{%- if page.cover -%}
+  {%- include snippets/prepend-baseurl.html path=page.cover -%}
+  {%- assign _og_img = __return | prepend: site.url -%}
+{%- elsif page.article_header.image.src -%}
+  {%- include snippets/prepend-baseurl.html path=page.article_header.image.src -%}
+  {%- assign _og_img = __return | prepend: site.url -%}
+{%- endif -%}
+{%- if _og_img %}
+<meta property="og:image" content="{{ _og_img }}">
+<meta name="twitter:card" content="summary_large_image">
+{%- else %}
+<meta name="twitter:card" content="summary">
+{%- endif %}
+<meta name="twitter:title" content="{{ _og_titre | strip_html | strip_newlines | strip | escape }}">
+<meta name="twitter:description" content="{{ _og_desc | strip_html | strip_newlines | strip | truncate: 200 | escape }}">

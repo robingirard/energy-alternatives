@@ -1,5 +1,6 @@
 ---
 title: Sobriété, technologie et transition énergétique   
+titre_recherche: "Sobriété ou technologie : faut-il choisir ?"
 key: sobriete-technologie
 ref: sobriete-technologie
 tags: sobriété, technologie, transition énergétique, fressoz

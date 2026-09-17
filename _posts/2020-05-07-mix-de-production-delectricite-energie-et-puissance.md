@@ -1,5 +1,6 @@
 ---
 title: Mix de production d’électricité – énergie et puissance.
+titre_recherche: "Mix électrique : énergie ou puissance, quelle différence ?"
 key: mix-de-production-delectricite-energie-et-puissance
 ref: mix-energie-puissance
 tags: mix-production intermittence evolution

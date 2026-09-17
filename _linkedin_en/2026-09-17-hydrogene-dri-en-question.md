@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-17-hydrogene-dri-en-question.html
 linkedin: https://www.linkedin.com/posts/activity-7506236956503232512-juYk
 cover: /assets/linkedin/2026-09-17-hydrogene-dri-en-question/figure_chaine_fr.png
 accroche: "ArcelorMittal left 1.3 billion euros of German subsidies on the table rather than build its two hydrogen-based direct reduction plants, and is investing the same amount in an electric arc furnace at Dunkirk. What blocks the route is not capital cost: it is a carbon price too low and hydrogen too expensive. Meanwhile the direct electrolysis of iron ore — SIDERWIN, now Volteron — is coming out of its pilot."
+titre_recherche: "Why ArcelorMittal refused €1.3bn for hydrogen steel"
 tags: ["steel", "hydrogen", "direct reduction", "electrolysis", "ArcelorMittal", "thyssenkrupp", "Volteron", "ammonia", "NEOM", "abatement cost"]
 ---
 

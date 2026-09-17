@@ -1,5 +1,6 @@
 ---
 title: A power system under strain
+titre_recherche: "The French power system: what constraints lie ahead?"
 key: power system
 ref: systeme-elec-contraint
 tags: nuclear, loss of load, RTE, transition

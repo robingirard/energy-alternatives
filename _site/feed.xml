@@ -8,14 +8,14 @@
 		<atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Un système électrique sous contrainte</title>
+				<title>PFAS, pompes à chaleur et climatisation : il va falloir choisir un fluide</title>
 				<description>&lt;p&gt;&lt;span class=&quot;summary&quot; style=&quot;display:block; text-align: justify&quot;&gt;
-&lt;em&gt;Résumé – Une tribune écrite en juin pour Alternatives Economiques qui a mis un peu de temps &lt;a href=&quot;https://www.alternatives-economiques.fr/robin-girard/un-systeme-electrique-contrainte/00107458&quot;&gt;à être publiée&lt;/a&gt;. J’y parle des contraintes passées et à venir sur notre système électrique (la question du “bouclage”), du fameux critère de défaillance et de la récente note de l’ASN qui vient un peu bousculer ce sujet.&lt;/em&gt;
+Résumé – Les PFAS, ces « polluants éternels », sont entrés dans le débat sur les pompes à chaleur et la climatisation depuis qu’une chronique de Jean-Baptiste Fressoz dans Le Monde &lt;a href=&quot;#note-1&quot;&gt;[1]&lt;/a&gt; a rappelé qu’en Europe la majorité des émissions de PFAS provient des gaz fluorés que nous utilisons comme fluides frigorigènes. L’Europe prépare une restriction quasi universelle des PFAS, attendue vers 2028, qui vient s’ajouter au règlement F-gas sur les gaz à effet de serre fluorés. Dans le même temps, il nous faut déployer massivement les pompes à chaleur pour sortir du gaz et du fioul, et la climatisation pour nous adapter aux canicules. J’explique ici ce que sont les PFAS et pourquoi ils posent problème, ce que l’on met dans une pompe à chaleur et pourquoi aucun fluide n’est parfait, puis ce que dit vraiment le dossier de l’agence européenne des produits chimiques : tous les usages ne se valent pas, et le chiffre agrégé qui circule cache une réalité très inégale. Ma conclusion est que le compromis à faire dépend de l’usage. Il faut aller vite là où les alternatives sont mûres, c’est-à-dire pour les petits équipements et pour la climatisation automobile, où le passage au véhicule électrique va d’ailleurs réduire les fuites, et se donner un peu de temps là où la substitution menace le rythme de la décarbonation, c’est-à-dire pour les grosses puissances. Dans tous les cas, le premier levier n’est pas le fluide des machines neuves, mais les fuites du parc existant et la récupération du fluide en fin de vie.
 &lt;/span&gt;&lt;/p&gt;
 </description>
-				<pubDate>Mon, 28 Aug 2023 00:00:00 +0200</pubDate>
-				<link>/2023/08/28/Systeme-elec-contraint.html</link>
-				<guid isPermaLink="true">/2023/08/28/Systeme-elec-contraint.html</guid>
+				<pubDate>Fri, 04 Sep 2026 00:00:00 +0200</pubDate>
+				<link>/2026/09/04/PFAS-pompes-a-chaleur.html</link>
+				<guid isPermaLink="true">/2026/09/04/PFAS-pompes-a-chaleur.html</guid>
 			</item>
 		
 	</channel>

@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-09-pfas-pompes-a-chaleur.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7503181960106647552/
 cover: /assets/linkedin/2026-09-09-pfas-pompes-a-chaleur/figure_pfas_emissions_europe_fr.png
 accroche: "Sur 68 000 tonnes de PFAS émises chaque année en Europe, près de 39 000 viennent des gaz fluorés du froid. Mais ce total agrège des usages qui n'ont presque rien en commun. Le post qui annonce le billet de blog."
+titre_recherche: "Les pompes à chaleur émettent-elles des PFAS ?"
 tags: ["PFAS", "pompes à chaleur", "climatisation", "fluides frigorigènes", "TFA", "réglementation européenne"]
 ---
 

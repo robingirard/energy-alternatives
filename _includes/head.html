@@ -8,7 +8,17 @@
 {%- assign _head_site_description = __return -%}
 
 {%- include snippets/get-article-title.html article=page -%}
-<title>{%- if __return -%}{{ __return }} - {{ _head_site_title }}{%- else -%}{{ _head_site_title }}{%- endif -%}</title>
+{%- comment -%}
+  `titre_recherche` (facultatif) remplace le <title> — donc le lien bleu affiché
+  par Google — sans toucher au titre affiché sur la page. C'est un usage
+  standard et documenté : Google s'attend à ce que le <title> et le H1 puissent
+  différer, et réécrit lui-même le <title> quand il le juge mauvais. Rien à voir
+  avec du texte caché : ce titre EST montré au lecteur, dans l'onglet et dans
+  les résultats de recherche. Il doit décrire honnêtement la page.
+  Renseigné depuis `meta.yml` (clé `titre_recherche`) par Linkedin/publier.py.
+{%- endcomment -%}
+{%- assign _head_article_title = __return -%}
+<title>{%- if page.titre_recherche -%}{{ page.titre_recherche }}{%- elsif _head_article_title -%}{{ _head_article_title }} - {{ _head_site_title }}{%- else -%}{{ _head_site_title }}{%- endif -%}</title>
 
 <meta name="description" content="{%- if page.accroche -%}{{ page.accroche | strip_html | strip_newlines | strip | truncate: 160 }}{%- elsif page.excerpt -%}{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}{%- else -%}{{ _head_site_description }}{%- endif -%}">
 <link rel="canonical" href="{%- include snippets/page-url.html -%}">
@@ -44,5 +54,9 @@
 <link rel="stylesheet" href="{{ _sources.font_awesome }}" >
 
 
+
+{%- include head/opengraph.html -%}
+
+{%- include head/structured-data.html -%}
 
 {%- include head/custom.html -%}

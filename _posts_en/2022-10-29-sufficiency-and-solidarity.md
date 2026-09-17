@@ -1,5 +1,6 @@
 ---
 title: Putting energy sufficiency at the service of solidarity
+titre_recherche: "Energy sufficiency: who should bear the effort?"
 key: sufficiency
 ref: sobriete-solidarite
 tags: sufficiency, gas crisis, electricity crisis, prices, purchasing power.

@@ -1,5 +1,6 @@
 ---
 title: A contribution to the debate on the national low-carbon strategy for buildings. Part 1 - Which heating systems by 2050?
+titre_recherche: "Which heating systems by 2050? France's building strategy"
 key: low-carbon-strategy-buildings-heating-2050
 ref: snbc-chauffage-2050
 tags: Thermosensitivity consumption variability heating evolution

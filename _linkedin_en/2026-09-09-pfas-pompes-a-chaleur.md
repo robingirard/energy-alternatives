@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-09-pfas-pompes-a-chaleur.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7503181960106647552/
 cover: /assets/linkedin/2026-09-09-pfas-pompes-a-chaleur/figure_pfas_emissions_europe_en.png
 accroche: "Of 68,000 tonnes of PFAS emitted each year in Europe, close to 39,000 come from refrigerant fluorinated gases. But that total aggregates uses that have almost nothing in common. The post announcing the blog article."
+titre_recherche: "Do heat pumps emit PFAS? What the ECHA figures show"
 tags: ["PFAS", "heat pumps", "air conditioning", "refrigerants", "TFA", "European regulation"]
 ---
 

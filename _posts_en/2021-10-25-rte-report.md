@@ -1,5 +1,6 @@
 ---
 title: The RTE scenarios — an ambitious development of both nuclear and renewables is needed.
+titre_recherche: "RTE 2050 scenarios: nuclear alone will not be enough"
 key: RTE
 ref: rapport-rte
 tags: generation-mix transition evolution RTE

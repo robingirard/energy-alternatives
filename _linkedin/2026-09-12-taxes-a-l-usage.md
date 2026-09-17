@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-12-taxes-a-l-usage.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7504436929250246656/
 cover: /assets/linkedin/2026-09-12-taxes-a-l-usage/figure_taxes_usage_fr_2024_paysage_fr.png
 accroche: "Un MWh d'électricité est plus taxé qu'un MWh de gaz, mais les deux ne se comparent pas : entre le MWh livré et le service rendu, il y a le rendement de la machine. Par 100 km, par 100 passagers-km, par MWh de chaleur utile, par casserole, le classement change — et l'avion ne paie rien du tout."
+titre_recherche: "L'électricité est-elle plus taxée que le gaz ?"
 tags: ["fiscalité", "prix de l'énergie", "pompe à chaleur", "voiture électrique", "avion", "train", "cuisson", "rendement", "France"]
 ---
 

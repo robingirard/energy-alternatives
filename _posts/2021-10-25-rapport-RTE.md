@@ -1,5 +1,6 @@
 ---
 title: Les scénarios RTE, un développement ambitieux du nucléaire et des renouvelables est nécessaire.
+titre_recherche: "Scénarios RTE 2050 : le nucléaire seul ne suffira pas"
 key: RTE
 ref: rapport-rte
 tags: mix-production transition evolution RTE

@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-10-taxes-energie.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7503706312531410944/
 cover: /assets/linkedin/2026-09-10-taxes-energie/figure_facture_fr_mwh_2024_paysage_fr.png
 accroche: "Ce qu'un consommateur paie par MWh d'électricité, de gaz, de bois ou de carburant, et ce que l'État en prend : la fiscalité de l'énergie ne suit ni le carbone, ni l'énergie."
+titre_recherche: "Taxes sur l'énergie en France : combien par MWh ?"
 tags: ["fiscalité", "prix de l'énergie", "électricité", "gaz", "bois", "carburants", "France"]
 ---
 

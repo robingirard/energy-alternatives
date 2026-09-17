@@ -1,5 +1,6 @@
 ---
 title: Sufficiency, technology and the energy transition
+titre_recherche: "Sufficiency or technology: do we have to choose?"
 key: sufficiency-technology
 ref: sobriete-technologie
 tags: sufficiency, technology, energy transition, fressoz

@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-14-charge-energetique-menages.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:share:7505166973262098432/
 cover: /assets/linkedin/2026-09-14-charge-energetique-menages/figure_charge_vingtiemes_et_serie_fr.png
 accroche: "The share of income the French spend on energy has barely moved since 1960; yet in 2020, 12 % of households cross the energy-poverty threshold on housing energy alone, and 56 % in the poorest twentieth."
+titre_recherche: "Energy poverty in France: share of income spent on energy"
 tags: ["households", "income", "energy poverty", "distribution", "inequality", "France"]
 ---
 

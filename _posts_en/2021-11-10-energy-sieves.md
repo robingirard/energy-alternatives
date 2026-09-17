@@ -1,5 +1,6 @@
 ---
 title: On the number of energy sieves in France
+titre_recherche: "How many poorly insulated homes are there in France?"
 key: EPC
 ref: dpe-passoires
 tags: buildings renovation EPC transition evolution energy sieves

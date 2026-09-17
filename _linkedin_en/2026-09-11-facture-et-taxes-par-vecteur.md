@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-11-facture-et-taxes-par-vecteur.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7504058324271734784/
 cover: /assets/linkedin/2026-09-11-facture-et-taxes-par-vecteur/figure_facture_taxes_vecteur_fr_2012-2024.png
 accroche: "Trade balance, final consumption and tax revenue by energy carrier, France 2012-2024. In 2022 the energy bill doubles while taxes fall; the only carrier in surplus is the one taxed most relative to its trade contribution."
+titre_recherche: "France's energy bill by carrier: deficit, use and taxes"
 tags: ["taxation", "trade balance", "gas", "electricity", "oil", "tariff shield", "France"]
 ---
 

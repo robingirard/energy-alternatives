@@ -1,5 +1,6 @@
 ---
 title: France and Germany, two European visions of energy — sources of tension and of learning.
+titre_recherche: "Energy: why France and Germany diverge"
 key: france-germany
 ref: france-allemagne
 tags: generation-mix transition evolution France-Germany Energiewende

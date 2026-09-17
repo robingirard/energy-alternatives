@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-11-facture-et-taxes-par-vecteur.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7504058324271734784/
 cover: /assets/linkedin/2026-09-11-facture-et-taxes-par-vecteur/figure_facture_taxes_vecteur_fr_2012-2024_fr.png
 accroche: "Balance commerciale, consommation finale et recettes fiscales par vecteur, France 2012-2024. En 2022 la facture énergétique double et les taxes baissent ; le seul vecteur excédentaire est celui qu'on taxe le plus au regard de sa contribution commerciale."
+titre_recherche: "Facture énergétique de la France, vecteur par vecteur"
 tags: ["fiscalité", "balance commerciale", "gaz", "électricité", "pétrole", "bouclier tarifaire", "France"]
 ---
 

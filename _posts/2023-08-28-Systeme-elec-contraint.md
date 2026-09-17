@@ -1,5 +1,6 @@
 ---
 title: Un système électrique sous contrainte
+titre_recherche: "Système électrique français : quelles contraintes à venir ?"
 key: système électrique
 ref: systeme-elec-contraint
 tags: nucléaire, défaillance, RTE, transition

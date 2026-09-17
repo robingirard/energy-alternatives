@@ -1,5 +1,6 @@
 ---
 title: Evaluer le coût économique de la production d'électricité
+titre_recherche: "Coût de l'électricité : comment se décompose un LCOE ?"
 key: decomposition-lcoe
 ref: decomposition-lcoe
 tags: mix-production intermittence evolution lcoe

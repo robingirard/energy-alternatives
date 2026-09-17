@@ -9,6 +9,7 @@ permalink: /linkedin/2026-09-16-efuels-prix-du-billet.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7505879344637140992/
 cover: /assets/linkedin/2026-09-16-efuels-prix-du-billet/figure_billet_fr.png
 accroche: "En 2026, la facture de carburant de l'aviation passe de 252 à 350 milliards de dollars à consommation constante. Les compagnies en ont répercuté 70 %, la demande n'a pas bronché, et le bénéfice net par passager est tombé de 9,10 à 4,50 dollars. Ce que ça dit des e-carburants, dont les projets européens affichent des coûts d'abattement de l'ordre de 1 500 €/tCO2 : le prix du billet devra monter."
+titre_recherche: "E-carburants : combien sur le prix du billet d'avion ?"
 tags: ["e-carburants", "SAF", "aviation", "kérosène", "fiscalité", "ReFuelEU", "élasticité", "Europe"]
 ---
 

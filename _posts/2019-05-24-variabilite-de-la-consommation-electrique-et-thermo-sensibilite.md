@@ -1,5 +1,6 @@
 ---
 title: Variabilité de la consommation électrique et thermosensibilité
+titre_recherche: "Pourquoi le froid fait monter la consommation électrique"
 key: variabilite-de-la-consommation-electrique-et-thermo-sensibilite
 ref: thermosensibilite
 tags: Thermosensibilite consommation variabilite chauffage evolution

@@ -1,5 +1,6 @@
 ---
 title: Estimating the Energy Performance of the French Residential Stock
+titre_recherche: "Estimating the energy performance of French housing"
 key: EPC
 ref: dpe-open-data
 tags: buildings renovation EPC transition evolution energy sieves

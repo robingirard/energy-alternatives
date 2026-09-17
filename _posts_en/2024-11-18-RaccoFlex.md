@@ -1,5 +1,6 @@
 ---
 title: Techno-economic value of photovoltaic generation flexibility in French distribution grids.
+titre_recherche: "Flexible PV grid connection: what is it worth?"
 key: photovoltaics
 ref: raccoflex
 tags: electricity distribution grid, reinforcement cost, value of flexibility, photovoltaics, transition, renewable energy,

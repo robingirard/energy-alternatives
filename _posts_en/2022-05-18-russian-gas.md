@@ -1,5 +1,6 @@
 ---
 title: Getting out of Russian gas requires sufficiency and investment in infrastructure, without demagogy.
+titre_recherche: "Quitting Russian gas: what REPowerEU really requires"
 key: EPC
 ref: gaz-russe
 tags: Russia, energy transition, gas, renewable energy, renovation, Europe

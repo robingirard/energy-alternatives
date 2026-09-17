@@ -1,5 +1,6 @@
 ---
 title: Simulation énergétique des bâtiments à l’échelle des territoires, un outil open source calibré à l’échelle de la France.
+titre_recherche: "Modèle open source de consommation des bâtiments en France"
 key: bâtiments
 ref: building-model
 tags: bâtiments, rénovation, consommation, énergie, territoires.

@@ -1,5 +1,6 @@
 ---
 title: Estimation de la Performance Énergétique du Parc Résidentiel
+titre_recherche: "DPE : estimer la performance énergétique du parc résidentiel"
 key: DPE
 ref: dpe-open-data
 tags: bâtiment rénovation DPE transition évolution passoires énergétiques

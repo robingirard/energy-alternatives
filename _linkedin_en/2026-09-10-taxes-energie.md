@@ -9,6 +9,7 @@ permalink: /en/linkedin/2026-09-10-taxes-energie.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7503706312531410944/
 cover: /assets/linkedin/2026-09-10-taxes-energie/figure_facture_fr_mwh_2024_paysage_en.png
 accroche: "What a consumer pays per MWh of electricity, gas, wood or fuel, and what the State takes from it: energy taxation follows neither carbon nor energy content."
+titre_recherche: "Energy taxes in France: how much per MWh, by carrier"
 tags: ["taxation", "energy prices", "electricity", "gas", "wood", "fuels", "France"]
 ---
 

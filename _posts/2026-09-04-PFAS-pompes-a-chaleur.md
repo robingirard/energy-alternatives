@@ -1,5 +1,6 @@
 ---
 title: "PFAS, pompes à chaleur et climatisation : il va falloir choisir un fluide"
+titre_recherche: "PFAS et pompes à chaleur : quel fluide frigorigène choisir ?"
 key: pfas
 ref: pfas-pompes-a-chaleur
 tags: PFAS, polluants éternels, pompes à chaleur, climatisation, fluides frigorigènes, réglementation européenne, F-gas, TFA, bâtiment

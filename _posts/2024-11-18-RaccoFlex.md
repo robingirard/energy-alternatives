@@ -1,5 +1,6 @@
 ---
 title: Valorisation technico-économique de la flexibilité de la production photovoltaïque dans les réseaux de distribution en France.   
+titre_recherche: "Raccordement flexible du photovoltaïque : quelle valeur ?"
 key: photovoltaïque
 ref: raccoflex
 tags: réseau de distribution d'électricité, coût renforcement, valeur de la flexibilité, photovoltaïque, transition, énergies renouvelables,

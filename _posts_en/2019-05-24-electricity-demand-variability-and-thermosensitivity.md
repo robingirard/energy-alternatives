@@ -1,5 +1,6 @@
 ---
 title: Electricity demand variability and thermosensitivity
+titre_recherche: "Why cold weather drives up electricity demand"
 key: electricity-demand-variability-and-thermosensitivity
 ref: thermosensibilite
 tags: Thermosensitivity consumption variability heating evolution

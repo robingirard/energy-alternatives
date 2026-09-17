@@ -1,5 +1,6 @@
 ---
 title: Out of stock?
+titre_recherche: "Oil, gas and coal: are we really running out?"
 key: oil-gas
 ref: rupture-de-stock
 tags: oil, gas, reserves, fuel tax, TIPP

@@ -1,5 +1,6 @@
 ---
 title: Assessing the economic cost of electricity generation
+titre_recherche: "Cost of electricity: how is an LCOE broken down?"
 key: cost-of-electricity-generation
 ref: decomposition-lcoe
 tags: generation-mix intermittency evolution lcoe

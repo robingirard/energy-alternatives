@@ -1,5 +1,6 @@
 ---
 title: La fin du véhicule thermique, une des clés de la décarbonation de nos transports
+titre_recherche: "Pourquoi la fin du véhicule thermique est une clé du climat"
 key: Véhicule électrique
 ref: vehicule-elec
 tags: transport, vehicule électrique, décarbonation industrie
