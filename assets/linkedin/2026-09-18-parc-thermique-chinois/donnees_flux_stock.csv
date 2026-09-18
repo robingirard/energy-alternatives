@@ -1,0 +1,23 @@
+# Chine — la part des véhicules électriques, dans les VENTES et dans le PARC.
+#
+# `part_ventes_pct` : part des véhicules électriques (NEV) dans les ventes
+#   intérieures de véhicules légers, exportations exclues.
+#   2023-2025 : valeurs OIES (mars 2026), corrigées des exportations — ce sont
+#   celles qu'utilise `bilan_parc_chine.py` (36 %, 46 %, 51 %).
+#   2020-2022 : rapport des séries CAAM de `ventes_historiques_chine.csv`, NON
+#   corrigé des exportations. La correction vaudrait moins d'un point sur ces
+#   trois années (les exportations de VE étaient de 0,2 à 0,7 million par an) ;
+#   elle est inférieure à l'épaisseur du trait, et elle est signalée ici plutôt
+#   que reconstruite avec des exportations que je n'ai pas vérifiées une à une.
+#
+# `part_parc_pct` : part des véhicules électriques dans le parc en circulation
+#   au 31 décembre. Parc NEV et parc total, ministère chinois de la Sécurité
+#   publique, repris par l'OIES (2023-2025) et par CnEVPost (2020-2022).
+#
+annee,part_ventes_pct,part_parc_pct,parc_nev_M,parc_total_M
+2020,5.4,1.8,4.92,281
+2021,13.4,2.6,7.84,302
+2022,24.2,4.1,13.10,319
+2023,36.0,6.1,20.40,336
+2024,46.0,8.9,31.40,352
+2025,51.0,12.1,44.30,366
