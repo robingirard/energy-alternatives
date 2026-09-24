@@ -477,3 +477,221 @@
     image ; la couverture reprend l'atelier de carrosserie de l'usine BMW de Leipzig
     (BMW Werk Leipzig, CC BY-SA 2.0 de). Les deux clichés étant sous CC BY-SA, cette
     vidéo est elle-même diffusée sous licence CC BY-SA 4.0.
+
+- id: ciment-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  serie: Ciment
+  serie_en: Cement
+  numero: 1/4
+  duree: 1 min 43
+  couverture: /assets/reels/ciment_1.jpg
+  titre: Comment on fabrique du ciment
+  titre_en: How cement is made
+  accroche: >-
+    Le calcaire est partout, et le ciment, lourd et bon marché, ne voyage pas : d'où
+    une vingtaine de cimenteries en France, près des carrières et des villes. À
+    Lumbres, on suit la ligne organe par organe, de la carrière aux silos.
+  accroche_en: >-
+    Limestone is everywhere, and cement, heavy and cheap, does not travel: hence some
+    twenty cement plants in France, close to quarries and towns. In Lumbres, we follow
+    the line machine by machine, from the quarry to the silos.
+  youtube: bMlVfX3H8tw
+  code:
+  sources:
+    - >-
+      Calcaire à 80 % de la matière crue, précalcinateur à ≈ 900 °C avec 60 % du
+      combustible, four rotatif de 50 à 70 m, brûleur principal à 1450 °C — note de
+      procédés industriels, valeurs d'ingénierie 2025.
+    - >-
+      Les 22 fours à clinker en service en 2023 — registre IndustryForge (Zenodo
+      10.5281/zenodo.21979417, CC BY 4.0), recoupé avec le Global Cement and Concrete
+      Tracker ; 13,9 Mt de ciment en 2024 et 150 km de livraison en moyenne — France
+      Ciment et SFIC.
+    - >-
+      Lumbres — 800 000 t de ciment par an, 135 salariés (L'Usine Nouvelle, 2024) ;
+      emprise de 100 ha mesurée sur OpenStreetMap, soit 140 terrains de football.
+  licence: >-
+    Photographies d'atelier issues de Wikimedia Commons, auteur et licence crédités sur
+    chaque image ; carte et vue aérienne IGN / Géoplateforme (Licence Ouverte) et
+    OpenStreetMap (ODbL). La couverture reprend la vue aérienne de Neubeckum (Dietmar
+    Rabich, CC BY-SA 4.0). Quatre clichés étant sous CC BY-SA, cette vidéo est
+    diffusée sous licence CC BY-SA 4.0.
+
+- id: ciment-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  serie: Ciment
+  serie_en: Cement
+  numero: 2/4
+  duree: 2 min 01
+  couverture: /assets/reels/ciment_2.jpg
+  titre: D'où vient le CO₂ du ciment
+  titre_en: Where cement's CO₂ comes from
+  accroche: >-
+    620 kilos de CO₂ par tonne de ciment. On suit la ligne en faisant monter le
+    compteur, et le plus gros ne vient pas du feu : 62 % sortent de la pierre
+    elle-même, quand le calcaire se décompose.
+  accroche_en: >-
+    620 kilos of CO₂ per tonne of cement. We follow the line with a running counter,
+    and the bulk does not come from the fire: 62% comes out of the stone itself, as
+    the limestone breaks down.
+  youtube: kN8CCUxos3Q
+  code:
+  sources:
+    - >-
+      La cascade, en tCO₂ par tonne de clinker — décarbonatation 0,52 (CaCO₃ → CaO +
+      CO₂), combustion 0,31, soit 0,83, dont 62 % sans combustible ; × 0,75 de clinker
+      dans le ciment, 0,62 tCO₂ par tonne de ciment. Valeurs d'ingénierie 2025,
+      émissions directes.
+    - >-
+      Un four moderne consomme 3,2 à 3,7 GJ par tonne de clinker, à 15 % de son
+      minimum thermodynamique.
+    - >-
+      Lumbres, programme K6 (Eqiom et Air Liquide) — près de 8 Mt de CO₂ à capter sur
+      les dix premières années, Fonds européen d'innovation (150 M€) ; Air Liquide,
+      1er avril 2022. Le captage était annoncé pour 2028 par Eqiom en 2022 ;
+      l'Autorité environnementale dit « à l'horizon 2027-2028 » (2024).
+  licence: >-
+    Photographies d'atelier issues de Wikimedia Commons, auteur et licence crédités sur
+    chaque image ; vue aérienne IGN / Géoplateforme (Licence Ouverte) et OpenStreetMap
+    (ODbL). La couverture reprend le fond de la carrière de Deuna (ErwinMeier, CC BY-SA
+    4.0). Plusieurs clichés étant sous CC BY-SA, cette vidéo est diffusée sous licence
+    CC BY-SA 4.0.
+
+- id: ciment-3a
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  serie: Ciment
+  serie_en: Cement
+  numero: 3a/4
+  duree: 1 min 54
+  couverture: /assets/reels/ciment_3a.jpg
+  titre: Brûler autre chose, et ce que ça n'enlève pas
+  titre_en: Burning something else, and what it does not remove
+  accroche: >-
+    Premier levier disponible aujourd'hui : brûler des déchets et de la biomasse
+    plutôt que du charbon. 620 kilos de CO₂ deviennent 560 — et la baisse tient à deux
+    conventions de comptage, pas à la cheminée. Le CO₂ de la pierre, lui, ne bouge pas.
+  accroche_en: >-
+    The first lever available today: burn waste and biomass instead of coal. 620
+    kilos of CO₂ become 560 — and the drop comes from two accounting conventions, not
+    from the stack. The CO₂ from the stone does not move.
+  youtube: kDb8I6zdELA
+  code:
+  sources:
+    - >-
+      En kgCO₂ par tonne de ciment, émissions directes — 390 de procédé + 230 de
+      combustion = 620 ; avec 50 % de combustibles alternatifs, 390 + 170 = 560.
+      Valeurs d'ingénierie 2025.
+    - >-
+      Intensité et part biogénique des combustibles — WBCSD / CSI, Getting the Numbers
+      Right, 2016, p. 13 ; objectif de la profession, 95 % de substitution dont 45 % de
+      biomasse — ADEME, Plan de transition sectoriel de l'industrie cimentière, 2021,
+      tableau 4 p. 34.
+    - >-
+      Airvault (Heidelberg Materials) — ligne de cuisson neuve mise en service en mai
+      2026, jusqu'à 90 % de combustibles alternatifs.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; vue aérienne IGN / Géoplateforme (Licence Ouverte) et OpenStreetMap (ODbL).
+    La couverture reprend des déchets avant broyage (Fun4life.nl, domaine public).
+    Plusieurs clichés étant sous CC BY-SA, cette vidéo est diffusée sous licence CC
+    BY-SA 4.0.
+
+- id: ciment-3b
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  serie: Ciment
+  serie_en: Cement
+  numero: 3b/4
+  duree: 2 min 06
+  couverture: /assets/reels/ciment_3b.jpg
+  titre: Moins de clinker, le levier le moins cher
+  titre_en: Less clinker, the cheapest lever
+  accroche: >-
+    Le clinker est la colle du ciment ; le reste du sac peut être autre chose. De
+    trois quarts de clinker à la moitié, on tombe à 370 kilos de CO₂ — et ce qui
+    freine est sur le chantier et dans le bon de commande avant d'être dans la norme.
+  accroche_en: >-
+    Clinker is cement's glue; the rest of the bag can be something else. Going from
+    three quarters clinker to half brings CO₂ down to 370 kilos — and what holds it
+    back is on the building site and in the purchase order before it is in the
+    standard.
+  youtube: DEPfn2_uuE0
+  code:
+  sources:
+    - >-
+      En kgCO₂ par tonne de ciment — 420 sur le seul taux de clinker, 370 cumulé avec
+      les combustibles alternatifs, soit environ − 40 % depuis 620 ; plancher de 260,
+      la décarbonatation seule à 50 % de clinker.
+    - >-
+      « Le clinker […] assure la fonction de "colle" » et les freins du chantier et de
+      la commande publique — ADEME, Plan de transition sectoriel de l'industrie
+      cimentière, 2021, p. 13, 15, 31 et 35.
+    - >-
+      Xeuilley (Vicat) — argiles calcinées depuis 2024, 15 % des émissions du site ;
+      NF EN 197-5 (2021) ; classes GWR du FD P18-483-2 (mars 2025) ; Bournezeau
+      (Hoffmann Green) — 250 000 t par an sans four sur le site.
+  licence: >-
+    Photographies issues de Wikimedia Commons (Lorenzo Bonino, CC BY 3.0 ; Steve
+    Pivnick, U.S. Air Force, domaine public) ; vues aériennes IGN / Géoplateforme et
+    OpenStreetMap ; schémas dessinés pour la série. La couverture reprend les nodules
+    de clinker de Lorenzo Bonino. Aucune photographie sous CC BY-SA : cette vidéo est
+    diffusée sous licence CC BY 4.0.
+
+- id: ciment-4a
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  serie: Ciment
+  serie_en: Cement
+  numero: 4a/4
+  duree: 2 min 31
+  couverture: /assets/reels/ciment_4a.jpg
+  titre: Capter le CO₂ de la pierre
+  titre_en: Capturing the CO₂ from the stone
+  accroche: >-
+    Il reste 370 kilos de CO₂, dont 260 sortent du calcaire : aucun combustible,
+    aucune électricité n'y change rien, il faut les capter. Comment on s'y prend, où
+    on en est à Brevik, et pourquoi le four électrique ne capte pas mieux la pierre —
+    alors qu'un four qui brûle de la biomasse peut passer sous zéro.
+  accroche_en: >-
+    370 kilos of CO₂ remain, 260 of them from the limestone: no fuel and no
+    electricity changes that, it has to be captured. How it is done, where Brevik
+    stands, and why the electric kiln captures the stone's CO₂ no better — while a
+    kiln burning biomass can go below zero.
+  youtube: 6CISOOp7Cjw
+  code:
+  sources:
+    - >-
+      En kgCO₂ par tonne de ciment — 370 avant capture, dont 260 de décarbonatation ;
+      90 % captés, 37 restent (four à flamme) ; four électrique, 270 avant capture et
+      27 après (calculé). Valeurs d'ingénierie 2025.
+    - >-
+      Le 8 kilos et le passage sous zéro sont calculés — substitut à 85 kgCO₂/GJ dont
+      47 % de carbone biogénique, 90 % captés biogénique compris, CO₂ biogénique
+      enfoui compté en négatif. Un ordre de grandeur, qui repose sur une convention.
+    - >-
+      Brevik (Heidelberg Materials) — inauguré le 18 juin 2025, conçu pour 400 000 t
+      par an soit 50 % des émissions de l'usine, taux limité par la chaleur perdue
+      disponible ; 58 408 t captées en 2025 (rapport annuel 2025, p. 121).
+    - >-
+      Pilote d'oxycombustion catch4climate, Mergelstetten, inauguré le 8 juillet 2026 ;
+      maturité — IEA, Clean Energy Technology Guide, 2026 (amines à captage partiel
+      TRL 9, oxycombustion TRL 7).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; carte Sentinel-2 cloudless 2016 (EOX IT Services, CC BY 4.0) ; schémas
+    dessinés pour la série. La couverture reprend l'unité de captage de Brevik
+    (PutTheKettleOn, CC BY 4.0). Deux clichés étant sous CC BY-SA, cette vidéo est
+    diffusée sous licence CC BY-SA 4.0.
