@@ -7,7 +7,7 @@ ref: linkedin-sortie-du-gaz-28-territoires
 key: linkedin-sortie-du-gaz-28-territoires
 permalink: /linkedin/2026-09-24-sortie-du-gaz-28-territoires.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7508888410032484352/
-cover: /assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_fr.png
+cover: /assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_fr.jpg
 accroche: "L'État retient 28 territoires sur 109 pour réduire leur réseau de distribution de gaz d'ici 2030. C'est justifié : un réseau capitalistique dont les volumes s'en vont concentre sa facture sur les abonnés restants. Mais fermer une poche de gaz n'est pas une décision gazière — c'est un arbitrage entre trois réseaux, et la valeur du réseau de gaz, c'est en partie le renforcement électrique qu'il évite. Personne en France ne l'a calculé à la maille fine."
 tags: ["réseau de distribution de gaz", "GRDF", "décarbonation", "électrification", "pompe à chaleur", "flexibilité", "réseaux de chaleur", "régulation", "CRE", "territoires"]
 ---
@@ -18,7 +18,7 @@ tags: ["réseau de distribution de gaz", "GRDF", "décarbonation", "électrifica
 <p class="linkedin-meta"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7508888410032484352/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> Voir le post et ses commentaires sur LinkedIn</a> · publié le 24 septembre 2026 · <a href="/linkedin.html">tous les posts</a></p>
 
 <figure class="linkedin-figure">
-<a href="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_fr.png" target="_blank"><img src="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_fr.png" alt="28 territoires pour sortir du gaz : la bonne décision, sans la méthode" style="max-width:100%;height:auto;"></a>
+<a href="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_fr.jpg" target="_blank"><img src="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_fr.jpg" alt="28 territoires pour sortir du gaz : la bonne décision, sans la méthode" style="max-width:100%;height:auto;"></a>
 <figcaption><small>Douze des 28 territoires retenus par l'État pour réduire leur réseau de distribution de gaz d'ici 2030 : ce sont les seuls nommés publiquement en septembre 2026 (L'Opinion ; dossier de presse du ministère chargé de l'Énergie, 11 septembre 2026). Le classement métropole, agglomération, rural est celui de la presse. Photos : Wikimedia Commons, auteur et licence sur chaque vignette.</small></figcaption>
 </figure>
 

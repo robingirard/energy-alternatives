@@ -263,6 +263,11 @@ def construire(lang: str, ph: dict, fmt: str) -> Path:
     suffixe = "" if fmt == "portrait" else "_paysage"
     out = HERE / f"figure_territoires{suffixe}_{lang}.png"
     fig.save(out, optimize=True)
+    # Le PNG est l'image postée sur LinkedIn (4,7 Mo). Le blog prend un JPEG, cinq
+    # fois plus léger : une mosaïque de photos s'y prête, et le sous-échantillonnage
+    # couleur désactivé (4:4:4) garde les crédits lisibles.
+    fig.save(out.with_suffix(".jpg"), "JPEG", quality=85, optimize=True,
+             progressive=True, subsampling=0)
     return out
 
 

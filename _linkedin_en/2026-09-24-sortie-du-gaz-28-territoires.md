@@ -7,7 +7,7 @@ ref: linkedin-sortie-du-gaz-28-territoires
 key: linkedin-sortie-du-gaz-28-territoires
 permalink: /en/linkedin/2026-09-24-sortie-du-gaz-28-territoires.html
 linkedin: https://www.linkedin.com/feed/update/urn:li:activity:7508888410032484352/
-cover: /assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_en.png
+cover: /assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_en.jpg
 accroche: "The French state has selected 28 territories out of 109 to shrink their gas distribution network by 2030. The case is sound: a capital-intensive network losing its volumes concentrates the bill on the customers who remain. But closing a pocket of gas network is not a gas decision — it is a trade-off between three networks, and the value of the gas network lies partly in the electricity reinforcement it avoids. No one in France has computed that at a fine spatial scale."
 tags: ["gas distribution network", "GRDF", "decarbonisation", "electrification", "heat pumps", "flexibility", "district heating", "regulation", "CRE", "local authorities"]
 ---
@@ -18,7 +18,7 @@ tags: ["gas distribution network", "GRDF", "decarbonisation", "electrification",
 <p class="linkedin-meta"><a href="https://www.linkedin.com/feed/update/urn:li:activity:7508888410032484352/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> See the post and its comments on LinkedIn</a> · published on 24 September 2026 · <a href="/en/linkedin.html">all posts</a></p>
 
 <figure class="linkedin-figure">
-<a href="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_en.png" target="_blank"><img src="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_en.png" alt="Twenty-eight territories to leave gas behind: the right call, without the method" style="max-width:100%;height:auto;"></a>
+<a href="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_en.jpg" target="_blank"><img src="{{ site.baseurl }}/assets/linkedin/2026-09-24-sortie-du-gaz-28-territoires/figure_territoires_en.jpg" alt="Twenty-eight territories to leave gas behind: the right call, without the method" style="max-width:100%;height:auto;"></a>
 <figcaption><small>Twelve of the 28 territories selected by the French State to shrink their gas distribution network by 2030: the only ones named publicly as of September 2026 (L'Opinion; energy ministry press kit, 11 September 2026). The metropolis, urban area and rural labels follow the press. Photos: Wikimedia Commons, author and licence on each tile.</small></figcaption>
 </figure>
 
