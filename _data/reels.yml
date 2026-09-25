@@ -695,3 +695,50 @@
     dessinés pour la série. La couverture reprend l'unité de captage de Brevik
     (PutTheKettleOn, CC BY 4.0). Deux clichés étant sous CC BY-SA, cette vidéo est
     diffusée sous licence CC BY-SA 4.0.
+
+- id: ciment-4b
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  serie: Ciment
+  serie_en: Cement
+  numero: 4b/4
+  duree: 2 min 16
+  couverture: /assets/reels/ciment_4b.jpg
+  titre: Où part le CO₂ capté
+  titre_en: Where captured CO₂ goes
+  accroche: >-
+    Une fois capté, le CO₂ s'enfouit ou s'utilise. De Brevik, il part en bateau
+    puis par 100 km de conduite, 2 600 m sous la mer du Nord. La France n'a pas
+    encore de stockage prêt : ce que prévoient Montalieu, Airvault et Lumbres, et
+    pourquoi utiliser le CO₂, ce n'est pas le garder.
+  accroche_en: >-
+    Once captured, CO₂ is either buried or used. From Brevik it is shipped, then
+    piped 100 km, 2,600 m under the North Sea. France has no storage site ready
+    yet: what Montalieu, Airvault and Lumbres plan, and why using CO₂ is not keeping
+    it.
+  youtube: dGftH7P1dGE
+  code:
+  sources:
+    - >-
+      Northern Lights — bateau de Brevik vers le terminal d'Øygarden depuis juin 2025 ;
+      première injection en août 2025 dans le réservoir Aurora, 2 600 m sous le fond,
+      au bout d'une conduite de 100 km (Equinor, 25/08/2025). CO₂ dense au-delà
+      d'environ 800 m (GIEC, 2005, ch. 5) ; Sleipner, environ 1 Mt par an depuis 1996.
+    - >-
+      France — aucun site de stockage prêt (Autorité environnementale, avis 2024-75) ;
+      Lacq abandonné en octobre 2024 (AFP) ; lauréats de février 2026 aidés 15 ans :
+      Montalieu 1,2 Mt/an (Vicat), Airvault 950 kt/an à partir de 2031, dont environ
+      20 % biogénique pour du carburant (dossier de presse du gouvernement).
+    - >-
+      Coût — « doubler le coût du ciment » à Lumbres (Eqiom) ; les 2 000 € par maison
+      neuve, environ 1 % de son prix, sont un ordre de grandeur calculé (environ 15 t
+      de ciment, 90 à 140 €/t, doublé). Carburant de synthèse : retour à l'air en
+      moins d'un an (AIE, 2019).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; carte et vues aériennes IGN (Licence Ouverte) et OpenStreetMap (ODbL) ;
+    schémas dessinés pour la série. La couverture reprend le terminal de Northern
+    Lights à Øygarden (Zypres, CC BY-SA 4.0). Les clichés étant sous CC BY-SA, cette
+    vidéo est diffusée sous licence CC BY-SA 4.0.
