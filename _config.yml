@@ -188,11 +188,16 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider: custom # false (default), "google", "custom"
+
+  ## GoatCounter (sans cookie, sans bandeau), branché par _includes/analytics-providers/custom.html.
+  ## Universal Analytics (UA-62070815-1) retiré le 2026-09-30 : fermé par Google en juillet 2023.
+  goatcounter:
+    code: energy-alternatives # tableau de bord : https://energy-alternatives.goatcounter.com
 
   ## Google Analytics
   google:
-    tracking_id : UA-62070815-1 # Google Analytics id for the site
+    tracking_id: # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
 
 

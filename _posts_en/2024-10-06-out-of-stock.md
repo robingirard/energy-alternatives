@@ -38,11 +38,13 @@ Disparities can make action difficult, but they can also accelerate it: countrie
 
 
 <span class="text" id="Figure1" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/20241020081220.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/reserves_map_oil_2020.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/reserves_map_gas_2020.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/reserves_map_coal_2020.png){:.border}
 </span>
 
 <span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
-**Figure 1** -- Distribution of reserves around the world. On this subject and its geopolitical implications, see the first 5 minutes of the [Le dessous des cartes](https://www.youtube.com/watch?v=tjRAwSSuj4k) video already mentioned in the text.
+**Figure 1** -- Proved reserves of oil, gas and coal around the world, end 2020: colour gives each country's share, labels its energy content in PWh. Source: BP Statistical Review of World Energy 2021, the last edition to publish reserves. On this subject and its geopolitical implications, see the first 5 minutes of the [Le dessous des cartes](https://www.youtube.com/watch?v=tjRAwSSuj4k) video already mentioned in the text.
 </span>
 
 <span class="mytext">

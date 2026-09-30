@@ -38,11 +38,13 @@ Les disparités peuvent rendre difficile l'action, mais elles peuvent aussi l'ac
 
 
 <span class="text" id="Figure1" style="display:block;text-align:center">
-![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/20241020081220.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/reserves_map_oil_2020_fr.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/reserves_map_gas_2020_fr.png){:.border}
+![Image]({{site.baseurl}}/assets/images/Posts/2024-10-20/reserves_map_coal_2020_fr.png){:.border}
 </span>
 
 <span class="legendtext" id="CAPFigure1" style="display:block;text-align:center">
-**Figure 1** -- Répartition des réserves dans le monde. Sur ce sujet et ses implications géopolitiques, voir les 5 premières minutes de la vidéo du [dessous des cartes](https://www.youtube.com/watch?v=tjRAwSSuj4k) déjà mentionnée dans le texte.
+**Figure 1** -- Réserves prouvées de pétrole, de gaz et de charbon dans le monde, fin 2020 : la couleur donne la part de chaque pays, les étiquettes le contenu énergétique en PWh. Source : BP Statistical Review of World Energy 2021, dernière édition à publier des réserves. Sur ce sujet et ses implications géopolitiques, voir les 5 premières minutes de la vidéo du [dessous des cartes](https://www.youtube.com/watch?v=tjRAwSSuj4k) déjà mentionnée dans le texte.
 </span>
 
 <span class="mytext">
@@ -54,7 +56,7 @@ Les disparités peuvent rendre difficile l'action, mais elles peuvent aussi l'ac
 </span>
 
 <span class="mytext">
-**Nous avons indiscutablement beaucoup trop de pétrole de gaz et de charbon.** Pour le pétrole comme pour le gaz, les réserves restantes sont plus importantes que ce que nous avons consommé depuis les années 70. Ainsi, la conclusion de l'article de Nature est déjà contenue dans la Figure 1 ci-dessous où sont représentées les émissions de CO2 passées selon leur origine puis leur évolution future désirables. Le CO2 que nous avons émis depuis les années 1970 de par notre utilisation du gaz et du pétrole dépasse déjà de loin ce que nous pouvons émettre dans un scénario à 2°C. En effet, entre 1970 et fin 2024, les émissions cumulées de CO2 sont de 250 Gt CO2 pour celles du au gaz et de 540 Gt CO2 pour celles dues au pétrole.  En face, notre budget carbone, c'est à dire ce que nous pouvons émettre entre début 2025 et 2050, est autour de 800 Gt si l'on vise un réchauffement à +2°C et de 300 Gt pour +1.5°C (valeurs obtenues en prolongeant celles du [résumé pour décideurs du GIEC de 2023](https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_SPM.pdf) qui donne le budget carbone en 2019). Tout cela est sans compter les deux mastodontes qui dominent l'équation : le charbon (550 Gt CO2 émises depuis 1970 et encore aujourd'hui la source d'émission principale) et les émissions des autres gaz à effet de serre que le CO2 (méthane, protoxyde d'azote, ...) même pas représentées ici.
+**Nous avons indiscutablement beaucoup trop de pétrole de gaz et de charbon.** Pour le pétrole comme pour le gaz, les réserves restantes sont plus importantes que ce que nous avons consommé depuis les années 70. Ainsi, la conclusion de l'article de Nature est déjà contenue dans la Figure 2 ci-dessous où sont représentées les émissions de CO2 passées selon leur origine puis leur évolution future désirables. Le CO2 que nous avons émis depuis les années 1970 de par notre utilisation du gaz et du pétrole dépasse déjà de loin ce que nous pouvons émettre dans un scénario à 2°C. En effet, entre 1970 et fin 2024, les émissions cumulées de CO2 sont de 250 Gt CO2 pour celles du au gaz et de 540 Gt CO2 pour celles dues au pétrole.  En face, notre budget carbone, c'est à dire ce que nous pouvons émettre entre début 2025 et 2050, est autour de 800 Gt si l'on vise un réchauffement à +2°C et de 300 Gt pour +1.5°C (valeurs obtenues en prolongeant celles du [résumé pour décideurs du GIEC de 2023](https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_SPM.pdf) qui donne le budget carbone en 2019). Tout cela est sans compter les deux mastodontes qui dominent l'équation : le charbon (550 Gt CO2 émises depuis 1970 et encore aujourd'hui la source d'émission principale) et les émissions des autres gaz à effet de serre que le CO2 (méthane, protoxyde d'azote, ...) même pas représentées ici.
 </span>
 
 
