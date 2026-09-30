@@ -16,3 +16,7 @@ Researcher at the PERSEE centre of MINES Paris PSL since 2008, Head of Science a
 - [His page on the school website](https://www.minesparis.psl.eu/Services/Annuaire/robin-girard)
 - [His list of scientific publications](http://hal-ensmp.archives-ouvertes.fr/Public/afficheRequetePubli.php?auteur_exp=robin,girard&labos_exp=2185;214579&CB_ref_biblio=oui&langue=Francais&tri_exp=annee_publi&tri_exp2=typdoc&tri_exp3=date_publi&ordre_aff=TA&Fen=Aff&css=../css/VisuRubriqueEncadre.css)
 - [His Google Scholar profile](https://scholar.google.fr/citations?user=cEYGStIAAAAJ&hl=fr)
+
+---
+
+[Privacy: what this site measures, and what it does not do]({{ site.baseurl }}/en/privacy.html)

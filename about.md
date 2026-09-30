@@ -33,3 +33,7 @@ Chargé de Recherche au centre PERSEE de MINES Paris PSL depuis 2008, Head of Sc
 
 {% highlight javascript %}
 {% endhighlight %}
+
+---
+
+[Confidentialité : ce que ce site mesure, et ce qu’il ne fait pas]({{ site.baseurl }}/confidentialite.html)
