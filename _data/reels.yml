@@ -743,6 +743,65 @@
     Lights à Øygarden (Zypres, CC BY-SA 4.0). Les clichés étant sous CC BY-SA, cette
     vidéo est diffusée sous licence CC BY-SA 4.0.
 
+- id: ciment-bonus
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ciment
+  filiere_en: Cement
+  # Hors du compte « /4 » (CHARTE § 1.10) : « Ciment · bonus », pas « 5/4 ».
+  serie: Ciment ·
+  serie_en: Cement ·
+  numero: bonus
+  duree: 2 min 22
+  couverture: /assets/reels/ciment_bonus.jpg
+  titre: Le béton reprend-il son CO₂ ?
+  titre_en: Does concrete take its CO₂ back?
+  accroche: >-
+    Une fois en place, le béton reprend à l'air une partie du CO₂ sorti de la pierre
+    dans les fours : près de la moitié depuis un siècle, surtout par le mortier, et
+    jamais celui des combustibles. Lentement, et pas sur l'acier des armatures. Ce que
+    donnent les procédés qui veulent l'accélérer, de FastCarb à Gennevilliers.
+  accroche_en: >-
+    Once in place, concrete takes back from the air part of the CO₂ driven out of the
+    stone in kilns: nearly half over a century, mostly through mortar, and never the
+    fuel's. Slowly, and not near the reinforcing steel. What processes that try to speed
+    it up achieve, from FastCarb to Gennevilliers.
+  youtube: vbTifegbNTU
+  code:
+  sources:
+    - >-
+      Reprise du CO₂ — 21,3 Gt repris de 1928 à 2023, soit environ 46 % du CO₂ de
+      procédé (la pierre) émis sur la période, combustibles non compris ; le mortier fait
+      48 % de la reprise, le béton 41,5 % (Niu, Andrew, Xi et al., Earth System Science
+      Data 17, 2231, 2025 ; Xi et al., Nature Geoscience, 2016, donnaient 43 % sur
+      1930-2013).
+    - >-
+      Vitesse — la profondeur carbonatée croît comme la racine du temps ; béton courant,
+      dehors à l'abri de la pluie, environ 4 mm par racine d'année, soit 12,6 mm à 10 ans
+      et 28 mm à 50 ans (Lagerblad, CBI 2005, repris dans la norme NF EN 16757).
+    - >-
+      Injection dans le béton frais — 0,1 à 0,4 % du poids de ciment, dont environ 90 %
+      se minéralise, soit moins de 1 % des 620 kg de CO₂ émis par tonne de ciment ; 4 à
+      5 % de ciment en moins selon le fabricant (CarbonCure), chiffre non vérifié
+      indépendamment.
+    - >-
+      FastCarb (recommandations d'avril 2024) — démonstrateurs chez Vicat à Créchy et
+      LafargeHolcim à Val d'Azergues, fumées à environ 15 % de CO₂ ; sable recyclé 31 à
+      39 kg de CO₂ par tonne, gravillon 5 à 12 ; un béton de granulats recyclés carbonatés
+      économise jusqu'à 17,4 kg de CO₂ par m³, environ 10 % de son impact.
+    - >-
+      Gennevilliers — procédé Neustark chez Lafarge Granulats, CO₂ biogénique d'unités de
+      biogaz, plus de 1 000 t par an (communiqué du 10/12/2024), annoncé pour 2025, sans
+      mise en service publiée. Le « dixième » est un plafond calculé : environ 10 kg de
+      CO₂ par tonne de granulat × 1,85 t/m³, rapportés à environ 175 kg de CO₂ par m³ de
+      béton.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; cartes et vues aériennes IGN (Licence Ouverte) et OpenStreetMap (ODbL) ;
+    schémas dessinés pour la série. La couverture reprend la Cité radieuse à Marseille
+    (Gatotienesueño, CC0). Deux des photos étant sous CC BY-SA, cette vidéo est diffusée
+    sous licence CC BY-SA 4.0.
+
 - id: hydrogene-1
   domaine: Industrie
   domaine_en: Industry
