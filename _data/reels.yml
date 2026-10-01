@@ -742,3 +742,155 @@
     schémas dessinés pour la série. La couverture reprend le terminal de Northern
     Lights à Øygarden (Zypres, CC BY-SA 4.0). Les clichés étant sous CC BY-SA, cette
     vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: hydrogene-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 1/5
+  duree: 2 min 13
+  couverture: /assets/reels/hydrogene_1.jpg
+  titre: À quoi sert vraiment l'hydrogène, et comment on le fabrique
+  titre_en: What hydrogen is really for, and how it is made
+  accroche: >-
+    À côté de la raffinerie de Port-Jérôme, une usine dont on ne parle jamais fabrique
+    une centaine de tonnes d'hydrogène par jour. Le monde en utilise près de 100
+    millions de tonnes par an, surtout pour raffiner du pétrole et faire des engrais —
+    les voitures, moins d'un millième. Le vaporeformeur de méthane, organe par organe.
+  accroche_en: >-
+    Next to the Port-Jérôme refinery, a plant nobody talks about makes around a hundred
+    tonnes of hydrogen a day. The world uses nearly 100 million tonnes a year, mostly to
+    refine oil and make fertiliser — cars, less than a thousandth. The steam methane
+    reformer, part by part.
+  youtube: n7LYfnHcmns
+  code:
+  sources:
+    - >-
+      Usages et sources — AIE, Global Hydrogen Review 2024, année 2023 : 97 Mt produits
+      pour un usage ; raffinage 43 Mt (44 %), ammoniac environ 32 Mt (33 %), méthanol
+      environ 16 Mt (17 %), acier par réduction directe environ 5 Mt (6 %), transport
+      routier 60 kt. Gaz naturel environ deux tiers, charbon 20 %, sous-produit plus de
+      15 % ; bas carbone moins de 1 %.
+    - >-
+      Port-Jérôme — environ 50 000 Nm³/h d'hydrogène envoyés à la raffinerie voisine pour
+      désulfurer les carburants (Air Liquide). « Une centaine de tonnes par jour » est
+      calculé : 50 000 × 0,0899 kg/Nm³ ≈ 4,5 t/h, soit environ 108 t/jour à pleine charge.
+    - >-
+      Procédé — tubes catalytiques à environ 900 °C (CH₄ + H₂O → CO + 3 H₂), conversion
+      du CO à 200–400 °C (CO + H₂O → CO₂ + H₂), purification par tamis moléculaire à
+      99,9 %. Environ 60 % de l'hydrogène mondial par vaporeformage : ordre de grandeur
+      de nos notes de procédés.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; vue aérienne IGN (Licence Ouverte) et OpenStreetMap (ODbL). La couverture
+    reprend la raffinerie de Port-Jérôme vue de Quillebeuf (Gérard, CC BY-SA 4.0). Deux
+    des photos étant sous CC BY-SA, cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: hydrogene-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 2/5
+  duree: 2 min 12
+  couverture: /assets/reels/hydrogene_2.jpg
+  titre: D'où sortent les 11 kilos de CO₂ d'un kilo d'hydrogène
+  titre_en: Where the 11 kilos of CO₂ in a kilo of hydrogen come from
+  accroche: >-
+    Deux kilos avant même l'usine, 3,3 par la cheminée des brûleurs, et 5,7 écrits dans
+    la réaction chimique : le carbone du méthane ressort en CO₂, quel que soit le
+    rendement. Comme pour l'acier et le ciment, les deux tiers viennent de la chimie —
+    on ne décarbone pas en changeant seulement de combustible.
+  accroche_en: >-
+    Two kilos before the plant even starts, 3.3 up the burners' stack, and 5.7 written
+    into the chemistry: the methane's carbon comes back out as CO₂, whatever the
+    efficiency. As for steel and cement, two thirds come from the chemistry — changing
+    the fuel alone does not decarbonise it.
+  youtube: FzJchU2H_P0
+  code:
+  sources:
+    - >-
+      Bilan, en kgCO₂ par kg d'hydrogène, du puits à la sortie de l'usine (fuites de
+      méthane à 1,5 %, électricité de l'usine sans émissions) — amont du méthane 2,0,
+      brûleurs 3,3, carbone du méthane dans le gaz du procédé 5,7, soit 11,0 (11,19 sur
+      le réseau UE-27 de 2023). Dans l'usine seule, 9,0, dont 63 % de chimie. Bilan
+      CH₄ + 2 H₂O → CO₂ + 4 H₂ : un carbone entré, un CO₂ sorti.
+    - >-
+      La cuve de conversion — un seul étage à haute température dans une usine
+      d'hydrogène à tamis moléculaire, et le gaz résiduaire de la purification brûlé
+      sous les tubes (IEAGHG, rapport 2017-02). Pour le méthanol, le gaz a déjà environ
+      50 % d'hydrogène en trop : on ne convertit pas le CO (Casale, brevet EP 2 116 295).
+    - >-
+      Erratum — la planche filmée indique « ≈ 8 % vol » de CO₂ dans les fumées de la
+      cheminée. Sans capture, l'usine de référence n'a qu'une cheminée, à environ 21 %
+      de CO₂ (IEAGHG, 2017-02, p. 4-5).
+    - >-
+      Le même partage ailleurs, hors amont du combustible — haut fourneau, 1,30 t de CO₂
+      de procédé et 0,55 de combustion par tonne d'acier (70 / 30) ; ciment, 0,39 et
+      0,23 t par tonne (63 / 37). Port-Jérôme : capture par le froid sur le gaz du
+      procédé, jusqu'à 100 000 t de CO₂ par an depuis 2015 (Air Liquide).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; vue aérienne IGN (Licence Ouverte) et OpenStreetMap (ODbL). La couverture
+    reprend un vaporeformeur en service à Leuna (Hannob, CC0). L'une des photos étant
+    sous CC BY-SA, cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: hydrogene-3
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 3/5
+  duree: 2 min 14
+  couverture: /assets/reels/hydrogene_3.jpg
+  titre: Du SMR à l'ATR, jusqu'où peut-on capter le CO₂ ?
+  titre_en: From SMR to ATR, how far can CO₂ capture go?
+  accroche: >-
+    Sur un vaporeformeur, on capte le CO₂ du procédé, pas celui des brûleurs : il reste
+    5,6 kilos, la moitié du problème. Le reformage autotherme supprime les brûleurs et
+    descend à 2,65 — quatre fois moins, pas cent. Et ce qui reste vient surtout d'avant
+    l'usine : du champ gazier, du transport et des fuites de méthane.
+  accroche_en: >-
+    On a steam methane reformer, the process CO₂ is captured, not the burners': 5.6
+    kilos remain, half the problem. Autothermal reforming does away with the burners
+    and gets down to 2.65 — four times less, not a hundred. And what remains comes
+    mostly from before the plant: the gas field, transport and methane leaks.
+  youtube: dHuEESikf0U
+  code:
+  sources:
+    - >-
+      Les voies, en kgCO₂ par kg d'hydrogène, du puits à la sortie de l'usine,
+      électricité sans émissions (réseau UE-27 de 2023 entre parenthèses) — vaporeformage
+      11,0 (11,19) ; avec capture du gaz du procédé, 5,6 (6,2), soit environ 95 % de ce
+      flux et 60 % du CO₂ émis sur le site ; reformage autotherme avec capture à 94 %,
+      2,65 (3,47), dont 2,0 d'amont du méthane. Ordres de grandeur de nos notes de
+      procédés.
+    - >-
+      L'amont du gaz — 2,0 kgCO₂e par kg d'hydrogène, avec des fuites de méthane
+      supposées à 1,5 %, est une hypothèse plutôt basse : avec l'approvisionnement
+      européen moyen décrit par Bauer et al. (Sustainable Energy & Fuels, 2022) et le
+      même taux de fuites, on trouverait plutôt 3.
+    - >-
+      Les sites — Port-Jérôme capte environ 100 000 t de CO₂ par an depuis 2015, vendues
+      et non stockées (ACER, 2025). Quest (Alberta, exploité par Shell) capte plus d'un
+      million de tonnes par an depuis 2015, stockées dans un aquifère salin. HPP1
+      (Stanlow) : reformage autotherme avec capture, 350 MW, environ 600 000 t de CO₂ par
+      an, décision d'investissement attendue en 2026.
+    - >-
+      L'ATR existe — le réacteur autotherme à l'oxygène pur fabrique le gaz de synthèse
+      d'usines de méthanol et de carburants de synthèse, par exemple Oryx GTL au Qatar
+      depuis 2006 (Topsoe). C'est la production d'hydrogène à fort taux de capture qui
+      n'est pas encore démontrée à grande échelle (AIE, Global Hydrogen Review 2026).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; vue aérienne IGN (Licence Ouverte) et OpenStreetMap (ODbL). La couverture
+    reprend une unité de séparation d'air au Creusot (Pressefoto Westfalen AG, CC BY
+    3.0). Plusieurs photos étant sous CC BY-SA, cette vidéo est diffusée sous licence
+    CC BY-SA 4.0.
