@@ -953,3 +953,70 @@
     reprend une unité de séparation d'air au Creusot (Pressefoto Westfalen AG, CC BY
     3.0). Plusieurs photos étant sous CC BY-SA, cette vidéo est diffusée sous licence
     CC BY-SA 4.0.
+
+- id: hydrogene-4a
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 4a/5
+  duree: 2 min 35
+  couverture: /assets/reels/hydrogene_4a.jpg
+  titre: >-
+    La pyrolyse du méthane : de l'hydrogène, et du carbone solide
+  titre_en: >-
+    Methane pyrolysis: hydrogen, and solid carbon
+  accroche: >-
+    Chauffé sans air, le méthane se casse en hydrogène et en carbone solide : pas de
+    CO₂, mais 3 kilos de poudre noire par kilo d'hydrogène. Un quart de méthane de plus
+    qu'un vaporeformeur, un carbone qui dépasse vite le marché du noir de carbone — et
+    pourtant un précieux usage du gaz pour les pays qui en ont trop. Avec du biogaz,
+    une émission négative.
+  accroche_en: >-
+    Heated without air, methane splits into hydrogen and solid carbon: no CO₂, but 3
+    kilos of black powder per kilo of hydrogen. A quarter more methane than a steam
+    reformer, carbon that quickly outgrows the carbon black market — and yet a valuable
+    use of gas for the countries that have too much of it. With biogas, a negative
+    emission.
+  youtube: oKW7Cl-uvkQ
+  code:
+  sources:
+    - >-
+      Transparence — le procédé plasma a été développé au centre PERSEE de Mines Paris.
+      Mines Paris, par Armines, détient des parts de Monolith ; l'auteur n'en détient
+      aucune.
+    - >-
+      Les chiffres, en kgCO₂ par kg d'hydrogène, du puits à la sortie de l'usine — 2,5
+      avec une électricité sans émissions (l'amont du gaz du vaporeformage, 2,0, mis à
+      l'échelle des 4 kg de méthane de la pyrolyse) ; 8,5 sur le réseau UE-27 de 2023
+      (2,5 + 25 kWh × 240 g). Ce sont des calculs, à partir de 25 kWh par kilo :
+      Fulcheri (Annales des Mines, 2022) donne 10 à 30 kWh selon les torches.
+    - >-
+      « Un quart de méthane en plus » — 4 kg de méthane au minimum (CH₄ → C + 2 H₂,
+      conversion complète) contre 3,4 kg au vaporeformeur (IEAGHG, 2017), soit + 26 %.
+      « Près de 300 millions de tonnes » : 97 Mt d'hydrogène (AIE, Global Hydrogen
+      Review 2024) × 2,98 ; marché du noir de carbone, 12 à 14 Mt par an. « Jusqu'à
+      11 kg » : 2,98 kg de carbone × 44/12, brut, avant les émissions du biogaz et de
+      l'électricité.
+    - >-
+      « Au moins la moitié des réserves » — la moitié des réserves de gaz pour 2 °C
+      (McGlade et Ekins, Nature, 2015), 56 % pour 1,5 °C (Welsby et al., Nature, 2021,
+      après correction). Pourquoi « trop de gaz » : le billet « Rupture de stock ? »
+      (2024).
+    - >-
+      Les sites — Monolith : usine Olive Creek, à Hallam (Nebraska), environ 14 000 t de
+      noir de carbone par an ; en 2026, elle passe du gaz naturel à une charge
+      d'hydrocarbure liquide, et son projet d'ammoniac est remplacé par un centre de
+      données. BASF et ExxonMobil : démonstrateur prévu à Baytown, jusqu'à 2 000 t
+      d'hydrogène et 6 000 t de carbone par an (annonce du 17/11/2025), chauffé à
+      l'électricité, sans plasma. Hazer : démonstrateur sur le biogaz de la station
+      d'épuration de Woodman Point, près de Perth, 100 t d'hydrogène par an de capacité ;
+      mis en veille après plus de 1 500 heures de marche (ARENA, 2025).
+  licence: >-
+    Carte des réserves de gaz : BP Statistical Review of World Energy 2021, fond Natural
+    Earth. Photographies issues de Wikimedia Commons, auteur et licence crédités sur
+    chaque image ; la couverture reprend une pile de pneus (PheobeLongneck, CC0). La
+    photo du méthaniseur étant sous CC BY-SA 4.0, cette vidéo est diffusée sous licence
+    CC BY-SA 4.0.
