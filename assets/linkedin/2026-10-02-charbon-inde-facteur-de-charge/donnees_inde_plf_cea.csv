@@ -1,0 +1,46 @@
+# Inde - facteur de charge (plant load factor) publie par la CEA,
+# centrales thermiques au charbon et au lignite, toute l'Inde, services publics.
+# Source : CEA, Growth of Electricity Sector in India from 1947-2025, Chart 13, p. 26.
+# Le point 2025-26 est provisoire et ne vient pas du meme document : voir sources.md.
+exercice,plf_pct,statut
+1985-86,52.40,publie
+1986-87,53.20,publie
+1987-88,56.50,publie
+1988-89,55.00,publie
+1989-90,56.50,publie
+1990-91,53.90,publie
+1991-92,55.30,publie
+1992-93,57.10,publie
+1993-94,61.00,publie
+1994-95,60.00,publie
+1995-96,63.00,publie
+1996-97,64.40,publie
+1997-98,64.70,publie
+1998-99,64.60,publie
+1999-00,67.30,publie
+2000-01,69.00,publie
+2001-02,69.90,publie
+2002-03,72.20,publie
+2003-04,72.70,publie
+2004-05,74.80,publie
+2005-06,74.30,publie
+2006-07,76.80,publie
+2007-08,78.60,publie
+2008-09,77.20,publie
+2009-10,77.68,publie
+2010-11,74.97,publie
+2011-12,73.47,publie
+2012-13,70.13,publie
+2013-14,65.56,publie
+2014-15,64.25,publie
+2015-16,62.24,publie
+2016-17,59.88,publie
+2017-18,60.72,publie
+2018-19,61.07,publie
+2019-20,55.99,publie
+2020-21,54.49,publie
+2021-22,58.87,publie
+2022-23,64.15,publie
+2023-24,69.09,publie
+2024-25,69.45,publie
+2025-26,65.18,provisoire

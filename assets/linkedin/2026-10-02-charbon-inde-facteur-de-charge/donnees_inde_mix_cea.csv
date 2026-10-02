@@ -1,0 +1,36 @@
+# Inde - capacite installee et production brute par source, services publics, exercices avril-mars.
+# Source : Central Electricity Authority (CEA).
+#   cap_2024_MW : Growth of Electricity Sector in India 1947-2025 (CEA, janv. 2026), Table 2 (thermique, nucleaire, hydraulique)
+#                 et tableau des capacites RES par annee (SHP, WIND, BIOMASS, WASTE TO ENERGY, SOLAR, colonne 2024).
+#                 https://cea.nic.in/wp-content/uploads/notification/2026/01/Growth_Book_2025.pdf
+#   cap_2025_MW : Executive Summary on Power Sector, March-2025, PDF p. 20 (tableau "All India installed capacity as on 31.03.2025").
+#                 https://cea.nic.in/wp-content/uploads/executive/2025/04/Executive_Summary_March_2025_Aztual.pdf
+#   cap_2026_MW : Executive Summary on Power Sector, March-2026, PDF p. 21 ; identique a Installed Capacity Report 31.03.2026, p. 1.
+#                 https://cea.nic.in/wp-content/uploads/executive/2026/03/Executive_Summary_March_2026_Actual.pdf
+#   gen_2023_24_GWh : Growth Book 1947-2025, Table 3 (charbon+lignite 1 294 852, gaz 31 296, diesel 401, hydraulique 134 054,
+#                 nucleaire 47 937) et Chart 16 (RES par source) ; import du Bhoutan 4,72 BU (Executive Summary March-2025, p. 5).
+#                 Total 1 739,09 BU, comme l'Executive Summary March-2025.
+#   gen_2024_25_GWh, gen_2025_26_GWh : CEA/OPM, Monthly Generation Report Actual Mar-2026 (29/04/2026), sous-rapports 11, 15, 17, colonnes
+#                 avril-mars et "same period last year" (2024-25 REVISE) ; et Executive Summary March-2026, PDF p. 5-6 et 36.
+#                 https://npp.gov.in/public-reports/cea/monthly/generation/18_col_act/2026/MAR//
+#                 Les renouvelables hors grande hydraulique ne sont publies qu'en BU a deux decimales.
+# Regroupements :
+#   charbon     = charbon + lignite (228 559 MW au 31.03.2026, comme donnees_inde_charbon_cea.csv).
+#                 2024-25 revise : 1 331 046,5 GWh (le Growth Book, non revise, donne 1 331 867).
+#   gaz         = gaz + diesel.
+#   hydraulique = grande hydraulique, STEP comprises ; cote production, PLUS l'import du Bhoutan (hydraulique),
+#                 4 720 GWh en 2023-24, 5 484,18 GWh en 2024-25 et 7 831,24 GWh en 2025-26, pour que le total soit celui de la CEA.
+#   autres_enr  = petite hydraulique + biomasse/cogeneration (+ bagasse) + dechets / "others".
+# Retrait comptable au 31.05.2025 (CEA, note de l'Installed Capacity Report) : 1 995 MW de charbon, 4 400,84 MW de gaz
+#   et 100 MW de nucleaire, a l'arret de longue duree, sortis temporairement du parc.
+# total : CEA, 441 970 -> 475 211,8 -> 532 739,68 MW ; 1 739 095 -> 1 828 877 -> 1 847 941,44 GWh
+#   (+1,04 % sur 2025-26, Executive Summary March-2026, p. 5 ; +6,3 % sur deux exercices).
+source,cap_2024_MW,cap_2025_MW,cap_2026_MW,gen_2023_24_GWh,gen_2024_25_GWh,gen_2025_26_GWh
+solaire,81813.60,105646.49,150260.70,115975.11,144150,174760
+eolien,45886.51,50037.82,56094.84,83385.35,83350,106700
+hydraulique,46928,47728.16,51414.66,138774,154118.16,175035.02
+nucleaire,8180,8180,8780,47937,56680.83,55190.52
+autres_enr,15944.40,16683.87,16917.89,26474.37,27520,29120
+gaz,25627,25122.46,20711.62,31697,32022.70,26461.77
+charbon,217589,221813,228559.97,1294852,1331046.5,1280668.8
+total,441970,475211.8,532739.68,1739095,1828877,1847941.44

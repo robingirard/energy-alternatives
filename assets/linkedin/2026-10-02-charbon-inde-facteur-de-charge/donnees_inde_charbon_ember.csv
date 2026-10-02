@@ -1,0 +1,34 @@
+# Inde - controle de coherence : parc et production charbon, ANNEES CIVILES.
+# Source : Ember, Yearly Electricity Data, telechargement du 17/09/2026 (CC BY 4.0),
+#   https://ember-energy.org/data/yearly-electricity-data/
+# Perimetre DIFFERENT de celui de la CEA : Ember compte TOUTES les centrales a charbon
+#   (capacite d'apres Global Energy Monitor, autoproduction industrielle incluse),
+#   la CEA ne compte que les services publics. D'ou ~24 GW d'ecart en 2024.
+# La production Ember est identique a celle de l'Energy Institute Statistical Review 2025.
+annee,capacite_GW,production_TWh
+2000,62.15,390.23
+2001,63.15,408.29
+2002,64.19,426.7
+2003,65.69,441.47
+2004,66.22,463.01
+2005,69.63,478.48
+2006,71.92,505.46
+2007,77.13,533.27
+2008,82.33,573.12
+2009,87.79,611.11
+2010,99.03,642.97
+2011,113.43,701.25
+2012,131.59,787.13
+2013,149.35,847.97
+2014,169.49,949.93
+2015,189.55,1006.55
+2016,207.05,1073.6
+2017,212.47,1115.24
+2018,217.99,1198.86
+2019,225.63,1198.76
+2020,225.69,1143.78
+2021,231.01,1255.56
+2022,232.19,1344.42
+2023,237.5,1445.44
+2024,241.49,1517.9
+2025,250.65,1474.15

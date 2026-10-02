@@ -1,0 +1,16 @@
+# Inde - tarif a deux parts des centrales a charbon, en roupies par kWh, au facteur de charge normatif de 85 %.
+# Source : Ember (Rodrigues, Das, Ewen), "Coal's diminishing role in India's electricity transition",
+#   chap. 3, "Coal power to get costlier", publie le 29/10/2025, revise le 13/04/2026.
+#   https://ember-energy.org/latest-insights/coals-diminishing-role-in-indias-electricity-transition/coal-power-to-get-costlier/
+#   parc_existant : graphique Flourish 25611114, barre "Normative cost" (fixe 1,64 + energie 3,14 = 4,78 ;
+#                   note du graphique : "determined at a normative plant load factor (PLF) of 85%").
+#   neuf_bihar    : graphique Flourish 25619543, "Bihar - Adani Power (2400 MW)" (fixe 4,165 + energie 1,91).
+#   effectif_*    : barres "Effective cost" du graphique 25611114, sous-utilisation ET surcouts de modulation
+#                   (capex, entretien, rendement degrade, redemarrages) ; total 5,43 et 6,05.
+# La charge fixe est due que la tranche produise ou non : ramenee au kWh produit, elle vaut fixe x 85 / PLF.
+# Lu par build_cout.py.
+cas,fixe_inr_kwh,energie_inr_kwh,plf_ref_pct,total_inr_kwh
+parc_existant,1.64,3.14,85,4.78
+neuf_bihar,4.165,1.91,85,6.075
+effectif_2024_25,,,69,5.43
+effectif_2031_32,,,55,6.05

@@ -1,0 +1,30 @@
+# Inde - parc et production charbon+lignite des services publics (utilities).
+# Source : Central Electricity Authority (CEA), ministere de l'Energie, Inde.
+#   capacite_MW  : capacite installee charbon + lignite au 31 mars de l'annee de cloture.
+#                  2012-2017 : Growth of Electricity Sector in India 1947-2017, Table 2.
+#                  2018-2025 : Growth of Electricity Sector in India 1947-2025, Table 2.
+#                  2026      : Executive Summary on Power Sector, March-2026, sections 4 et G-2.
+#   production_GWh : production brute charbon + lignite sur l'exercice (avril-mars).
+#                  2012-2017 : Growth Book 2017, Table 3.
+#                  2018-2025 : Growth Book 2025, Table 3.
+#                  2026      : provisoire, voir sources.md (relais presse d'un chiffre CEA).
+#   plf_pct      : plant load factor publie par la CEA, centrales thermiques charbon et lignite.
+#                  1986-2025 : Growth Book 2025, Chart 13.
+#                  2026      : provisoire, voir sources.md.
+#   statut       : publie | provisoire
+exercice,capacite_MW,production_GWh,plf_pct,statut
+2011-12,112022,612497,73.47,publie
+2012-13,130221,691341,70.13,publie
+2013-14,145273,745533,65.56,publie
+2014-15,164636,835291,64.25,publie
+2015-16,185173,895340,62.24,publie
+2016-17,192163,944022,59.88,publie
+2017-18,197172,986591,60.72,publie
+2018-19,200705,1022265,61.07,publie
+2019-20,205135,994197,55.99,publie
+2020-21,209295,981443,54.49,publie
+2021-22,210700,1078581,58.87,publie
+2022-23,211855,1182096,64.15,publie
+2023-24,217589,1294852,69.09,publie
+2024-25,221813,1331867,69.45,publie
+2025-26,228559,1281000,65.18,provisoire
