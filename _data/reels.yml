@@ -1020,3 +1020,61 @@
     chaque image ; la couverture reprend une pile de pneus (PheobeLongneck, CC0). La
     photo du méthaniseur étant sous CC BY-SA 4.0, cette vidéo est diffusée sous licence
     CC BY-SA 4.0.
+
+- id: hydrogene-4b
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 4b/5
+  duree: 2 min 33
+  couverture: /assets/reels/hydrogene_4b.jpg
+  titre: >-
+    L'électrolyse : quand l'hydrogène est-il vraiment vert ?
+  titre_en: >-
+    Electrolysis: when is hydrogen really green?
+  accroche: >-
+    De l'eau, du courant, et aucun carbone dans l'usine : l'électrolyseur n'émet que ce
+    qu'émet son électricité. 53 kWh par kilo d'hydrogène, 38 + 9 de chaleur à haute
+    température. Sur le réseau européen moyen, l'hydrogène ressort à 12,7 kg de CO₂ par
+    kilo, plus que le vaporeformage qu'il remplace : le seuil est à 210 g par kWh.
+  accroche_en: >-
+    Water, electricity, and no carbon in the plant: an electrolyser emits only what its
+    electricity emits. 53 kWh per kilo of hydrogen, 38 + 9 of heat at high temperature.
+    On the average European grid, hydrogen comes out at 12.7 kg of CO₂ per kilo, more
+    than the steam reforming it replaces: the threshold is 210 g per kWh.
+  youtube: r7WUx2ainUY
+  code:
+  sources:
+    - >-
+      Électrolyseur courant (alcalin ou à membrane) : 53 kWh d'électricité par kg
+      d'hydrogène, rendement système moyen de l'AIE (Global Hydrogen Review 2025). Le
+      kilo d'hydrogène contient 33,3 kWh (pouvoir calorifique inférieur) : 33,3 / 53 =
+      63 % (74 % sur le pouvoir calorifique supérieur, 39,4 kWh).
+    - >-
+      Le seuil — 11,19 / 53 ≈ 210 gCO₂/kWh, où 11,19 kg est le vaporeformage compté sur
+      le réseau UE. Trois fois le même électrolyseur : France 2023 à 56 g → 2,97 kg ;
+      UE-27 2023 à 240 g → 12,72 ; monde 2023 à 480 g → 25,44, contre 19,5 pour la
+      gazéification du charbon. Le 240 g européen date de 2023 et baisse vite : ces
+      valeurs sont à redater chaque année.
+    - >-
+      Haute température (électrolyse à oxyde solide) : cellule en céramique, typiquement
+      entre 600 et 900 °C (AIE, guide ETP des technologies) ; 38 kWh d'électricité +
+      9 kWh de chaleur par kg, système (DOE, 2024) ; maturité 8 sur 9, contre 9 pour
+      l'alcalin et la membrane (AIE, GHR 2026). Démonstrateur MultiPLHY (Sunfire) à la
+      raffinerie Neste de Rotterdam : 2,6 MW, plus de 60 kg d'hydrogène par heure,
+      démarré le 6 octobre 2025.
+    - >-
+      Les sites — Normand'Hy (Air Liquide, Port-Jérôme-sur-Seine) : 200 MW à membrane,
+      ≈ 28 000 t par an annoncées, raccordé au réseau en juin 2025, production annoncée
+      pour 2026. Holland Hydrogen 1 (Shell, Rotterdam) : 200 MW alcalin, raccordé au
+      réseau d'hydrogène de Rotterdam en mars 2026, démarrage attendu fin 2026. Chifeng
+      (Envision, Mongolie-Intérieure) : 500 MW, en service depuis juillet 2025 (AIE, GHR
+      2026). Sources consultées entre le 14 septembre et le 1er octobre 2026.
+  licence: >-
+    Vue aérienne : orthophoto IGN / Géoplateforme (Licence Ouverte) et emprise
+    OpenStreetMap (ODbL). Photographies issues de Wikimedia Commons, auteur et licence
+    crédités sur chaque image. Le module d'électrolyse (Bubble60) étant sous CC BY-SA
+    4.0, cette vidéo est diffusée sous licence CC BY-SA 4.0.
