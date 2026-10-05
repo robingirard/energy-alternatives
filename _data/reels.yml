@@ -1078,3 +1078,67 @@
     OpenStreetMap (ODbL). Photographies issues de Wikimedia Commons, auteur et licence
     crédités sur chaque image. Le module d'électrolyse (Bubble60) étant sous CC BY-SA
     4.0, cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: hydrogene-5a
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 5a/5
+  duree: 2 min 39
+  couverture: /assets/reels/hydrogene_5a.jpg
+  titre: >-
+    Tuyaux et cavités : à quoi servent les infrastructures de l'hydrogène ?
+  titre_en: >-
+    Pipes and caverns: what is hydrogen infrastructure for?
+  accroche: >-
+    Aujourd'hui, l'hydrogène se fabrique là où on l'utilise : ni tuyau, ni réservoir. Un
+    électrolyseur qui ne tourne qu'aux heures bon marché — 513 heures de prix négatif en
+    France en 2025 — fait un hydrogène moins cher, mais l'usine le veut à toute heure : il
+    faut le stocker, par milliers de tonnes, dans des cavités creusées dans le sel, et le
+    transporter par canalisations. Pas indispensables, mais elles laissent l'électrolyse
+    choisir ses heures.
+  accroche_en: >-
+    Today, hydrogen is made where it is used: no pipe, no tank. An electrolyser running
+    only at cheap hours — 513 hours of negative prices in France in 2025 — makes cheaper
+    hydrogen, but the plant wants it at every hour: it has to be stored, by the thousand
+    tonnes, in caverns dug into salt, and carried by pipeline. Not indispensable, but they
+    let electrolysis choose its hours.
+  youtube: znPWw-3k0vI
+  code:
+  sources:
+    - >-
+      513 heures de prix négatif en France en 2025 : RTE, Bilan électrique 2025 (EPEX
+      SPOT). Avec les prix horaires de 2025 et un électrolyseur à 1 350 €/kW, tourner les
+      ≈ 4 300 heures les moins chères donne ≈ 3,5 €/kg contre ≈ 4,6 en continu — un calcul
+      simple, qui dépend du coût de l'électrolyseur. Le stock montré (≈ 80 jours de
+      consommation de l'usine) est calculé sur les mêmes prix, sans coût ni arrêt.
+    - >-
+      Le gaz au vaporeformeur plutôt qu'à la centrale : par un cycle combiné (un peu moins
+      de 60 % ; record de 62,22 % à Bouchain, homologué en 2016) puis l'électrolyse (63 %),
+      ≈ 37 % de l'énergie du gaz finit en hydrogène ; directement au vaporeformeur, ≈ 76 %.
+    - >-
+      Manosque (projet GeoH2, Géométhane) : deux cavités salines existantes, non
+      exploitées, voisines des cavités de gaz naturel ; ≈ 6 000 t d'hydrogène, à plus de
+      1 000 m et près de 200 bars ; mise en service visée en 2031 (dossier du débat public,
+      mars 2025 ; décision du maître d'ouvrage, 11/12/2025).
+    - >-
+      Canalisations : 1 636 km d'hydrogène en service dans l'UE (ACER, 2025). HY-FEN
+      (NaTran) : plus de 800 km de Fos-sur-Mer à la frontière allemande, ≈ 2 Mt/an, service
+      visé en 2032, décision d'investissement non prise. Volume : 10,8 MJ/Nm³ pour
+      l'hydrogène contre 35,8 pour le méthane (NIST), rapport 3,3 ; à rapport de pression
+      égal, ≈ 3,3 fois le travail de compression par unité d'énergie (Haeseldonckx et
+      D'haeseleer, Int. J. Hydrogen Energy, 2007).
+    - >-
+      La valeur de la cavité vient de travaux en cours (MINES Paris – PSL), non encore
+      publiés, sur Fos-sur-Mer et la cavité de Manosque : quand l'hydrogène doit venir de
+      l'électrolyse, la cavité réduit son coût d'environ 11 % dans le cas central, de 5 à
+      16 % selon l'année météo — un ordre de grandeur. Sources consultées entre le 2 et le
+      4 octobre 2026.
+  licence: >-
+    Vues aériennes : orthophoto IGN / Géoplateforme (Licence Ouverte) et Sentinel-2
+    cloudless 2016 d'EOX (CC BY 4.0). Photographies issues de Wikimedia Commons, auteur et
+    licence crédités sur chaque image ; pictogrammes Tabler Icons (MIT). Cette vidéo est
+    diffusée sous licence CC BY-SA 4.0, comme toute la série.
