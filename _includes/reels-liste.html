@@ -56,28 +56,32 @@ Paramètre : `lang` = "fr" ou "en". Utilisé par `reels.md` et `en/reels.md`.
     {%- endif %}
     {%- for r in _bloc -%}
       {%- assign _serie = r.serie -%}{%- assign _titre = r.titre -%}{%- assign _accroche = r.accroche -%}
+      {%- assign _yt = r.youtube -%}{%- assign _couv = r.couverture -%}{%- assign _duree = r.duree -%}
       {%- if lang == "en" -%}
+        {%- comment -%} la version anglaise si elle est en ligne, sinon la française (sous-titrée) {%- endcomment -%}
+        {%- if r.youtube_en -%}{%- assign _yt = r.youtube_en -%}{%- assign _duree = r.duree_en | default: r.duree -%}{%- endif -%}
+        {%- assign _couv = r.couverture_en | default: r.couverture -%}
         {%- assign _serie = r.serie_en | default: r.serie -%}
         {%- assign _titre = r.titre_en | default: r.titre -%}
         {%- assign _accroche = r.accroche_en | default: r.accroche -%}
       {%- endif %}
 <div class="reels-item" style="display:flex;flex-wrap:wrap;gap:1.4rem;margin:2.6rem 0;align-items:flex-start;">
   <div style="flex:0 0 220px;max-width:100%;">
-  {%- if r.youtube %}
+  {%- if _yt %}
     <div style="position:relative;width:220px;max-width:100%;aspect-ratio:9/16;">
-      <iframe src="https://www.youtube-nocookie.com/embed/{{ r.youtube }}" title="{{ _serie }} {{ r.numero }} — {{ _titre }}" style="position:absolute;inset:0;width:100%;height:100%;border:1px solid #e1e0d9;" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ _yt }}" title="{{ _serie }} {{ r.numero }} — {{ _titre }}" style="position:absolute;inset:0;width:100%;height:100%;border:1px solid #e1e0d9;" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   {%- else %}
-    <img src="{{ r.couverture | relative_url }}" alt="{{ _serie }} {{ r.numero }} — {{ _titre }}" style="width:220px;max-width:100%;height:auto;border:1px solid #e1e0d9;">
+    <img src="{{ _couv | relative_url }}" alt="{{ _serie }} {{ r.numero }} — {{ _titre }}" style="width:220px;max-width:100%;height:auto;border:1px solid #e1e0d9;">
   {%- endif %}
   </div>
   <div style="flex:1 1 280px;">
-    <small>{{ _serie }} {{ r.numero }} · {{ r.duree }}</small>
+    <small>{{ _serie }} {{ r.numero }} · {{ _duree }}</small>
     <h3 style="margin:.2rem 0 .5rem;">{{ _titre }}</h3>
     <p style="margin:0 0 .6rem;">{{ _accroche }}</p>
     <p style="margin:0 0 .6rem;"><small>
-    {%- if r.youtube -%}
-      <a href="https://www.youtube.com/watch?v={{ r.youtube }}" target="_blank" rel="noopener">{{ t_voir }}</a> ·
+    {%- if _yt -%}
+      <a href="https://www.youtube.com/watch?v={{ _yt }}" target="_blank" rel="noopener">{{ t_voir }}</a> ·
     {%- else -%}
       <em>{{ t_bientot }}</em> ·
     {%- endif %}

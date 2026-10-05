@@ -11,6 +11,11 @@
 # `youtube.com/watch?v=…`). La page en fabrique le lecteur encapsulé et le lien. Tant
 # qu'il est vide, elle affiche la couverture et « bientôt en ligne » à la place.
 #
+# `youtube_en`, `couverture_en`, `duree_en` : la **version anglaise** (chaîne
+# @energy_alternatives_en, depuis le 05/10/2026), dite par Robin et publiée quelques
+# jours après la française. La page anglaise la montre quand elle existe ; sinon elle
+# montre la vidéo française, qui porte des sous-titres anglais.
+#
 # `code` : le chemin de l'épisode dans le dépôt public
 # git.persee.minesparis.psl.eu/energy-alternatives/reels. Vide = lien vers la racine.
 #
@@ -58,6 +63,9 @@
     iron ore. From the coke ovens to the blast furnace, the converter, the rolling
     mill and the coil.
   youtube: tfdNDqzkcLU
+  couverture_en: /assets/reels/acier_1_en.jpg
+  duree_en: 2 min 13
+  youtube_en:
   code:
   sources:
     - >-
