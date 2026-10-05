@@ -241,6 +241,14 @@ collections:
     output: true
   linkedin_en:
     output: true
+  ## Les pages « Cas d'étude » : un cas = une question, un modèle qu'on relance,
+  ## une page interactive et un notebook. Deux collections engendrées par
+  ## ~/Documents/Communication/Cas/publier.py (ne pas éditer à la main). Hors
+  ## flux RSS et hors page d'accueil, comme LinkedIn. Permalink posé dans chaque page.
+  cas:
+    output: true
+  cas_en:
+    output: true
 
 defaults:
   - scope:
@@ -291,6 +299,34 @@ defaults:
   - scope:
       path: ""
       type: linkedin_en
+    values:
+      layout: article
+      lang: en
+      sharing: true
+      license: false
+      comment: false
+      aside:
+        toc: false
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: false
+  - scope:
+      path: ""
+      type: cas
+    values:
+      layout: article
+      lang: fr
+      sharing: true
+      license: false
+      comment: false
+      aside:
+        toc: false
+      show_edit_on_github: false
+      show_subscribe: true
+      pageview: false
+  - scope:
+      path: ""
+      type: cas_en
     values:
       layout: article
       lang: en

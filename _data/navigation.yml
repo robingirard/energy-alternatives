@@ -38,6 +38,25 @@ header:
       fr: /reels.html
       en: /en/reels.html
 
+  - titles:
+      # @start locale config
+      en      : &EN_C     Case studies
+      en-GB   : *EN_C
+      en-US   : *EN_C
+      en-CA   : *EN_C
+      en-AU   : *EN_C
+      fr      : &FR_C     Cas d'étude
+      fr-BE   : *FR_C
+      fr-CA   : *FR_C
+      fr-CH   : *FR_C
+      fr-FR   : *FR_C
+      fr-LU   : *FR_C
+      # @end locale config
+    url: /cas.html
+    urls:
+      fr: /cas.html
+      en: /en/cas.html
+
 #  - titles:
       # @start locale config
 #      fr      : &FR       Consommation

@@ -1,0 +1,66 @@
+# Hypothèses du cas « Fos-sur-Mer : l'hydrogène et son stockage » — valeur, unité, source, statut.
+# Statuts : vérifié (lu dans la source) · calculé (dérivé ici, formule donnée) · repris (valeur du cas pommes de
+# l'étude PERSEE, sans source primaire relue dans cette session) · lu sur figure · mémoire.
+# Les coûts viennent de la table unique `regles_parametriques/regles/couts.py` (R_LOCAL), qui cite chaque ligne du
+# fichier de cas pommes (`case.yaml`, noté [case]).
+
+perimetre:
+  description: "Hub d'hydrogène de Fos-sur-Mer SANS aciérie, un nœud, preneur de prix ; demande exogène plate."
+  millesime_parc_electrique: 2030
+  annees_climatiques: [1983, 1985, 1987, 1990, 1996, 2000, 2003, 2009, 2010, 2012, 2014]
+
+demande:
+  - {nom: demande d'hydrogène, valeur: 317.70, unite: MW_H2 (plats), equivalent: "83,5 kt/an ; 2 783 055 MWh/an",
+     source: "[case]:1484-1560 (raffinage et méthanol)", statut: repris}
+  - {nom: "demande avec l'aciérie DRI à l'H2 (comparaison seulement)", valeur: 1093.88, unite: MW_H2,
+     equivalent: "287,5 kt/an", source: "[case] ; aciérie de 2,55 Mt/an", statut: repris}
+
+electricite:
+  - {nom: prix horaires FR, valeur: "8 760 h × 11 années × gaz 15/30/65 €/MWh", unite: €/MWh,
+     source: "modèle POMMES Europe 2030, 16 zones (étage 1, jeu 0716) — T. Knibiehly, thèse PERSEE",
+     statut: "calculé (modèle) ; extrait gelé data/prix_fr_etage1.parquet"}
+  - {nom: traitement des heures de délestage, valeur: "≥ 1 000 €/MWh → plus haut prix observé en dessous ; plancher 0",
+     source: "convention de lecture des plans DGEC (anaelle_replay.prices.thibaut.load_price)", statut: vérifié}
+  - {nom: TURPE HTB 3 abattu, valeur: 1.1778, unite: €/MWh_e, formule: "4,53 × (1 − 0,74)",
+     source: "[case]:1059-1165 ; abattement électro-intensif 74 %", statut: repris}
+
+electrolyseur:
+  - {nom: CAPEX central, valeur: 1350, unite: €/kW_e, source: "RTE, Bilan prévisionnel 2023 ([case]:1650)", statut: repris}
+  - {nom: CAPEX explorés par pommes, valeur: "417 (η 0,65) · 1 000 (η 0,71) · 1 350 (η 0,68)", unite: €/kW_e,
+     source: "[case] contexts/electrolysis_capex.yaml:20-67 (thèse, RTE favorable, RTE référence)", statut: repris}
+  - {nom: CAPEX du balayage du modèle réduit, valeur: "200 · 400 · 700 · 1 000 · 1 350 · 1 700 · 2 000 (η 0,68)",
+     unite: €/kW_e, statut: "choix du cas"}
+  - {nom: rendement (PCI), valeur: 0.68, unite: "-", source: "[case]:1659", statut: repris}
+  - {nom: coût fixe (FOM), valeur: 14, unite: €/kW_e/an, source: "[case]:1662-1665", statut: repris}
+  - {nom: durée de vie, valeur: 20, unite: ans, source: "[case]:1666", statut: repris}
+  - {nom: taux d'actualisation, valeur: 0.06, unite: "-", source: "[case]:1667", statut: repris}
+  - {nom: disponibilité (plafond horaire), valeur: 0.95, unite: "-", source: "[case]:1668 (RTE)", statut: repris}
+
+cavite_manosque:
+  - {nom: puissance (canalisation comprise), valeur: 403.4, unite: €/kW_H2, formule: "333 + 0,64 €/kW/km × 110 km",
+     source: "[case]:3494-3495, 3521-3548", statut: repris}
+  - {nom: volume, valeur: 0.33, unite: €/kWh_H2, source: "[case]:3498-3499", statut: repris}
+  - {nom: plafond déclaré, valeur: 200, unite: GWh_H2, source: "[case]:3510-3511", statut: repris,
+     remarque: "non géologique : levé, pommes construit 1,3 à 1,7 TWh (avec aciérie) ; la valeur est une borne basse"}
+  - {nom: durée de vie, valeur: 50, unite: ans, source: "[case]:3507", statut: repris}
+  - {nom: taux, valeur: 0.06, unite: "-", source: "[case]:3508", statut: repris}
+  - {nom: rendement d'injection, valeur: 0.98, unite: "-", source: "[case]:3509", statut: repris}
+
+secours:
+  - {nom: vaporeformeur existant (SMR), valeur: "317 MW_H2, amorti", unite: MW_H2, source: "[case]:1691-1700", statut: repris}
+  - {nom: méthane par MWh d'H2, valeur: 1.31, unite: MWh_CH4/MWh_H2, source: "[case]:1698", statut: repris}
+  - {nom: émissions de procédé, valeur: 0.28, unite: tCO2/MWh_H2, source: "[case]:1699", statut: repris}
+  - {nom: fuite amont de méthane (taxée), valeur: 0.0326, unite: tCO2/MWh_CH4, source: "[case]:905-925", statut: repris}
+  - {nom: émissions taxées du SMR, valeur: 0.3227, unite: tCO2/MWh_H2, formule: "0,28 + 1,31 × 0,0326", statut: calculé}
+  - {nom: chlore coproduit (KEM ONE), valeur: 43, unite: MW_H2, cout: "1 €/MWh_H2",
+     source: "[case]:1799-1870", statut: repris,
+     remarque: "n'émet rien dans le modèle mais compte comme NON électrolytique dans l'obligation"}
+
+gaz_et_carbone:
+  - {nom: prix du gaz, valeur: "30 (15 à 65)", unite: €/MWh_PCS, statut: "contexte de l'étage 1"}
+  - {nom: taxe carbone, valeur: 100, unite: €/tCO2, statut: "contexte de l'étude"}
+
+conventions:
+  valeur_cavite: "coût annuel du hub sans cavité − avec cavité (cavité payée), à hydrogène servi égal ; €/kg et % du coût de l'H2 électrolytique sans cavité"
+  cout_obligation: "coût du hub sous obligation − coût du hub libre (optimum taxe comprise, cavité disponible) ; hors taxe carbone = coût pour la collectivité"
+  annees: "moyenne simple des 11 années climatiques ; étendue = minimum et maximum entre années"
