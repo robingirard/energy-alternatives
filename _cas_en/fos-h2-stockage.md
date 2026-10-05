@@ -54,6 +54,10 @@ The full story, executed with its outputs: hourly prices, one run of the reduced
 - The EU hourly-correlation rule for renewable hydrogen (RFNBO) is not modelled.
 - One power system (2030): the weather years change, the fleet does not. Replaying the case with the TYNDP 2026 scenarios is the natural next step.
 
+## Posts about it
+
+- [Hydrogen infrastructure: what is storage worth? (LinkedIn, 5 October 2026)](/en/linkedin/2026-10-05-pommes-fos-1-valeur-stockage.html)
+
 ## Data
 
 - [donnees_valeur_stockage_pommes.csv]({{ site.baseurl }}/assets/cas/fos-h2-stockage/donnees_valeur_stockage_pommes.csv) — value of the cavern in the POMMES modelling, by CAPEX, gas price and mandate: mean, minimum and maximum over the 11 years.

@@ -54,6 +54,10 @@ Le récit complet, exécuté avec ses sorties (en anglais) : les prix horaires, 
 - La règle européenne de corrélation horaire de l'hydrogène renouvelable (RFNBO) n'est pas modélisée.
 - Un seul parc électrique (2030) : les années météo changent, pas le parc. Rejouer le cas avec les scénarios TYNDP 2026 est la suite naturelle.
 
+## Les posts qui en parlent
+
+- [Infrastructures d'hydrogène : que vaut un stockage ? (LinkedIn, 5 octobre 2026)](/linkedin/2026-10-05-pommes-fos-1-valeur-stockage.html)
+
 ## Données
 
 - [donnees_valeur_stockage_pommes.csv]({{ site.baseurl }}/assets/cas/fos-h2-stockage/donnees_valeur_stockage_pommes.csv) — valeur de la cavité dans la modélisation POMMES, par CAPEX, prix du gaz et obligation : moyenne, minimum et maximum sur les 11 années.
