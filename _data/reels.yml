@@ -1150,3 +1150,55 @@
     cloudless 2016 d'EOX (CC BY 4.0). Photographies issues de Wikimedia Commons, auteur et
     licence crédités sur chaque image ; pictogrammes Tabler Icons (MIT). Cette vidéo est
     diffusée sous licence CC BY-SA 4.0, comme toute la série.
+
+- id: hydrogene-5b
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Hydrogène
+  filiere_en: Hydrogen
+  serie: Hydrogène
+  serie_en: Hydrogen
+  numero: 5b/5
+  duree: 1 min 31
+  couverture: /assets/reels/hydrogene_5b.jpg
+  titre: >-
+    À quoi servira l'hydrogène ? D'abord à remplacer celui d'aujourd'hui
+  titre_en: >-
+    What will hydrogen be used for? First, replacing today's
+  accroche: >-
+    Le monde utilise près de 100 millions de tonnes d'hydrogène par an, presque toutes
+    fabriquées avec du gaz ou du charbon. Le premier chantier n'est donc pas un nouvel
+    usage : c'est de remplacer cet hydrogène fossile, dans les engrais et le raffinage.
+    Viennent ensuite l'acier, les navires et les avions, là où l'électricité seule ne
+    suffit pas. La voiture à hydrogène, elle, demande 2,5 fois plus d'électricité qu'une
+    voiture à batterie.
+  accroche_en: >-
+    The world uses nearly 100 million tonnes of hydrogen a year, almost all of it made
+    from gas or coal. So the first task is not a new use: it is replacing that fossil
+    hydrogen, in fertilisers and refining. Next come steel, ships and aircraft, where
+    electricity alone is not enough. The hydrogen car, for its part, needs 2.5 times more
+    electricity than a battery car.
+  youtube: SFcvU6Cj6UA
+  code:
+  sources:
+    - >-
+      Près de 100 millions de tonnes : 97 Mt en 2023, l'hydrogène produit exprès pour un
+      usage (AIE, Global Hydrogen Review 2024, encadré 2.1). Presque tout fossile : gaz
+      naturel environ deux tiers, charbon 20 %, sous-produit des raffineries plus de 15 %
+      (lui aussi fossile) ; bas carbone, moins de 1 Mt. Raffinage 43 Mt (44 %), ammoniac
+      32 Mt (un tiers), méthanol 17 %, acier par réduction directe environ 6 % ; transport
+      routier 60 000 t, moins d'un millième (même rapport).
+    - >-
+      Trois fois plus de volume : pouvoir calorifique inférieur de 10,8 MJ/Nm³ pour
+      l'hydrogène contre 35,8 pour le méthane (NIST), rapport 3,3.
+    - >-
+      2,5 fois plus d'électricité : 115,1 MJ d'électricité à la prise pour 100 km avec une
+      voiture à hydrogène (électrolyse, compression à 700 bar, pile à combustible) contre
+      45,66 MJ pour la voiture à batterie du même corpus, même segment (JEC Well-to-Wheels
+      v5 et Tank-to-Wheels v5, Centre commun de recherche de la Commission européenne,
+      2020) ; rapport 2,52. Aucun chiffre de demande future : les scénarios se contredisent
+      d'un facteur deux et plus.
+  licence: >-
+    Figures dessinées pour la vidéo ; pictogrammes Tabler Icons (MIT). Couverture : photo
+    d'épandage d'engrais de Wikideas1 (Wikimedia Commons, CC0). Cette vidéo est diffusée
+    sous licence CC BY-SA 4.0, comme toute la série.
