@@ -1202,3 +1202,69 @@
     Figures dessinées pour la vidéo ; pictogrammes Tabler Icons (MIT). Couverture : photo
     d'épandage d'engrais de Wikideas1 (Wikimedia Commons, CC0). Cette vidéo est diffusée
     sous licence CC BY-SA 4.0, comme toute la série.
+
+- id: ammoniac-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ammoniac
+  filiere_en: Ammonia
+  serie: Ammoniac
+  serie_en: Ammonia
+  numero: 1/6
+  duree: 2 min 22
+  couverture: /assets/reels/ammoniac_1.jpg
+  titre: >-
+    Du pain avec de l'air : Crookes, Haber, Bosch, et la boucle qui tourne toujours
+  titre_en: >-
+    Bread from air: Crookes, Haber, Bosch, and the loop that still runs
+  accroche: >-
+    En 1898, William Crookes annonce une famine : vers 1931, le blé ne suffira plus, faute
+    d'azote. L'air en est plein, mais sous une forme que les plantes ne savent pas
+    utiliser. En 1909, Fritz Haber fait couler de l'ammoniac avec l'azote de l'air, un
+    verre toutes les deux heures : une forte pression, un catalyseur, et le gaz qui n'a
+    pas réagi renvoyé au réacteur. Carl Bosch en fait une usine, Oppau, en 1913. Un an
+    plus tard, la guerre, et l'ammoniac part aux munitions.
+  accroche_en: >-
+    In 1898, William Crookes announced a famine: by about 1931, wheat would no longer
+    feed the world, for lack of nitrogen. The air is full of it, but in a form plants
+    cannot use. In 1909, Fritz Haber made ammonia flow from the nitrogen in the air, one
+    glass every two hours: high pressure, a catalyst, and the unreacted gas sent back to
+    the reactor. Carl Bosch turned it into a factory, Oppau, in 1913. A year later, war,
+    and the ammonia went to munitions.
+  youtube: n9bXUNsrWOg
+  code:
+  sources:
+    - >-
+      Crookes : discours présidentiel à la British Association, Bristol, septembre 1898,
+      publié dans The Wheat Problem (1899) : « just enough to supply the increase of
+      population among bread-eaters till the year 1931 » ; « it is the chemist who must
+      come to the rescue ». Le salpêtre du Chili : plus de la moitié de l'azote fixé dans le
+      monde en 1913 (Smil, Enriching the Earth, 2001) ; 78 % d'azote dans l'air.
+    - >-
+      Haber : démonstration du 2 juillet 1909 à Karlsruhe, lettre du lendemain citée par
+      Smil (Nature, 1999) ; environ 2 cm³ d'ammoniac liquide par minute, soit un verre
+      toutes les deux heures (Tamaru, 1991, d'après Coates, 1939) ; 200 atmosphères,
+      osmium et uranium, circulation du gaz : conférence Nobel de Haber (1920). La raison
+      du catalyseur et de la pression : la réaction dégage de la chaleur, l'équilibre fuit
+      l'ammoniac quand on chauffe et y revient quand on comprime ; le fer permet de
+      casser la triple liaison sans trop chauffer (Ertl, Nobel 2007).
+    - >-
+      Bosch : tubes éclatés après 80 heures, acier décarburé par l'hydrogène, réacteur à
+      double paroi (conférence Nobel de Bosch, 1932) ; plus de 2 500 formules de catalyseur
+      en 6 500 essais jusqu'en 1910, puis le fer promu (Appl, 1997). Oppau : 9 septembre
+      1913, prévue pour 30 t par jour, pleine capacité en 1914 (BASF ; Appl, 1997). « 35
+      fois plus » : 400 000 t par an au Havre, soit 1 100 t par jour, divisées par 30.
+    - >-
+      La guerre : blocus britannique, promesse du salpêtre de Bosch (septembre 1914),
+      première unité d'acide nitrique d'Oppau (mai 1915), Leuna (avril 1917) : Science
+      History Institute ; BASF. Nobel : Haber pour 1918, remis en 1919 ; Bosch pour 1931,
+      avec Bergius (nobelprize.org).
+  licence: >-
+    Images d'archives de Wikimedia Commons, auteur et licence sur chaque image : champ de
+    blé (W.carter, CC0), Crookes (Fournier d'Albe, 1923, domaine public), exploitation de
+    salpêtre Paposo (Luis Boudat, 1889, domaine public), Haber (gravure d'Emil Orlik, 1922,
+    domaine public), Carl Bosch et le four d'Oppau (BASF Corporate History, CC BY-SA 3.0),
+    Oppau en 1914 (Otto Bollhagen, domaine public). Vue aérienne du Havre : IGN /
+    Géoplateforme (Licence Ouverte), OpenStreetMap (ODbL). Carte : Sentinel-2 cloudless
+    2016, EOX, CC BY 4.0. Figures dessinées pour la vidéo. Cette vidéo est diffusée sous
+    licence CC BY-SA 4.0, comme toute la série.
