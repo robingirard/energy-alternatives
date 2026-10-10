@@ -113,6 +113,9 @@
     workshop with a running counter, and find that more than half comes from carbon
     that is not there to heat anything, but to take the oxygen out of the ore.
   youtube: p5-1Ptw2G_c
+  couverture_en: /assets/reels/acier_2_en.jpg
+  duree_en: 1 min 59
+  youtube_en: qrRNjsI4Bc4
   code:
   sources:
     - >-
@@ -1268,3 +1271,166 @@
     Géoplateforme (Licence Ouverte), OpenStreetMap (ODbL). Carte : Sentinel-2 cloudless
     2016, EOX, CC BY 4.0. Figures dessinées pour la vidéo. Cette vidéo est diffusée sous
     licence CC BY-SA 4.0, comme toute la série.
+
+- id: ammoniac-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ammoniac
+  filiere_en: Ammonia
+  serie: Ammoniac
+  serie_en: Ammonia
+  numero: 2/6
+  duree: 2 min 05
+  couverture: /assets/reels/ammoniac_2.jpg
+  titre: >-
+    L'usine du Havre : ce que l'ammoniac ajoute à l'hydrogène
+  titre_en: >-
+    The Le Havre plant: what ammonia adds to hydrogen
+  accroche: >-
+    Une cinquantaine de terrains de football au bord du canal, 400 000 tonnes
+    d'ammoniac par an. L'hydrogène sort d'un vaporeformeur ; l'ammoniac y ajoute un
+    second reformeur soufflé à l'air, une colonne qui retire tout le CO2, pur, et la
+    boucle de Haber et Bosch. Deux tonnes de CO2 par tonne d'ammoniac, dont plus de la
+    moitié sort déjà pure de cette colonne.
+  accroche_en: >-
+    About fifty football pitches along the canal, 400,000 tonnes of ammonia a year. The
+    hydrogen comes out of a steam reformer; ammonia adds a second reformer with air
+    blown in, a column that removes all the CO2, pure, and the Haber-Bosch loop. Two
+    tonnes of CO2 per tonne of ammonia, more than half of which already comes out pure
+    from that column.
+  youtube: Qt4TWv_g2f4
+  code:
+  sources:
+    - >-
+      L'usine du Havre : site Yara de Gonfreville-l'Orcher, emprise de 33 hectares
+      (OpenStreetMap) ; 155 salariés (ICI Normandie, décembre 2023) ; 400 000 t
+      d'ammoniac par an (France 3 Normandie, 2014 ; 390 000 selon L'Usine Nouvelle,
+      2022) ; trois usines en France depuis l'arrêt de Grandpuits (LAT Nitrogen, mars
+      2026). L'urée : 320 000 à 330 000 t par an, premier producteur français d'AdBlue.
+    - >-
+      Le procédé : second reformeur soufflé à l'air, un azote pour trois hydrogènes (Appl,
+      Ammonia) ; le CO2 qui empoisonnerait le catalyseur (Fertilizers Europe, BAT
+      Booklet 1, Production of Ammonia, 2000, p. 13 ; AIE, Ammonia Technology Roadmap,
+      2021, p. 30) ; la boucle à 200 bars et 450 degrés, catalyseur au fer, 15 % convertis
+      par passage, stockage liquide à moins 33 degrés ; sept fois sur dix vers les
+      engrais (AIE, 2021).
+    - >-
+      Les deux tonnes : 178 kg d'hydrogène par tonne d'ammoniac (3 × 1,008 / 17,03) ;
+      11 kg de CO2 par kg d'hydrogène, vaporeformage amont compris, le chiffre de la série
+      Hydrogène ; 0,178 × 11 = 1,96, et 2,01 avec la compression. Plus de la moitié sort
+      pure de la colonne de lavage : 1,15 sur 2,01, soit 57 %.
+  licence: >-
+    Vue aérienne : orthophoto IGN / Géoplateforme (Licence Ouverte), emprise
+    OpenStreetMap (ODbL) ; carte de France : IGN. Photos de Wikimedia Commons, auteur et
+    licence sur chaque image : l'usine de Porsgrunn et ses colonnes, un train de
+    compresseurs, le réacteur de 1921 à Ludwigshafen, le réservoir de Linz. Figures
+    dessinées pour la vidéo. Cette vidéo est diffusée sous licence CC BY-SA 4.0, comme
+    toute la série.
+
+- id: ammoniac-3
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ammoniac
+  filiere_en: Ammonia
+  serie: Ammoniac
+  serie_en: Ammonia
+  numero: 3/6
+  duree: 2 min 03
+  couverture: /assets/reels/ammoniac_3.jpg
+  titre: >-
+    Un CO2 déjà capté, qui part dans l'air
+  titre_en: >-
+    CO2 that is already captured, and released into the air
+  accroche: >-
+    Dans une usine d'ammoniac, le CO2 de la chimie sort seul, pur et concentré : le
+    travail le plus coûteux de la capture est déjà fait. En France, les deux tiers
+    partent pourtant dans l'air, et l'urée qui prend le reste le rend au champ ou au pot
+    d'échappement. À Sluiskil, aux Pays-Bas, il part depuis septembre 2026 sous la mer
+    du Nord.
+  accroche_en: >-
+    In an ammonia plant, the CO2 from the chemistry comes out on its own, pure and
+    concentrated: the most expensive part of capture is already done. Yet in France two
+    thirds of it goes into the air, and the urea that takes the rest gives it back in the
+    field or the exhaust pipe. At Sluiskil, in the Netherlands, it has gone under the
+    North Sea since September 2026.
+  youtube: Oj1GGpsiGBc
+  code:
+  sources:
+    - >-
+      Les chiffres, en tCO2/t NH3, réseau électrique UE-27 2023 (240 g/kWh) : 2,01 au
+      vaporeformage, dont 1,15 de chimie stœchiométrique et 0,55 de combustible. Capture
+      du seul flux procédé (≈ 60 %) → 1,04. Réacteur autotherme, capture ≈ 93 % → 0,56.
+    - >-
+      Où part le CO2 de procédé : en France, 65 % dans l'air, 20 % à l'urée, 15 % vendu
+      (ADEME, Plan de transition sectoriel de l'ammoniac, synthèse, 2023) ; dans le
+      monde, environ 130 Mt sur 250 Mt vont à l'urée, soit 52 % (AIE, Ammonia Technology
+      Roadmap, 2021).
+    - >-
+      Sluiskil : jusqu'à 800 000 t/an captées, transportées par navire jusqu'à Øygarden
+      (Norvège), stockées à environ 2 600 m sous le fond marin (Northern Lights) ;
+      inauguration le 7 septembre 2026 (Yara, communiqué du 7/09/2026).
+  licence: >-
+    Photos : l'usine Yara de Sluiskil le jour de l'inauguration de sa capture (Union
+    européenne / Guillaume Cortade, CC BY 4.0), un épandeur d'engrais (Vieve Forward,
+    geograph.org.uk, CC BY-SA 2.0), le réservoir d'AdBlue d'un camion (KaiBorgeest,
+    Wikimedia Commons, CC BY-SA 4.0). Carte : Sentinel-2 cloudless, EOX, CC BY 4.0.
+    Figures dessinées pour la vidéo. Cette vidéo est diffusée sous licence CC BY-SA 4.0,
+    comme toute la série.
+
+- id: ammoniac-4
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ammoniac
+  filiere_en: Ammonia
+  serie: Ammoniac
+  serie_en: Ammonia
+  numero: 4/6
+  duree: 2 min 11
+  couverture: /assets/reels/ammoniac_4.jpg
+  titre: >-
+    La boucle, sans le méthane
+  titre_en: >-
+    The Haber-Bosch loop, without the methane
+  accroche: >-
+    On garde la boucle de Haber et Bosch, on ferme le vaporeformeur : l'hydrogène vient
+    d'un électrolyseur, l'azote d'une unité de séparation d'air. Il faut alors
+    11 mégawattheures par tonne d'ammoniac, et tout dépend du CO2 de cette électricité.
+    Porsgrunn le fait depuis 2024, NEOM le construit ; vers 1930, un tiers des usines
+    électrolysaient déjà de l'eau.
+  accroche_en: >-
+    Keep the Haber-Bosch loop, shut down the steam reformer: the hydrogen comes from an
+    electrolyser, the nitrogen from an air separation unit. It then takes 11
+    megawatt-hours per tonne of ammonia, and everything depends on the CO2 of that
+    electricity. Porsgrunn has done it since 2024, NEOM is building it; around 1930, a
+    third of plants were already splitting water.
+  youtube: lTktWCtmAPM
+  code:
+  sources:
+    - >-
+      Les chiffres, en tCO2/t NH3, réseau UE-27 2023 (240 g/kWh) : vaporeformage 2,01 ;
+      électrolyse 0,00 sans émissions, 2,64 sur le réseau européen moyen, 0,62 sur le
+      réseau français (56 g/kWh). 11 MWh d'électricité par tonne d'ammoniac (≈ 9,5 pour
+      l'hydrogène, ≈ 0,6 pour la séparation d'air et la synthèse). Le Havre : 400 000 t/an
+      × 11 MWh = 4,4 TWh/an ; un réacteur nucléaire français produit en moyenne
+      6,5 TWh/an (EDF, résultats annuels 2025).
+    - >-
+      Les projets : Porsgrunn (Herøya, Norvège), 24 MW, inauguré le 10 juin 2024,
+      ≈ 20 500 t NH3/an (Yara, S&P Global). NEOM (Arabie saoudite) : 2,2 GW
+      d'électrolyse, ≈ 4 GW de solaire et d'éolien, plus d'un million de tonnes par an,
+      exploitation commerciale visée en 2027 (ACWA Power, Air Products). Le Havre : projet
+      Green Horizon de Lhyfe, 100 MW, décision d'investissement attendue début 2027, Yara
+      preneur de plus de la moitié de l'hydrogène (Lhyfe ; ICI / France Bleu Normandie).
+    - >-
+      La flexibilité : 80 % de charge minimale aujourd'hui, 40 % promis par les
+      constructeurs (Cédric Philibert, dialogue Zenon, 15/06/2023). L'histoire : vers
+      1930, près d'un tiers des usines d'ammoniac du monde en capacité électrolytique,
+      surtout en Norvège (Rjukan, Glomfjord) et au Canada (Trail) — IRENA, Innovation
+      Outlook: Renewable Ammonia (2022) ; Rouwenhorst et al. (2022).
+  licence: >-
+    Photos de Wikimedia Commons, auteur et licence sur chaque image : une unité de
+    séparation d'air au Creusot (Pressefoto Westfalen AG, CC BY 3.0), une colonne de
+    distillation (CC BY-SA 3.0), l'usine de Porsgrunn (Bitjungle, CC BY-SA 4.0), la
+    centrale de Gravelines (Raimond Spekking, CC BY-SA 4.0), l'usine Norsk Hydro de
+    Rjukan vers 1912 (Magnus Himberg / Oslo Museum, CC BY 3.0). Carte de NEOM :
+    Sentinel-2 cloudless, EOX, CC BY 4.0. Figures dessinées pour la vidéo. Cette vidéo
+    est diffusée sous licence CC BY-SA 4.0, comme toute la série.
