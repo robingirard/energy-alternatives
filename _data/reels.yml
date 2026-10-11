@@ -1434,3 +1434,48 @@
     Rjukan vers 1912 (Magnus Himberg / Oslo Museum, CC BY 3.0). Carte de NEOM :
     Sentinel-2 cloudless, EOX, CC BY 4.0. Figures dessinées pour la vidéo. Cette vidéo
     est diffusée sous licence CC BY-SA 4.0, comme toute la série.
+
+- id: ammoniac-5
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ammoniac
+  filiere_en: Ammonia
+  serie: Ammoniac
+  serie_en: Ammonia
+  numero: 5/6
+  duree: 1 min 28
+  couverture: /assets/reels/ammoniac_5.jpg
+  titre: >-
+    Se passer de la boucle ?
+  titre_en: >-
+    Doing without the Haber-Bosch loop?
+  accroche: >-
+    Depuis 1913, presque tout l'ammoniac du monde passe par la même boucle, sous
+    200 bars. Trois pistes pour s'en passer : une boucle plus douce (Tsubame BHB,
+    500 tonnes par an au Japon), une cellule électrochimique (quatre fois plus
+    d'énergie), un plasma (près de cinq fois plus). Aucune ne battra une grande usine
+    avant longtemps.
+  accroche_en: >-
+    Since 1913, almost all of the world's ammonia has gone through the same loop, at
+    200 bar. Three ways to do without it: a gentler loop (Tsubame BHB, 500 tonnes a
+    year in Japan), an electrochemical cell (four times the energy), a plasma (nearly
+    five times). None will beat a large plant any time soon.
+  youtube: PESk2XUerQ4
+  code:
+  sources:
+    - >-
+      Boucle basse pression (Tsubame BHB, catalyseur électride) : 50 à 80 bars et
+      300 °C à 400 °C, contre ≈ 200 bars et ≈ 450 °C ; première unité commerciale le
+      6 janvier 2026 au Kashiwazaki Hydrogen Park (INPEX), 500 t/an ; 400 000 / 500 = 800.
+    - >-
+      Énergie par tonne d'ammoniac : électrolyse + boucle ≈ 33 GJ ; cellule
+      électrochimique, mesurée, 135 GJ (× 4,1) ; plasma, mesuré, 155 GJ (× 4,7),
+      potentiel 50-65 GJ (Rouwenhorst et al. 2020 et 2021 ; IRENA, Innovation Outlook:
+      Renewable Ammonia, 2022).
+    - >-
+      Les faux positifs : Andersen et al., Nature (2019). L'entreprise qui a abandonné
+      le plasma faisait des nitrates, pas de l'ammoniac (AgFunderNews, mars 2025).
+      « Haber-Bosch restera dominant dans les décennies à venir » : IRENA (2022), p. 64.
+  licence: >-
+    Schémas et planche dessinés pour la vidéo. Cette vidéo est diffusée sous licence
+    CC BY-SA 4.0, comme toute la série.
