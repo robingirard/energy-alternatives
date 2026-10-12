@@ -1479,3 +1479,52 @@
   licence: >-
     Schémas et planche dessinés pour la vidéo. Cette vidéo est diffusée sous licence
     CC BY-SA 4.0, comme toute la série.
+
+- id: ammoniac-6
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Ammoniac
+  filiere_en: Ammonia
+  serie: Ammoniac
+  serie_en: Ammonia
+  numero: 6/6
+  duree: 2 min 20
+  couverture: /assets/reels/ammoniac_6.jpg
+  titre: >-
+    À quoi servira l'ammoniac ?
+  titre_en: >-
+    What will ammonia be used for?
+  accroche: >-
+    180 millions de tonnes d'ammoniac par an aujourd'hui, près de quatre fois plus en
+    2050 dans le scénario 1,5 °C de l'IRENA. Pour son hydrogène : les navires de haute
+    mer, le transport de l'énergie d'un continent à l'autre, l'électricité de pointe.
+    Ce qui en vaut la peine, et ce qui n'en vaut pas.
+  accroche_en: >-
+    180 million tonnes of ammonia a year today, nearly four times as much in 2050 in
+    IRENA's 1.5 °C scenario. For its hydrogen: deep-sea ships, moving energy from one
+    continent to another, peak electricity. What is worth it, and what is not.
+  youtube: NoQ18wL-8yM
+  code:
+  sources:
+    - >-
+      IRENA (2022), scénario 1,5 °C : 183 Mt en 2020, 688 Mt en 2050 (× 3,8), dont
+      marché existant 334 (engrais 267, industrie 67), navires 197, hydrogène
+      transporté 127, électricité 30 (IRENA et Ammonia Energy Association, Innovation
+      Outlook: Renewable Ammonia, 2022).
+    - >-
+      L'Antwerpen (EXMAR), transporteur de gaz à moteur bicarburant WinGD, livré en
+      juin 2026. Craquage : au moins 13 % de l'énergie (IRENA). Transport par bateau
+      presque indépendant de la distance (Royal Society, 2020).
+    - >-
+      Hekinan (JERA) : 20 % d'ammoniac dans la tranche 4 (1 GW), avril-juin 2024,
+      exploitation commerciale visée pour 2029. Électricité → électricité : 24 à 31 %
+      par turbine (CSIRO, Giddey et al. 2017).
+    - >-
+      Parc : ≈ 250 Mt de capacité pour 185 Mt produits ; âge moyen 12 ans en Chine
+      (85 % au charbon), ≈ 24 dans le monde, ≈ 40 en Europe (AIE, Ammonia Technology
+      Roadmap, 2021).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; la couverture reprend l'Antwerpen (Organisation maritime internationale,
+    photo EXMAR, CC BY 4.0). Deux d'entre elles étant sous CC BY-SA 3.0, cette vidéo
+    est elle-même diffusée sous licence CC BY-SA 4.0, comme toute la série.
