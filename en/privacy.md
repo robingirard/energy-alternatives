@@ -62,6 +62,11 @@ data is handled under the [Google Privacy Policy](https://policies.google.com/pr
 authorization can be revoked at any time in [the Google account security
 settings](https://myaccount.google.com/permissions).
 
+**Storage and deletion.** The statistics read by the tool are stored only on the author's
+computer, for his own use. If the authorization is revoked, the authorization token and
+the stored statistics are deleted. Since the tool stores no data about anyone else, there
+is no other data to delete; any question can be sent through the [About]({{ site.baseurl }}/en/about.html) page.
+
 ## Contact
 
 For any question about this data: see the [About]({{ site.baseurl }}/en/about.html) page.

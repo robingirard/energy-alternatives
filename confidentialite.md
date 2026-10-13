@@ -66,6 +66,12 @@ et les données passent sous la [politique de confidentialité de
 Google](https://policies.google.com/privacy). L'autorisation se retire à tout moment dans
 [les paramètres de sécurité du compte Google](https://myaccount.google.com/permissions).
 
+**Conservation et effacement.** Les statistiques lues par l'outil ne sont gardées que sur
+l'ordinateur de l'auteur, pour son propre usage. Si l'autorisation est retirée, le jeton
+d'autorisation et les statistiques gardées sont effacés. L'outil ne gardant aucune donnée
+sur personne d'autre, il n'y a rien d'autre à effacer ; toute question passe par la page
+[À propos]({{ site.baseurl }}/about.html).
+
 ## Contact
 
 Pour toute question sur ces données : voir la page [À propos]({{ site.baseurl }}/about.html).
