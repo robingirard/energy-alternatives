@@ -41,12 +41,13 @@ To display formulas, charts and icons, pages load libraries from
 page are embedded from YouTube in "no cookie" mode (`youtube-nocookie.com`). Like any
 web server, these servers receive your IP address when the content loads.
 
-## The author's tools for his YouTube channel
+## The author's tools for his YouTube channels
 
 The "Audience" application is the author's personal tool. It runs on his computer and is
 offered to no one else. With his authorization, it uses the YouTube API Services for two
-things, and only on **his own channel**
-([@energy_alternatives](https://www.youtube.com/@energy_alternatives)):
+things, and only on **his own two channels**
+([@energy_alternatives](https://www.youtube.com/@energy_alternatives) in French and
+[@energy_alternatives_en](https://www.youtube.com/@energy_alternatives_en) in English):
 
 - **reading the channel's statistics** (views, subscribers, watch time), to display them
   on his computer;

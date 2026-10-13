@@ -44,12 +44,13 @@ partage viennent d'[AddToAny](https://www.addtoany.com/). Les vidéos de la page
 cookie » (`youtube-nocookie.com`). Ces serveurs reçoivent, comme tout serveur web, votre
 adresse IP au moment du chargement.
 
-## Outils de l'auteur pour sa chaîne YouTube
+## Outils de l'auteur pour ses chaînes YouTube
 
 L'application « Audience » est un outil personnel de l'auteur, qui tourne sur son
 ordinateur et n'est proposé à personne d'autre. Avec son autorisation, elle utilise les
-services d'API de YouTube pour deux choses, et seulement sur **sa propre chaîne**
-([@energy_alternatives](https://www.youtube.com/@energy_alternatives)) :
+services d'API de YouTube pour deux choses, et seulement sur **ses deux propres chaînes**
+([@energy_alternatives](https://www.youtube.com/@energy_alternatives) en français et
+[@energy_alternatives_en](https://www.youtube.com/@energy_alternatives_en) en anglais) :
 
 - **lire les statistiques** de la chaîne (vues, abonnés, durée de visionnage), pour les
   afficher sur son ordinateur ;
