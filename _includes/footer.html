@@ -24,6 +24,22 @@
     </div>
     {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
     {%- assign _locale_copyright_dates = __return -%}
+    {%- comment -%} Confidentialité, conditions et chaîne YouTube : demandés par l'audit des services
+      d'API de YouTube (13/10/2026), sur toutes les pages. {%- endcomment -%}
+    {%- if page.url contains '/en/' -%}
+      {%- assign _f_priv = '/en/privacy.html' -%}{%- assign _f_priv_t = 'Privacy' -%}
+      {%- assign _f_cond = '/en/terms.html' -%}{%- assign _f_cond_t = 'Terms of use' -%}
+      {%- assign _f_yt = 'https://www.youtube.com/@energy_alternatives_en' -%}{%- assign _f_yt_t = 'Our videos on YouTube' -%}
+    {%- else -%}
+      {%- assign _f_priv = '/confidentialite.html' -%}{%- assign _f_priv_t = 'Confidentialité' -%}
+      {%- assign _f_cond = '/conditions.html' -%}{%- assign _f_cond_t = "Conditions d'utilisation" -%}
+      {%- assign _f_yt = 'https://www.youtube.com/@energy_alternatives' -%}{%- assign _f_yt_t = 'Nos vidéos sur YouTube' -%}
+    {%- endif -%}
+    <div class="site-info mt-2 footer__legal">
+      <a href="{{ site.baseurl }}{{ _f_priv }}">{{ _f_priv_t }}</a> ·
+      <a href="{{ site.baseurl }}{{ _f_cond }}">{{ _f_cond_t }}</a> ·
+      <a href="{{ _f_yt }}" title="YouTube"><svg aria-hidden="true" width="20" height="14" viewBox="0 0 28 20" style="vertical-align:-2px"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg> {{ _f_yt_t }}</a>
+    </div>
     <div class="site-info mt-2">
       <div>
         {%- include snippets/get-locale-string.html key='COPYRIGHT_DATES' -%}
