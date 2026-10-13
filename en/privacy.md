@@ -41,14 +41,25 @@ To display formulas, charts and icons, pages load libraries from
 page are embedded from YouTube in "no cookie" mode (`youtube-nocookie.com`). Like any
 web server, these servers receive your IP address when the content loads.
 
-## The author's statistics tool
+## The author's tools for his YouTube channel
 
-The "Audience" application is the author's personal tool. With his authorization, it
-reads the statistics of his own YouTube channel
-([@energy_alternatives](https://www.youtube.com/@energy_alternatives)) **read-only**, to
-display them on his computer. It accesses no other user's data; what it reads is not
-published, shared or sold. The authorization can be revoked at any time in
-[the Google account settings](https://myaccount.google.com/permissions).
+The "Audience" application is the author's personal tool. It runs on his computer and is
+offered to no one else. With his authorization, it uses the YouTube API Services for two
+things, and only on **his own channel**
+([@energy_alternatives](https://www.youtube.com/@energy_alternatives)):
+
+- **reading the channel's statistics** (views, subscribers, watch time), to display them
+  on his computer;
+- **publishing his own videos**: uploading a video, its thumbnail and its captions,
+  adding it to one of the channel's playlists and posting a first comment.
+
+It accesses no other user's data and collects no personal data; what it reads is not
+published, shared or sold. The authorization token stays on the author's computer. The
+tool uses the [YouTube API Services](https://developers.google.com/youtube): by using it,
+the author agrees to the [YouTube Terms of Service](https://www.youtube.com/t/terms), and
+data is handled under the [Google Privacy Policy](https://policies.google.com/privacy). The
+authorization can be revoked at any time in [the Google account security
+settings](https://myaccount.google.com/permissions).
 
 ## Contact
 

@@ -44,14 +44,26 @@ partage viennent d'[AddToAny](https://www.addtoany.com/). Les vidéos de la page
 cookie » (`youtube-nocookie.com`). Ces serveurs reçoivent, comme tout serveur web, votre
 adresse IP au moment du chargement.
 
-## Outil de statistiques de l'auteur
+## Outils de l'auteur pour sa chaîne YouTube
 
-L'application « Audience » est un outil personnel de l'auteur. Avec son autorisation, elle
-lit **en lecture seule** les statistiques de sa propre chaîne YouTube
-([@energy_alternatives](https://www.youtube.com/@energy_alternatives)) pour les afficher
-sur son ordinateur. Elle n'accède aux données d'aucun autre utilisateur ; ce qu'elle lit
-n'est ni publié, ni transmis, ni vendu. L'autorisation se retire à tout moment dans
-[les paramètres du compte Google](https://myaccount.google.com/permissions).
+L'application « Audience » est un outil personnel de l'auteur, qui tourne sur son
+ordinateur et n'est proposé à personne d'autre. Avec son autorisation, elle utilise les
+services d'API de YouTube pour deux choses, et seulement sur **sa propre chaîne**
+([@energy_alternatives](https://www.youtube.com/@energy_alternatives)) :
+
+- **lire les statistiques** de la chaîne (vues, abonnés, durée de visionnage), pour les
+  afficher sur son ordinateur ;
+- **publier ses propres vidéos** : importer une vidéo, sa miniature et ses sous-titres,
+  l'ajouter à une playlist de la chaîne et y poster un premier commentaire.
+
+Elle n'accède aux données d'aucun autre utilisateur et ne collecte aucune donnée
+personnelle ; ce qu'elle lit n'est ni publié, ni transmis, ni vendu. Le jeton
+d'autorisation reste sur l'ordinateur de l'auteur. L'outil utilise les
+[services d'API de YouTube](https://developers.google.com/youtube) : en l'utilisant,
+l'auteur accepte les [conditions d'utilisation de YouTube](https://www.youtube.com/t/terms),
+et les données passent sous la [politique de confidentialité de
+Google](https://policies.google.com/privacy). L'autorisation se retire à tout moment dans
+[les paramètres de sécurité du compte Google](https://myaccount.google.com/permissions).
 
 ## Contact
 
