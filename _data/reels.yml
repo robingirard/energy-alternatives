@@ -233,6 +233,9 @@
     methane. Changing that gas is enough to make the reduction CO₂ disappear, on one
     condition: the electricity.
   youtube: X9WMqBYC0vA
+  couverture_en: /assets/reels/acier_4_en.jpg
+  duree_en: 2 min 08
+  youtube_en: vfozM2UTRU0
   code:
   sources:
     - >-
@@ -1573,3 +1576,45 @@
     Art, auteur et licence crédités sur chaque image. Quatre d'entre elles étant sous
     CC BY-SA, cette vidéo est elle-même diffusée sous licence CC BY-SA 4.0, comme toute
     la série.
+- id: olefines-1b
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 1b/11
+  duree: 2 min 08
+  couverture: /assets/reels/olefines_1b.jpg
+  titre: >-
+    La molécule géante
+  titre_en: >-
+    The giant molecule
+  accroche: >-
+    De 1920 à 1954 : Staudinger impose l'idée des molécules géantes contre presque tous,
+    Svedberg les pèse, Carothers en construit (néoprène, nylon), ICI trouve le
+    polyéthylène, Ziegler et Natta le font sans haute pression. Puis le plastique entre
+    dans les maisons : 2 Mt en 1950, plus de 400 Mt aujourd'hui.
+  accroche_en: >-
+    From 1920 to 1954: Staudinger defends giant molecules against nearly everyone,
+    Svedberg weighs them, Carothers builds them (neoprene, nylon), ICI finds polyethylene,
+    Ziegler and Natta make it without high pressure. Then plastic moves into homes:
+    2 Mt in 1950, over 400 Mt today.
+  youtube: EQLLU2kXpu4
+  code:
+  sources:
+    - >-
+      Staudinger et Fritschi, Helvetica Chimica Acta, vol. V (1922) ; discours Nobel de
+      Staudinger (1953) ; lettre de Wieland rapportée dans ses souvenirs (1961).
+      Svedberg et Fåhraeus, Journal of the American Chemical Society (1926).
+    - >-
+      Carothers : néoprène 1930, nylon 1935 (American Chemical Society) ; polyéthylène :
+      Gibson et Fawcett, ICI, 1933 ; Ziegler 1953, Natta 1954, Nobel 1963.
+    - >-
+      Production mondiale : 2 Mt en 1950, 460 Mt en 2019 (Our World in Data, d'après
+      Geyer et al. 2017 et l'OCDE 2022) ; polyéthylène et polypropylène : 45 % en 2024
+      (Plastics Europe, Fast Facts 2025).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image. Cinq d'entre elles étant sous CC BY-SA, cette vidéo est elle-même diffusée
+    sous licence CC BY-SA 4.0, comme toute la série.
