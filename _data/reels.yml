@@ -295,6 +295,9 @@
     two families of cells now do it for iron — at 1600 °C and at 110 °C. Same carbon
     balance as hydrogen, one conversion instead of two, and pilot scale as the limit.
   youtube: Mu9MRtDGcR4
+  couverture_en: /assets/reels/acier_5_en.jpg
+  duree_en: 2 min 45
+  youtube_en: AaaoDWJCSjk
   code:
   sources:
     - >-
@@ -1618,3 +1621,46 @@
     Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
     image. Cinq d'entre elles étant sous CC BY-SA, cette vidéo est elle-même diffusée
     sous licence CC BY-SA 4.0, comme toute la série.
+- id: olefines-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 2/11
+  duree: 1 min 49
+  couverture: /assets/reels/olefines_2.jpg
+  titre: >-
+    D'où vient le plastique
+  titre_en: >-
+    Where plastic comes from
+  accroche: >-
+    Lavéra, le plus gros des cinq vapocraqueurs français : 720 000 tonnes d'éthylène par
+    an. Le naphta y est cassé à 850 °C en moins d'une seconde, trié à −100 °C, puis les
+    petites molécules sont accrochées bout à bout en polyéthylène et polypropylène. Près
+    de deux tonnes de CO2 par tonne de produit.
+  accroche_en: >-
+    Lavéra, the largest of France's five steam crackers: 720,000 tonnes of ethylene a
+    year. Naphtha is cracked at 850 °C in under a second, sorted at −100 °C, then the
+    small molecules are linked end to end into polyethylene and polypropylene. Almost
+    two tonnes of CO2 per tonne of product.
+  youtube: Nz4bFceV060
+  code:
+  sources:
+    - >-
+      Production mondiale : 460 Mt en 2019, 234 Mt en 2000 (OCDE, Global Plastics Outlook,
+      2022) ; acier : 1 887 Mt en 2024 (worldsteel).
+    - >-
+      Lavéra : 720 000 t/an d'éthylène (Naphtachimie, INEOS) ; cinq vapocraqueurs en
+      service en France, Gravenchon arrêté en juin 2024 (L'Élémentarium, « Vapocraquage
+      des hydrocarbures »).
+    - >-
+      Procédé (≈ 850 °C, trempe en moins de 0,1 s, séparation à −100 °C) et 1,95 tCO2 par
+      tonne de produits à haute valeur, du berceau à la sortie d'usine, réseau UE-27 à
+      240 gCO2/kWh : valeurs d'ingénierie 2025.
+  licence: >-
+    Vue aérienne : orthophoto IGN / Géoplateforme (Licence Ouverte) et OpenStreetMap
+    (ODbL). Photographies issues de Wikimedia Commons, auteur et licence crédités sur
+    chaque image. Cinq d'entre elles étant sous CC BY-SA, cette vidéo est elle-même
+    diffusée sous licence CC BY-SA 4.0, comme toute la série.
