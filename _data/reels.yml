@@ -363,6 +363,9 @@
     scale. And at the end of the sufficiency arithmetic, more than one and a half
     billion tonnes of CO₂ a year would still be left.
   youtube: zPVpRUxsLj4
+  couverture_en: /assets/reels/acier_6_en.jpg
+  duree_en: 2 min 35
+  youtube_en: rfaxZU-cd_8
   code:
   sources:
     - >-
@@ -1664,3 +1667,44 @@
     (ODbL). Photographies issues de Wikimedia Commons, auteur et licence crédités sur
     chaque image. Cinq d'entre elles étant sous CC BY-SA, cette vidéo est elle-même
     diffusée sous licence CC BY-SA 4.0, comme toute la série.
+- id: olefines-3
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 3/11
+  duree: 1 min 53
+  couverture: /assets/reels/olefines_3.jpg
+  titre: >-
+    Quels plastiques, pour quoi faire
+  titre_en: >-
+    Which plastics, and what for
+  accroche: >-
+    Le petit triangle sous les emballages : cinq grands plastiques, les deux tiers du
+    plastique neuf en Europe. Chaînes droites ou ramifiées, branche du polypropylène,
+    chlore du PVC : la forme fait l'usage. L'Europe en transforme 52 Mt par an, près de
+    quatre sur dix pour l'emballage, et 14 % seulement viennent du recyclage.
+  accroche_en: >-
+    The small triangle under packaging: five main plastics, two thirds of Europe's new
+    plastic. Straight or branched chains, polypropylene's side branch, PVC's chlorine:
+    shape decides use. Europe converts 52 Mt a year, nearly four in ten for packaging,
+    and only 14% comes from recycling.
+  youtube: StlztV8hWio
+  code:
+  sources:
+    - >-
+      Codes de recyclage : OCDE, Global Plastics Outlook (2022), figure 2.4. Les cinq
+      polymères : 67,4 % de la demande européenne vierge en 2021, PE + PP 49 % (Plastics
+      Europe, Plastics – the Facts 2022, p. 35).
+    - >-
+      52,4 Mt converties en Europe en 2024, emballage 38,7 %, bâtiment 23,1 %, recyclé
+      post-consommation 13,9 % (Plastics Europe, Circular Economy for Plastics 2026,
+      p. 39 et 45).
+    - >-
+      Emballage : 42 % de la production mondiale et 54 % des déchets en 2015, durées
+      d'usage par secteur (Geyer, Jambeck et Law, Science Advances, 2017).
+  licence: >-
+    Schémas et figures dessinés pour la série. Couverture : Cjp24, Wikimedia Commons,
+    CC BY-SA 3.0 ; la vidéo est diffusée sous licence CC BY-SA 4.0, comme toute la série.
