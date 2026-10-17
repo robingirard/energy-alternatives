@@ -522,6 +522,9 @@
     twenty cement plants in France, close to quarries and towns. In Lumbres, we follow
     the line machine by machine, from the quarry to the silos.
   youtube: bMlVfX3H8tw
+  couverture_en: /assets/reels/ciment_1_en.jpg
+  duree_en: 2 min 03
+  youtube_en: qwcQgy6QqF4
   code:
   sources:
     - >-
@@ -1708,3 +1711,39 @@
   licence: >-
     Schémas et figures dessinés pour la série. Couverture : Cjp24, Wikimedia Commons,
     CC BY-SA 3.0 ; la vidéo est diffusée sous licence CC BY-SA 4.0, comme toute la série.
+- id: olefines-4
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 4/11
+  duree: 1 min 25
+  couverture: /assets/reels/olefines_4.jpg
+  titre: >-
+    Où est passé le carbone
+  titre_en: >-
+    Where did the carbon go
+  accroche: >-
+    Les deux tonnes de CO2 d'une tonne d'oléfines, poste par poste : 0,55 en amont, 1,30
+    aux brûleurs des fours, 0,10 pour la compression. La chimie du procédé, elle, est à
+    zéro : 71 % du carbone du naphta part dans la molécule. Il n'a pas disparu.
+  accroche_en: >-
+    The two tonnes of CO2 behind a tonne of olefins, step by step: 0.55 upstream, 1.30
+    at the furnace burners, 0.10 for compression. The process chemistry itself is at
+    zero: 71% of the naphtha's carbon ends up in the molecule. It has not gone away.
+  youtube: SDqK2ZgXXJQ
+  code:
+  sources:
+    - >-
+      Cascade en tCO2 par tonne de produits du vapocraqueur (amont 0,55, combustion 1,30,
+      électricité 0,10, total 1,95) : jeu de valeurs d'ingénierie, emission_factors.md § 5
+      (Decarbonisation_routes), réseau UE-27 de 2023.
+    - >-
+      Bilan carbone matière (71 % du carbone manipulé dans la molécule) : note de procédés
+      industriels, § 5.2.
+  licence: >-
+    Planche du vapocraqueur et figures dessinées pour la série. Couverture : Rolf
+    Kickuth, Wikimedia Commons, CC BY-SA 4.0 ; la vidéo est diffusée sous licence
+    CC BY-SA 4.0, comme toute la série.
