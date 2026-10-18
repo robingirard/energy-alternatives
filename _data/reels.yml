@@ -567,6 +567,9 @@
     and the bulk does not come from the fire: 62% comes out of the stone itself, as
     the limestone breaks down.
   youtube: kN8CCUxos3Q
+  couverture_en: /assets/reels/ciment_2_en.jpg
+  duree_en: 1 min 42
+  youtube_en: Qfdu41SJM5A
   code:
   sources:
     - >-
@@ -1747,3 +1750,43 @@
     Planche du vapocraqueur et figures dessinées pour la série. Couverture : Rolf
     Kickuth, Wikimedia Commons, CC BY-SA 4.0 ; la vidéo est diffusée sous licence
     CC BY-SA 4.0, comme toute la série.
+- id: olefines-5
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 5/11
+  duree: 1 min 20
+  couverture: /assets/reels/olefines_5.jpg
+  titre: >-
+    Le carbone revient
+  titre_en: >-
+    The carbon comes back
+  accroche: >-
+    Un bidon d'un kilo a coûté 1,95 kg de CO2 à fabriquer, mais l'essentiel du carbone du
+    pétrole est resté dans l'objet : 3,1 kg de CO2 s'il est brûlé. Décarboner l'usine ne
+    traite que deux cinquièmes du problème. En Europe, 15 % du plastique jeté est recyclé.
+  accroche_en: >-
+    Making a one-kilo jerrycan cost 1.95 kg of CO2, but most of the oil's carbon stayed in
+    the object: 3.1 kg of CO2 if it is burned. Decarbonising the plant only deals with two
+    fifths of the problem. In Europe, 15% of discarded plastic is recycled.
+  youtube: RliPo3oVJp0
+  code:
+  sources:
+    - >-
+      Fabrication : 1,95 kgCO2 par kg d'oléfines, du puits à l'usine (amont 0,55, brûleurs
+      1,30, électricité 0,10), réseau UE-27 de 2023 : emission_factors.md § 5
+      (Decarbonisation_routes) ; polymérisation et moulage non comptés.
+    - >-
+      Incinération : polyéthylène à 86 % de carbone, × 44/12 = 3,1 kgCO2 par kg de
+      polyoléfine (stœchiométrie).
+    - >-
+      Fin de vie en Europe (2020) : 15 % recyclés ; du reste, 61 % incinérés, 34 % enfouis,
+      5 % exportés. Grimaud & Girard, « Plastiques en transition », Zenon Research, 2024,
+      d'après Material Economics.
+  licence: >-
+    Figures dessinées pour la série. Photos : Cjp24 (objets en polyéthylène, CC BY-SA 3.0)
+    et John-Grégoire (incinérateur de Saint-Ouen, couverture, CC BY-SA 4.0), Wikimedia
+    Commons ; la vidéo est diffusée sous licence CC BY-SA 4.0, comme toute la série.
