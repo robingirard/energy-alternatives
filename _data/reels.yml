@@ -1790,3 +1790,40 @@
     Figures dessinées pour la série. Photos : Cjp24 (objets en polyéthylène, CC BY-SA 3.0)
     et John-Grégoire (incinérateur de Saint-Ouen, couverture, CC BY-SA 4.0), Wikimedia
     Commons ; la vidéo est diffusée sous licence CC BY-SA 4.0, comme toute la série.
+- id: olefines-6
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 6/11
+  duree: 1 min 52
+  couverture: /assets/reels/olefines_6.jpg
+  titre: >-
+    Ce qu'on ajoute au plastique
+  titre_en: >-
+    What we add to plastic
+  accroche: >-
+    Un plastique n'est jamais un polymère pur : antioxydants, anti-UV, plastifiants,
+    retardateurs de flamme, charges. Ces molécules ne sont pas accrochées aux chaînes, et
+    avec le temps elles sortent. Le recyclage les remet en circulation.
+  accroche_en: >-
+    A plastic is never a pure polymer: antioxidants, UV stabilisers, plasticisers, flame
+    retardants, fillers. These molecules are not bound to the chains, and over time they
+    leak out. Recycling puts them back into circulation.
+  youtube: NIVxtRGpdzQ
+  code:
+  sources:
+    - >-
+      Additifs : PNUE, Chemicals in plastics, 2023 ; PlastChem, 2024 (16 325 substances,
+      4 219 préoccupantes) ; Geyer et al., 2017 (part des additifs dans la masse).
+    - >-
+      6PPD et saumons coho : Scholz et al., 2011 ; Tian et al., Science, 2021.
+    - >-
+      DEHP : CIRC, monographie 101 ; ECHA, liste des substances candidates (28/10/2008) ;
+      règlement REACH, annexes XIV et XVII.
+  licence: >-
+    Schéma et figures dessinés pour la série. Couverture : Gabriele85, Wikimedia Commons,
+    CC0 ; les autres photos sont créditées sur chaque image ; la vidéo est diffusée sous
+    licence CC BY-SA 4.0, comme toute la série.
