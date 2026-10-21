@@ -24,8 +24,7 @@
   {%- assign _og_desc = site.description -%}
 {%- endif -%}
 
-{%- include snippets/page-url.html -%}
-{%- assign _og_url = __return -%}
+{%- capture _og_url -%}{%- include snippets/page-url.html -%}{%- endcapture -%}
 {%- include snippets/get-lang-code.html -%}
 {%- assign _og_lang = __return -%}
 

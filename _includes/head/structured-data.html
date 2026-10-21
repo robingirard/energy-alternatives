@@ -24,8 +24,7 @@
 {%- if page.date and page.title -%}
   {%- include snippets/get-lang-code.html -%}
   {%- assign _sd_lang = __return -%}
-  {%- include snippets/page-url.html -%}
-  {%- assign _sd_url = __return -%}
+  {%- capture _sd_url -%}{%- include snippets/page-url.html -%}{%- endcapture -%}
   {%- include snippets/get-article-title.html article=page -%}
   {%- assign _sd_titre = __return -%}
 
