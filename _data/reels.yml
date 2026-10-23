@@ -706,6 +706,9 @@
     stands, and why the electric kiln captures the stone's CO₂ no better — while a
     kiln burning biomass can go below zero.
   youtube: 6CISOOp7Cjw
+  couverture_en: /assets/reels/ciment_4a_en.jpg
+  duree_en: 2 min 29
+  youtube_en: 7NUjr1nE4s4
   code:
   sources:
     - >-
@@ -1925,3 +1928,62 @@
     Figures dessinées pour la série. Couverture : NOAA Marine Debris Program, domaine
     public ; les autres photos sont créditées sur chaque image ; la vidéo est diffusée
     sous licence CC BY-SA 4.0, comme toute la série.
+
+- id: olefines-8
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 8/11
+  duree: 1 min 56
+  couverture: /assets/reels/olefines_8.jpg
+  titre: >-
+    Réduire
+  titre_en: >-
+    Reducing
+  accroche: >-
+    En Chine, essence et gazole reculent, mais le pétrole monte : la pétrochimie tire
+    désormais la demande, et dans le monde elle pèse plus que la route depuis dix ans.
+    Tout le plastique ne se vaut pas : celui du soin et celui de la transition pèsent
+    peu ; le gros volume, c'est l'emballage jetable, 40 % des déchets. L'Europe vise
+    − 5 % d'emballages par habitant en 2030, mais à 178 kilos par Européen, les volumes
+    ne baissent pas encore. Seuls les sacs ont reculé d'un tiers.
+  accroche_en: >-
+    In China, petrol and diesel are falling, yet oil keeps rising: petrochemicals now
+    drive demand, and worldwide they have outweighed road transport in oil growth for
+    ten years. Not all plastic is equal: healthcare and the energy transition weigh
+    little; the big volume is single-use packaging, 40% of waste. Europe targets −5%
+    packaging per person by 2030, but at 178 kilos per European, volumes are not yet
+    falling. Only plastic bags have dropped by a third.
+  youtube: 5-cURaGHalA
+  code:
+  sources:
+    - >-
+      Chine : essence, gazole et kérosène en recul depuis 2021, demande totale encore en
+      hausse, pétrochimie près de + 5 % en 2024 — AIE, Oil 2025 (mars 2025). Monde : sur
+      la hausse 2014-2024 (+ 9,93 Mb/j), 41 % pour la pétrochimie, 35 % pour la route.
+    - >-
+      Cinq millions de barils par jour retirés par les voitures électriques en 2030 —
+      AIE, Global EV Outlook 2026 ; le « près de trois » prolonge la pétrochimie à son
+      rythme 2014-2024 (+ 2,07 %/an) : un prolongement, pas une prévision.
+    - >-
+      Covid : environ 300 000 t d'équipements de protection, moins de 0,1 % du plastique
+      de 2020 ; emballage : 40 % des déchets plastiques du monde en 2019 — OCDE, Global
+      Plastics Outlook, 2022.
+    - >-
+      Éolien : 15,1 GW installés dans l'UE en 2025 (WindEurope) × environ 12,6 t de
+      polymères et composites par MW (JRC, 2020), soit environ 0,4 % des quelque 50 Mt
+      de plastique consommées par an en Europe (calcul).
+    - >-
+      Substituts : dans presque tous les usages étudiés, le substitut émet plus — Meng
+      et al., Environmental Science & Technology, 2024.
+    - >-
+      Directive plastiques à usage unique (2019) ; règlement européen sur les emballages
+      (2025, base 2018). Volumes : 173,6 kg d'emballages par habitant en 2018, 177,8 kg
+      en 2023 ; 94,7 puis 64,1 sacs légers par habitant — Eurostat, UE à 27.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; figures dessinées pour la série. Plusieurs clichés étant sous CC BY-SA,
+    cette vidéo est diffusée sous licence CC BY-SA 4.0.
