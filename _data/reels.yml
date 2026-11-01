@@ -757,6 +757,9 @@
     yet: what Montalieu, Airvault and Lumbres plan, and why using CO₂ is not keeping
     it.
   youtube: dGftH7P1dGE
+  couverture_en: /assets/reels/ciment_4b_en.jpg
+  duree_en: 2 min 36
+  youtube_en: -J9l07KD8eg
   code:
   sources:
     - >-
@@ -863,6 +866,9 @@
     refine oil and make fertiliser — cars, less than a thousandth. The steam methane
     reformer, part by part.
   youtube: n7LYfnHcmns
+  couverture_en: /assets/reels/hydrogene_1_en.jpg
+  duree_en: 2 min 18
+  youtube_en: Q1Xu7TuTMcE
   code:
   sources:
     - >-
@@ -909,6 +915,9 @@
     efficiency. As for steel and cement, two thirds come from the chemistry — changing
     the fuel alone does not decarbonise it.
   youtube: FzJchU2H_P0
+  couverture_en: /assets/reels/hydrogene_2_en.jpg
+  duree_en: 2 min 35
+  youtube_en: qOvbkeAUzg8
   code:
   sources:
     - >-
@@ -960,6 +969,9 @@
     and gets down to 2.65 — four times less, not a hundred. And what remains comes
     mostly from before the plant: the gas field, transport and methane leaks.
   youtube: dHuEESikf0U
+  couverture_en: /assets/reels/hydrogene_3_en.jpg
+  duree_en: 2 min 30
+  youtube_en: F0fpt4EkDLQ
   code:
   sources:
     - >-
@@ -1987,3 +1999,408 @@
     Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
     image ; figures dessinées pour la série. Plusieurs clichés étant sous CC BY-SA,
     cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: olefines-9
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 9/11
+  duree: 1 min 44
+  couverture: /assets/reels/olefines_9.jpg
+  titre: >-
+    Recycler : le mécanique, et sa limite
+  titre_en: >-
+    Recycling: the mechanical route, and its limit
+  accroche: >-
+    Sur 100 tonnes de plastique neuf en Europe, 14 seulement viennent de nos déchets
+    recyclés. Presque tout le recyclage est mécanique — trier, laver, broyer, refondre —
+    et il marche bien pour la bouteille : le PET redevient du PET. Mais il plafonne : le
+    tri, la matière qui s'abîme à chaque boucle, les additifs qu'on ne sait pas retirer,
+    les emballages multi-couches comme le pot de yaourt. En France, 27 % des emballages
+    plastiques sont recyclés, pour un objectif européen de 50 % en 2025.
+  accroche_en: >-
+    Out of 100 tonnes of new plastic in Europe, only 14 come from our recycled waste.
+    Almost all recycling is mechanical — sort, wash, shred, remelt — and it works well
+    for bottles: PET becomes PET again. But it hits a ceiling: sorting, material that
+    degrades with every loop, additives no one knows how to remove, multilayer packaging
+    like the yoghurt pot. In France, 27% of plastic packaging is recycled, against a
+    European target of 50% for 2025.
+  youtube: EpSIWBNbGEg
+  code:
+  sources:
+    - >-
+      Recyclé post-consommation dans le plastique neuf en Europe, 2024 : 13,9 %, soit
+      7,3 Mt ; 99 % du recyclage européen est mécanique (2020) — Plastics Europe, The
+      Circular Economy for Plastics 2026 et 2022.
+    - >-
+      Additifs : 7 % de la masse en moyenne (Geyer, Jambeck et Law, Science Advances,
+      2017) ; 16 325 substances recensées dans les plastiques, additifs, monomères et
+      impuretés compris (PlastChem, 2024).
+    - >-
+      Bouteilles : 25 % de matière recyclée en 2025, 30 % en 2030 (directive plastiques à
+      usage unique). Pot de yaourt : pot en polystyrène, banderole en papier collée,
+      opercule complexe (Citeo, 2025) ; avant septembre 2025, 5 à 10 % des tonnages de
+      pots en polystyrène devenaient de nouveaux objets en plastique, estimation de la
+      Fondation Tara Océan (Reporterre, avril 2025).
+    - >-
+      Emballages non recyclables : le règlement (UE) 2025/40 les interdit sous 70 % de
+      recyclabilité à partir du 1er janvier 2030, ou 24 mois après ses actes délégués de
+      conception si c'est plus tard ; en 2038, seules les classes A et B (80 % et plus)
+      restent admises.
+    - >-
+      Emballages plastiques recyclés en France : 27 % en 2023 (Citeo) ; objectifs
+      européens 50 % en 2025 et 55 % en 2030 (directive emballages de 2018). « 15 %
+      recyclés » (la vidéo sur la fin de vie) et « 14 % de matière recyclée » ne mesurent
+      pas la même chose : ce qui part au recyclage, et ce qui revient dans un produit neuf.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image. Deux d'entre elles étant sous CC BY-SA, cette vidéo est diffusée sous licence
+    CC BY-SA 4.0.
+
+- id: olefines-10
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 10/11
+  duree: 2 min 03
+  couverture: /assets/reels/olefines_10.jpg
+  titre: >-
+    Casser la molécule
+  titre_en: >-
+    Breaking the molecule
+  accroche: >-
+    Casser la molécule pour la refaire : dépolymérisation, pyrolyse, gazéification. Le
+    recyclage chimique prend ce que le mécanique refuse, mais à peine la moitié du carbone
+    revient, et l'huile de pyrolyse se dilue dans du naphta fossile. En Europe, près de
+    3 millions de tonnes de capacité ont été annoncées ; ce qui tourne en 2026, c'est
+    Grandpuits, 15 000 tonnes par an, 0,5 % de cette capacité. Le chimique complète le
+    mécanique, il ne le remplace pas.
+  accroche_en: >-
+    Breaking the molecule to build it again: depolymerisation, pyrolysis, gasification.
+    Chemical recycling takes what mechanical recycling rejects, but barely half the carbon
+    comes back, and pyrolysis oil is diluted in fossil naphtha. Europe has announced
+    nearly 3 million tonnes of capacity; what actually runs in 2026 is Grandpuits, 15,000
+    tonnes a year, 0.5% of that capacity. Chemical recycling complements mechanical
+    recycling; it does not replace it.
+  youtube: Oe7JBiL2U98
+  code:
+  sources:
+    - >-
+      Températures (chémolyse 180-280 °C, pyrolyse 300-700 °C, gazéification
+      700-1 200 °C) et coût de 4 à 7 M€ par kt de capacité (pyrolyse, dépolymérisation,
+      figure 25) — Grimaud et Girard, « Plastiques en transition », Zenon Research, 2024.
+    - >-
+      Carbone : 38 à 55 % de celui des déchets se retrouve dans l'huile de pyrolyse,
+      876 kg CO2e par tonne pyrolysée, 28 à 31 % de moins qu'une incinération sans capture
+      (Petrík et al., Waste Management & Research, 2025). Le recyclage fait mieux que la
+      valorisation énergétique sans capture (JRC, 2023).
+    - >-
+      Dilution : 5 à 20 % d'huile pour 80 à 95 % de naphta, estimation de Zero Waste
+      Europe (2023), contestée par Chemical Recycling Europe ; HAP dans l'huile : ZWE 2023.
+      Recyclé « sur le papier » : bilan massique de la décision d'exécution (UE) 2026/1425
+      (bouteilles). Pots : 80 % du polystyrène compact trié en France part chez Indaver, à
+      Anvers, depuis septembre 2025 (Citeo).
+    - >-
+      Europe : 2,8 Mt/an planifiées, dont 60 % en pyrolyse, 0,29 Mt/an en service
+      (Fraunhofer, octobre 2025). France : 13 projets, environ 2 Md€ (contrat de filière
+      Chimie-Matériaux 2023-2027).
+    - >-
+      Projets, état au 14 septembre 2026 (Eastman revu le 25 octobre) — Grandpuits :
+      TotalEnergies (technologie Plastic Energy), 15 000 t/an de déchets traités, en
+      production depuis mars 2026, ≈ 100 M€. Eastman, Port-Jérôme : méthanolyse, plus de
+      1 milliard de dollars, en pause depuis fin 2024. Carbios, Longlaville : démarrage
+      repoussé à 2028. Enerkem, Varennes : sous la protection de la loi sur les
+      arrangements avec les créanciers.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image. Trois d'entre elles étant sous CC BY-SA, cette vidéo est diffusée sous licence
+    CC BY-SA 4.0.
+
+- id: olefines-11
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique
+  serie_en: Plastics
+  numero: 11/11
+  duree: 2 min 59
+  couverture: /assets/reels/olefines_11.jpg
+  titre: >-
+    Défossiliser
+  titre_en: >-
+    Getting off fossil carbon
+  accroche: >-
+    Le CO2 du vapocraqueur vient de la combustion et de l'amont, pas de la chimie. Le
+    craqueur électrique tombe à 0,70 tonne par tonne avec une électricité propre, mais
+    fait 1,90 sur le réseau européen, contre 1,95 ; en captant 70 % des fumées, il reste
+    1,15. Et dans les deux cas, le carbone du plastique reste fossile. Le naphta biosourcé
+    (0,30), le méthanol fait de CO2 et d'hydrogène, le recyclage mécanique (0,25) touchent
+    au carbone lui-même. Remplacer la chaleur ne suffit pas : seul un carbone qui circule
+    ferme le bilan.
+  accroche_en: >-
+    The steam cracker's CO2 comes from combustion and upstream, not from the chemistry.
+    An electric cracker drops to 0.70 tonnes per tonne with clean power, but reaches 1.90
+    on the European grid, against 1.95; capturing 70% of the flue gas leaves 1.15. Either
+    way, the plastic's carbon is still fossil. Bio-based naphtha (0.30), methanol made
+    from CO2 and hydrogen, and mechanical recycling (0.25) act on the carbon itself.
+    Replacing the heat is not enough: only carbon that circulates closes the balance.
+  youtube: wxikK5AUpXs
+  code:
+  sources:
+    - >-
+      Les voies, en tCO2 par tonne de produits du craqueur, amont compris, électricité à
+      0 gCO2/kWh (une borne) ou au réseau UE-27 de 2023 (240 g) : vapocraqueur au naphta
+      1,85 / 1,95 ; craqueur électrique 0,70 / 1,90 (5 MWh/t) ; capture de 70 % des
+      fumées 0,95 / 1,15 ; naphta biosourcé et craqueur électrique 0,30 / 1,50 ; recyclage
+      mécanique 0,25 / 0,50.
+    - >-
+      Fin de vie : 2,75 tCO2 fossile par tonne de plastique brûlé (GIEC, Citepa). Oslo :
+      capture à l'incinérateur de Klemetsrud, 350 000 tCO2/an, 90 % des fumées, mise en
+      service visée au 3e trimestre 2029 (Hafslund Celsio).
+    - >-
+      Braskem : 275 000 t/an d'éthylène de canne (Braskem, 2025). Méthanol : ≈ 3 t par
+      tonne d'oléfines ; Chine, fin 2024 : 13,4 Mt de capacité pour le charbon seul
+      (CPCIF), 19,7 Mt méthanol compris (CCIA). 41 % de la hausse de la demande mondiale
+      de pétrole de 2014 à 2024 : calcul sur l'Energy Institute, Statistical Review 2025.
+    - >-
+      30 MWh : l'électrolyse des 0,58 t d'hydrogène qu'il faut par tonne d'oléfines ; le
+      vapocraqueur, électrique ou non, consomme ≈ 2,3 t de naphta par tonne d'oléfines,
+      ≈ 29 MWh.
+    - >-
+      Stock : environ 550 Mt de plastique en usage en Europe en 2020 (Material Economics,
+      2022), × 2,7 tCO2 par tonne. Éolien : ≈ 12,6 t de polymères et de composites par MW
+      (JRC, 2020) ; les 15,1 GW installés dans l'UE en 2025 en contiennent ≈ 190 000 t,
+      ≈ 0,4 % des ≈ 50 Mt de plastique consommées chaque année en Europe (WindEurope 2026,
+      Plastics Europe).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image. La couverture reprend un vapocraqueur vu du ciel à Ludwigshafen (Rolf Kickuth,
+    CC BY-SA 4.0). Les photos étant sous CC BY-SA, cette vidéo est diffusée sous licence
+    CC BY-SA 4.0.
+
+- id: olefines-bonus-soin
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  # Hors du compte « /11 » (CHARTE § 1.10) : « Plastique · bonus », pas « 12/11 ».
+  serie: Plastique ·
+  serie_en: Plastics ·
+  numero: bonus
+  duree: 2 min 08
+  couverture: /assets/reels/olefines_bonus_soin.jpg
+  titre: >-
+    Le plastique du soin
+  titre_en: >-
+    The plastic of healthcare
+  accroche: >-
+    Le Covid, moins d'un millième du plastique mondial ? Ce chiffre ne comptait que les
+    masques et les tests ; en comptant tout, la pandémie a produit 8 millions de tonnes de
+    déchets plastiques en un an et demi, de l'ordre de 1 %. Hors Covid, le soin consomme
+    en Europe au moins 900 000 tonnes de plastique jetable par an, près de 2 %. La
+    seringue reste jetable, mais une partie du jetable ne protège personne : au CHU de
+    Bordeaux, les gants sont passés de 75 à 53 par journée d'hospitalisation.
+  accroche_en: >-
+    Covid, less than a thousandth of the world's plastic? That figure only counted masks
+    and tests; counting everything, the pandemic produced 8 million tonnes of plastic
+    waste in a year and a half, around 1%. Outside Covid, healthcare in Europe uses at
+    least 900,000 tonnes of single-use plastic a year, nearly 2%. The syringe stays
+    disposable, but some of the disposables protect no one: at Bordeaux University
+    Hospital, gloves went from 75 to 53 per day of hospital stay.
+  youtube: Y8F2aA1-nhw
+  code:
+  sources:
+    - >-
+      Covid : les 300 000 t de l'OCDE (Global Plastics Outlook 2022) comptent les masques
+      et les tests PCR de 2020, en estimation basse ; Peng et al. (PNAS, 2021) modélisent
+      8,4 Mt de déchets plastiques liés à la pandémie jusqu'en août 2021, à 87 %
+      hospitaliers, soit de l'ordre de 1 % du plastique mondial annuel (calcul).
+    - >-
+      Europe : 0,9 Mt de plastique à usage unique dans le soin en 2023, UE et Royaume-Uni,
+      sept catégories seulement (Systemiq et Eunomia, 2025), près de 2 % d'environ 50 Mt
+      (calcul).
+    - >-
+      France : 23 000 à 170 000 t/an de déchets plastiques de santé hors DASRI, extrapolés
+      de 4 hôpitaux (ADEME, étude EVAPlus, 2024) ; aucune donnée d'achat n'a pu être
+      obtenue. L'Allemagne serait à 125 000 t, 1,5 kg par habitant (Cano et al.,
+      Resources, Conservation and Recycling, 2025), mais extrapolés d'un seul hôpital et
+      en masse de produits, emballages exclus : le périmètre n'est pas celui de la France.
+    - >-
+      Gants : CHU de Bordeaux, d'après la Gazette de la Société et des Techniques (Annales
+      des Mines), n° 128, 2024. Déchets infectieux : 934 contre 362 kg de CO2e par tonne
+      incinérée (The Shift Project, Décarboner la santé, 2023, facteurs ADEME). Blouses :
+      Vozzola et al., AORN Journal, 2020, étude financée par la filière du textile
+      réutilisable.
+    - >-
+      Retraitement de cathéters : décret 2025-895 et arrêté du 22/07/2026 ; le gain
+      écologique « reste à objectiver » (IGAS-IGEDD, 2024). Empreinte du soin : environ
+      49 MtCO2e, plus de 8 % de l'empreinte française (The Shift Project, 2023).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image. Plusieurs d'entre elles étant sous CC BY-SA, cette vidéo est diffusée sous
+    licence CC BY-SA 4.0.
+
+- id: olefines-bonus-pales
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Plastique
+  filiere_en: Plastics
+  serie: Plastique ·
+  serie_en: Plastics ·
+  numero: bonus
+  duree: 2 min 10
+  couverture: /assets/reels/olefines_bonus_pales.jpg
+  titre: >-
+    Recycler les pales d'éoliennes
+  titre_en: >-
+    Recycling wind turbine blades
+  accroche: >-
+    Une pale, c'est 60 à 70 % de fibre de verre noyée dans une résine qui, en durcissant,
+    se lie une fois pour toutes : c'est ce qui la rend solide, et ce qui empêche de la
+    refondre. Le reste de l'éolienne se recycle déjà, 85 à 90 % de sa masse. En Europe,
+    environ 25 000 tonnes de pales arrivent en fin de vie chaque année ; la voie
+    principale est le four à ciment, où la fibre disparaît. Les fabricants changent de
+    résine, mais recyclable ne veut pas dire recyclé : ce sont encore des démonstrateurs.
+  accroche_en: >-
+    A blade is 60 to 70% glass fibre embedded in a resin that, as it cures, bonds once
+    and for all: that is what makes it strong, and what stops it from being remelted. The
+    rest of the turbine is already recycled, 85 to 90% of its mass. In Europe, about
+    25,000 tonnes of blades reach end of life each year; the main route is the cement
+    kiln, where the fibre disappears. Manufacturers are changing resins, but recyclable
+    does not mean recycled: these are still demonstrators.
+  youtube: q0N8GmhCACU
+  code:
+  sources:
+    - >-
+      Composition et réticulation : 60-70 % de fibres, 30-40 % de matrice, en masse —
+      WindEurope, Cefic et EuCIA, Accelerating wind turbine blade circularity, 2020,
+      p. 11-12. Un dixième des déchets composites thermodurcissables : EuCIA, dans
+      WindEurope 2020, p. 15.
+    - >-
+      85-90 % d'une éolienne recyclable, 25 000 t de pales en fin de vie vers 2025 et
+      52 000 t vers 2030 — WindEurope, communiqué du 16/06/2021 (le JRC, en 2023, dit 80 à
+      95 %).
+    - >-
+      Cimenterie : WindEurope 2020, p. 25 ; aucune statistique publique ne donne la part
+      de chaque voie. Brême et Lägerdorf : WindEurope 2020, p. 18 ; l'arrêt depuis 2023
+      est rapporté par Ørsted (EnergieWinde, 14/12/2025), d'après Tagesspiegel Background.
+      États-Unis : American Clean Power, Blade management strategies, 2023, p. 2.
+    - >-
+      Nouvelles résines — Siemens Gamesa RecyclableBlade, communiqué du 01/08/2022
+      (Kaskasi, mer du Nord) ; ZEBRA, IRT Jules Verne, Arkema, LM Wind Power et alii,
+      communiqué du 17/03/2022 ; Vestas, communiqué du 08/02/2023, procédé
+      pré-commercial. France : arrêté du 22 juin 2020.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image. Plusieurs d'entre elles étant sous CC BY-SA, cette vidéo est diffusée sous
+    licence CC BY-SA 4.0.
+
+- id: chaleur-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Chaleur dans l'industrie
+  filiere_en: Heat in industry
+  serie: Chaleur dans l'industrie
+  serie_en: Heat in industry
+  numero: 1/6
+  duree: 1 min 53
+  couverture: /assets/reels/chaleur_1.jpg
+  titre: >-
+    La moitié de l'énergie de l'industrie part en combustion
+  titre_en: >-
+    Half of industry's energy goes into combustion
+  accroche: >-
+    L'industrie européenne consomme environ 4 000 TWh par an. Un quart est de la matière
+    première ; près de la moitié, 1 861 TWh, sert à chauffer les procédés : les fours, la
+    vapeur, les séchoirs. Cette chaleur se fait par combustion, aux trois quarts de
+    combustibles fossiles ; l'électricité n'en fait que 4 %, alors que les machines
+    existent. Résultat : la chaleur fait les trois quarts des gaz à effet de serre de
+    l'industrie européenne.
+  accroche_en: >-
+    European industry uses about 4,000 TWh a year. A quarter is feedstock; nearly half,
+    1,861 TWh, goes into heating processes: furnaces, steam, dryers. That heat comes from
+    combustion, three quarters of it from fossil fuels; electricity supplies only 4%,
+    although the machines exist. The result: heat accounts for three quarters of
+    European industry's greenhouse gas emissions.
+  youtube: -iCAhA1ih5A
+  code:
+  sources:
+    - >-
+      Europe : chaleur de procédé de l'industrie de l'UE-27 en 2019, 1 861 TWh sur une
+      demande totale d'environ 4 000 TWh matières premières comprises (47 %) ; par
+      vecteur : gaz 657, charbon 348, biomasse 278, autres fossiles 265, fioul 120, réseaux
+      de chaleur 117, électricité 77 TWh (4 %) ; fossiles ≈ 75 % ; émissions : fours 51 %,
+      vapeur et eau chaude 24 %, procédé 20 %, locaux 5 % (UE, 2018) — Fraunhofer ISI pour
+      Agora Industry, Direct electrification of industrial process heat, 2024, fig. 1 à 5.
+    - >-
+      Monde : ≈ 110 EJ ≈ 30 600 TWh en 2022, calculé depuis la projection de l'AIE
+      (Renewables 2023 : + 17,6 EJ = + 16 % de 2023 à 2028).
+    - >-
+      France : 284 TWh de consommation finale de l'industrie en 2023 dont 102
+      d'électricité (Eurostat) ; 190 TWh de combustibles pour les fours et séchoirs en 2012
+      (ADEME, La chaleur fatale industrielle, 2015) ; 165 TWh de chaleur de procédé utile
+      des grandes usines en 2023, estimation IndustryEU (centre PERSEE, MINES Paris – PSL).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; figures redessinées à partir des chiffres publiés. Plusieurs photos étant sous
+    CC BY-SA, cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: chaleur-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Chaleur dans l'industrie
+  filiere_en: Heat in industry
+  serie: Chaleur dans l'industrie
+  serie_en: Heat in industry
+  numero: 2/6
+  duree: 2 min 09
+  couverture: /assets/reels/chaleur_2.jpg
+  titre: >-
+    Tout est affaire de température
+  titre_en: >-
+    It is all about temperature
+  accroche: >-
+    Sécher du papier, brasser de la bière, fondre du verre : de la chaleur, mais pas la
+    même. Près de 40 % de la chaleur de procédé de l'industrie européenne reste sous
+    200 °C : on chauffe, on chasse ou on évapore de l'eau, avec de la vapeur. La moitié
+    dépasse 500 °C : on transforme la matière, et c'est la chimie du produit qui fixe la
+    température, de l'ordre de 1 500 °C pour le clinker, le verre ou la fonte. D'où la
+    machine électrique : la pompe à chaleur en bas, la résistance, l'induction, l'arc ou
+    le plasma en haut.
+  accroche_en: >-
+    Drying paper, brewing beer, melting glass: heat, but not the same heat. Nearly 40% of
+    European industry's process heat stays below 200 °C: water is heated, driven off or
+    evaporated, with steam. Half is above 500 °C: the material itself is transformed, and
+    the product's chemistry sets the temperature, around 1,500 °C for clinker, glass or
+    pig iron. Hence the electric machine: the heat pump at the bottom, resistance,
+    induction, arc or plasma at the top.
+  youtube: rz29IEcqVU0
+  code:
+  sources:
+    - >-
+      Chaleur de procédé de l'UE-27 en 2019 (1 861 TWh) par température : < 100 °C 13 %,
+      100-150 °C 15 %, 150-200 °C 11 %, 200-500 °C 11 %, > 500 °C 50 % ; par secteur, à
+      l'écran (TWh, valeurs lues sur la figure) — Fraunhofer ISI pour Agora Industry,
+      Direct electrification of industrial process heat, 2024, fig. 5.
+    - >-
+      Températures de procédé, ordres de grandeur d'ingénierie : cuisson du clinker au
+      four rotatif ≈ 1 450 °C, dite « autour de 1 500 » ; creuset du haut fourneau
+      ≈ 1 500 °C (la température du bain, pas le point de fusion de la fonte) ; four de
+      vapocraquage ≈ 850 °C, séjour inférieur à la seconde.
+    - >-
+      Fusion du verre d'emballage à 1 400 °C au four électrique de Verallia à
+      Châteaubernard (vidéo 4). Le « 3 fois » de la question finale est le COP moyen de
+      3,28 du potentiel européen de pompes à chaleur (Marina et al., 2021), expliqué dans
+      la vidéo 3.
+  licence: >-
+    Photographies issues de Wikimedia Commons et de Pexels, auteur et licence crédités sur
+    chaque image ; figures redessinées d'après Agora Industry (2024). Plusieurs photos
+    étant sous CC BY-SA, cette vidéo est diffusée sous licence CC BY-SA 4.0, sauf la photo
+    du four de verrerie (Keegan J Checks, licence Pexels), qui reste à son auteur.
