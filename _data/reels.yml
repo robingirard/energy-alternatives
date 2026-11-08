@@ -1031,6 +1031,9 @@
     use of gas for the countries that have too much of it. With biogas, a negative
     emission.
   youtube: oKW7Cl-uvkQ
+  couverture_en: /assets/reels/hydrogene_4a_en.jpg
+  duree_en: 2 min 58
+  youtube_en: WhVxsSFD2L0
   code:
   sources:
     - >-
@@ -1096,6 +1099,9 @@
     On the average European grid, hydrogen comes out at 12.7 kg of CO₂ per kilo, more
     than the steam reforming it replaces: the threshold is 210 g per kWh.
   youtube: r7WUx2ainUY
+  couverture_en: /assets/reels/hydrogene_4b_en.jpg
+  duree_en: 2 min 51
+  youtube_en: WNfIdyK6gio
   code:
   sources:
     - >-
@@ -1157,6 +1163,9 @@
     tonnes, in caverns dug into salt, and carried by pipeline. Not indispensable, but they
     let electrolysis choose its hours.
   youtube: znPWw-3k0vI
+  couverture_en: /assets/reels/hydrogene_5a_en.jpg
+  duree_en: 2 min 58
+  youtube_en: vruO1-EWIqA
   code:
   sources:
     - >-
@@ -2404,3 +2413,441 @@
     chaque image ; figures redessinées d'après Agora Industry (2024). Plusieurs photos
     étant sous CC BY-SA, cette vidéo est diffusée sous licence CC BY-SA 4.0, sauf la photo
     du four de verrerie (Keegan J Checks, licence Pexels), qui reste à son auteur.
+
+- id: chaleur-3
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Chaleur dans l'industrie
+  filiere_en: Heat in industry
+  serie: Chaleur dans l'industrie
+  serie_en: Heat in industry
+  numero: 3/6
+  duree: 2 min 14
+  couverture: /assets/reels/chaleur_3.jpg
+  titre: >-
+    Sous 200 °C, la pompe à chaleur
+  titre_en: >-
+    Below 200°C, the heat pump
+  accroche: >-
+    À Marcq-en-Barœul, la levurerie Lesaffre récupère depuis octobre 2025 la chaleur de la
+    fermentation de ses levures : deux pompes à chaleur de 19 MW la remontent pour sécher
+    la levure, 70 % des besoins du site. Une pompe à chaleur ne produit pas la chaleur,
+    elle la déplace — 3,3 kWh de chaleur par kWh d'électricité en moyenne dans l'industrie
+    européenne. En France, l'industrie perd chaque année 110 TWh de chaleur ; en Europe,
+    on pourrait en reprendre 178 TWh avec des pompes à chaleur, jusqu'à 200 °C. Mais la
+    moitié de la chaleur industrielle dépasse 500 °C, hors de leur portée.
+  accroche_en: >-
+    In Marcq-en-Barœul, the Lesaffre yeast plant has recovered the heat from fermenting
+    its yeast since October 2025: two 19 MW heat pumps raise it to dry the yeast, 70% of
+    the site's heat needs. A heat pump does not produce heat, it moves it — 3.3 kWh of
+    heat per kWh of electricity on average across European industry. French industry
+    wastes 110 TWh of heat every year; across Europe, heat pumps could recover 178 TWh of
+    it, up to 200°C. But half of industrial heat is above 500°C, out of their reach.
+  youtube: 1g4XwliX1pk
+  code:
+  sources:
+    - >-
+      Lesaffre, Marcq-en-Barœul : deux pompes à chaleur de 19 MW thermiques (ENGIE
+      Solutions), inaugurées le 14/10/2025, 70 % des besoins de chaleur du site, aide
+      ADEME de 5,6 M€ (communiqués Lesaffre, agro-media.fr).
+    - >-
+      COP moyen de 3,28 (médiane 2,77) pour le potentiel européen de pompes à chaleur
+      industrielles sur chaleur fatale jusqu'à 200 °C : 23,0 GW, 4 174 unités, 178 TWh de
+      chaleur par an pour 54 TWh d'électricité — Marina, Spoelstra, Zondag, Wemmers,
+      Renewable and Sustainable Energy Reviews, 2021, tableau 4.
+    - >-
+      Chaleur fatale française : 109,5 TWh par an, 36 % de la consommation de combustibles
+      de l'industrie (ADEME, La chaleur fatale, 2017) ; un four à combustible ne met que
+      20 à 40 % de son combustible en chaleur utile (ADEME, La chaleur fatale industrielle,
+      2015, p. 7).
+    - >-
+      LACTOSOL (Newheat chez Lactalis Ingredients, Verdun) : 15 000 m² de capteurs,
+      12,4 MW thermiques, ≈ 8 000 MWh par an depuis juin 2023, 6 % de la chaleur du site ;
+      le solaire thermique industriel mondial fait ≈ 0,02 % de la chaleur industrielle
+      (AIE, Renewables 2023, calculé).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; la pompe à chaleur et le champ solaire montrés ne sont pas ceux de Lesaffre
+    ni de LACTOSOL (aucune photo libre), la légende le dit. Figures redessinées d'après
+    Marina et al. (2021) et l'ADEME. Plusieurs photos étant sous CC BY-SA, cette vidéo
+    est diffusée sous licence CC BY-SA 4.0.
+
+- id: chaleur-4
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Chaleur dans l'industrie
+  filiere_en: Heat in industry
+  serie: Chaleur dans l'industrie
+  serie_en: Heat in industry
+  numero: 4/6
+  duree: 2 min 22
+  couverture: /assets/reels/chaleur_4.jpg
+  titre: >-
+    Au-dessus de 200 °C, d'autres machines électriques
+  titre_en: >-
+    Above 200°C, other electric machines
+  accroche: >-
+    À Châteaubernard, un four de la verrerie Verallia fond le verre à 1400 °C sans brûler
+    de gaz depuis 2024 : 100 % électrique, 180 tonnes de verre par jour. Chaudière
+    électrique jusqu'à 500 °C, résistance jusqu'à 2000 °C, induction au-delà de 2400 °C,
+    arc électrique des aciéries, torche à plasma jusqu'à 3000 °C : toutes les températures
+    de l'industrie sont couvertes. Pour l'industrie européenne, 90 % de l'énergie non
+    encore électrique pourrait l'être avec les machines attendues d'ici 2035. Ce qui
+    résiste est presque tout dans la sidérurgie, où le charbon n'est pas qu'un
+    combustible : il arrache l'oxygène au minerai.
+  accroche_en: >-
+    In Châteaubernard, a Verallia glass furnace has been melting glass at 1,400°C
+    without burning any gas since 2024: 100% electric, 180 tonnes of glass a day. An
+    electric boiler up to 500°C, resistance heating up to 2,000°C, induction beyond
+    2,400°C, electric arc furnaces in steelmaking, plasma torches up to 3,000°C: every
+    industrial temperature is covered. For European industry, 90% of the energy that
+    isn't electric yet could be by 2035. What resists is almost all in steelmaking,
+    where coal is not just a fuel: it strips the oxygen from the ore.
+  youtube: Xw5hm5v-lD4
+  code:
+  sources:
+    - >-
+      Verallia, Châteaubernard : four 100 % électrique de 8 MW (Fives), mis en service en
+      avril 2024, inauguré le 10/09/2024, 180 t de verre/jour, fusion à 1400 °C ;
+      raccordement du site plus que doublé, à 20 MW (Vitisphere, L'Usine Nouvelle).
+    - >-
+      BASF, SABIC et Linde : four de vapocraquage chauffé à l'électricité, 6 MW,
+      démonstrateur démarré le 17/04/2024 à Ludwigshafen.
+    - >-
+      Potentiel d'électrification directe de l'industrie de l'UE-27 (base 2019, hors
+      matières premières) : 933 TWh déjà électriques ; sur les 2068 TWh restants, 62 %
+      électrifiables dès 2025, 90 % dès 2035 ; 208 TWh résistent, dont 202 dans la
+      sidérurgie — Fraunhofer ISI pour Agora Industry, Direct electrification of
+      industrial process heat, 2024.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; la photo de Châteaubernard date de 2009, avant le four électrique. Figures
+    redessinées d'après Agora Industry (2024). Plusieurs photos étant sous CC BY-SA,
+    cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: chaleur-5
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Chaleur dans l'industrie
+  filiere_en: Heat in industry
+  serie: Chaleur dans l'industrie
+  serie_en: Heat in industry
+  numero: 5/6
+  duree: 2 min 16
+  couverture: /assets/reels/chaleur_5.jpg
+  titre: >-
+    Stocker la chaleur : briques, sable, sel, carbone
+  titre_en: >-
+    Storing heat: bricks, sand, salt, carbon
+  accroche: >-
+    En France, en 2025, le prix de l'électricité a été négatif pendant 513 heures, et a
+    dépassé 150 €/MWh pendant près de 280 heures. Une papeterie, elle, veut sa vapeur à
+    toute heure. Pour stocker l'électricité bon marché sous forme de chaleur : des
+    briques réfractaires chauffées par résistance (Rondo, 100 MWh en Californie), de la
+    roche ou du béton traversés d'un tube d'eau (Brenmiller, EnergyNest), du sable brassé
+    par l'air (Magaldi), du sel fondu (Kyoto Group), ou des blocs de carbone incandescents
+    qui rendent leur énergie en lumière (Antora, 5 GWh dans le Dakota du Sud). En France,
+    le premier est à Troyes, chez WEPA, depuis mai 2026.
+  accroche_en: >-
+    In France, in 2025, electricity prices were negative for 513 hours, and above
+    €150/MWh for nearly 280 hours. A paper mill, though, wants its steam at every hour.
+    To store cheap electricity as heat: refractory bricks heated by resistance (Rondo,
+    100 MWh in California), rock or concrete threaded with a water pipe (Brenmiller,
+    EnergyNest), sand stirred by air (Magaldi), molten salt (Kyoto Group), or glowing
+    carbon blocks that give back their energy as light (Antora, 5 GWh in South Dakota).
+    In France, the first is in Troyes, at WEPA, since May 2026.
+  youtube: ffsYnyO5gI8
+  code:
+  sources:
+    - >-
+      Prix day-ahead horaires de la zone France en 2025 (Energy-Charts, Fraunhofer ISE ;
+      EPEX SPOT) : moyenne 61 €/MWh, 278 h au-dessus de 150 €/MWh (calculé) ; 513 h
+      négatives (RTE, Bilan électrique 2025).
+    - >-
+      Rondo Energy : 100 MWh de briques à plus de 1000 °C, Holmes Western Oil Corp.,
+      comté de Kern (Californie), depuis octobre 2025, champ solaire dédié de 20 MW
+      (ess-news, IEEE Spectrum).
+    - >-
+      Electrified Thermal Solutions (briques conductrices jusqu'à 1800 °C), Brenmiller
+      (roche concassée), EnergyNest (béton, chez Yara depuis 2023), Magaldi et Enel
+      (7,5 MWh de sable chez I.GI, Italie, depuis septembre 2025), Kyoto Group (sel
+      fondu), Antora Energy (carbone, 5 GWh chez POET, Dakota du Sud, depuis mai 2026) —
+      sites des constructeurs.
+    - >-
+      Epyr chez WEPA (Troyes) : inaugurée le 29/05/2026, 1,3 MW et 5 h de stockage en
+      céramique, un quart de la vapeur du site selon Epyr (presse).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; aucune photo libre des stockages eux-mêmes, d'où les schémas ; la machine à
+    papier n'est pas celle de Troyes, la légende le dit. Schémas de principe et figures
+    redessinés. Plusieurs photos étant sous CC BY-SA, cette vidéo est diffusée sous
+    licence CC BY-SA 4.0.
+
+- id: chaleur-6
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Chaleur dans l'industrie
+  filiere_en: Heat in industry
+  serie: Chaleur dans l'industrie
+  serie_en: Heat in industry
+  numero: 6/6
+  duree: 1 min 57
+  couverture: /assets/reels/chaleur_6.jpg
+  titre: >-
+    Brancher l'usine, garder le gaz
+  titre_en: >-
+    Connecting the plant, keeping the gas
+  accroche: >-
+    À Saint-Romain-le-Puy, Verallia remplace en 2026 un four de verrerie par un four
+    hybride : 80 % d'électricité, 20 % de gaz. Électrifier un four, c'est d'abord tirer
+    une ligne : à Châteaubernard, le raccordement a dû plus que doubler pour accueillir
+    le four électrique. En France, 450 sites industriels sont branchés sur le réseau de
+    transport, pour 10 GW en tout — et plus de 170 projets avaient déjà réservé plus de
+    30 GW en novembre 2025, trois fois la puissance de toute l'industrie française. D'où
+    l'hybride : une chaudière électrique à côté de la chaudière à gaz, l'électricité aux
+    heures bon marché, le gaz aux heures chères. Pour une usine chimique, il revient
+    moins cher que le gaz seul, mais n'enlève qu'un peu plus du quart des émissions.
+  accroche_en: >-
+    In Saint-Romain-le-Puy, Verallia is replacing a glass furnace in 2026 with a hybrid
+    one: 80% electricity, 20% gas. Electrifying a furnace first means laying a cable: in
+    Châteaubernard, the grid connection had to more than double to host the electric
+    furnace. In France, 450 industrial sites are connected to the transmission grid,
+    10 GW in total — and more than 170 projects had already reserved over 30 GW by
+    November 2025, three times the power used by all of French industry. Hence the
+    hybrid: an electric boiler next to the gas one, electricity at cheap hours, gas at
+    expensive ones. For a chemical plant, it comes out cheaper than gas alone, but
+    removes only a bit more than a quarter of emissions.
+  youtube: Ay30-EKRk7U
+  code:
+  sources:
+    - >-
+      Verallia, Châteaubernard : four 100 % électrique de 8 MW, raccordement du site
+      plus que doublé, à 20 MW (Vitisphere, L'Usine Nouvelle). Saint-Romain-le-Puy : four
+      hybride 80 %/20 %, 60 M€ dont 14,2 M€ de France 2030, démarrage annoncé pour
+      septembre 2026 ; « le raccordement représente 10 % du prix, jusqu'à 50 % pour
+      certaines usines » (directeur général France de Verallia, IF Saint-Étienne,
+      14/11/2024). Saragosse : premier four hybride du groupe, 70 % électricité,
+      inauguré le 16/04/2026 (communiqué Verallia).
+    - >-
+      RTE : 450 sites industriels raccordés au réseau de transport, ≈ 10 GW (Schéma
+      décennal 2025, fiche 5) ; plus de 170 projets avaient réservé plus de 30 GW en
+      novembre 2025, près de 33 GW en juillet 2026 ; « course à la réservation »,
+      passage prévu au « premier prêt, premier servi » (consultation publique du
+      26/01/2026).
+    - >-
+      Coût actualisé de la chaleur pour une usine chimique à 180 °C, prix d'électricité
+      2030-2040, indice gaz = 100 : tout électrique 137, avec stockage thermique 129,
+      hybride 88 ; intensité carbone : gaz ≈ 222 kgCO2e/MWh, hybride 161 (− 28 %), tout
+      électrique ≈ 5 — T. Knibiehly, T. Heggarty, P. Affonso Nobrega, R. Girard (thèse
+      PLANETERR, PERSEE – Mines Paris – PSL, avec RTE), présentation, Copenhague, avril
+      2026.
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; la ligne à haute tension est à Dnipro, le site chimique est celui de BASF à
+    Ludwigshafen, la verrerie où sortent les bouteilles est une usine Verallia
+    d'Allemagne. Figures redessinées. Plusieurs photos étant sous CC BY-SA, cette vidéo
+    est diffusée sous licence CC BY-SA 4.0 ; la couverture reprend la photo de Dnipro de
+    VKras, CC BY-SA 4.0.
+
+- id: aluminium-1
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Aluminium
+  filiere_en: Aluminium
+  serie: Aluminium
+  serie_en: Aluminium
+  numero: 1/4
+  duree: 1 min 56
+  couverture: /assets/reels/aluminium_1.jpg
+  titre: >-
+    De l'électricité solidifiée
+  titre_en: >-
+    Solidified electricity
+  accroche: >-
+    La plus grande aluminerie de l'Union européenne est à Dunkerque, juste à côté de la
+    centrale nucléaire de Gravelines : 300 000 tonnes d'aluminium par an. De la bauxite à
+    l'alumine, puis l'électrolyse : une cuve de cryolithe fondue à 960 °C, où le courant
+    arrache l'oxygène à l'alumine. Une cuve ne demande que 4 volts, mais elle avale
+    300 000 ampères : on en aligne 264 à Dunkerque. Ce câble, c'est 15 MWh par tonne
+    d'aluminium — 25 fois plus que l'acier. Tout ça émet 3,35 tonnes de CO2 par tonne,
+    avec une électricité propre.
+  accroche_en: >-
+    The largest aluminium smelter in the European Union is in Dunkirk, right next to the
+    Gravelines nuclear power plant: 300,000 tonnes of aluminium a year. From bauxite to
+    alumina, then electrolysis: a cell of molten cryolite at 960°C, where the current
+    strips the oxygen from the alumina. A cell needs only 4 volts, but draws 300,000
+    amps: 264 of them are lined up in Dunkirk. That cable means 15 MWh per tonne of
+    aluminium — 25 times more than steel. All of it emits 3.35 tonnes of CO2 per tonne,
+    even with clean electricity.
+  youtube: -aZg3OtmyF0
+  code:
+  sources:
+    - >-
+      Digestion à ≈ 250 °C sous pression, calcination à ≈ 1000 °C, 1 à 1,5 t de boues
+      rouges par tonne d'alumine, ≈ 2 t d'alumine par tonne d'aluminium, anodes cuites à
+      ≈ 1100 °C, bain de cryolithe à ≈ 960 °C, 300 à 600 kA sous ≈ 4,2 V, 15 MWh
+      d'électricité par tonne (acier intégré 0,6, ciment 0,11) : note de procédés
+      industriels, ordres de grandeur d'ingénierie 2025.
+    - >-
+      Aluminium Dunkerque : ≈ 300 000 t/an, 264 cuves, plus de 700 salariés, ≈ deux tiers
+      de la production française d'aluminium primaire (Wikipédia, « Fonderie d'aluminium
+      de Dunkerque » ; France 3 Hauts-de-France). La plus grande aluminerie de l'UE, non
+      d'Europe : Hydro Sunndal (Norvège) et Fjarðaál (Islande) sont plus grosses, hors UE.
+    - >-
+      3,35 tCO2e par tonne, voie Hall-Héroult à anode carbone avec une électricité sans
+      émissions, du berceau à la porte de l'usine (décomposé dans la vidéo 2).
+  licence: >-
+    Vues aériennes : orthophoto IGN / Géoplateforme (Licence Ouverte) et emprise
+    OpenStreetMap (ODbL). Photographies issues de Wikimedia Commons, auteur et licence
+    crédités sur chaque image. Neuf photos étant sous CC BY-SA, cette vidéo est diffusée
+    sous licence CC BY-SA 4.0 (YouTube ne l'offre pas au menu de licence).
+
+- id: aluminium-2
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Aluminium
+  filiere_en: Aluminium
+  serie: Aluminium
+  serie_en: Aluminium
+  numero: 2/4
+  duree: 1 min 54
+  couverture: /assets/reels/aluminium_2.jpg
+  titre: >-
+    D'où vient le CO₂ de l'aluminium
+  titre_en: >-
+    Where aluminium's CO2 comes from
+  accroche: >-
+    Une tonne d'aluminium, c'est 3,35 tonnes de CO2 avec une électricité sans carbone :
+    la mine et le transport, la raffinerie qui calcine l'alumine à 1000 °C, la cuisson
+    des anodes — 1,6 tonne avant même que la cuve ne tourne. La cuve, elle, ne brûle
+    rien : c'est l'anode de carbone qui se consomme, 2 Al2O3 + 3 C → 4 Al + 3 CO2, près
+    de la moitié du total. Et il y a le câble, 15 MWh par tonne : sur le réseau européen
+    moyen, ils valent 3,60 tonnes de plus — le réseau double la note.
+  accroche_en: >-
+    A tonne of aluminium means 3.35 tonnes of CO2 even with carbon-free electricity:
+    mining and transport, the refinery that calcines alumina at 1,000°C, the baking of
+    anodes — 1.6 tonnes before the cell even starts. The cell itself burns nothing: it's
+    the carbon anode that gets consumed, 2 Al2O3 + 3 C → 4 Al + 3 CO2, nearly half the
+    total. And then there's the cable, 15 MWh per tonne: on the average European grid,
+    that adds 3.60 more tonnes — the grid doubles the bill.
+  youtube: KRlAlPswIiQ
+  code:
+  sources:
+    - >-
+      La cascade, en tCO2e par tonne d'aluminium, du berceau à la porte de l'usine,
+      électricité sans émissions : mine et fret 0,25, raffinage Bayer 1,20, cuisson des
+      anodes 0,15, électrolyse (anode consommée) 1,50, effet d'anode (CF4, PRG ≈ 7380)
+      0,25, soit 3,35.
+    - >-
+      Électricité : 15 MWh/t × 240 gCO2/kWh (réseau UE-27, 2023) = 3,60, soit 6,95 au
+      total ; réseau français 2023, 56 gCO2/kWh, supplément de 0,84 t (calculé).
+    - >-
+      Contrat EDF – Aluminium Dunkerque : 10 ans à compter du 1er janvier 2026, signé le
+      22/07/2025, 450 MW de puissance instantanée, la moitié d'un réacteur nucléaire
+      (AFP, mai et juillet 2025).
+  licence: >-
+    Vue aérienne : orthophoto IGN / Géoplateforme (Licence Ouverte) et emprise
+    OpenStreetMap (ODbL). Photographies issues de Wikimedia Commons, auteur et licence
+    crédités sur chaque image ; plusieurs étant sous CC BY-SA, cette vidéo est diffusée
+    sous licence CC BY-SA 4.0.
+
+- id: aluminium-3
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Aluminium
+  filiere_en: Aluminium
+  serie: Aluminium
+  serie_en: Aluminium
+  numero: 3/4
+  duree: 1 min 49
+  couverture: /assets/reels/aluminium_3.jpg
+  titre: >-
+    Supprimer le carbone lui-même
+  titre_en: >-
+    Removing the carbon itself
+  accroche: >-
+    Dans une cuve d'aluminium, c'est l'électrode qui émet le CO2 : changeons d'électrode.
+    Avec une anode inerte qui ne se consomme pas, l'équation devient 2 Al2O3 → 4 Al +
+    3 O2 — plus de carbone, moins 1,75 tonne de CO2. Au Québec, Elysis a démarré en
+    novembre 2025 une première cuve de taille industrielle. Mais l'anode inerte demande
+    15 % d'électricité en plus : sur le réseau européen, la voie propre remonte à
+    5,56 tonnes, plus que la voie au carbone alimentée en électricité propre. Décarboner
+    l'aluminium, c'est aussi un problème de système électrique.
+  accroche_en: >-
+    In an aluminium cell, it's the electrode that emits the CO2: so change the
+    electrode. With an inert anode that isn't consumed, the equation becomes 2 Al2O3 →
+    4 Al + 3 O2 — no more carbon, minus 1.75 tonnes of CO2. In Quebec, Elysis started up
+    a first industrial-scale cell in November 2025. But the inert anode needs 15% more
+    electricity: on the European grid, the clean route climbs back to 5.56 tonnes, more
+    than the carbon route run on clean electricity. Decarbonising aluminium is also a
+    power-system problem.
+  youtube: THmtKWzLC2Y
+  code:
+  sources:
+    - >-
+      Les chiffres, en tCO2e par tonne, électricité sans émissions puis réseau UE-27
+      240 gCO2/kWh (2023) : Hall-Héroult à anode carbone 3,35 / 6,95 (15 MWh/t) ; anode
+      inerte 1,60 / 5,56 (16,5 MWh/t, + 15 % d'électricité) ; anode inerte avec raffinage
+      décarboné 0,35 / 4,79 (18,5 MWh/t).
+    - >-
+      Elysis (Alcoa et Rio Tinto) : cuve à anode inerte de 450 kA démarrée à Alma
+      (Québec) en novembre 2025, usine de démonstration de dix cuves (2 500 t/an)
+      annoncée à Arvida pour 2027 (communiqués Rio Tinto, juin 2024 et novembre 2025).
+    - >-
+      Rusal : cellule pilote de 140 kA à Krasnoïarsk depuis juin 2020, ≈ 1 t/jour,
+      livraisons d'essai en 2021 (Rusal, Light Metal Age, S&P Global).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; l'une étant sous CC BY-SA, cette vidéo est diffusée sous licence CC BY-SA
+    4.0.
+
+- id: aluminium-4
+  domaine: Industrie
+  domaine_en: Industry
+  filiere: Aluminium
+  filiere_en: Aluminium
+  serie: Aluminium
+  serie_en: Aluminium
+  numero: 4/4
+  duree: 1 min 47
+  couverture: /assets/reels/aluminium_4.jpg
+  titre: >-
+    Recycler l'aluminium
+  titre_en: >-
+    Recycling aluminium
+  accroche: >-
+    Refondre de l'aluminium coûte 5 % de l'électricité qu'il a fallu pour le fabriquer :
+    0,7 MWh par tonne, aucune chimie, aucun CF4 — 0,3 tonne de CO2 contre presque 7 pour
+    le métal primaire. La ferraille d'aluminium vaut cher et se collecte sans
+    subvention : trois canettes sur quatre sont recyclées dans le monde. Mais
+    l'aluminium n'est presque jamais pur — sept familles d'alliages — et le mélange ne
+    sert qu'à couler des pièces, jamais une tôle de carrosserie. Le recyclage ne remplace
+    pas les cuves : les deux tiers de l'aluminium sortiront encore d'elles.
+  accroche_en: >-
+    Remelting aluminium costs just 5% of the electricity it took to make it: 0.7 MWh per
+    tonne, no chemistry, no CF4 — 0.3 tonnes of CO2 against nearly 7 for primary metal.
+    Aluminium scrap is valuable and gets collected without subsidies: three out of four
+    cans are recycled worldwide. But aluminium is almost never pure — seven families of
+    alloys — and once mixed, the metal can only be cast into parts, never rolled into car
+    body panels. Recycling doesn't replace the cells: two thirds of aluminium will still
+    come out of them.
+  youtube: R-1Q1R4U7Ek
+  code:
+  sources:
+    - >-
+      Refusion : 0,30 tCO2e/t avec une électricité sans émissions, 0,47 sur le réseau
+      UE-27 (240 gCO2/kWh, 2023), pour 0,7 MWh/t, contre 3,35 / 6,95 et 15 MWh/t pour le
+      métal primaire.
+    - >-
+      Trois canettes sur quatre : taux mondial de recyclage des canettes de boisson,
+      75 % en 2023 ; ≈ 42 Mt d'aluminium secondaire en 2024, plus d'un tiers de l'offre
+      mondiale (International Aluminium Institute).
+    - >-
+      Constellium Neuf-Brisach : centre de recyclage inauguré le 17/09/2024, +
+      130 000 t/an (Constellium, L'Usine Nouvelle). Aluminium Dunkerque : four de
+      recyclage de 20 000 t/an, inauguré le 15/05/2025, objectif de 10 % d'aluminium
+      recyclé en 2030 (AFP).
+  licence: >-
+    Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
+    image ; plusieurs étant sous CC BY-SA, cette vidéo est diffusée sous licence CC
+    BY-SA 4.0.
