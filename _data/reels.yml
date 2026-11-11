@@ -2854,3 +2854,128 @@
     Photographies issues de Wikimedia Commons, auteur et licence crédités sur chaque
     image ; plusieurs étant sous CC BY-SA, cette vidéo est diffusée sous licence CC
     BY-SA 4.0.
+
+- id: cop-1
+  domaine: Diplomatie climatique
+  filiere: Diplomatie climatique
+  serie: La COP, mode d'emploi
+  numero: 1/9
+  duree: 2 min 28
+  couverture: /assets/reels/cop_1.jpg
+  titre: >-
+    Qui décide, à une COP ?
+  accroche: >-
+    « La COP a décidé que… » On l'entend partout. Mais une COP réunit les 198 Parties
+    de la convention de l'ONU sur le climat (1992), chacune avec une voix — et pourtant
+    personne ne vote : depuis la COP1 (Berlin, 1995), le règlement n'est appliqué qu'à
+    titre provisoire, sauf la règle 42, celle du vote, toujours en suspens. Une COP
+    cherche le consensus, que le président constate ; à Cancún (2010) comme à Bakou
+    (2024), la décision est passée malgré une objection. La présidence tourne entre les
+    5 groupes régionaux de l'ONU, le secrétariat à Bonn organise sans décider. Premier
+    épisode d'une série de 9 sur la COP, « mode d'emploi ».
+  youtube: ZvqmFiRPfHo
+  code:
+  sources:
+    - >-
+      198 Parties à la convention-cadre de l'ONU sur les changements climatiques
+      (197 États + l'Union européenne), dont les États-Unis, encore Partie jusqu'au
+      27/02/2027 mais sans délégation annoncée à la COP31.
+    - >-
+      Règlement intérieur appliqué « à titre provisoire » depuis la COP1 (Berlin,
+      28/03/1995), sauf la règle 42 (le vote), renvoyée de COP en COP jusqu'à la
+      COP31 (rapports officiels des sessions).
+    - >-
+      Cancún (COP16, 2010) : décision adoptée malgré l'objection de la Bolivie. Bakou
+      (COP29, 2024) : objection de l'Inde notée, décision maintenue (rapports
+      officiels des sessions).
+    - >-
+      Badges sur place : 83 884 à la COP28 de Dubaï, 42 618 à la COP30 de Belém
+      (listes officielles de participants).
+  licence: >-
+    Vidéo entièrement composée de schémas et cartes originaux (matplotlib), sans
+    photographie extérieure.
+
+- id: cop-2
+  domaine: Diplomatie climatique
+  filiere: Diplomatie climatique
+  serie: La COP, mode d'emploi
+  numero: 2/9
+  duree: 2 min 21
+  couverture: /assets/reels/cop_2.jpg
+  titre: >-
+    Le GIEC ne fait pas de recherche
+  accroche: >-
+    On entend souvent « les chercheurs du GIEC ont mesuré… » ou « le GIEC
+    recommande… ». Créé en 1988 par l'Organisation météorologique mondiale et le
+    Programme des Nations unies pour l'environnement — l'ONU n'a fait qu'approuver —,
+    le GIEC compte 195 pays membres : ce sont les gouvernements qui y siègent. Il ne
+    fait pas de recherche et ne mesure rien : il évalue ce qui est déjà publié, plus de
+    66 000 références pour son 6ᵉ rapport, avec 782 auteurs bénévoles. Son fonds baisse
+    et pourrait être vide fin 2028 ; en octobre 2026, à Addis-Abeba, les gouvernements
+    ne se sont accordés ni sur le calendrier ni sur le budget du 7ᵉ rapport, dont le
+    bilan mondial de la COP a besoin.
+  youtube: 1PVeovhY8LU
+  code:
+  sources:
+    - >-
+      GIEC créé en 1988 par l'Organisation météorologique mondiale et le Programme
+      des Nations unies pour l'environnement, « endorsed » par l'Assemblée générale
+      de l'ONU (résolution 43/53, décembre 1988) ; 195 pays membres.
+    - >-
+      3 groupes de travail, 782 auteurs bénévoles pour le 6ᵉ rapport (AR6,
+      2021-2023), plus de 66 000 références citées (communiqués du GIEC).
+    - >-
+      Fonds du GIEC : environ 11 millions de francs suisses pour 2026, versements
+      volontaires en baisse déclarée, fonds annoncé épuisé fin 2028.
+    - >-
+      Session de l'IPCC à Addis-Abeba, octobre 2026 : accord non trouvé sur le
+      calendrier ni le budget du 7ᵉ rapport, session suspendue (*Earth Negotiations
+      Bulletin*, IISD). 2ᵉ bilan mondial de l'accord de Paris ouvert à Antalya,
+      conclu en 2028.
+  licence: >-
+    Photo : le siège de l'Organisation météorologique mondiale à Genève (Torbjørn
+    Toby Jørgensen, CC BY-SA 2.0). Cette vidéo est diffusée sous licence CC BY-SA 4.0.
+
+- id: cop-3
+  domaine: Diplomatie climatique
+  filiere: Diplomatie climatique
+  serie: La COP, mode d'emploi
+  numero: 3/9
+  duree: 2 min 49
+  couverture: /assets/reels/cop_3.jpg
+  titre: >-
+    Approuvé ligne par ligne
+  accroche: >-
+    Le résumé du GIEC que lisent les ministres, qui l'approuve ? Les gouvernements.
+    Le rapport complet est « accepté » sans discussion ; le résumé pour décideurs, lui,
+    est débattu phrase par phrase, en séance, par consensus — les auteurs sont
+    consultés pour qu'il reste fidèle au rapport. Le consensus a un prix : à Berlin
+    (2014), 4 graphiques sont retirés faute d'accord ; en 2022, la séance déborde de
+    2 jours et demi et le résumé passe de 43 à 63 pages ; à Incheon (2018),
+    l'Arabie saoudite et l'Égypte font inscrire des réserves. Mais approuver un texte du
+    GIEC et le saluer à la COP suivante, ce sont deux choses différentes : à Katowice,
+    quatre pays refusent que la COP le salue sur le fond ; elle finit par le saluer —
+    seulement pour son calendrier, pas ses conclusions.
+  youtube: CIMFO20ftqk
+  code:
+  sources:
+    - >-
+      Madrid, 5ᵉ session du GT I, 27-29/11/1995, 177 délégués de 96 pays : « un
+      faisceau d'éléments suggère une influence humaine discernable sur le climat
+      mondial » (préface du rapport SAR).
+    - >-
+      Berlin, approbation du résumé AR5 GT III, 11/04/2014 : 4 figures (émissions par
+      région et par revenu) retirées faute de consensus (compte rendu de la session,
+      IISD).
+    - >-
+      Approbation du résumé AR6 GT III, en ligne du 21/03 au 4/04/2022 : dépassement
+      de 2 jours et demi, résumé de 43 à 63 pages (compte rendu de la session, IISD).
+    - >-
+      Incheon, SR1.5, 1-6/10/2018 : réserves de l'Arabie saoudite et de l'Égypte sur
+      une mention de l'accord de Paris. Katowice, COP24, 10/12/2018 : l'Arabie
+      saoudite, le Koweït et la Russie s'opposent à ce que la COP « salue » le
+      rapport ; décision finale : « welcomes the timely completion » (comptes rendus
+      des sessions, IISD).
+  licence: >-
+    Photo : l'adoption du résumé sur 1,5 °C à Incheon, 6 octobre 2018 (Sean Wu,
+    IISD/ENB, CC BY 4.0). Cette vidéo est diffusée sous licence CC BY-SA 4.0.
